@@ -1,0 +1,610 @@
+<script type="text/javascript" src="/js/jquery.validate.js"></script>
+<link rel="stylesheet"  type="text/css" href="/css/jquery.steps.css" />
+<style>
+   @media screen and (max-width: 767px) {
+   .wizard > .steps > ul > li {
+   float: none;
+   width: 100%;
+   }
+   .wizard > .steps > ul > li > a, .wizard > .steps a, .wizard > .steps a:hover, .wizard > .steps a:active{
+   padding: 0.5em;
+   }
+   }
+   .wizard > .content > .body {
+   position: initial;
+   }
+</style>
+<%
+    manual=sess.manual;
+   el_product=sess.el_product;
+   gas_product=sess.gas_product;
+   conditions = "";
+
+   if (sess.site_lang == "nl")
+   {
+   	if (!gas_product)
+   		conditions=el_product["ask_algemene_voorwaarden_nl"];
+   	else if (!el_product)
+   		conditions=gas_product["ask_algemene_voorwaarden_nl"];
+   	else if ( helpers.strcmp(gas_product['provider'], el_product['provider']) != 0 )
+   		conditions=el_product["ask_algemene_voorwaarden_nl"] + ' en <br> ' + gas_product["ask_algemene_voorwaarden_nl"];
+   	else
+   		conditions=el_product["ask_algemene_voorwaarden_nl"];
+   } else if (sess.site_lang == "fr")
+   {
+   	if (!gas_product)
+   		conditions=el_product["ask_algemene_voorwaarden_fr"];
+   	else if (!el_product)
+   		conditions=gas_product["ask_algemene_voorwaarden_fr"];
+   	else if ( helpers.strcmp(gas_product['provider'],el_product['provider']) != 0 )
+   		conditions=el_product["ask_algemene_voorwaarden_fr"] + ' et <br> ' + gas_product["ask_algemene_voorwaarden_fr"];
+   	else
+   		conditions=el_product["ask_algemene_voorwaarden_fr"];
+   } else if (sess.site_lang == "en")
+   {
+   	if (!gas_product)
+   		conditions=el_product["ask_algemene_voorwaarden_en"];
+   	else if (!el_product)
+   		conditions=gas_product["ask_algemene_voorwaarden_en"];
+   	else if ( helpers.strcmp(gas_product['provider'],el_product['provider']) != 0 )
+   		conditions=el_product["ask_algemene_voorwaarden_en"] + ' and <br> ' + gas_product["ask_algemene_voorwaarden_en"];
+   	else
+   		conditions=el_product["ask_algemene_voorwaarden_en"];
+   }
+   %>
+<% if (manual) {%>
+<script type="text/javascript" src="/js/jquery.steps.js"></script>
+<script>
+   $().ready(function() {
+          var form = $("#upload-form");
+          form.children("div").steps({
+              headerTag: "h3",
+              bodyTag: "section",
+              transitionEffect: "slideLeft",
+              onStepChanging: function (event, currentIndex, newIndex)
+              {
+                  if (currentIndex > newIndex)
+                  {
+                     return true;
+                  }
+   
+                  form.validate().settings.ignore = ":disabled,:hidden";
+                  return form.valid();
+              },
+              onFinishing: function (event, currentIndex)
+              {
+                  form.validate().settings.ignore = ":disabled";
+                  return form.valid();
+              },
+              onFinished: function (event, currentIndex)
+              {
+                  document.getElementById('upload-form').submit()
+              }
+          });
+   
+          document.getElementById('billing_address').onchange = function() {
+              document.getElementById('div_invoice_address').style.display = this.checked ? 'block' : 'none';
+          };
+          document.getElementById('billing_address').onchange();
+   
+          document.getElementById('ask_account_number').onchange = function() {
+              document.getElementById('account_data').style.display = this.checked ? 'block' : 'none';
+          };
+          document.getElementById('ask_account_number').onchange();
+   
+   });
+      
+</script>
+<div class="container">
+   <div class="style-msg successmsg" style="margin-top:15px">
+      <div class="sb-msg"><i class="icon-bulb"></i><strong><%= gt.gettext("TIP")%>:</strong> <%= gt.gettext("Als je geen zin hebt om dit formulier in te vullen, kan je ook gewoon een foto van de eerste pagina van je factuur delen. Supereenvoudig vanop een mobiel toestel.")%><br><a href="" onclick='$("#modal_user_information").modal("show");return false;'><%= gt.gettext("Klik hier")%> <i class="icon-camera"></i></a> <%= gt.gettext("om je foto te delen")%></div>
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+   </div>
+   <form method="POST" action="/<%=sess.site_lang%>/switch/<%=sess.directory%>/<%=sess.el_product_id%>/<%=sess.gas_product_id%>" id="upload-form" novalidate>
+      <div>
+         <h3><%= gt.gettext("Persoonlijke info") %></h3>
+         <section>
+            <input type="hidden" name="absolute" value="true">
+            <% if (el_product) { %>
+            <input type="hidden" name="has_el" id="has_el" value="true">
+            <div style="display:none;">
+               <input class="left" style="width:10%;" type="checkbox" id="has_el" name="has_el2" checked />
+            </div>
+            <% } %>
+            <% if (gas_product) { %>
+            <input type="hidden" name="has_gas" value="true">
+            <div style="display:none;">
+               <input class="left" style="width:10%;" type="checkbox" id="has_gas" name="has_gas2" checked />
+            </div>
+            <% } %>
+            <div hidden>
+               <h2 style="display:inline;"> <%= gt.gettext("Scenario") %>: </h2>
+               <span style="display:inline;" > <%= gt.gettext("Ik verhuis") %> </span>
+               <span style="display:inline;" > <%= gt.gettext("Openen meter") %> </span>
+               <span style="display:inline;" > <%= gt.gettext("Verandering leverancier") %> </span>
+               <a href="" >(wijzig)</a>
+               <div>
+                  <input style="width:10%;display:inline;" type="radio" name="scenario" value="new" />
+                  <span style="width:90%;display:inline;"> <%= gt.gettext("Openen meter (nieuw of afgesloten)") %> </span>
+                  <br>
+                  <input checked style="width:10%;display:inline;" type="radio" name="scenario" value="switch"  />
+                  <span style="width:90%;display:inline;"> <%= gt.gettext("Ik verander van leverancier (huidige adres)") %> </span>
+                  <br>
+                  <input style="width:10%;display:inline;" type="radio" name="scenario" value="move"  />
+                  <span style="width:90%;display:inline;"> <%= gt.gettext("Ik verhuis (nieuw adres)") %> </span>
+               </div>
+            </div>
+            <div>
+               <span class="left" style="width:90%;"><%= gt.gettext("Aanspreking") %></span>
+               <select name='person_title'>
+                  <option value='' disabled selected>  <%= gt.gettext("Selecteer aanspreking") %> </option>
+                  <option value='Miss' <%= helpers.set_select(body.person_title,'Miss') %> ><%= gt.gettext("Juffrouw") %></option>
+                  <option value='MRS' <%= helpers.set_select(body.person_title,'MRS') %> ><%= gt.gettext("Mevrouw") %></option>
+                  <option value='MR' <%= helpers.set_select(body.person_title,'MR') %> ><%= gt.gettext("Meneer") %></option>
+               </select>
+               <span class="left" style="width:90%;"><%= gt.gettext("Uw voornaam") %></span>
+               <input type="text" name="person_first_name" placeholder="<%= gt.gettext("Voornaam") %>" value="<%= helpers.set_value(body.person_first_name);%>" />
+               <span class="left" style="width:90%;"><%= gt.gettext("Uw naam") %></span>
+               <input type="text" name="person_last_name" placeholder="<%= gt.gettext("Naam") %>" value="<%= helpers.set_value(body.person_last_name);%>" />
+               <%- include("personal_info"); %>
+            </div>
+         </section>
+         <h3><%= gt.gettext("Adresinformatie") %></h3>
+         <section>
+            <div>
+               <h4><%= gt.gettext("Leveradres") %></h4>
+               <div class="flex" style="flex-wrap:wrap">
+                  <div class="flex flex-container" style="flex-direction:column;flex-grow:10;padding:5px;flex-shrink:initial;">
+                     <span class="flex"><%= gt.gettext("Straat") %></span>
+                     <input class="flex" type="text" name="delivery_address_street" placeholder="<%= gt.gettext("Straat") %>" value="<%= helpers.set_value(body.delivery_address_street);%>" />
+                  </div>
+                  <div class="flex flex-container" style="flex-direction:column;flex-grow:1;padding:5px;flex-shrink:initial;">
+                     <span class="flex"><%= gt.gettext("Nummer") %></span>
+                     <input class="flex" type="text" name="delivery_address_number" placeholder="<%= gt.gettext("Nummer") %>" value="<%= helpers.set_value(body.delivery_address_number);%>" />
+                  </div>
+                  <div class="flex flex-container" style="flex-direction:column;flex-grow:1;padding:5px;flex-shrink:initial;">
+                     <span class="flex"><%= gt.gettext("Bus") %></span>
+                     <input class="flex" type="text" name="delivery_address_box" placeholder="<%= gt.gettext("Bus") %>" value="<%= helpers.set_value(body.delivery_address_box);%>"/>
+                  </div>
+               </div>
+               <div class="flex" style="flex-wrap:wrap">
+                  <div class="flex flex-container" style="flex-direction:column;flex-grow:1;padding:5px;flex-shrink:initial;">
+                     <span class="flex"><%= gt.gettext("Postcode") %></span>
+                     <input type="text" id="zip_code" name="delivery_address_zip_code" placeholder="<%= gt.gettext("Postcode") %>" value="<%= helpers.set_value(body.delivery_address_zip_code);%>" />
+                  </div>
+                  <div class="flex flex-container" style="flex-direction:column;flex-grow:1;padding:5px;flex-shrink:initial;">
+                     <span class="flex"><%= gt.gettext("Gemeente") %></span>
+                     <input type="text" name="delivery_address_city" placeholder="<%= gt.gettext("Gemeente") %>" value="<%= helpers.set_value(body.delivery_address_city);%>" />
+                  </div>
+               </div>
+               <p style="text-indent: -20px;padding-left: 20px;display: block;">
+                  <input id="billing_address" class="nomargin" type="checkbox" name="billing_address" value="True" />
+                  <%= gt.gettext("Ander facturatieadres") %>
+               </p>
+               <div id="div_invoice_address">
+                  <h4><%= gt.gettext("Facturatieadres") %></h4>
+                  <div class="flex" style="flex-wrap:wrap">
+                     <div class="flex flex-container" style="flex-direction:column;flex-grow:10;padding:5px;flex-shrink:initial;">
+                        <span class="flex"><%= gt.gettext("Straat") %></span>
+                        <input type="text" name="billing_address_street" placeholder="<%= gt.gettext("Straat") %>" value="<%= helpers.set_value(body.billing_address_street);%>" />
+                     </div>
+                     <div class="flex flex-container" style="flex-direction:column;flex-grow:1;padding:5px;flex-shrink:initial;">
+                        <span class="flex"><%= gt.gettext("Nummer") %></span>
+                        <input type="text" name="billing_address_number" placeholder="<%= gt.gettext("Nummer") %>" value="<%= helpers.set_value(body.billing_address_number);%>" />
+                     </div>
+                     <div class="flex flex-container" style="flex-direction:column;flex-grow:1;padding:5px;flex-shrink:initial;">
+                        <span class="flex"><%= gt.gettext("Bus") %></span>
+                        <input type="text" name="billing_address_box" placeholder="<%= gt.gettext("Bus") %>" value="<%= helpers.set_value(body.billing_address_box);%>" />
+                     </div>
+                  </div>
+                  <div class="flex" style="flex-wrap:wrap">
+                     <div class="flex flex-container" style="flex-direction:column;flex-grow:1;padding:5px;flex-shrink:initial;">
+                        <span class="flex"><%= gt.gettext("Postcode") %></span>
+                        <input type="text" id="zip_code_two" name="billing_address_zip_code" placeholder="<%= gt.gettext("Postcode") %>" value="<%= helpers.set_value(body.billing_address_zip_code);%>" />
+                     </div>
+                     <div class="flex flex-container" style="flex-direction:column;flex-grow:1;padding:5px;flex-shrink:initial;">
+                        <span class="flex"><%= gt.gettext("Gemeente") %></span>
+                        <input type="text" name="billing_address_city" placeholder="<%= gt.gettext("Gemeente") %>" value="<%= helpers.set_value(body.billing_address_city);%>" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <h3><%= gt.gettext("Meterinformatie") %></h3>
+         <section>
+            <div>
+               <% if (el_product) { %>
+               <span class="flex"><%= gt.gettext("EAN elektriciteit") %></span>
+               <input type="text" id="el_EAN" name="el_EAN" placeholder="<%= gt.gettext("EAN Elektriciteit") %>" value="<%= helpers.set_value(body.el_EAN);%>" />
+               <% } %>
+               <% if (gas_product) { %>
+               <span class="flex"><%= gt.gettext("EAN gas") %></span>
+               <input type="text" id="gas_EAN" name="gas_EAN" placeholder="<%= gt.gettext("EAN Gas") %>" value="<%= helpers.set_value(body.gas_EAN);%>" />
+               <% } %>
+            </div>
+         </section>
+         <h3><%= gt.gettext("Betaling en voorwaarden") %></h3>
+         <section>
+            <%- include("payment_info"); %>
+         </section>
+      </div>
+   </form>
+</div>
+<% } else { %>
+<script>
+   $().ready(function() {
+          document.getElementById('ask_account_number').onchange = function() {
+              document.getElementById('account_data').style.display = this.checked ? 'block' : 'none';
+              positionColumns();
+          };
+          document.getElementById('ask_account_number').onchange();
+   });
+      
+</script>
+<div class="row" id="scrollIntoView">
+   <div id="cf-table" class="clearfix">
+      <div id="cf-table-left" class="clearfix">
+         <div class="cf-column cf-middle personal-data">
+            <h2 class="greenbar" style="padding-top: 10px; padding-bottom: 10px;"><%= gt.gettext("Aanvullen informatie") %></h2>
+            <div class="flex hiddenOnWider">
+               <div class="flex flex-container flex-center" style="margin-left:25px">
+                  <button class="btn btn-default btn-sm btn-no-top flex-container" onclick="showPanel('left')"><i class="icon-thumbs-up"></i> <%= gt.gettext("Uw keuze") %></button>
+               </div>
+               <div class="flex flex-container" style="flex-grow: 1"></div>
+               <div class="flex flex-container flex-center" style="margin-right:25px">
+                  <button class="btn btn-default btn-sm btn-no-top flex-container" onclick="showPanel('right')"><i class="icon-line2-info"></i> <%= gt.gettext("Wat gebeurt hierna?") %></button>
+               </div>
+            </div>
+            <div class="cf-column-interior">
+               <!--<p style="text-align:center"><%= gt.gettext('We hebben enkel nog de volgende informatie nodig, de rest vinden we in uw factuur.'); %></p>-->
+               <form method="POST" action="/<%=sess.site_lang%>/switch/<%=sess.directory%>/<%=sess.el_product_id%>/<%=sess.gas_product_id%>" id="upload-form" novalidate>
+                  <h5><%= gt.gettext("Persoonlijke info") %></h5>
+                  <%- include("personal_info"); %>
+                  <%- include("payment_info"); %>
+                  <button class="btn btn-lg btn-danger btn-block nomargin" type="submit" id="button-to-be-disabled"><i class="icon-ok"></i>&nbsp;&nbsp;<%= gt.gettext("Bevestig") %></button>
+               </form>
+            </div>
+         </div>
+         <div class="cf-column switch-next">
+            <button type="button" class="close hiddenOnWider" onclick="showPanel('middle')">×</button>
+            <h1><%= gt.gettext("Uw keuze") %></h1>
+            <div id="personal-data">
+               <% if (el_product) { %>
+               <div style="margin: 15px 0;" class="divider divider-center divider-rounded">
+                  <i class="icon-bolt"></i>
+                  <span style="display: block"><%= gt.gettext("Elektriciteit") %></span>
+               </div>
+               <div class="center">
+                  <img src="/images/providers/<%= el_product["provider"] %>-logo.png" alt="" />
+                  <p class="clearfix">
+                    <%
+                        if (sess.site_lang == "fr" && helpers.array_key_exists("product_fr", el_product)) { 
+                    %>
+                     	<%= el_product["product_fr"] %>
+                    <% 
+                        } else if (sess.site_lang == "en" && helpers.array_key_exists("product_en", el_product)) { 
+                    %>
+                         <%= el_product["product_en"] %>
+                    <% 
+                        } else { 
+                    %>
+                          <%= el_product["product"]; %>
+                    <%
+                        }
+                     %></p>
+               </div>
+               <% } %>
+               <% if (gas_product) { %>
+               <div style="margin: 15px 0;" class="divider divider-center divider-rounded">
+                  <i class="icon-fire2"></i>
+                  <span style="display: block"><%= gt.gettext("Gas") %></span>
+               </div>
+               <div class="center">
+                  <img src="/images/providers/<%= gas_product["provider"] %>-logo.png" alt="" />
+                  <p class="clearfix"><%
+                     if (sess.site_lang == "fr" && helpers.array_key_exists("product_fr", gas_product)) {
+                    %>
+                    <%= gas_product["product_fr"] %>
+                    <% } else if (sess.site_lang == "en" && helpers.array_key_exists("product_en", gas_product)) {
+                    %>
+                    <%= gas_product["product_en"] %>
+                    <% } else { %>
+                    <%= gas_product["product"] %>
+                    <%
+                     }
+                     %></p>
+               </div>
+               <% } %>
+               <div class="center" style="margin-top:20px">
+                  <!-- remove to A/B test 2017/05/22-->
+                  <!-- <a class="clearfix" href="/result/<%= sess.directory %>"><%= gt.gettext("Klik hier om uw keuze aan te passen") %></a> -->
+               </div>
+               <button type="button" class="btn btn-danger btn-md hiddenOnWider close-button topmargin-sm" onclick="showPanel('middle')"><%= gt.gettext("Sluit") %></button>
+            </div>
+         </div>
+      </div>
+      <div id="cf-table-right">
+         <div class="cf-column advantages">
+            <button type="button" class="close hiddenOnWider" onclick="showPanel('middle')">×</button>
+            <h1><%= gt.gettext('Wat gebeurt hierna?'); %></h1>
+            <ul style="list-style:none">
+               <li class="clearfix">
+                  <p style="float: none; width: 100%"><%= gt.gettext("Je nieuwe leverancier stuurt je een welkomstmail (binnen de 24h)") %></p>
+                  <span class="center"><i class="icon-double-angle-down"></i></span>
+               </li>
+               <li class="clearfix">
+                  <p style="float: none; width: 100%"><%= gt.gettext("Je hebt 14 dagen bedenktijd") %></p>
+                  <span class="center"><i class="icon-double-angle-down"></i></span>
+               </li>
+               <li class="clearfix">
+                  <p style="float: none; width: 100%"><%= gt.gettext("De netbeheerder nodigt je uit om de meterstanden door te geven") %></p>
+                  <span class="center"><i class="icon-double-angle-down"></i></span>
+               </li>
+               <li class="clearfix">
+                  <p style="float: none; width: 100%"><%= gt.gettext("30 dagen na vandaag krijgt je energie van jouw nieuwe leverancier") %></p>
+               </li>
+            </ul>
+            <button type="button" class="btn btn-danger btn-md hiddenOnWider close-button" onclick="showPanel('middle')"><%= gt.gettext("Sluit") %></button>
+               <%
+               if (typeof feedback === 'object') {
+                   errors = [];
+                   feedback.forEach(function(info){
+                       if(!helpers.in_array(info.param, errors)) {
+                           errors.push(info.param);
+               %>
+                   <%- '<small ' + (info.success ? 'class="success"' : 'class="error"') + '>' + info.msg + ' </small>' %>
+               <%
+                       }
+                   });
+               }
+               %>
+         </div>
+      </div>
+   </div>
+</div>
+<% }%>
+<script>
+   $().ready(function() {
+   	$("#upload-form").submit(function() {
+   		document.getElementById("button-to-be-disabled").disabled = true;
+   	}).focusin(function() {
+   		document.getElementById("button-to-be-disabled").disabled = false;
+   	});
+   	// validate the comment form when it is submitted
+   	$("#upload-form").validate({
+              errorPlacement: function(label, element) {
+                  console.log(element);
+   							document.getElementById("button-to-be-disabled").disabled = false;
+                  if (element[0].type == 'radio' || element[0].type == 'checkbox')
+                  {
+                      label.insertBefore(element);
+                      if (typeof positionColumns === "function")
+                          positionColumns();
+                  }
+                  else
+                  {
+                      label.insertAfter(element);
+                      if (typeof positionColumns === "function")
+                          positionColumns();
+                  }
+              },
+              wrapper: 'span',
+              rules: {
+   			person_title: {
+   				required: true
+   			},
+   			person_first_name: {
+   				required: true
+   			},
+   			person_last_name: {
+   				required: true
+   			},
+   			email: {
+   				required: true,
+   				email: true
+   			},
+   			day: {
+   				required: true,
+   				range: [1,31]
+   			},
+   			month: {
+   				required: true,
+   				range: [1,12]
+   			},
+   			year: {
+   				required: true,
+   				range: [1900,2100]
+   			},
+   			delivery_address_street: {
+   			    required: true,
+   			},
+   			delivery_address_number: {
+   			    required: true,
+   			},
+   			delivery_address_box: {
+   			},
+   			delivery_address_zip_code: {
+   			    required:true,
+   			    is_belgian_zip:true
+   			},
+   			delivery_address_city: {
+   			    required: true,
+   			},
+   			billing_address_street: {
+   			    required: "#billing_address:checked"
+   			},
+   			billing_address_number: {
+   			    required: "#billing_address:checked"
+   			},
+   			billing_address_box: {
+   			},
+   			billing_address_zip_code: {
+   			    required: "#billing_address:checked",
+   			    is_belgian_zip:true
+   			},
+   			billing_address_city: {
+   			    required: "#billing_address:checked"
+   			},
+   			el_EAN:{
+   			    required: "#has_el:checked",
+   			    is_ean:true
+   			},
+   			gas_EAN:{
+   			    required: "#has_gas:checked",
+   			    is_ean:true
+   			},
+   			account_number:{
+   			    required: "#ask_account_number:checked",
+   			    is_iban:true
+   			},
+   			acceptance:{
+   			    required:true,
+   			},
+   			phone:{
+   			    required:true,
+   			    is_phone:true
+   			},
+   			rrn:{
+   			    required:"#rrn_required:checked",
+   			    is_rrn:true
+   			},
+   		},
+   		messages: {
+   		    person_title: "<%= gt.gettext('Gelieve een aanspreking op te geven') %>",
+   		    person_first_name: "<%= gt.gettext('Gelieve een voornaam op te geven') %>",
+   		    person_last_name: "<%= gt.gettext('Gelieve een naam op te geven') %>",
+   		    email: "<%= gt.gettext('Gelieve een geldig email adres op te geven') %>",
+   		    day: "<%= gt.gettext(' !') %>",
+   		    month: "<%= gt.gettext(' !') %>",
+   		    year: "<%= gt.gettext(' !') %>",
+   		    delivery_address_street: "<%= gt.gettext('Gelieve een straat op te geven') %>",
+   		    delivery_address_number: "<%= gt.gettext('Gelieve een huisnummer op te geven') %>",
+   		    delivery_address_box: "<%= gt.gettext('Gelieve een bus op te geven') %>",
+   		    delivery_address_zip_code: "<%= gt.gettext('Gelieve een geldige Belgische postcode op te geven') %>",
+   		    delivery_address_city: "<%= gt.gettext('Gelieve een gemeente op te geven') %>",
+   		    billing_address_street: "<%= gt.gettext('Gelieve een straat op te geven') %>",
+   		    billing_address_number: "<%= gt.gettext('Gelieve een huisnummer op te geven') %>",
+   		    billing_address_box: "<%= gt.gettext('Gelieve een bus op te geven') %>",
+   		    billing_address_zip_code: "<%= gt.gettext('Gelieve een geldige Belgische postcode op te geven') %>",
+   		    billing_address_city: "<%= gt.gettext('Gelieve een gemeente op te geven') %>",
+   		    el_EAN: "<%= gt.gettext('Gelieve een geldig EAN nummer op te geven (18 cijfers, start met 5414)') %>",
+   		    gas_EAN: "<%= gt.gettext('Gelieve een geldig EAN nummer op te geven (18 cijfers, start met 5414)') %>",
+   		    account_number: "<%= gt.gettext('Gelieve een geldig IBAN nummer op te geven (BExx xxxx xxxx xxxx)') %>",
+   		    acceptance: "<%= gt.gettext('U dient de voorwaarden te accepteren') %>",
+   		    phone: "<%= gt.gettext('Gelieve een geldig telefoonnummer op te geven') %>",
+   		    rrn: "<%= gt.gettext('Gelieve een geldig rijksregisternummer op te geven') %>",
+   		}
+          });
+   
+          //accept comma
+          $.validator.methods.range = function (value, element, param) {
+              var globalizedValue = value.replace(",", ".");
+              return this.optional(element) || (globalizedValue >= param[0] && globalizedValue <= param[1]);
+          }
+   
+          jQuery.validator.addMethod("is_belgian_zip", function(value) {
+      	    if(value.length==0)
+               return true;
+   
+              var zip_codes = ["1000", "1020", "1030", "1040", "1050", "1060", "1070", "1080", "1081", "1082", "1083", "1090", "1120", "1130", "1140", "1150", "1160", "1170", "1180", "1190", "1200", "1210", "1300", "1301", "1310", "1315", "1320", "1325", "1330", "1331", "1332", "1340", "1341", "1342", "1348", "1350", "1357", "1360", "1367", "1370", "1380", "1390", "1400", "1401", "1402", "1404", "1410", "1420", "1421", "1428", "1430", "1435", "1440", "1450", "1457", "1460", "1461", "1470", "1471", "1472", "1473", "1474", "1476", "1480", "1490", "1495", "1500", "1501", "1502", "1540", "1541", "1547", "1560", "1570", "1600", "1601", "1602", "1620", "1630", "1640", "1650", "1651", "1652", "1653", "1654", "1670", "1671", "1673", "1674", "1700", "1701", "1702", "1703", "1730", "1731", "1740", "1741", "1742", "1745", "1750", "1755", "1760", "1761", "1770", "1780", "1785", "1790", "1800", "1820", "1830", "1831", "1840", "1850", "1851", "1852", "1853", "1860", "1861", "1880", "1910", "1930", "1932", "1933", "1950", "1970", "1980", "1981", "1982", "2000", "2018", "2020", "2030", "2030", "2040", "2040", "2050", "2060", "2070", "2100", "2110", "2140", "2150", "2160", "2170", "2180", "2200", "2220", "2221", "2222", "2223", "2230", "2235", "2240", "2242", "2243", "2250", "2260", "2270", "2275", "2280", "2288", "2290", "2300", "2310", "2320", "2321", "2322", "2323", "2328", "2330", "2340", "2350", "2360", "2370", "2380", "2381", "2382", "2387", "2390", "2400", "2430", "2431", "2440", "2450", "2460", "2470", "2480", "2490", "2491", "2500", "2520", "2530", "2531", "2540", "2547", "2550", "2560", "2570", "2580", "2590", "2600", "2610", "2620", "2627", "2630", "2640", "2650", "2660", "2800", "2801", "2811", "2812", "2820", "2830", "2840", "2845", "2850", "2860", "2861", "2870", "2880", "2890", "2900", "2910", "2920", "2930", "2940", "2950", "2950", "2960", "2970", "2980", "2990", "3000", "3001", "3010", "3012", "3018", "3020", "3040", "3050", "3051", "3052", "3053", "3054", "3060", "3061", "3070", "3071", "3078", "3080", "3090", "3110", "3111", "3118", "3120", "3128", "3130", "3140", "3150", "3190", "3191", "3200", "3201", "3202", "3210", "3211", "3212", "3220", "3221", "3270", "3271", "3272", "3290", "3293", "3294", "3300", "3320", "3321", "3350", "3360", "3370", "3380", "3381", "3384", "3390", "3391", "3400", "3401", "3404", "3440", "3450", "3454", "3460", "3461", "3470", "3471", "3472", "3473", "3500", "3501", "3510", "3511", "3512", "3520", "3530", "3540", "3545", "3550", "3560", "3570", "3580", "3581", "3582", "3583", "3590", "3600", "3620", "3621", "3630", "3631", "3640", "3650", "3660", "3665", "3668", "3670", "3680", "3690", "3700", "3717", "3720", "3721", "3722", "3723", "3724", "3730", "3732", "3740", "3742", "3746", "3770", "3790", "3791", "3792", "3793", "3798", "3800", "3803", "3806", "3830", "3831", "3832", "3840", "3850", "3870", "3890", "3891", "3900", "3910", "3920", "3930", "3940", "3941", "3945", "3950", "3960", "3970", "3971", "3980", "3990", "4000", "4020", "4030", "4031", "4032", "4040", "4041", "4042", "4050", "4051", "4052", "4053", "4100", "4101", "4102", "4120", "4121", "4122", "4130", "4140", "4141", "4160", "4161", "4162", "4163", "4170", "4171", "4180", "4181", "4190", "4210", "4217", "4218", "4219", "4250", "4252", "4253", "4254", "4257", "4260", "4261", "4263", "4280", "4287", "4300", "4317", "4340", "4342", "4347", "4350", "4351", "4357", "4360", "4367", "4400", "4420", "4430", "4431", "4432", "4450", "4451", "4452", "4453", "4458", "4460", "4470", "4480", "4500", "4520", "4530", "4537", "4540", "4550", "4557", "4560", "4570", "4577", "4590", "4600", "4601", "4602", "4606", "4607", "4608", "4610", "4620", "4621", "4623", "4624", "4630", "4631", "4632", "4633", "4650", "4651", "4652", "4653", "4654", "4670", "4671", "4672", "4680", "4681", "4682", "4683", "4684", "4690", "4700", "4701", "4710", "4711", "4720", "4721", "4728", "4730", "4731", "4750", "4760", "4761", "4770", "4771", "4780", "4782", "4783", "4784", "4790", "4791", "4800", "4801", "4802", "4820", "4821", "4830", "4831", "4834", "4837", "4840", "4841", "4845", "4850", "4851", "4852", "4860", "4861", "4870", "4877", "4880", "4890", "4900", "4910", "4920", "4950", "4960", "4970", "4980", "4983", "4987", "4990", "5000", "5001", "5002", "5003", "5004", "5020", "5021", "5022", "5024", "5030", "5031", "5032", "5060", "5070", "5080", "5081", "5100", "5101", "5140", "5150", "5170", "5190", "5300", "5310", "5330", "5332", "5333", "5334", "5336", "5340", "5350", "5351", "5352", "5353", "5354", "5360", "5361", "5362", "5363", "5364", "5370", "5372", "5374", "5376", "5377", "5380", "5500", "5501", "5502", "5503", "5504", "5520", "5521", "5522", "5523", "5524", "5530", "5537", "5540", "5541", "5542", "5543", "5544", "5550", "5555", "5560", "5561", "5562", "5563", "5564", "5570", "5571", "5572", "5573", "5574", "5575", "5576", "5580", "5590", "5600", "5620", "5621", "5630", "5640", "5641", "5644", "5646", "5650", "5651", "5660", "5660", "5670", "5680", "6000", "6001", "6010", "6020", "6030", "6031", "6032", "6040", "6041", "6042", "6043", "6044", "6060", "6061", "6110", "6111", "6120", "6140", "6141", "6142", "6150", "6180", "6181", "6182", "6183", "6200", "6210", "6211", "6220", "6221", "6222", "6223", "6224", "6230", "6238", "6240", "6250", "6280", "6440", "6441", "6460", "6461", "6462", "6463", "6464", "6470", "6500", "6511", "6530", "6531", "6532", "6533", "6534", "6536", "6540", "6542", "6543", "6560", "6567", "6590", "6591", "6592", "6593", "6594", "6596", "6600", "6630", "6637", "6640", "6642", "6660", "6661", "6662", "6663", "6666", "6670", "6671", "6672", "6673", "6674", "6680", "6681", "6686", "6687", "6688", "6690", "6692", "6698", "6700", "6704", "6706", "6717", "6720", "6721", "6723", "6724", "6730", "6740", "6741", "6742", "6743", "6747", "6750", "6760", "6761", "6762", "6767", "6769", "6780", "6781", "6782", "6790", "6791", "6792", "6800", "6810", "6811", "6812", "6813", "6820", "6821", "6823", "6824", "6830", "6831", "6832", "6833", "6834", "6836", "6838", "6840", "6850", "6851", "6852", "6853", "6856", "6860", "6870", "6880", "6887", "6890", "6900", "6920", "6921", "6922", "6924", "6927", "6929", "6940", "6941", "6950", "6951", "6952", "6953", "6960", "6970", "6971", "6972", "6980", "6982", "6983", "6984", "6986", "6987", "6990", "6997", "7000", "7011", "7012", "7020", "7021", "7022", "7024", "7030", "7031", "7032", "7033", "7034", "7040", "7041", "7050", "7060", "7061", "7062", "7063", "7070", "7080", "7090", "7100", "7110", "7120", "7130", "7131", "7133", "7134", "7140", "7141", "7160", "7170", "7180", "7181", "7190", "7191", "7300", "7301", "7320", "7321", "7322", "7330", "7331", "7332", "7333", "7334", "7340", "7350", "7370", "7380", "7382", "7387", "7390", "7500", "7501", "7502", "7503", "7504", "7506", "7520", "7521", "7522", "7530", "7531", "7532", "7533", "7534", "7536", "7538", "7540", "7542", "7543", "7548", "7600", "7601", "7602", "7603", "7604", "7608", "7610", "7611", "7618", "7620", "7621", "7622", "7623", "7624", "7640", "7641", "7642", "7643", "7700", "7711", "7712", "7730", "7740", "7742", "7743", "7750", "7760", "7760", "7780", "7781", "7782", "7783", "7784", "7800", "7801", "7802", "7803", "7804", "7810", "7811", "7812", "7822", "7823", "7830", "7850", "7860", "7861", "7862", "7863", "7864", "7866", "7870", "7880", "7890", "7890", "7900", "7901", "7903", "7904", "7906", "7910", "7910", "7911", "7912", "7940", "7941", "7942", "7943", "7950", "7951", "7970", "7971", "7972", "7973", "8000", "8020", "8200", "8210", "8211", "8300", "8301", "8310", "8340", "8370", "8377", "8380", "8400", "8420", "8421", "8430", "8431", "8432", "8433", "8434", "8450", "8460", "8470", "8480", "8490", "8500", "8501", "8510", "8511", "8520", "8530", "8531", "8540", "8550", "8551", "8552", "8553", "8554", "8560", "8570", "8572", "8573", "8580", "8581", "8582", "8583", "8587", "8600", "8610", "8620", "8630", "8640", "8647", "8650", "8660", "8670", "8680", "8690", "8691", "8700", "8710", "8720", "8730", "8740", "8750", "8755", "8760", "8770", "8780", "8790", "8791", "8792", "8793", "8800", "8810", "8820", "8830", "8840", "8850", "8851", "8860", "8870", "8880", "8890", "8900", "8902", "8904", "8906", "8908", "8920", "8930", "8940", "8950", "8951", "8952", "8953", "8954", "8956", "8957", "8958", "8970", "8972", "8978", "8980", "9000", "9030", "9031", "9032", "9040", "9041", "9042", "9050", "9051", "9052", "9060", "9070", "9080", "9090", "9100", "9111", "9112", "9120", "9130", "9140", "9150", "9160", "9170", "9180", "9185", "9190", "9200", "9220", "9230", "9240", "9250", "9255", "9260", "9270", "9280", "9290", "9300", "9308", "9310", "9320", "9340", "9400", "9401", "9402", "9403", "9404", "9406", "9420", "9450", "9451", "9470", "9472", "9473", "9500", "9506", "9520", "9521", "9550", "9551", "9552", "9570", "9571", "9572", "9600", "9620", "9630", "9636", "9660", "9661", "9667", "9680", "9681", "9688", "9690", "9700", "9750", "9770", "9771", "9772", "9790", "9800", "9810", "9820", "9830", "9831", "9840", "9850", "9860", "9870", "9880", "9881", "9890", "9900", "9910", "9920", "9921", "9930", "9931", "9932", "9940", "9950", "9960", "9961", "9968", "9970", "9971", "9980", "9981", "9982", "9988", "9990", "9991", "9992" ];
+              return $.inArray(value.toUpperCase(), zip_codes) != -1;
+          });
+   
+          jQuery.validator.addMethod("is_ean", function(value) {
+      	    if(value.length==0)
+               return true;
+   
+   	    value = value.replace("  ", "").toLowerCase();
+   
+   	    if(isNaN(value) || value.length!=18 || value.substring(0,4)!="5414")
+   	        return false;
+   
+              result = 0;
+   
+              for (i = 0; i < value.length-1; i++)
+              {
+   	        if (i%2 == 0)
+   	            result = result + 3* parseInt(value[i]);
+   	        else
+   	            result = result + parseInt(value[i]);
+              }
+   
+              mod = result % 10;
+              check_digit = 10 - mod;
+              if (check_digit == 10)
+                  check_digit = 0;
+   
+              if(parseInt(value[value.length-1]) != check_digit)
+                  return false;
+   	    else
+                  return true;
+          });
+   
+          jQuery.validator.addMethod("is_iban", function(value) {
+      	    if(value.length==0)
+               return true;
+   
+              var CODE_LENGTHS = {
+                  AD: 24, AE: 23, AT: 20, AZ: 28, BA: 20, BE: 16, BG: 22, BH: 22, BR: 29,
+                  CH: 21, CR: 21, CY: 28, CZ: 24, DE: 22, DK: 18, DO: 28, EE: 20, ES: 24,
+                  FI: 18, FO: 18, FR: 27, GB: 22, GI: 23, GL: 18, GR: 27, GT: 28, HR: 21,
+                  HU: 28, IE: 22, IL: 23, IS: 26, IT: 27, JO: 30, KW: 30, KZ: 20, LB: 28,
+                  LI: 21, LT: 20, LU: 20, LV: 21, MC: 27, MD: 24, ME: 22, MK: 19, MR: 27,
+                  MT: 31, MU: 30, NL: 18, NO: 15, PK: 24, PL: 28, PS: 29, PT: 25, QA: 29,
+                  RO: 24, RS: 22, SA: 24, SE: 24, SI: 19, SK: 24, SM: 27, TN: 24, TR: 26
+              };
+              var iban = String(value).toUpperCase().replace(/[^A-Z0-9]/g, ''), // keep only alphanumeric characters
+              code = iban.match(/^([A-Z]{2})(\d{2})([A-Z\d]+)$/), // match and capture (1) the country code, (2) the check digits, and (3) the rest
+              digits;
+              // check syntax and length
+              if (!code || iban.length !== CODE_LENGTHS[code[1]]) {
+                  return false;
+              }
+              // rearrange country code and check digits, and convert chars to ints
+              digits = (code[3] + code[1] + code[2]).replace(/[A-Z]/g, function (letter) {
+                  return letter.charCodeAt(0) - 55;
+              });
+              // final check
+              if(mod97(digits) == 1)
+                  return true;
+              return false;
+          });
+   
+          function mod97(string) {
+              var checksum = string.slice(0, 2), fragment;
+              for (var offset = 2; offset < string.length; offset += 7) {
+                  fragment = String(checksum) + string.substring(offset, offset + 7);
+                  checksum = parseInt(fragment, 10) % 97;
+              }
+              return checksum;
+          }
+   
+          jQuery.validator.addMethod("is_phone", function(value) {
+              value = value.replace(/[^0-9+]+/g, "")
+      		if(value.match("^((\\+|00)32|0)[1-9]{1}\\d{7,8}$"))
+       		return true;
+   	    else
+   		    return false;
+          });
+   
+          jQuery.validator.addMethod("is_rrn", function(value) {
+              debugger;
+              if(value.length==0)
+               return true;
+   	    if (!value.match("^[0-9]{2}\\.?[0-9]{2}\\.?[0-9]{2}\\-?[0-9]{3}\\.?[0-9]{2}$"))
+   	        return false
+   
+   	    value = value.replace('/\D/g','');    //remove any non digit characters
+   	    check = parseInt(value.slice(-2));
+   	    principal = value.substring(0, value.length-2);
+   	    //check for birthdays before 2000
+   	    if( 97-(parseInt(principal)%97)!=check){
+   		    //if this fails test for birthdays in 2000 and up
+   		    principal = '2' + principal;
+   		    if(97-(parseInt(principal)%97)!=check)
+   		        return false;
+   	    }
+   	    return true;
+          });
+   });
+</script>

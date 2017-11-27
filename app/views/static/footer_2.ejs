@@ -1,0 +1,158 @@
+<!-- Content
+		============================================= -->
+
+</div>
+<!-- #wrapper end -->
+
+<!-- Go To Top
+        ============================================= -->
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<!-- External JavaScripts
+        ============================================= -->
+
+<script type="text/javascript" src="/js/plugins.js"></script>
+
+<!-- Bootstrap File Upload Plugin -->
+<script type="text/javascript" src="/js/components/bs-filestyle.js"></script>
+
+<!-- Scripts -->
+<script type="text/javascript" src="/js/vendor/underscore-min.js"></script>
+<%- helpers.renderScriptsTags(scripts) %>
+    <!-- Footer Scripts
+        ============================================= -->
+    <script type="text/javascript" src="/js/functions.js"></script>
+
+    <% if (host.indexOf('ing') !== -1) {
+        urls = ["contract.fit", "energiegids.be", "guideenergie.be"];
+        urls.forEach(function(url) {
+    %>
+            <%= '<img src="https://' + url + '/givehat?hat=ing" style="display:none;" />\n' %>
+    <%
+        }) 
+    %>
+        <%= "<script> (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g); t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s); })(window, document, '_gscq','script','//widgets.getsitecontrol.com/87449/script.js'); </script>" %>
+    <%
+    } else { %>
+        <script>
+            (function (w, i, d, g, e, t, s) {
+                w[d] = w[d] || [];
+                t = i.createElement(g);
+                t.async = 1;
+                t.src = e;
+                s = i.getElementsByTagName(g)[0];
+                s.parentNode.insertBefore(t, s);
+            })(window, document, '_gscq', 'script', '//widgets.getsitecontrol.com/48603/script.js');
+        </script>
+    <% } %>
+
+<script>
+    (function (w, d, t, u, n, a, m) {
+        w['MauticTrackingObject'] = n;
+        w[n] = w[n] || function () {
+                (w[n].q = w[n].q || []).push(arguments)
+            }, a = d.createElement(t),
+            m = d.getElementsByTagName(t)[0];
+        a.async = 1;
+        a.src = u;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://mautic.contract.fit/mtc.js', 'mt');
+    var email;
+    var trackinghat;
+<%
+    if (sess.email && sess.email != "") {
+%>
+        <%- "email = '" + sess.email + "';\n" %>
+<%
+    } else if (body.email && body.email != "") {
+%>
+        <%- "email = '" + body.email + "';\n" %>
+<%
+    }
+    if(host === "ing.contract.fit") {
+%>
+        trackinghat = 'ing';
+<%
+    }
+    if(cookies.trackinghat) {
+%>
+        <%- "trackinghat = '" + cookies.trackinghat + "';\n" %>
+<%
+    }
+%>
+    if (email === undefined) {
+        mt('send', 'pageview');
+    } else {
+        if (trackinghat === undefined) {
+            mt('send', 'pageview', {
+                email: email
+            });
+        } else {
+            mt('send', 'pageview', {
+                email: email,
+                trackinghat: trackinghat
+            });
+        }
+    }
+</script>
+
+<!--Start of Tawk.to Script nl-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        <% if (sess.site_lang=="nl") { %>
+        s1.src = 'https://embed.tawk.to/5783924574888c1b4a8618e7/default';
+        <% } else if (sess.site_lang=="fr") { %>
+        s1.src = 'https://embed.tawk.to/5783924574888c1b4a8618e7/1and0gi1c';
+        <% } else if (sess.site_lang=="en") { %>
+        s1.src = 'https://embed.tawk.to/5783924574888c1b4a8618e7/1and0cp7m';
+        <% } else { %>
+        s1.src = 'https://embed.tawk.to/5783924574888c1b4a8618e7/default';
+        <% } %>
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- Facebook -->
+<div id="fb-root"></div>
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 922049494;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/922049494/?guid=ON&amp;script=0"
+        />
+    </div>
+</noscript>
+
+<%
+//tagging for ing
+if(host == "ing.contract.fit") {
+%>
+    <%= '<script type="text/javascript">if(typeof _satellite !== "undefined"){_satellite.pageBottom()}</script>' %>
+<%
+}
+%>
+
+    <script type="text/javascript" src="/js/intro.js"></script>
+    </body>
+
+    </html>

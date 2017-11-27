@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Page not found - 404</title>
+	<link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+
+	<!-- Mobile optimization -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="MobileOptimized" />  
+
+	<!-- SEO -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="robots" content="noindex, follow">
+
+	<!-- Mobile thumbnails -->
+    <link rel="apple-touch-icon-precomposed" href="/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/touch-icon-ipad-retina.png">
+
+	<!-- Css -->
+	<link rel="stylesheet"  type="text/css" href="/css/style.min.css" />
+
+</head>
+<body class="full-cover">
+
+	<div id="full-background" class="not-found">
+		<div id="full-background-content">
+		<h1><%= gt.gettext('pagina niet gevonden') %></h1>
+			<p><%= gt.gettext('De pagina waarnaar u op zoek bent bestaat niet. Contacteer ons op in geval van een probleem.') %></p>
+			<a class="button" href="/"><%=gt.gettext('Naar homepagina')%></a>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+// Faq
+#page-content{
+	margin:35px 0px;
+	.questions{
+		padding-bottom:35px;
+		border-bottom:$light-gray 1px solid;
+		a{
+			font-weight:bold;
+			text-decoration:underline;
+			line-height:1.75rem;
+		}
+	}
+
+	.answers{
+		margin-top:35px;
+		& > div{
+			position:relative;
+			margin-top:35px;
+			i{
+				display:block; 
+				position:absolute;
+				top:-$header-height - 25; 
+				visibility: hidden;
+			}
+			b{
+				display:block;
+				margin-bottom:10px;
+				cursor:pointer;
+			}
+			& > div{
+				display:none;
+			}
+		}
+		& > div:first-child{
+			& > div{
+				display:block;
+			}
+		}
+	}
+}
+
+// Contact
+#page-content{
+	form{
+		max-width:450px;
+	}
+	form input, textarea, p, button{ 
+		margin-bottom:15px;
+		display:block;
+		width:100%;
+	}
+	p{
+		margin-bottom:35px;
+	}
+	textarea{
+		height:150px;
+	}
+}
+
+// Terms &c conditions
+.terms, .about{
+	padding-top:15px;
+	.section{
+		margin-bottom:35px;
+		h2{
+			color:#3e3d3d;
+			font-size:1.25rem;
+			margin-bottom:25px;
+			cursor:pointer;
+		}
+		div{
+			display:none;
+		}
+		&:first-child div{
+			display:block;
+		}
+	}
+}
+.about{
+	.section{
+		text-align:center;
+		border-bottom:1px solid #efefef;
+		padding-bottom:35px;
+		margin-bottom:35px;
+		&:last-child{
+			border:none;
+			margin-bottom:0px;
+		}
+		.row p, .row h2{
+			text-align:center;
+			margin-top:20px;
+		}
+		.row h2{
+			font-size:1rem;
+		}
+		.row img{
+			display:block;
+			width:55px;
+			margin:0px auto 25px;
+		}
+	}
+}

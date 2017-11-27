@@ -1,0 +1,83 @@
+<%- include("init_header") %>
+
+<% if (segment[position+1] == "2") { %>
+<section id="page-title">
+   <div class="container clearfix">
+      <h1><%= gt.gettext('Result') %></h1>
+   </div>
+</section>
+<!-- #page-title end -->
+<% } %>
+<section id="section-form" class="nobg section page-section nomargin">
+   <div class="nobgcolor section nomargin ohidden nopadding">
+      <div class="clearfix nomargin nopadding">
+         <% if (segment[position+1]=="2"){ %>
+         <div class="table-responsive">
+            <table id="datatable1" class="table table-bordered" cellspacing="0" width="100%">
+               <thead>
+                  <tr>
+                     <th>Info for humans</th>
+                     <th>Info for machines</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["name"]) %></td>
+                     <td rowspan=2 style="vertical-align:middle;font-family:Courier"><%= htmlspecialchars(json_response["line_3"]) %></td>
+                  </tr>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["first_name"]) %></td>
+                  </tr>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["nationality"]) %></td>
+                     <td rowspan=2 style="vertical-align:middle;font-family:Courier"><%= htmlspecialchars(json_response["line_1"]) %></td>
+                  </tr>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["card_number"]) %></td>
+                  </tr>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["birth"]) %></td>
+                     <td rowspan=4 style="vertical-align:middle;font-family:Courier"><%= htmlspecialchars(json_response["line_2"]) %></td>
+                  </tr>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["gender"]) %></td>
+                  </tr>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["validity"]) %></td>
+                  </tr>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["national_number"]) %></td>
+                  </tr>
+                  <tr>
+                     <td><%= htmlspecialchars(json_response["place_of_issue"]) %></td>
+                     <td><i>not applicable</i></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <% } else { %>
+         <div class="nobg leftmargin-sm rightmargin-sm topmargin-sm bottommargin-sm center">
+            <img src="/images/bot/<%= image %>" onclick="document.getElementById('upload').click();"/>
+         </div>
+         <div class="nomargin nopadding nobg topmargin-sm">
+            <form id="form" class="clearfix" id="upload-form" name="template-contactform" method="post" novalidate action="/<%=sess.site_lang%>/upload_image<%= extension %>" enctype="multipart/form-data">
+               <div class="col_full hidden">
+                  <label for="template-contactform-email"><%= gt.gettext("Email") %> <small></small></label>
+                  <input type="email" required id="txtMail" value="bertrand.anckaert@gmail.com" placeholder="<%= gt.gettext('Uw emailadres'); %>" name="email" value="" class="upload-email required email sm-form-control not-dark" />
+               </div>
+               <div class="clear"></div>
+               <div class="file-upload hidden">
+                  <label><%= gt.gettext("Selecteer hier uw energiefactuur") %></label><br>
+                  <input name="fileToUpload[]" required class="dark image-upload-wrapper file" id="upload" type="file" accept="image/*" capture="camera">
+               </div>
+               <div class="center nobg toppadding">
+                  <button class="btn btn-lg btn-danger btn-circle nomargin" type="button" onclick="document.getElementById('upload').click();"><i class="icon-line-camera"></i></button>
+               </div>
+            </form>
+         </div>
+         <% } %>
+      </div>
+   </div>
+</section>
+<%- include("explainer_id"); %>
+<%- include("footer"); %>

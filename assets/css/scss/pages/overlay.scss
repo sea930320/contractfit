@@ -1,0 +1,255 @@
+#modalInfo{
+	b{
+		display: block;
+		color: $blue;
+		margin-bottom:5px;
+	}
+	.row > div > .info-title{
+		padding-bottom:10px; margin-bottom:20px;
+		border-bottom:1px solid #e7e7e7;
+		b{
+			display: block;
+			color:#191919;
+			padding:10px 0px 0px 10px;
+		}
+	}
+	ul, li{
+		list-style-type:circle;
+		margin-left:10px;
+	}
+	.info-table p{
+		font-size: .9rem;
+		margin-bottom:10px;
+	}
+	table{
+		width:100%;
+		border:1px solid #efefef;
+		td{
+			width:25%;
+			vertical-align: top;
+			&:first-child{
+				background:#f9f9f9;
+			}
+		}
+		tr{
+			background:white;
+			border-bottom:1px solid #efefef;
+			&:last-child{
+				border:none;
+			}
+		}
+	}
+	.full table td{
+		width:75%;
+		&:first-child{
+			width:25% !important;
+		}
+	}
+}
+
+	.parent.parent-result.parent-4{
+		margin-bottom:15px;
+	}
+
+#pricing-table{
+	.title{
+		color:#ababab;
+		margin-top:20px;
+		text-decoration: uppercase;
+		font-weight:bold;
+		text-align:center;
+	}
+	p, li{
+		overflow: auto;
+		white-space: nowrap;
+	}
+	.parent-result.parent-8 p{
+		white-space: normal;
+	}
+
+	.features, .current-contract, .optimal-contract{
+		width:33%;
+		li.parent, li.parent-section{
+			cursor: pointer;
+		}
+		.sub ul li span, .legend span, .parent span, .parent-section span{
+			display: block;
+			float:left;
+			width:33%;
+			text-align:right;
+		}
+		.sub ul li span, .parent span, .parent-section span{
+			text-align: right;
+		}
+	}
+	.features, .current-contract, .optimal-contract{
+		.sub ul li span, .legend span, .parent span, .parent-section span{
+			text-align:left;
+		}
+	}
+	.optimal-contract{
+		border:2px solid $green;
+		@include border-radius(3px);
+	}
+	.features, .current-contract{
+		padding-top:2px;
+	}
+	// Provider
+	.provider{
+		height:75px;
+		padding-top:15px;
+		border-bottom:1px solid #e7e7e7;
+		img, b{
+			padding-left:20px;
+		}
+		b{
+			padding-top:10px;
+		}
+	}
+	// Legend
+	.legend{
+		margin:5px 0px;
+		padding:15px;
+		span{
+			font-weight: 600;
+			color:#191919;
+		}
+	}
+	// Parent toggle
+	.parent-toggle{
+		border:1px solid #e7e7e7;
+		margin-bottom:10px;
+		overflow:auto;
+		p, li{
+		    white-space: nowrap;
+			font-weight: 400;
+			padding:12.5px;
+		}
+		li{
+			font-weight: 500;
+			padding:10px 15px;
+			&:first-child
+			{
+				padding-top:0px;
+			}
+		}
+	}
+	.features{
+		.provider{
+			padding-top:25px;
+			font-weight: bold;
+		}
+		.parent-toggle p{
+			background: url(/images/toggle-icon.png) no-repeat 95% 50%;
+		}
+	}
+	.current-contract .parent-toggle span, .optimal-contract .parent-toggle span{
+		color:#737373;
+	}
+	.features .parent-toggle, .current-contract .parent-toggle{
+		border-right:none;
+	}
+	.parent-toggle.discount{
+		background:#fbfbfb;
+	}
+	// Parent result
+	.parent-result{
+		p{
+			font-weight: 600;
+			text-transform: uppercase;
+			padding:5px 15px 0px 15px;
+		}
+		& + .parent-result{
+			p{
+				padding:0px 15px 15px 15px;
+			}
+		}
+	}
+	// Rows
+	.sub{
+		display: none;
+		li a{
+			text-decoration: none;
+		}
+	}
+	.discount .sub{
+		display: block;
+	}
+	.parent-8, ol + ol .parent-result{
+		margin-top:15px;
+		min-height: 65px;
+		p, a{
+			font-weight: normal;
+			text-transform: none;
+			font-size:.9rem;
+		}
+		.vreg-button{
+			display: block;
+			width:250px;
+			margin:0px auto;
+			background:#97a3ab;
+		}
+	}
+	.discount + .parent-6 + .parent-7{
+		// border-bottom:1px solid #efefef;
+		padding-top:20px !important;
+	}
+	.discount + .parent-6{
+		padding-top:10px !important;
+	}
+	// Action-btns
+	ol + ol{
+		.parent-9{
+			& > div{
+				width:175px;
+				margin:0px auto;
+				padding-top:5px;
+				a{
+					padding:5px 0px 0px 15px;
+				}
+			}
+		}
+	}
+	.save{
+		color:$green;
+	}
+}
+.text-span{
+	width:auto !important;
+	padding:0px !important;
+}
+
+// Media queries
+@media only screen and (max-width: 40em){ 
+	#modalInfo{
+		background:#FFF;
+	}
+	.text-span{
+		display: none;
+	}
+	.mc{
+		background:#00FF00;
+		display: none !important;
+	}
+	#pricing-table{
+		.features, .current-contract, .optimal-contract{
+			.sub ul li span, .legend span, .parent span, .parent-section span{
+				width:100%;
+				text-align:center;
+			}
+		}
+		// Provider
+		.provider{
+			img{
+				display: none;
+			}
+		}
+	}
+	.parent-7, .parent-8, .parent-9{
+		display: none;
+	}
+	.features, .current-contract, .optimal-contract{
+		border:none !important;
+		padding-top:0px !important;
+	}
+} 

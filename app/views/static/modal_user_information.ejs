@@ -1,0 +1,86 @@
+<div class="modal fade" id="modal_user_information" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" style="text-align: center"><%= gt.gettext("Invullen van gegevens") %></h4>
+                    </div>
+                    <div class="modal-body center">
+                        <%
+                            if(sess.form_errors){
+                                feedback = sess.form_errors;
+                                feedback.forEach(function(info){
+                                    if(!helpers.in_array(info.param, errors)) {
+                                        errors.push(info.param);
+                        %>
+                                <%- '<small ' + (info.success ? 'class="success"' : 'class="error"') + '>' + info.msg + ' </small>' %>
+                        <%
+                                    }
+                                });
+                                sess.form_errors = null;
+                            }
+                            %>
+                        <p class="bottommargin-sm">
+                            <%= gt.gettext("Deel de eerste pagina van je energiefactuur. Dan halen wij daar alle nodige informatie uit voor de overstap!") %>
+                        </p>
+                        <p class="bottommargin-sm">
+                            <%= gt.gettext("Op een mobiel toestel krijg je ook de optie om een foto te nemen.") %>
+                        </p>
+                        <form name="template-contactform" id="mui_form" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" required class="upload-email" id="mui_email" name="email" value="<%= helpers.set_value(body.email); %>" />
+                            <input type="hidden" name="pdfInvoice" value="true" />
+                            <div class="bottommargin-sm file-upload">
+                                <input name="fileToUpload[]" multiple required id="mui_upload" type="file" accept="application/pdf,image/*">
+                            </div>
+                            <div class="col_full nobottommargin">
+                                <button class="btn btn-lg btn-danger btn-block nomargin" value="submit" id="mui_upload-button" type="submit" data-dismiss="modal"><i class="icon-share2"></i>&nbsp;&nbsp;<%= gt.gettext("Verstuur") %></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).on('ready', function() {
+            $('#modal_user_information').on('shown.bs.modal', function(){
+                var mui_fileUploaded = false;
+                $('#mui_upload-button').click(function() {
+                    if (validateEmail($('#mui_email').val()) && $("#mui_upload").prop('files').length > 0) {
+                        $('#myModal').modal('toggle');
+                        $("#mui_form").submit();
+                    }
+                })
+                $("#mui_upload").fileinput({
+                    mainClass: "input-group-md",
+                    showPreview: false,
+                    showUpload: false,
+                    showRemove: false,
+                    previewFileType: "",
+                    browseClass: "btn button-aqua",
+                    browseLabel: "Browse",
+                    browseIcon: "<i class=\"icon-folder-open\"></i> ",
+                    removeClass: "",
+                    removeLabel: "",
+                    removeIcon: "",
+                    uploadClass: "",
+                    uploadLabel: "",
+                    uploadIcon: "",
+                    allowedFileExtensions: ["pdf", "jpg", "jpeg", "png", "gif"],
+                });
+                /*$('#mui_form').fileupload({
+                    url: '',
+                    multipart:true,
+                    singleFileUploads:false,
+                    add: function (e, data){
+                        mui_fileUploaded = true;
+                    }
+                });*/
+                function validateEmail(email){
+                    var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+                    return email.length > 0 && filter.test(email);
+                }
+            });
+            });
+        </script>
+    </div>

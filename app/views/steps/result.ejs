@@ -1,0 +1,537 @@
+<%
+    if (!styles) {
+        styles = [];
+    }
+    styles.push('custom');
+%>
+<%- include("../static/init_header") %>
+<input type="hidden" id="refreshed" value="no">
+<script type="text/javascript">
+previous_width = -1;
+
+onload=function(){
+    var e=document.getElementById("refreshed");
+    if(e.value=="no")e.value="yes";
+    else{e.value="no";location.reload();}
+    width=$(window).width();
+}
+
+onresize=function(){
+    if(previous_width != -1 && ((previous_width <= 640) != ($(window).width() <= 640)))
+    {
+        {
+        var e=document.getElementById("refreshed");
+        if(e.value=="no")e.value="yes";
+        else{e.value="no";location.reload();}
+        }
+
+    }
+    previous_width = $(window).width();
+}
+</script>
+<!-- Google Code for ConversionGoal1-InvoiceUpload Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 871589193;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "ogXvCKKizGsQycrNnwM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+<div style="display:inline;">
+   <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/871589193/?label=ogXvCKKizGsQycrNnwM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<div>
+<div class="section nomargin noborder ohidden nopadding hiddenOnSmaller">
+   <ul class="process-steps process-3 clearfix nomargin">
+      <li>
+         <a href="/<%=sess.site_lang%>/home#section-form" style="color:lightgray;" class="i-light i-circled divcenter icon-share2"></a>
+         <h5><%= gt.gettext("Stap 1: Deel") %></h5>
+      </li>
+      <li class="active">
+         <a href="#" class="i-circled i-alt divcenter bgcolor icon-thumbs-up"></a>
+         <h5><%= gt.gettext("Stap 2: Kies") %></h5>
+      </li>
+      <li>
+         <span class="i-bordered i-circled divcenter icon-ok" onclick="document.getElementById('choose-supplier-button').click()"></span>
+         <h5><%= gt.gettext("Stap 3: Bevestig") %></h5>
+      </li>
+   </ul>
+</div>
+<div class="hiddenOnWider flex">
+   <div class="flex flex-container top-three-navigation-buttons"><a href="/<%=sess.site_lang%>/home#section-form" class="i-light i-circled divcenter icon-share2 i-small"></a><a href="/<%=sess.site_lang%>/home#section-form" style="display:flex;align-items:center"><span> <%= gt.gettext("Deel") %></span></a></div>
+   <div class="flex flex-container top-three-navigation-buttons" style="flex-grow: 1;align-items:center"><i class="icon-angle-right"></i></div>
+   <div class="flex flex-container top-three-navigation-buttons active"><a href="#"  class="i-circled i-alt divcenter bgcolor icon-thumbs-up i-small"></a><a href="#" style="display:flex;align-items:center"><span> <%= gt.gettext("Kies") %></span></a></div>
+   <div class="flex flex-container top-three-navigation-buttons" style="flex-grow: 1;align-items:center"><i class="icon-angle-right"></i></div>
+   <div class="flex flex-container top-three-navigation-buttons"><a href="#" onclick="document.getElementById('choose-supplier-button').click()" class="i-bordered i-circled divcenter icon-ok i-small"></a><a href="#" onclick="document.getElementById('choose-supplier-button').click()" style="display:flex;align-items:center"><span> <%= gt.gettext("Bevestig") %></span></a></div>
+</div>
+<div class="row" id="scrollIntoView" ng-app="app" ng-controller="optionsController">
+   <h2 ng-if="!absolute" class="display-price hiddenOnWider" ng-class="{'negative-price': yourSavings() < 0, 'low-price': yourSavings() < 10}">
+      <span class="nocolor" ng-class="{'hidden': yourSavings() <= 0}"><%= gt.gettext("Jaarlijkse besparing:") %>&nbsp;</span>
+      <span class="nocolor" ng-class="{'hidden': yourSavings() > 0}"><%= gt.gettext("Extra kost:") %>&nbsp;</span>
+      <span class="totalprice nocolor">€{{ (yourSavings()<0?-yourSavings():yourSavings()) | number : 2}}</span>
+   </h2>
+   <h2 ng-if="absolute" class="display-price hiddenOnWider"><%= gt.gettext("Kost: ") %> <span class="totalprice nocolor">€{{ yourAbsoluteCost() | number : 2}}</span> </h2>
+   <div class="small-12 columns" style="padding-left:30px;padding-right:30px">
+      <a onclick="startTour()" style="color: #1ABC9C;"><%= gt.gettext("Start de rondleiding") %></a>
+      <div id="cf-table" class="clearfix" ng-cloak>
+         <div id="cf-table-left">
+            <div class="cf-column cf-middle switch-provider" style="border-radius: 0;" data-intro="<%= gt.gettext('In dit paneel tonen we je standaard het goedkoopste aanbod op maat van jouw profiel.') %>" data-step="2" data-scrollTo="tooltip">
+               <%- include('../static/section_switch_provider'); %>
+            </div>
+            <div class="cf-column" style="z-index:1" data-intro="<%= gt.gettext('Hier vind je de gegevens terug op basis waarvan we de berekening hebben gemaakt') %>" data-step="1" data-scrollTo="tooltip">
+               <div class="result-content ">
+                  <button type="button" class="close hiddenOnWider" onclick="showPanel('middle')">×</button>
+                  <h2><%= gt.gettext("Uw gegevens") %></h2>
+                  <div id="personal-data">
+                     <div class="personal-data-label">
+                        <strong><%= gt.gettext("Leveradres") %>:</strong>&nbsp;<span> {{ user.delivery_address.full }}</span>
+                     </div>
+                     <div ng-show="original_electricity_products.length >0 || !fully_loaded">
+                        <div style="margin: 15px 0;" class="divider divider-center divider-rounded">
+                           <i class="icon-bolt"></i>
+                           <span style="display: block"><%= gt.gettext("Elektriciteit") %></span>
+                        </div>
+                        <div class="personal-data-label">
+                           <strong ng-if="user.el.supplier"><%= gt.gettext("Leverancier") %>:</strong><span ng-if="user.el.supplier">&nbsp;{{user.el.supplier }}</span><br ng-if="user.el.supplier" />
+                           <strong><%= gt.gettext("Product") %>:</strong>&nbsp;
+                            <%
+                              if (sess.site_lang == "fr") {
+                            %>
+                                <span ng-if="user.el.product_fr">{{user.el.product_fr}}</span><span ng-if="!user.el.product_fr">{{user.el.product }}</span>
+                            <%
+                              } else if (sess.site_lang == "en") {
+                            %>
+                                <span ng-if="user.el.product_en">{{user.el.product_en}}</span><span ng-if="!user.el.product_en">{{user.el.product }}</span>
+                            <%
+                              } else {
+                            %>
+                                <span ng-if="user.el.product">{{user.el.product}}</span>
+                            <%
+                              }
+                            %>
+                        </div>
+                        <div class="personal-data-label" ng-show="!user.el.cost_excl && !user.el.cost">
+                           <span><%= gt.gettext("Verbruik: ") %></span>
+                           <i class="icon-line2-info" data-toggle="tooltip" title='<%= gt.gettext("Voor de berekening schalen we uw verbruik naar een periode van 1 jaar.")%>'></i>
+                           <ul style="margin-left:24px">
+                              <li ng-show="user.el.day">
+                                 <span ng-if="!user.el.day_orig"> {{user.el.day}} kWh</span>
+                                 <span ng-if="user.el.day_orig"> {{user.el.day_orig}} kWh</span>
+                                 <span> (<%= gt.gettext("Dag") %>)</span>
+                              </li>
+                              <li ng-show="user.el.night">
+                                 <span ng-if="!user.el.night_orig"> {{user.el.night}} kWh</span>
+                                 <span ng-if="user.el.night_orig"> {{user.el.night_orig}} kWh</span>
+                                 <span> (<%= gt.gettext("Nacht") %>)</span>
+                              </li>
+                              <li ng-show="user.el.excl_night">
+                                 <span ng-if="!user.el.excl_night_orig" > {{user.el.excl_night}} kWh</span>
+                                 <span ng-if="user.el.excl_night_orig" > {{user.el.excl_night_orig}} kWh</span>
+                                 <span> (<%= gt.gettext("Excl. nacht") %>)</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="personal-data-label" ng-show="user.el.cost_excl || user.el.cost">
+                           <span><%= gt.gettext("Maandelijkse kost") %>:</span>
+                           <span ng-if="user.el.cost_excl">€{{user.el.cost_excl}}</span>
+                           <span ng-if="!user.el.cost_excl">€{{user.el.cost}}</span>
+                           <i class="icon-line2-info" data-toggle="tooltip" data-placement="bottom" title='<%= gt.gettext("Op basis van uw maandelijkse kost berekenen we het aantal kWh dat u op jaarbasis gebruikt.")%>'></i>
+                        </div>
+                        <div class="toggle" style="margin: 10px 0 20px 0;">
+                           <div class="togglet">
+                              <span><i class="toggle-closed icon-caret-right"></i><i class="toggle-open icon-caret-down"></i><%= gt.gettext("Zonnepanelen? klik hier!") %></span>
+                           </div>
+                           <div class="togglec">
+                              <span><%= gt.gettext("Mijn vermogen: ") %></span>
+                              <input style="width:50%;display:inline" type="text" ng-change="updateResults()" id="kVA" ng-model="user.el.kVA" ng-init="updateResults()"/>
+                              <span><%= gt.gettext("kVA") %></span>
+                              <i class="icon-line2-info" data-toggle="tooltip" data-placement="bottom" title='<%= gt.gettext("Geef hier het vermogen van uw installatie in. Merk op dat dit geen invloed heeft op de besparing die je kan realiseren, dit is immers onafhankelijk van de gekozen leverancier. In de detailberekening kan je de totale kost zien inclusief prosumententarief.")%>'></i>
+                           </div>
+                        </div>
+                     </div>
+                     <div style="margin: 15px 0;" class="divider divider-center divider-rounded" ng-show="original_gas_products.length > 0 || !manual">
+                        <i class="icon-fire2"></i>
+                        <span style="display: block"><%= gt.gettext("Gas") %></span>
+                     </div>
+                     <div ng-show="!manual">
+                        <div ng-show="original_gas_products.length <= 0 && fully_loaded">
+                           <p>
+                              <%= gt.gettext("Geen gas gevonden, klik hier om toe te voegen") %>
+                           </p>
+                           <form name="template-contactform" method="POST" enctype="multipart/form-data" class="file-upload-form">
+                              <input class="txtMail" type="hidden" name="email" value="{{email}}"/>
+                              <input type="hidden" name="pdfInvoice" value="True"/>
+                              <div class="file-upload">
+                                 <input name="fileToUpload[]" multiple required class="file-upload-field" type="file" accept="application/pdf,image/*" class="file" data-allowed-file-extensions='[]'>
+                              </div>
+                              <div class="col_full nobottommargin">
+                                 <button class="btn btn-md btn-block nomargin custom-button custom-upload-button" value="submit" type="submit" ><i class="icon-share2"></i>&nbsp;&nbsp;<%= gt.gettext("Toevoegen") %></button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div ng-show="original_gas_products.length >0 || !fully_loaded">
+                        <div class="personal-data-label">
+                           <strong ng-if="user.gas.supplier"><%= gt.gettext("Leverancier") %>:</strong><span ng-if="user.gas.supplier">&nbsp;{{user.gas.supplier }}</span><br ng-if="user.gas.supplier" />
+                           <strong><%= gt.gettext("Product") %>:</strong>&nbsp;
+                            <%
+                              if (sess.site_lang == "fr") {
+                            %>
+                                <span ng-if="user.gas.product_fr">{{user.gas.product_fr}}</span><span ng-if="!user.gas.product_fr">{{user.gas.product }}</span>
+                            <%
+                              } else if (sess.site_lang == "en") {
+                            %>
+                                <span ng-if="user.gas.product_en">{{user.gas.product_en}}</span><span ng-if="!user.gas.product_en">{{user.gas.product }}</span>
+                            <%
+                              } else {
+                            %>
+                                <span ng-if="user.gas.product">{{user.gas.product}}</span>
+                            <%
+                              }
+                            %>
+                        </div>
+                        <div class="personal-data-label" ng-show="!user.gas.cost_excl && !user.gas.cost">
+                           <span><%= gt.gettext("Verbruik: ") %></span>
+                           <i class="icon-line2-info" data-toggle="tooltip" title='<%= gt.gettext("Voor de berekening schalen we uw verbruik naar een periode van 1 jaar.")%>'></i>
+                           <ul style="margin-left:24px">
+                              <li>
+                                 <span ng-if="!user.gas.consumption_orig">{{ user.gas.consumption }} kWh</span>
+                                 <span ng-if="user.gas.consumption_orig"> {{ user.gas.consumption_orig}} kWh</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="personal-data-label" ng-show="user.gas.cost_excl || user.gas.cost">
+                           <span><%= gt.gettext("Maandelijkse kost") %>:</span>
+                           <span ng-if="user.gas.cost_excl"> €{{user.gas.cost_excl}}</span>
+                           <span ng-if="!user.gas.cost_excl"> €{{user.gas.cost}}</span>
+                           <i class="icon-line2-info" data-toggle="tooltip" title='<%= gt.gettext("Op basis van uw maandelijkse kost berekenen we het aantal kWh dat u op jaarbasis gebruikt.")%>'></i>
+                        </div>
+                     </div>
+                     <div ng-show="!manual">
+                        <div style="margin: 15px 0;" class="divider divider-center divider-rounded" ng-show="original_electricity_products.length <= 0 && fully_loaded"><i class="icon-bolt"></i></div>
+                        <div ng-show="original_electricity_products.length <= 0 && fully_loaded">
+                           <p>
+                              <%= gt.gettext("Geen elektriciteit gevonden, klik hier om toe te voegen") %>
+                           </p>
+                           <form name="template-contactform" method="POST" enctype="multipart/form-data" class="file-upload-form">
+                              <input class="txtMail" type="hidden" name="email" value="{{email}}"/>
+                              <input type="hidden" name="pdfInvoice" value="True"/>
+                              <div class="file-upload">
+                                 <input name="fileToUpload[]" multiple required class="file-upload-field" type="file" accept="application/pdf,image/*" class="file" data-allowed-file-extensions='[]'>
+                              </div>
+                              <div class="col_full nobottommargin">
+                                 <button class="btn btn-md btn-block nomargin custom-button custom-upload-button" value="submit" type="submit" ><i class="icon-share2"></i>&nbsp;&nbsp;<%= gt.gettext("Toevoegen") %></button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="button" class="btn btn-danger btn-md hiddenOnWider close-button" onclick="showPanel('middle')"><%= gt.gettext("Sluit") %></button>
+               </div>
+               <!--<a href="" id="enablePersonalData">Klik hier om te wijzigen</a>-->
+            </div>
+         </div>
+         <div id="cf-table-right">
+            <div class="cf-column" >
+               <!-- content -->
+               <div class="result-content">
+                  <button type="button" class="close hiddenOnWider" onclick="showPanel('middle')">×</button>
+                  <h2><%= gt.gettext("Uw voorkeuren") %></h2>
+                  <div class="option-list-item" ng-show="original_gas_products.length > 0 && original_electricity_products.length > 0">
+                     <div class="row">
+                        <div class="small-10 columns">
+                           <p class="left" id="differentProvidersLabel"><%= gt.gettext("Ik laat verschillende producten/leveranciers toe voor elektriciteit en gas") %>:</p>
+                        </div>
+                        <div class="small-2 columns">
+                           <div class="switch round right">
+                              <input id="differentProviders" ng-model="options.differentProvidersValue" ng-change="updateResults()" type="checkbox">
+                              <label for="differentProviders" class="beforeclick"></label>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                  </div>
+                  <div class="option-list-item" data-intro="<%= gt.gettext('In dit paneel kan je je voorkeuren instellen. <br>Je ziet meteen de impact op je besparing.<br><br> Wens je bijvoorbeeld niet te betalen met domiciliëring? Zet deze optie dan af.') %>" data-step="4" data-scrollTo="tooltip">
+                     <div class="row">
+                        <div class="small-10 columns">
+                           <p class="left" id="domicilieringOptionalLabel"><%= gt.gettext("Toon ook tarieven met domiciliëring") %>:</p>
+                        </div>
+                        <div class="small-2 columns">
+                           <div class="switch round right">
+                              <input id="domicilieringOptional" ng-model="options.domicieleringOptional" ng-change="updateResults()" type="checkbox">
+                              <label for="domicilieringOptional" class="beforeclick"></label>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                  </div>
+                  <div class="option-list-item">
+                     <div class="row">
+                        <div class="small-10 columns">
+                           <p class="left" id="greenPercentageLable"><%= gt.gettext("Toon enkel tarieven met groene energie") %>:</p>
+                        </div>
+                        <div class="small-2 columns">
+                           <div class="switch round right">
+                              <input id="greenPercentage" ng-model="options.greenPercentageValue" ng-change="updateResults()" type="checkbox">
+                              <label for="greenPercentage" class="beforeclick"></label>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                  </div>
+                  <div class="option-list-item">
+                     <div class="row">
+                        <div class="small-10 columns">
+                           <p class="left" id="currentPromotionsLabel"><%= gt.gettext("Hou rekening met lopende promoties") %>:</p>
+                        </div>
+                        <div class="small-2 columns">
+                           <div class="switch round right">
+                              <input id="currentPromotions" ng-model="options.currentPromotionsValue" ng-change="updateResults()" type="checkbox">
+                              <label for="currentPromotions" class="beforeclick"></label>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                  </div>
+                  <div class="option-list-item">
+                     <div class="row">
+                        <div class="small-10 columns">
+                           <p class="left" id="fixedRateValueLabel"><%= gt.gettext("Vaste tarieven") %>:</p>
+                        </div>
+                        <div class="small-2 columns">
+                           <div class="switch round right">
+                              <input id="fixedRateValue" ng-model="options.fixedRateValue" ng-change="updateResults()" type="checkbox">
+                              <label for="fixedRateValue" class="beforeclick"></label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="small-10 columns">
+                           <p class="left" id="variabelRateValueLabel"><%= gt.gettext("Variabele tarieven") %>:</p>
+                        </div>
+                        <div class="small-2 columns">
+                           <div class="switch round right">
+                              <input id="variabelRateValue" ng-model="options.variabelRateValue" ng-change="updateResults()" type="checkbox">
+                              <label for="variabelRateValue" class="beforeclick"></label>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                  </div>
+                  <button type="button" class="btn btn-danger btn-md hiddenOnWider close-button" onclick="showPanel('middle')"><%= gt.gettext("Sluit") %></button>
+                  <!--<div class="option-list-item option-list-item-hide">
+                     <div class="row">
+                     <div class="small-8 columns">
+                     <p class="left" id="undefinedContractLabel">Onbepaalde duur:</p>
+                     </div>
+                     <div class="small-4 columns">
+                     <div class="switch round right">
+                     <input id="undefinedContract" ng-model="options.undefinedContractValue" ng-change="updateResults()" type="checkbox">
+                     <label for="undefinedContract" class="beforeclick"></label>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="row">
+                     <div class="small-8 columns">
+                     <p class="left" id="oneYearContractLabel">1 jaar:</p>
+                     </div>
+                     <div class="small-4 columns">
+                     <div class="switch round right">
+                     <input id="oneYearContract" ng-model="options.oneYearContractValue" ng-change="updateResults()" type="checkbox">
+                     <label for="oneYearContract" class="beforeclick"></label>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="row">
+                     <div class="small-8 columns">
+                     <p class="left" id="twoYearContractLabel">2 jaar:</p>
+                     </div>
+                     <div class="small-4 columns">
+                     <div class="switch round right">
+                     <input id="twoYearContract" ng-model="options.twoYearContractValue" ng-change="updateResults()" type="checkbox">
+                     <label for="twoYearContract" class="beforeclick"></label>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="row">
+                     <div class="small-8 columns">
+                     <p class="left" id="threeYearContractLabel">3 jaar:</p>
+                     </div>
+                     <div class="small-4 columns">
+                     <div class="switch round right">
+                     <input id="threeYearContract" ng-model="options.threeYearContractValue" ng-change="updateResults()" type="checkbox">
+                     <label for="threeYearContract" class="beforeclick"></label>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="row">
+                     <div class="small-8 columns">
+                     <p class="left" id="fourYearContractLabel">4 jaar:</p>
+                     </div>
+                     <div class="small-4 columns">
+                     <div class="switch round right">
+                     <input id="fourYearContract" ng-model="options.fourYearContractValue" ng-change="updateResults()" type="checkbox">
+                     <label for="fourYearContract" class="beforeclick"></label>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="row">
+                     <div class="small-8 columns">
+                     <p class="left" id="fiveYearContractLabel">5 jaar:</p>
+                     </div>
+                     <div class="small-4 columns">
+                     <div class="switch round right">
+                     <input id="fiveYearContract" ng-model="options.fiveYearContractValue" ng-change="updateResults()" type="checkbox">
+                     <label for="fiveYearContract" class="beforeclick"></label>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="option-list-item option-list-item-hide">
+                     <div class="row">
+                     <div class="small-8 columns">
+                     <p class="left" id="digitalInvoiceLabel">Digitale factuur:</p>
+                     </div>
+                     <div class="small-4 columns">
+                     <div class="switch round right">
+                     <input id="digitalInvoice" ng-model="options.digitalInvoiceValue" ng-change="updateResults()" type="checkbox">
+                     <label for="digitalInvoice" class="beforeclick"></label>
+                     </div>
+                     </div>
+                     </div>
+                     </div>-->
+               </div>
+               <!-- button -->
+               <!--<a href="" id="moreOptions">Meer opties tonen</a>-->
+            </div>
+         </div>
+        <%- include("detail-modal") %>
+        <%- include("info-modal") %>
+        <%
+            if (!sess.manual) {
+        %>
+                <%- include("../static/modal_result_confirmation"); %>
+        <%
+            }
+        %>
+      </div>
+   </div>
+</div>
+<%
+    manual=sess.manual;
+    el_product = sess.el_product;
+    has_electricity = isset(el_product);
+    gas_product = sess.gas_product;
+    has_gas = isset(gas_product);
+
+    if(!manual && (!has_electricity || !has_gas)) {
+%>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+       $(".file-upload-form .file-upload-field").fileinput({
+           mainClass: "input-group-sm",
+           showPreview: false,
+           showUpload: false,
+           showRemove: false,
+           previewFileType: "image",
+           browseClass: "btn custom-button custom-browse-button",
+           browseLabel: "Browse",
+           browseIcon: "<i class=\"icon-folder-open\"></i> ",
+           removeClass: "btn btn-danger",
+           removeLabel: "",
+           removeIcon: "<i class=\"icon-trash\"></i> ",
+           uploadClass: "btn btn-info",
+           uploadLabel: "Upload",
+           uploadIcon: "<i class=\"icon-upload\"></i> ",
+           allowedFileExtensions: ["pdf"],
+       });
+       // Upload
+       /*$('.file-upload-form').each(function() {
+           var wrapper = $(this).find(".file-upload-field");
+           if(wrapper.length){
+               wrapper.fileupload({
+                   url: 'upload_invoice',
+                   multipart:true,
+                   singleFileUploads:true,
+                   formData: getEmail,
+                   add: function (e, data){
+                       // Submit
+                       $(this).find(".custom-upload-button").on('click', function(event){
+                           event.preventDefault();
+                           console.log("yes", $(this), validateForm($(this)));
+                           if(validateForm($(this).form)){
+                               // Load modal
+                               $('#myModal').modal('toggle');
+                               // Data submit
+                               data.submit();
+                           }
+                       });
+                   },
+                   progress: function(e, data){
+                       var progress = parseInt(data.loaded / data.total * 100, 10);
+                   },
+                   success: function (result, textStatus, jqXHR){
+                       var result = JSON.parse(result);
+                       console.log(result.success);
+                       if(result.success){
+                           window.location = result.success;
+                       }else{
+                           console.log(result.error);
+                       }
+                   },
+                   error: function (jqXHR, textStatus, errorThrown) {
+                       console.log('error',jqXHR.responseText);
+                   }
+               });
+           }
+       });
+       function getEmail(){
+           var email_value = $(this).find('.txtMail').val();
+           return { 1: {name: 'pdfInvoice', value:true}, 2: {name: 'email', value: email_value} };
+       }*/
+       var validateForm = function(form){
+           form = $(form);
+           // Email
+           formArray = [];
+           var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+           var email = form.find('.txtMail').val();
+           if(email.length == 0){
+               formArray.push({'input':'upload-email','error': '<%= gt.gettext("Gelieve een emailadres in te vullen."); %>'});
+           } else if(!filter.test(email)){
+               formArray.push({'input':'upload-email','error': '<%= gt.gettext("Gelieve een correct emailadres in te vullen."); %>'});
+           }
+           // Show
+           form.find('.file-upload-label').removeClass('error');
+           form.find('.upload-form-feedback').empty();
+           if(formArray){
+               for(var key in formArray){
+                   // $('#upload-form-feedback').append('<small class="error">' + formArray[key]['error'] + '</div>');
+                   form.find('.' + formArray[key]['input']).addClass('error');
+               };
+           }
+           // Return
+           return (formArray.length == 0 ? true : false );
+       }
+       $(".custom-upload-button").click(function(object){
+           if(validateForm(object.target.form)){
+               // Load modal
+               $('#myModal').modal('toggle');
+               // Data submit
+               if(object.target.form.getElementsByClassName("file-upload-field")[0].value.indexOf(".pdf") < 0){
+                   object.target.form.action = window.location.pathname.substr(0,window.location.pathname.indexOf("/", 1)) + "/share_by_picture";
+               }
+               object.target.form.submit();
+           }
+       });
+   });
+</script>
+<% } %>
+</div>
+<%- include("../static/explainer"); %>
+<%- include("../static/footer_2"); %>

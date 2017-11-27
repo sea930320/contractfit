@@ -1,0 +1,59 @@
+<%
+    if (!styles) {
+        styles = [];
+    }
+    styles.push('custom');
+%>
+<%- include("../static/init_header") %>
+<%
+    el_product=sess.el_product;
+    gas_product=sess.gas_product;
+%>
+<div class="section nomargin noborder ohidden nopadding hiddenOnSmaller">
+<ul class="process-steps process-3 clearfix nomargin">
+   <li>
+      <a href="/<%=sess.site_lang%>/home#section-form" style="color:lightgray;" class="i-light i-circled divcenter icon-share2"></a>
+      <h5><%= gt.gettext("Stap 1: Deel") %></h5>
+   </li>
+   <li>
+      <a href="/<%=sess.site_lang%>/result/<%= sess.directory %>" style="color:lightgray;" class="i-light i-circled divcenter icon-thumbs-up"></a>
+      <h5><%= gt.gettext("Stap 2: Kies") %></h5>
+   </li>
+   <li class="active">
+      <a href="#" class="i-bordered i-circled divcenter icon-ok"></a>
+      <h5><%= gt.gettext("Stap 3: Bevestig") %></h5>
+   </li>
+</ul>
+</div>
+<div class="hiddenOnWider flex">
+<div class="flex flex-container top-three-navigation-buttons"><a href="/<%=sess.site_lang%>/home#section-form" class="i-light i-circled divcenter icon-share2 i-small"></a><a href="/<%=sess.site_lang%>/home#section-form" style="display:flex;align-items:center"><span> <%= gt.gettext("Deel") %></span></a></div>
+<div class="flex flex-container top-three-navigation-buttons" style="flex-grow: 1;align-items:center"><i class="icon-angle-right"></i></div>
+<div class="flex flex-container top-three-navigation-buttons"><a href="/<%=sess.site_lang%>/result/<%= sess.directory %>" class="i-light i-circled divcenter icon-thumbs-up i-small" ></a><a href="/<%=sess.site_lang%>/result/<%= sess.directory %>" style="display:flex;align-items:center"><span> <%= gt.gettext("Kies") %></span></a></div>
+<div class="flex flex-container top-three-navigation-buttons" style="flex-grow: 1;align-items:center"><i class="icon-angle-right"></i></div>
+<div class="flex flex-container top-three-navigation-buttons active"><a href="#" class="i-circled i-alt divcenter bgcolor icon-ok i-small"></a><a href="#" style="display:flex;align-items:center"><span> <%= gt.gettext("Bevestig") %></span></a></div>
+</div>
+<%- include('../static/section_user_information2'); %>
+<script>
+$(document).ready(function(){
+    function getCookie(name) {
+     var value = "; " + document.cookie;
+     var parts = value.split("; " + name + "=");
+     if (parts.length == 2) return parts.pop().split(";").shift();
+   }
+   var formData = getCookie("formdata");
+    if (formData !== undefined) {
+        $("#upload-form").deserialize(formData);
+    }
+    $("#upload-form").on("focusout", function() {
+        var d = new Date();
+        //one day
+    d.setTime(d.getTime() + (24*60*60*1000));
+        var path = location.pathname.substr(0,location.pathname.indexOf("/", location.pathname.indexOf("user_information") + "user_information".length + 1))
+    document.cookie = "formdata=" + $(this).serialize() + ";expires="+ d.toUTCString() + ";path=" + path + "/;";
+    });
+});
+</script>
+<script type="text/javascript" src="/js/jquery.deserialize.js"></script>
+<%- include('../static/modal_user_information'); %>
+<%- include("../static/explainer"); %>
+<%- include("../static/footer_2"); %>

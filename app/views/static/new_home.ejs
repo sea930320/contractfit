@@ -1,0 +1,791 @@
+<%- include('init_header'); %>
+<header id="header" class="transparent-header dark  sticky" data-sticky-class="not-dark">
+    <%- include('header'); %>
+</header>
+<section id="slider" class="slider-parallax">
+    <div class="clearfix full-screen section nomargin nopadding dark " style="background: url('/images/videos/energy.png') center center no-repeat; background-size: cover;">
+        <div class="slider-parallax-inner">
+            <div class="container vertical-middle center clearfix">
+                <div class="emphasis-title nomargin" data-animate="fadeInUp">
+                    <!-- <h2 data-caption-animate="fadeInUp"><%= gt.gettext("Energie: leveranciers vergelijken, kiezen en overstappen") %></h2> -->
+                    <h2 data-caption-animate="fadeInUp">
+                        <%= gt.gettext("Vergelijk, kies en bespaar op gas en elektriciteit") %>
+                    </h2>
+                    <!-- <p data-caption-animate="fadeInUp" data-caption-delay="200"><%= gt.gettext("Goeie keuzes zijn belangrijk. Ontvang in minder dan 60 seconden een gratis analyse op basis van jouw factuur en hulp bij de overstap!") %></p> -->
+                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200">
+                        <%= gt.gettext("Goeie keuzes zijn belangrijk, ook voor energie. Laat nu in 60 seconden je factuur analyseren en krijg hulp bij de overstap. Gratis en zonder gedoe.") %>
+                    </h4>
+                    <!-- <a data-animate="fadeInUp" data-delay="600" href="#section-movie" class="button button-border button-light button-rounded button-large noleftmargin nobottommargin" style="margin-top: 30px;"><%= gt.gettext("Meer lezen") %></a> -->
+                    <a data-animate="fadeInUp" data-delay="600" href="#section-movie" class="button button-border button-light button-rounded button-large noleftmargin nobottommargin makesmalleronmobile"
+                        style="margin-top: 30px;">
+                        <%= gt.gettext("Benieuwd hoe dit kan?") %>
+                    </a>
+                    <!-- <a data-animate="fadeInUp" data-delay="800" href="#section-form" class="button button-3d button-red button-large nobottommargin" style="margin: 30px 0 0 10px;"><%= gt.gettext("Start nu") %></a> -->
+                    <a data-animate="fadeInUp" data-delay="800" href="#section-form" class="button button-3d button-red button-large nobottommargin makesmalleronmobile"
+                        style="margin: 30px 0 0 0px;">
+                        <%= gt.gettext("Ik ken het al, start nu !") %>
+                    </a>
+                </div>
+            </div>
+            <div id="movie" class="yt-bg-player top-cart" data-quality="hd1080" data-video="https://youtu.be/Mio9NWbnd5Q" data-opacity="50"
+                data-autoplay="true" style="width: 100%;z-index: 0">
+            </div>
+            <div class="video-overlay" style="background-color: rgba(0,0,0,0.55);z-index:1"></div>
+            <a href="#section-movie" data-scrollto="#section-movie" data-offset="0" class="dark one-page-arrow">
+                <i class="icon-angle-down infinite animated fadeInDown"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<section id="content">
+    <!-- Page Sub Menu
+            ============================================= -->
+    <div id="page-menu" class="dots-menu">
+        <div id="page-menu-wrap" style="margin:22px 0 0 0">
+            <div class="container clearfix">
+                <div class="menu-title">
+                    <%= gt.gettext("Verken") %>
+                        <span>
+                            <%= sess.brand%>
+                        </span>
+                </div>
+                <nav class="one-page-menu safe-offset">
+                    <ul>
+                        <li>
+                            <a href="#" data-href="#header">
+                                <div>
+                                    <%= gt.gettext("Welkom") %>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-href="#section-movie">
+                                <div>
+                                    <%= gt.gettext("Hoe werkt het") %>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-href="#section-usp">
+                                <div>
+                                    <%= gt.gettext("Voordelen") %>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-href="#section-suppliers">
+                                <div>
+                                    <%= gt.gettext("Leveranciers") %>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-href="#section-testimonials">
+                                <div>
+                                    <%= gt.gettext("Getuigenissen") %>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-href="#section-team">
+                                <div>
+                                    <%= gt.gettext("Wie zijn wij") %>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-href="#section-form">
+                                <div>
+                                    <%= gt.gettext("Start nu") %>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="page-submenu-trigger">
+                    <i class="icon-reorder"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #page-menu end -->
+    <section id="section-movie" class="page-section section nomargin notopborder nobg">
+        <div class="container center clearfix">
+            <div class="heading-block">
+                <h2>
+                    <%= gt.gettext("Hoe werkt het") %>
+                </h2>
+                <span>
+                    <%= gt.gettext("Benieuwd hoe het werkt? Dat vertellen we je graag in dit filmpje") %>.</span>
+            </div>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= sess.moviecode%>" frameborder="0" allowfullscreen></iframe> -->
+            <iframe width="480" height="270" src="https://www.youtube.com/embed/<%= sess. moviecode %>" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="section-usp" class="page-section section nomargin noborder">
+        <div class="container center clearfix">
+            <div id="section-features" class="heading-block title-center page-section">
+                <h2>
+                    <%= gt.gettext("Voordelen") %>
+                </h2>
+                <!-- <span><%= gt.gettext("Waarom zou je het niet eens proberen?") %></span> -->
+            </div>
+            <div class="col_one_third">
+                <div class="feature-box fbox-plain">
+                    <div class="fbox-icon" data-animate="bounceIn">
+                        <a href="#">
+                            <img src="/images/icons/features/free.png" alt="Gratis">
+                        </a>
+                    </div>
+                    <h3>
+                        <%= gt.gettext("Volledig gratis") %>
+                    </h3>
+                    <p>
+                        <%= gt.gettext("Onze dienst is volledig gratis. Er zijn ook geen opzeg- of overstapkosten. Zelfs als je een meerjarig contract tekende kan je kostenloos overstappen binnen 30 dagen.") %>
+                    </p>
+                </div>
+            </div>
+            <div class="col_one_third">
+                <div class="feature-box fbox-plain">
+                    <div class="fbox-icon" data-animate="bounceIn" data-delay="200">
+                        <a href="#">
+                            <img src="/images/icons/features/tick.png" alt="Makkelijk">
+                        </a>
+                    </div>
+                    <h3>
+                        <%= gt.gettext("Geen onnodig tikwerk") %>
+                    </h3>
+                    <p>
+                        <%= vsprintf(gt.gettext("Bij ons hoef je geen eindeloze formulieren in te vullen. We lezen alle nodige gegevens automatisch uit je factuur."),[sess.brand]); %>
+                    </p>
+                </div>
+            </div>
+            <div class="col_one_third col_last">
+                <div class="feature-box fbox-plain">
+                    <div class="fbox-icon" data-animate="bounceIn" data-delay="400">
+                        <a href="#">
+                            <img src="/images/icons/features/fast.png" alt="Snel">
+                        </a>
+                    </div>
+                    <h3>
+                        <%= gt.gettext("Snel en makkelijk") %>
+                    </h3>
+                    <p>
+                        <%= gt.gettext("Binnen de 60 seconden vertellen we je wat het beste aanbod is op de markt op basis van jouw verbruik en adres. We regelen voor jou de overstap.") %>
+                    </p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="col_one_third">
+                <div class="feature-box fbox-plain">
+                    <div class="fbox-icon" data-animate="bounceIn" data-delay="600">
+                        <a href="#">
+                            <img src="/images/icons/features/retina.png" alt="Transparant">
+                        </a>
+                    </div>
+                    <h3>
+                        <%= gt.gettext("Objectief en transparant") %>
+                    </h3>
+                    <p>
+                        <%= gt.gettext("Wij tonen objectief het beste aanbod op de markt op maat van jouw verbruik. Bovendien geven we volledige transparantie in de berekeningen.") %>
+                    </p>
+                </div>
+            </div>
+            <div class="col_one_third">
+                <div class="feature-box fbox-plain">
+                    <div class="fbox-icon" data-animate="bounceIn" data-delay="800">
+                        <a href="#">
+                            <img src="/images/icons/features/flag.png" alt="Naadloos">
+                        </a>
+                    </div>
+                    <h3>
+                        <%= gt.gettext("Beter dan een groepsaankoop") %>
+                    </h3>
+                    <p>
+                        <%= vsprintf(gt.gettext("%s zoekt het beste aanbod voor jou persoonlijk profiel. Een groepsaankoop zoekt het beste aanbod voor het gemiddelde profiel in de groep."),[sess.brand]); %>
+                    </p>
+                </div>
+            </div>
+            <div class="col_one_third col_last">
+                <div class="feature-box fbox-plain">
+                    <div class="fbox-icon" data-animate="bounceIn" data-delay="1000">
+                        <a href="#">
+                            <img src="/images/icons/features/support.png" alt="Veilig">
+                        </a>
+                    </div>
+                    <h3>
+                        <%= gt.gettext("Completer dan Vreg / Cwape / Brusim") %>
+                    </h3>
+                    <p>
+                        <%= gt.gettext("Vreg / Cwape / Brusim houden geen rekening met kortingen en promoties, en helpen je ook niet overstappen. Wij wel.") %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container center clearfix">
+            <a href="/<%=sess.site_lang%>/faq" class="button button-border button-rounded button-red">
+                <i class="icon-question"></i>
+                <%= gt.gettext("Veelgestelde vragen") %>
+            </a>
+        </div>
+    </section>
+    <section id="section-suppliers" class="page-section section nomargin noborder nobg">
+        <div class="container center clearfix">
+            <div id="section-features" class="heading-block title-center page-section">
+                <h3 class="center">
+                    <%= gt.gettext("Vergelijk onder meer de volgende leveranciers") %>
+                </h3>
+            </div>
+            <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30" data-nav="true"
+                data-pagi="false" data-autoplay="2000" data-loop="true" data-items-xxs="3" data-items-xs="3" data-items-sm="5"
+                data-items-md="6" data-items-lg="7">
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/ANTARGAZ.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/BELPOWER.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/COMFORTENERGY.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/EBEM.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/ENGIEElectrabel.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/ELEGANT.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/ENECO.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/ENERGIE2030.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/ENI.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/ESSENT.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/LAMPIRIS.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/LUMINUS.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/MEGA.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/POWEO.png" alt="Brands">
+                    </a>
+                </div>
+                <div class="oc-item">
+                    <a href="#">
+                        <img src="/images/clients/WATZ.png" alt="Brands">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-testimonials" class="page-section section nomargin noborder">
+        <div class="container center clearfix">
+            <div id="section-features" class="heading-block title-center page-section">
+                <h2>
+                    <%= gt.gettext("Enkele getuigenissen") %>
+                </h2>
+                <span>
+                    <%= gt.gettext("Zij gingen je al voor") %>
+                </span>
+            </div>
+            <div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="20" data-items-xs="1" data-items-sm="2"
+                data-items-lg="3">
+                <div class="oc-item">
+                    <div class="testimonial">
+                        <div class="testi-image">
+                            <a href="#">
+                                <img src="/images/testimonials/1.jpg" alt="Customer Testimonails">
+                            </a>
+                        </div>
+                        <div class="testi-content">
+                            <p>
+                                <%= gt.gettext("Als het zo makkelijk kan, dan verander ik wel elk jaar van leverancier") %>
+                            </p>
+                            <div class="testi-meta">
+                                Sien B.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="oc-item">
+                    <div class="testimonial">
+                        <div class="testi-image">
+                            <a href="#">
+                                <img src="/images/testimonials/2.jpg" alt="Customer Testimonails">
+                            </a>
+                        </div>
+                        <div class="testi-content">
+                            <p>
+                                <%= gt.gettext("400€ verdiend in minder dan een minuut, normaal moet ik daar harder voor werken") %>
+                            </p>
+                            <div class="testi-meta">
+                                Arnaud M.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="oc-item">
+                    <div class="testimonial">
+                        <div class="testi-image">
+                            <a href="#">
+                                <img src="/images/testimonials/4.jpg" alt="Customer Testimonails">
+                            </a>
+                        </div>
+                        <div class="testi-content">
+                            <p>
+                                <%= gt.gettext("Wow, dit is super ! Wanneer maken jullie dit beschikbaar voor mijn autoverzekering?") %>
+                            </p>
+                            <div class="testi-meta">
+                                Dieter L.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="oc-item">
+                    <div class="testimonial">
+                        <div class="testi-image">
+                            <a href="#">
+                                <img src="/images/testimonials/3.jpg" alt="Customer Testimonails">
+                            </a>
+                        </div>
+                        <div class="testi-content">
+                            <p>
+                                <%= gt.gettext("Dit werkt echt en super makkelijk ! Een aanrader.") %>
+                            </p>
+                            <div class="testi-meta">
+                                Nadia D.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-team" class="page-section section nomargin noborder nobg">
+        <div class="container clearfix">
+            <div class="heading-block topmargin-sm center">
+                <h2>
+                    <%= gt.gettext("Wie zijn wij") %>
+                </h2>
+            </div>
+            <div class="col_one_third bottommargin-sm center">
+                <img data-animate="fadeInLeft" src="/images/founders.png" alt="founders">
+            </div>
+            <div class="col_two_third col_last bottommargin-sm">
+                <p style="margin-bottom:15px">
+                    <%= gt.gettext("Oprichters Bertrand Anckaert en Pol Brouckaert hebben een jarenlange ervaring in de technologie- (Microsoft, Altran) en bedrijfswereld (The Boston Consulting Group). Zij hebben besloten om op de trein van de digitalisering te springen en volop in te zetten op nieuwe oplossingen die een sterke meerwaarde kunnen bieden voor mensen en bedrijven.") %>
+                </p>
+                <p style="margin-bottom:15px">
+                    <%= vsprintf(gt.gettext("%s is hier een prima voorbeeld van: zonder gedoe en volledig digitaal de matchmaking regelen tussen energiegebruikers en -leveranciers. Want zeg nu zelf, wie houdt van die lastige call centers of opdringerige deur-aan-deur verkopers ;-) "),[sess.brand]); %>
+                </p>
+                <p style="margin-bottom:15px">
+                    <%= gt.gettext("Ze worden hierbij ondersteund door zowel ING FinTech Village, KBC StartIt als Eggsplore. ") %>
+                </p>
+                <p style="margin-bottom:15px">
+                    <%= gt.gettext("Zit je nog met een vraag, aarzel dan niet om ons te contacteren.") %>
+                </p>
+                <a href="/<%=sess.site_lang%>/contact" class="nomargin button button-border button-rounded button-red">
+                    <i class="icon-line-mail"></i>
+                    <%= gt.gettext("Contacteer ons") %>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="section-form" class="section page-section nomargin">
+        <style>
+            form {
+                margin-bottom: 0px;
+            }
+
+            .divider-of {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .popover {
+                background-color: #111111;
+            }
+
+            .popover-title {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
+
+            .popover-content {
+                display: none;
+            }
+
+            .popover-top {
+                background-color: #333333;
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            @media screen and (max-width: 767px) {
+                .flex {
+                    flex-direction: column;
+                }
+                .flex:nth-child(2) {
+                    order: 5;
+                }
+            }
+
+            .flex-item {
+                flex: 1;
+                align-items: center;
+            }
+
+            .flex-item .button {
+                white-space: normal;
+                font-size: 16px;
+                padding: 20px 20%;
+                text-transform: none;
+                border-right: 3px solid rgba(0, 0, 0, 0.15);
+                align-self: stretch;
+            }
+
+            input[type='email'] {
+                font-size: 16px;
+            }
+        </style>
+        <div class="grey section nomargin noborder nobottompadding ohidden nopadding">
+            <div class="container clearfix">
+                <div id="section-features" class="heading-block title-center page-section">
+                    <h2>
+                        <%= gt.gettext("OK, I got it !  Hoeveel kan ik besparen ?") %>
+                    </h2>
+                    <span>
+                        <%= gt.gettext("Prima, bezorg ons je energiefactuur en wij doen al het harde werk voor je") %>
+                    </span>
+                </div>
+                <h4 class="center">
+                    <%= gt.gettext("We maken het makkelijk voor je, kies één van deze drie opties om je maandelijkse voorschotfactuur of jaarlijkse afrekening te delen:") %>
+                </h4>
+                <div class="flex">
+                    <div class="flex flex-item" style="flex-grow:1">
+                        <a style="width:100%;padding-right:5px" href="#section-form" class="button button-desc button-3d button-rounded button-red center noleftpadding"
+                            onclick="$('#home_modal_upload').modal('show')">
+                            <i class="icon-line-cloud-upload" style="font-size:20px;"></i>
+                            <%= gt.gettext("Ik upload een factuur of scan") %>
+                        </a>
+                    </div>
+                    <div class="flex flex-item" style="flex-grow:1">
+                        <!-- <a href="#section-form" class="button button-desc button-3d button-rounded button-red center noleftpadding" onclick="$('#home_modal_picture').modal('show')"> -->
+                        <a style="width:100%;padding-right:5px" href="/<%=sess.site_lang%>/manual" class="button button-desc button-3d button-rounded button-red noleftpadding center">
+                            <!-- Temporarily replaced the photo flow by manual to test change in conversion rate -->
+                            <!-- <i class="icon-line-camera" style="font-size:20px;"></i><%= gt.gettext("Ik maak een foto van mijn papieren factuur") %> -->
+                            <i class="icon-keyboard" style="font-size:20px;"></i>
+                            <%= gt.gettext("Ik vul de gegevens zelf in") %>
+                        </a>
+                    </div>
+                    <div class="flex flex-item" style="flex-grow:1">
+                        <a style="width:100%;padding-right:5px" href="#section-form" class="button button-desc button-3d button-rounded button-red center noleftpadding"
+                            onclick="$('#home_modal_email').modal('show')">
+                            <i class="icon-line-mail" style="font-size:20px;"></i>
+                            <%= gt.gettext("Ik mail mijn factuur") %>
+                        </a>
+                    </div>
+                </div>
+                <!--
+                    <div>
+                        <h4 class="center"><%= gt.gettext("Ik heb geen factuur en vul de gegevens zelf in via ") %><a href="/<%=sess.site_lang%>/manual"><%= gt.gettext("deze link.") %></a></h4>
+                    </div>
+                    -->
+                <div>
+                    <div class="topmargin nobottommargin">
+                        <h4>
+                            <%= gt.gettext("Wat gebeurt er dan?") %>
+                        </h4>
+                        <ul class="iconlist iconlist-large nobottommargin">
+                            <li>
+                                <i class="icon-share2"></i>
+                                <%= gt.gettext("Ons systeem leest automatisch je woonplaats en verbruik uit de factuur") %>
+                            </li>
+                            <li>
+                                <i class="icon-thumbs-up"></i>
+                                <%= gt.gettext("Je krijgt je persoonlijke besparing te zien en de beste energieleveranciers") %>
+                            </li>
+                            <li>
+                                <i class="icon-calculator"></i>
+                                <%= gt.gettext("Simuleer je prijs voor vast/variabel tarief, type energie, ...") %>
+                            </li>
+                            <li>
+                                <i class="icon-ok"></i>
+                                <%= gt.gettext("Indien je dit wenst kan je meteen overstappen") %>
+                            </li>
+                        </ul>
+                        <!--
+                            <h4> </h4>
+                            <h4> <%= gt.gettext("Ik heb geen recente digitale factuur: ") %><a href="/<%=sess.site_lang%>/manual"><%= gt.gettext("klik hier") %> </a> </h4>
+                            
+                            <ul class="iconlist iconlist-large nobottommargin">
+                            <li><i class="icon-share2"></i><%= gt.gettext("Stap 1: Deel je gegevens") %></li>
+                            <li><i class="icon-thumbs-up"></i><%= gt.gettext("Stap 2: Kies je leverancier") %></li>
+                            <li><i class="icon-ok"></i><%= gt.gettext("Stap 3: Bevestig") %></li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch modal</button>-->
+    <script type="text/javascript" src="/js/clipboard.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+
+            if (jQuery.browser.mobile) {
+                $("#movie").hide();
+            }
+
+            $("#upload").fileinput({
+                mainClass: "input-group-md",
+                showPreview: false,
+                showUpload: false,
+                showRemove: false,
+                showCaption: true,
+                previewFileType: "image",
+                browseClass: "btn btn-danger",
+                browseLabel: "<%= gt.gettext("Browse") %>",
+                browseIcon: "<i class=\"icon-folder-open\"></i> ",
+                removeClass: "btn btn-danger",
+                removeLabel: "",
+                removeIcon: "<i class=\"icon-trash\"></i> ",
+                uploadClass: "btn btn-info",
+                uploadLabel: "Upload",
+                uploadIcon: "<i class=\"icon-upload\"></i> ",
+                allowedFileExtensions: ["*"],
+            });
+
+            $(".form-control.file-caption.kv-fileinput-caption").click(function (event) {
+                $(event.target.nextElementSibling).find("input[type=file]").click();
+            });
+
+            $("#pictureuploadfile").on('change', function (event) {
+                var form = document.getElementById("pictureuploadform");
+                if (form !== null) {
+                    event.preventDefault();
+                    $('#home_modal_picture').modal('hide');
+                    $('#myModal').modal('show');
+                    form.submit();
+                    return;
+                }
+            });
+
+            new Clipboard('.copy-button');
+        });
+
+        function isValidEmail(email) {
+            var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+            return email.length != 0 && filter.test(email);
+        }
+
+        function home_modal_upload_button() {
+            if ($('#txtMail').val() && isValidEmail($('#txtMail').val())) {
+                document.getElementById('upload').click();
+            } else {
+                $('#txtMail').addClass("error");
+            }
+        }
+
+        function home_modal_picture_button() {
+            if ($('#pictureuploademail').val() && isValidEmail($('#pictureuploademail').val())) {
+                document.getElementById('pictureuploadfile').click();
+            } else {
+                $('#pictureuploademail').addClass("error");
+            }
+        }
+    </script>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="home_modal_upload">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <!--<h4 class="modal-title" style="text-align: center"><%= gt.gettext("Uploaden van een factuur of scan") %></h4>-->
+                        <h4 class="modal-title" style="text-align: center">
+                            <%= gt.gettext("Ik upload mijn factuur") %>
+                        </h4>
+                    </div>
+                    <div class="modal-body center">
+                        <div class="feedback-output">
+                            <%
+                                if(sess.form_errors && sess.form_error_type && sess.form_error_type == "upload"){
+                                    feedback = sess.form_errors;
+                                    feedback.forEach(function(message) {
+                            %>
+                                <%- '<small ' + (feedback['success'] ? 'class="success"' : 'class="error"') + '>' + message +  ' </small>';
+                                    %>
+                            <%
+                                })
+                                    sess.form_errors = null;
+                                }
+                                %>
+                        </div>
+                        <form id="upload-form" name="template-contactform" method="post" novalidate action="upload_invoice">
+                            <input type="hidden" name="pdfInvoice" value="true" />
+                            <div style="margin-top:20px;width:100%;text-align:left;">
+                                <span class="left" style="width:90%;">
+                                    <%= gt.gettext("Uw email adres") %>
+                                </span>
+                                <input type="email" required class="upload-email form-control" name="email" placeholder="<%= gt.gettext("Email adres") %>" id="txtMail"
+                                    style="display: inline; width:inherit;" <%=(sess.email ?"value = '" + sess.email + "'":"")%>
+                                />
+                            </div>
+                            <div style="margin-top:20px;text-align:left;">
+                                <span class="left" style="width:90%;">
+                                    <%= gt.gettext("Uw factuur") %>
+                                </span>
+                                <input name="fileToUpload[]" multiple required class="file-upload-wrapper" id="upload" type="file" accept="*" class="file"
+                                    data-allowed-file-extensions='[]'>
+                            </div>
+                            <div class="file-upload topmargin">
+                                <button class="btn btn-lg btn-danger btn-block nomargin" value="submit" id="upload-button" type="submit">
+                                    <i class="icon-share2"></i>&nbsp;&nbsp;
+                                    <%= gt.gettext("Verstuur") %>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="home_modal_picture">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <!-- <h4 class="modal-title" style="text-align: center"><%= gt.gettext("Foto maken van een papieren factuur") %></h4> -->
+                        <h4 class="modal-title" style="text-align: center">
+                            <%= gt.gettext("Ik maak een foto van mijn papieren factuur") %>
+                        </h4>
+                    </div>
+                    <div class="modal-body center">
+                        <div class="feedback-output">
+                            <%
+                                if(sess.form_errors && sess.form_error_type && sess.form_error_type == "picture"){
+                                    feedback = sess.form_errors;
+                                    feedback.forEach(function(message) {
+                            %>
+                                <%- '<small ' + (feedback['success'] ? 'class="success"' : 'class="error"') + '>' + message +  ' </small>' %>
+                            <%
+                                    })
+                                    sess.form_errors = null;
+                                }
+                                %>
+                        </div>
+                        <form class="clearfix" method="post" novalidate action="share_by_picture" enctype="multipart/form-data" id="pictureuploadform">
+                            <div style="margin-top:20px;width:100%">
+                                <input type="email" required class="upload-email form-control" name="email" placeholder="<%= gt.gettext(" Uw email adres ") %>*" id="pictureuploademail"
+                                    style="display: inline; width:inherit;" <%=(sess.email ? "value = '" + sess.email + "'":"") %>
+                                />
+                            </div>
+                            <div class="hidden">
+                                <input name="fileToUpload[]" required class="file" type="file" accept="image/*" capture="camera" id="pictureuploadfile">
+                            </div>
+                            <div class="center nobg topmargin">
+                                <button class="btn btn-danger btn-circle" type="button" onclick="home_modal_picture_button()">
+                                    <i class="icon-line-camera"></i>&nbsp;&nbsp;
+                                    <%= gt.gettext("Maak een foto") %>
+                                </button>
+                            </div>
+                        </form>
+                        <p class="topmargin">
+                            <%= gt.gettext("Kies een foto of van op jouw toestel of maak een nieuwe foto met de camera. Hou de camera ongeveer 30cm recht boven de eerste pagina van de factuur.") %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="home_modal_email">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" style="text-align: center">
+                            <%= gt.gettext("Ik mail mijn factuur") %>
+                        </h4>
+                    </div>
+                    <div class="modal-body center">
+                        <p class="bottommargin">
+                            <%= gt.gettext("Stuur je factuur of de email van jouw energieleverancier door naar dit adres.") %>
+                        </p>
+                        <div class="input-group input-group-md" style="margin-bottom: 10px; width: 100%;">
+                            <a href="mailto:<%= vsprintf(gt.gettext(" factuur@%s "),[sess.brand]); %>">
+                                <h3 id="copyTarget" data-clipboard-target="#copyTarget" data-trigger="focus">
+                                    <%= vsprintf(gt.gettext("factuur@%s"),[sess.brand]); %>
+                                </h3>
+                            </a>
+                            <div class="topmargin">
+                                <button onclick="this.children[1].textContent='<%= gt.gettext("Copied!") %>'" class="copy-button btn btn-danger" type="button" data-clipboard-demo=""
+                                    data-clipboard-target="#copyTarget">
+                                    <i class="icon-copy"></i>&nbsp;&nbsp;
+                                    <span>
+                                        <%= gt.gettext("Copy") %>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%
+            if(sess.form_error_type) {
+    %>
+                <%- '<script>$(document).on("ready", function() {$("#home_modal_' + sess.form_error_type + '").modal("show")})</script>' %>
+                
+    <%
+                sess.form_error_type = null;
+            }
+    %>
+        <%- include("explainer") %>
+</section>
+<%- include("footer") %>

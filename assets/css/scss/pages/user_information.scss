@@ -1,0 +1,25 @@
+#extra-information{
+	margin:75px auto;
+	input[type="text"], textarea{
+		background:#FFF;
+	}
+	input[type="text"], input[type="date"], input[type="email"], input[type="email"]{
+		background:#FFF;
+		margin-bottom:10px;
+	}
+	center{
+		margin-top:15px;
+		text-align:left;
+		font-size:.75rem;
+		color:#b2b2b2;
+	}
+}
+
+#extra-information{
+	.general-conditions{
+		label, label a{
+			color:#878787;
+			font-size:.9rem !important;
+		}
+	}
+}

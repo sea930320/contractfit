@@ -1,0 +1,90 @@
+<%- include("init_header") %>
+
+<header id="header" class="">
+    <%- include("header") %>
+</header>
+
+<section id="page-title">
+
+    <div class="container clearfix">
+        <h1>
+            <%= gt.gettext('Gebruikersvoorwaarden'); %>
+        </h1>
+    </div>
+
+</section>
+
+<!-- #page-title end -->
+<section id="content">
+
+    <div class="content-wrap nopadding">
+
+        <div class="container clearfix">
+
+            <div id="page-content" class="terms">
+                <div class="">
+                    <h2>
+                        <%= gt.gettext('Algemeen'); %>
+                    </h2>
+                    <div>
+                        <p>
+                            <%= vsprintf(gt.gettext('Door het gebruik van de website van www.%s stemt u in met onze Algemene Voorwaarden inzake het gebruik van onze website.'),[sess.brand]); %>
+                        </p>
+                        <p>
+                            <%= vsprintf(gt.gettext('Hoewel www.%s de op deze website aangeboden informatie met de grootst mogelijke zorg heeft samengesteld en er steeds naar streeft deze informatie zo actueel, volledig en nauwkeurig mogelijk te houden, is deze informatie slechts indicatief en kan u als gebruiker van deze website geen rechten ontlenen of verbintenissen inroepen tegen www.%s. De informatie op deze website wordt continu aangevuld, gecorrigeerd, bijgewerkt of verwijderd. Eventuele wijzigingen kunnen steeds en met onmiddellijke ingang worden aangebracht zonder dat www.%s gehouden is tot enige meldingsplicht.'),[sess.brand,sess.brand,sess.brand]); %>
+                        </p>
+                        <p>
+                            <%= vsprintf(gt.gettext('www.%s treedt enkel op als tussenpersoon tussen uzelf als potentiële klant en de leverancier en dit op basis van informatie die haar door deze leveranciers werd verstrekt. Zij sluit zelf geen overeenkomst af met u als potentiële klant. Bijgevolg kan zij zelf ook niet verplicht zijn om verbintenissen voor of namens een leverancier na te komen en is zij ook niet aansprakelijk voor enig gebrek of fout die op haar website zou voorkomen (ongeacht de aard van het gebrek of de fout inzake het gebruik of  de beschikbaarheid van de website of de presentatie ervan). Deze uitsluiting van aansprakelijkheid geldt ongeacht de aard van de beweerde schade en de ingeroepen juridische grondslag voor de beweerde aansprakelijkheid, met uitzondering van zware fout of bedrag vanwege www.%s. www.%s garandeert niet dat aan haar toegezonden e-mails of andere elektronische berichten tijdig worden ontvangen en verwerkt en www.%s is niet aansprakelijk voor eventuele gevolgen van het niet of te laat ontvangen of verwerken van dergelijke e-mails of berichten, met uitzondering van zware fout of bedrag vanwege www.%s.'),[sess.brand,sess.brand,sess.brand,sess.brand,sess.brand]); %>
+                        </p>
+                        <p>
+                            <%= vsprintf(gt.gettext('www.%s behoudt zich uitdrukkelijk alle intellectuele en industriële eigendomsrechten voor wat betreft het uitzicht, de vormgeving en de inhoud van de website “www.%s” die niet mag worden gereproduceerd of geëxploiteerd zonder uitdrukkelijke en schriftelijke toestemming van www.%s.'),[sess.brand,sess.brand,sess.brand]); %>
+                        </p>
+                    </div>
+                </div>
+                <div class="">
+                    <h2>
+                        <%= gt.gettext('Privacy-beleid'); %>
+                    </h2>
+                    <div>
+                        <p>
+                            <%= vsprintf(gt.gettext('Door deze website te gebruiken geeft u toestemming voor het verzamelen en het gebruik van eventueel door u aangeleverde gegevens zoals de door u gebruikte browser  of IP adres, het besturingsprogramma dat u gebruikt of de domeinnaam van de website langs waar u naar deze website gekomen bent of waarlangs u deze weer verlaat en desgevallend inclusief persoonsgegevens. Deze gegevens zullen uitsluitend worden gebruikt voor het identificeren van de voor u meest voordelige leverancier op basis van de gegevens die u ons ter beschikking stelt. Deze gegevens zullen niet aan derden worden overgedragen met uitzondering van potentiële leveranciers met wie u wenst te contracteren. Deze gegevens zullen niet gebruikt worden voor direct marketing. www.%s neemt op contractuele basis met de potentiële leveranciers de gepaste technische en organisatorische maatregelen om de gegevens te beveiligen met name door de retentie van deze gegevens tot een minimum te beperken, deze in ieder geval te versleutelen met encryptietechnologie die voldoet aan de stand van de techniek en haar informatica-infrastructuur op afdoende wijze te beveiligen tegen inbraak of ongeoorloofde toegang.'),[sess.brand]); %>
+                        </p>
+                        <p>
+                            <%= gt.gettext('Als ons Privacy-beleid verandert, zal daarvan melding van gemaakt worden op deze pagina van de website zodat u altijd op de hoogte blijft van de aard van de informatie die wordt verzameld, hoe deze wordt gebruikt en onder welke omstandigheden deze informatie wordt bekend gemaakt of overgedragen aan derden.'); %>
+                        </p>
+                    </div>
+                </div>
+                <div class="">
+                    <h2>
+                        <%= gt.gettext('Links van en naar andere websites'); %>
+                    </h2>
+                    <div>
+                        <p>
+                            <%= vsprintf(gt.gettext('Deze website kan links naar websites of naar webpagina\'s van derden en andere partijen bevatten of daar op een andere manier naar verwijzen. www.%s heeft geen zeggenschap over de inhoud of over andere kenmerken van deze websites of webpagina\'s en is in geen geval aansprakelijk voor de inhoud ervan. Het plaatsen van links door www.%s houdt op geen enkele wijze enige goedkeuring in van de inhoud van deze websites of webpagina\'s.'),[sess.brand,sess.brand]); %>
+                        </p>
+                    </div>
+                </div>
+                <div class="">
+                    <h2>
+                        <%= gt.gettext('Cookies'); %>
+                    </h2>
+                    <div>
+                        <p>
+                            <%= vsprintf(gt.gettext('Deze website kan gebruik maken van zogenaamde “cookies” om het Internetverkeer van gebruikers vast te leggen met het oog op een betere en efficiëntere dienstverlening. Cookies zijn kleine tekstbestanden die een website overzet naar het opslagmedium van uw computer. Cookies identificeren geen personen, maar computers van gebruikers. U kan deze cookies weigeren maar in dat geval kan www.%s mogelijk de behoorlijke werking van deze website niet meer volledig garanderen. De meeste browsers zijn standaard ingesteld om cookies te accepteren maar laten toe om cookies automatisch te weigeren dan wel om u vooraf te waarschuwen alvorens een cookie wordt opgeslagen op uw computer.'),[sess.brand]); %>
+                        </p>
+                        <p>
+                            <%= vsprintf(gt.gettext('Voor vragen en/of opmerkingen kan u via info@%s met ons in contact treden.'),[sess.brand]); %>
+                        </p>
+                        <p>
+                            <%= vsprintf(gt.gettext('%s (BE0646697416) p.a. De Kleetlaan 5A, 1831 Diegem, België'),[sess.brand]); %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<%- include("footer") %>

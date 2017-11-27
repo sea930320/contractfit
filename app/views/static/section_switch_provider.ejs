@@ -1,0 +1,138 @@
+<h2 style="padding-top: 10px; padding-bottom: 10px;" ng-if="!absolute" class="display-price hiddenOnSmaller" ng-class="{'negative-price': yourSavings() < 0, 'low-price': yourSavings() < 10}">
+    <span class="nocolor" ng-class="{'hidden': yourSavings() <= 0}"><%= gt.gettext("Jaarlijkse besparing:") %>&nbsp;</span>
+    <span class="nocolor" ng-class="{'hidden': yourSavings() > 0}"><%= gt.gettext("Extra kost:") %>&nbsp;</span>
+    <span class="totalprice nocolor">€{{ (yourSavings()<0?-yourSavings():yourSavings()) | number : 2}}</span>
+</h2>
+<h2 style="padding-top: 10px; padding-bottom: 10px;" ng-if="absolute" class="display-price hiddenOnSmaller"><%= gt.gettext("Kost: ") %> <span class="totalprice nocolor">€{{ yourAbsoluteCost() | number : 2}}</span> </h2>
+<div class="flex hiddenOnWider">
+    <div class="flex flex-container flex-center">
+        <button class="btn btn-default btn-sm btn-no-top flex-container" onclick="showPanel('left')"><i class="icon-user"></i> <%= gt.gettext("Mijn gegevens") %></button>
+    </div>
+    <div class="flex flex-container" style="flex-grow: 1"></div>
+    <div class="flex flex-container flex-center">
+        <button class="btn btn-default btn-sm btn-no-top flex-container" onclick="showPanel('right')"><i class="icon-cog"></i> <%= gt.gettext("Mijn voorkeuren") %></button>
+    </div>
+</div>
+<div class="cf-column-interior" style="padding-top:0px">
+    <div class="result-content">
+        <!-- content -->
+        <div id="option-suggestions" class="loading" ng-class="{'loading':original_electricity_products.length == 0 && original_gas_products.length == 0}">
+            <div id="loader"></div>
+            <div class="row" style="margin-bottom:0px">
+                <!-- Elektriciteit -->
+                <div class="small-12 columns" ng-if="original_electricity_products.length > 0">
+                    <b class="suggestion-title" style="margin-bottom:0px"><i class="icon-bolt"></i>&nbsp;<%= gt.gettext("Elektriciteit") %></b>
+                    <div class="accordion-header unselectable">
+                        <span  ng-if="active_electricity_index > 0" ng-click="changeElectricity('prev','click')"><%= gt.gettext("Goedkopere tarieven") %>&nbsp;<i class="icon-angle-up"></i></span>
+                        <div ng-if="active_electricity_index <= 0" class="center cursive"><%= gt.gettext("Goedkoopste tarief") %></div>
+                    </div>
+                    <div class="accordion accordion-border clearfix suggestion-content accordion-electricity" style="padding-top:0px;padding-bottom:0px">
+                        <div class="info-wrapper">
+                            <div ng-click="openProductInfo(active_electricity)">
+                                <a><i class="icon-line2-info product-info"></i></a>
+                            </div>
+                        </div>
+                        <div ng-repeat="offer in electricity_products track by $index" ng-class="{'active':offer.id == active_electricity.id}" class="accordionrow">
+                            <div class="row acc_content" ng-class="{'no-provider':!offer.provider}">
+                                <div class="small-3 columns">
+                                    <div class="flex-col">
+                                        <div>
+                                            <strong class="right ng-binding" style="float:none !important">{{($index + 1)}}</strong>
+                                        </div>
+                                        <div>
+                                            <span class="smaller-font"><%= gt.gettext("van") %>&nbsp;{{electricity_products.length}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-9 columns suggestion-brand" ng-class="{'no-provider':!offer.provider}">
+                                    <img ng-src="{{offer.provider?('/images/providers/'+ offer.provider +'-logo.png'):null}}" alt="" style="margin-top:10px"/>
+                                    <div>
+                                        <strong class="smaller-font nowrapping">{{offer.product<%= (sess.site_lang == "fr" ? "_fr" : (sess.site_lang == "en" ? "_en" : "")) %>}}</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-footer unselectable" data-intro="<%= gt.gettext('Niet helemaal comfortabel met het voorgestelde product? <br> Wil je meer keuze? <br> Via deze knop krijg je toegang tot alle producten van alle leveranciers op de markt.') %>" data-step="3">
+                        <span ng-if="active_electricity_index < electricity_products.length - 1" ng-click="changeElectricity('next','click')" onclick="$('.unclicked').removeClass('unclicked')"><%= gt.gettext("Duurdere tarieven") %>&nbsp;<i class="icon-angle-down unclicked" onclick="$('.unclicked').removeClass('unclicked')"></i></span>
+                        <div ng-if="active_electricity_index >= electricity_products.length - 1" class="center cursive"><%= gt.gettext("Duurste tarief") %></div>
+                    </div>
+                    <div class="suggestion-content-no-results" ng-if="electricity_products.length == 0">
+                        <div class="row">
+                            <div class="small-12 columns text-center">
+                                <p style="padding-top:15px;"><%= gt.gettext("Geen aanbieders voor deze opties") %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gas -->
+                <div class="small-12 columns" ng-if="original_gas_products.length > 0">
+                    <b class="suggestion-title" style="margin-top:0px;margin-bottom:0px"><i class="icon-fire2"></i>&nbsp;<%= gt.gettext("Gas") %></b>
+                    <div class="accordion-header unselectable">
+                        <span  ng-if="active_gas_index > 0" ng-click="changeGas('prev','click')"><%= gt.gettext("Goedkopere tarieven") %>&nbsp;<i class="icon-angle-up"></i></span>
+                        <div ng-if="active_gas_index <= 0" class="center cursive"><%= gt.gettext("Goedkoopste tarief") %></div>
+                    </div>
+                    <div class="accordion accordion-border clearfix suggestion-content accordion-gas" style="padding-top:0px;padding-bottom:0px">
+                        <div class="info-wrapper">
+                            <div ng-click="openProductInfo(active_gas)">
+                                <a><i class="icon-line2-info product-info"></i></a>
+                            </div>
+                        </div>
+                        <div ng-repeat="offer in gas_products track by $index" ng-class="{'active':offer.id == active_gas.id}" class="accordionrow">
+                            <div class="row acc_content" ng-class="{'no-provider':!offer.provider}">
+                                <div class="small-3 columns">
+                                    <div class="flex-col">
+                                        <div>
+                                            <strong class="right ng-binding" style="float:none !important">{{($index + 1)}}</strong>
+                                        </div>
+                                        <div>
+                                            <span class="smaller-font"><%= gt.gettext("van") %>&nbsp;{{gas_products.length}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-9 columns suggestion-brand" ng-class="{'no-provider':!offer.provider}">
+                                    <img ng-src="{{offer.provider?('/images/providers/'+ offer.provider +'-logo.png'):null}}" alt="" style="margin-top:10px"/>
+                                    <div>
+                                        <strong class="smaller-font nowrapping">{{offer.product<%= (sess.site_lang == "fr" ? "_fr" : (sess.site_lang == "en" ? "_en" : "")) %>}}</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-footer unselectable" data-intro="<%= gt.gettext('Niet helemaal comfortabel met het voorgestelde product? <br> Wil je meer keuze? <br> Via deze knop krijg je toegang tot alle producten van alle leveranciers op de markt.') %>" data-step="3">
+                        <span ng-if="active_gas_index < gas_products.length - 1" ng-click="changeGas('next','click')" onclick="$('.unclicked').removeClass('unclicked')"><%= gt.gettext("Duurdere tarieven") %>&nbsp;<i class="icon-angle-down unclicked" onclick="$('.unclicked').removeClass('unclicked')"></i></span>
+                        <div ng-if="active_gas_index >= gas_products.length - 1" class="center cursive"><%= gt.gettext("Duurste tarief") %></div>
+                    </div>
+                    <div class="suggestion-content-no-results" ng-if="gas_products.length == 0">
+                        <div class="row">
+                            <div class="small-12 columns text-center">
+                                <p style="padding-top:15px;"><%= gt.gettext("Geen aanbieders voor deze opties") %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- button -->
+        <form style="margin-bottom: 5px;" method="POST" action="{{ '/<%= sess.site_lang %>/user_information/<%= sess.directory %>/' + active_electricity.pid + '/' + active_gas.pid }}">
+            <input type="hidden" name="kVA" value="{{user.kVA}}"/>
+            <input type="hidden" name="email" value="{{email}}"/>
+            <input type="hidden" name="el_product_id" value="{{active_electricity.pid}}" />
+            <input type="hidden" name="gas_product_id" value="{{active_gas.pid}}"/>
+            <input type="hidden" name="differentProviders" value="{{ options.differentProvidersValue }}"/>
+            <input type="hidden" name="direct_debit" value="{{ options.domicieleringOptional }}"/>
+            <input type="hidden" name="green" value="{{ options.greenPercentageValue }}"/>
+            <input type="hidden" name="fixed" value="{{ options.fixedRateValue }}"/>
+            <input type="hidden" name="variable" value="{{ options.variabelRateValue }}"/>
+            <input type="hidden" name="promotions" value="{{ options.currentPromotionsValue }}"/>
+            <input type="hidden" name="directory" value="<%= sess.directory %>"/>
+            <button class="btn btn-lg btn-danger btn-block" style="margin-bottom: 10px;" type="submit" id="choose-supplier-button"><i class="icon-thumbs-up"></i>&nbsp;&nbsp;<%= (("el" in global_data["json"]) && ("gas" in global_data["json"])?gt.gettext("Kies"):gt.gettext("Kies")) %></button>
+        </form>
+        <button class="btn btn-info btn-lg" ng-show="active_electricty" ng-click="openElectricityModal(active_electricity);"><i class="icon-line2-calculator"></i>&nbsp;&nbsp;<%= gt.gettext("Detail vergelijking") %></button>
+        <button class="btn btn-info btn-lg" ng-show="!active_electricty" ng-click="openGasModal(active_gas);"><i class="icon-line2-calculator"></i>&nbsp;&nbsp;<%= gt.gettext("Detail vergelijking") %></button>
+        <div class="hidden">
+            <span><%= gt.gettext("Wat gebeurt er hierna ?") %></span>
+            <i class="icon-line2-info" data-toggle="tooltip" data-placement="bottom" title='<%= gt.gettext("Op de volgende pagina krijgt u alle details van de overstap te zien, vooraleer u deze bevestigt.") %>'></i>
+        </div>
+    </div>
+</div>

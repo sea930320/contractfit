@@ -1,0 +1,56 @@
+<h5><%= gt.gettext("Betaling") %></h5>
+<!-- IBAN / Rek. naam -->
+<% if ( el_product && helpers.array_key_exists("dom_required",el_product) && el_product["dom_required"] == "True" || gas_product && helpers.array_key_exists("dom_required",gas_product) && gas_product["dom_required"] == "True" ) { %>
+<div id="account_check" class="clearfix">
+    <p style="text-indent: -20px;padding-left: 20px;display: block;">
+        <input id="ask_account_number" class="nomargin" type="checkbox" name="direct_debit" checked disabled />
+        <%= gt.gettext("Domiciliëring (verplicht voor gekozen product(en):") %>
+    </p>
+</div>
+<div id="account_data">
+    <span class="flex"><%= gt.gettext("Uw rekeningnummer (IBAN)") %></span>
+    <input type="text" id="account_number" name="account_number" placeholder="<%= gt.gettext("Rekeningnummer") %>" value="<%= helpers.set_value(body.account_number);%>"/>
+</div>
+<div style="display:none;">
+    <input class="left" style="width:10%;" type="checkbox" id="account_required" name="account_required" checked />
+</div>
+<% } else if(el_product && helpers.array_key_exists("ask_account",el_product) && el_product["ask_account"] == "True" || (gas_product) && helpers.array_key_exists("ask_account",gas_product)&&gas_product["ask_account"] == "True" ) { %>
+<div id="account_check" class="clearfix">
+    <p style="text-indent: -20px;padding-left: 20px;display: block;">
+        <input class="nomargin" type="checkbox" id="direct_debit" name="direct_debit" value="direct_debit"  <%= helpers.set_checkbox(body.direct_debit,'direct_debit')%>/>
+        <%= gt.gettext("Ik wens te betalen via domiciliëring") %>
+    </p>
+</div>
+<div id="account_data">
+    <span class="flex"><%= gt.gettext("Rekeninginformatie (gevraagd door nieuwe leverancier(s))") %></span>
+    <input type="text" id="account_number" name="account_number" placeholder="<%= gt.gettext("Rekeningnummer") %>"  value="<%= helpers.set_value(body.account_name);%>"/>
+</div>
+<div style="display:none;">
+    <input id="ask_account_number" class="left" style="width:10%;" type="checkbox" name="account_required" checked />
+</div>
+<% } else if (true) { %>
+<div id="account_check" class="clearfix">
+    <p style="text-indent: -20px;padding-left: 20px;display: block;">
+        <input id="ask_account_number" class="nomargin" type="checkbox" name="direct_debit" value="direct_debit" <%= helpers.set_checkbox(body.direct_debit,'direct_debit')%> />
+        <%= gt.gettext("Domiciliëring") %>
+    </p>
+    <% if ( (el_product) && (gas_product) && (el_product.korting_dualfuel_in_EUR) && (helpers.strcmp(el_product.product["value"],gas_product.product["value"])==0) && (helpers.strcmp(el_product.supplier["value"],gas_product.supplier["value"])==0)) { %>
+    <p class="left" style="width:90%;"><%= gt.gettext("Domiciliëring verplicht voor korting (inbegrepen in berekening): ")%><%= el_product.korting_dualfuel_in_EUR["value"]%>€</p>
+    <% } %>
+</div>
+<div id="account_data" style="display:none;">
+    <span class="flex"><%= gt.gettext("Uw rekeningnummer (IBAN)") %></span>
+    <input type="text" id="account_number" name="account_number" placeholder="<%= gt.gettext("Rekeningnummer") %>"  value="<%= helpers.set_value(body.account_name);%>"/>
+</div>
+<div style="display:none;">
+    <input class="left" style="width:10%;" type="checkbox" id="account_required" name="account_required" />
+</div>
+<% } %>
+<h5><%= gt.gettext("Algemene voorwaarden") %></h5>
+<p style="text-indent: -20px;padding-left: 20px;display: block;">
+    <input class="nomargin" type="checkbox" id="acceptance" name="acceptance" value="acceptance" <%= helpers.set_checkbox(body.acceptance,'acceptance')%>/>
+    <%-conditions%>
+</p>
+<div style="margin-top:20px;margin-bottom:10px">
+    <p><%= vsprintf(gt.gettext("Door dit formulier in te sturen, geeft u %s het mandaat om de overstap in uw naam aan te vragen."),sess.brand) %></p>
+</div>

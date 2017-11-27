@@ -1,0 +1,590 @@
+<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel"><%= gt.gettext("Berekening") %></h4>
+				<h6><%= gt.gettext("Klik op de") %> <i class="icon-line-square-plus"></i> <%= gt.gettext("symbolen voor meer detail.") %></h6>
+			</div>
+			<div class="modal-body">
+				<div class="toggle toggle-bg">
+					<div class="togglet">
+						<span ng-show="!absolute"><%= gt.gettext("Besparing totaal:") %></span>
+						<span ng-show="!absolute" class="new-amount">&euro;{{yourSavings() | number : 2}}</span>
+						<span ng-show="absolute"><%= gt.gettext("Totale kost:") %></span>
+						<span ng-show="absolute" class="new-amount">&euro;{{yourAbsoluteCost() | number : 2}}</span>
+					</div>
+				</div>
+				<!-- electricity -->
+				<div class="toggle toggle-bg" ng-show="your_electricity || active_electricity" data-state="open">
+					<div class="togglet">
+						<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+						<span ng-show="!absolute"><%= gt.gettext("Besparing elektriciteit:") %></span>
+						<span ng-show="absolute"><%= gt.gettext("Kost elektriciteit:") %></span>
+						<span ng-show="!absolute" class="new-amount">&euro;{{total_cost(your_electricity) - total_cost(active_electricity) - (markup_green && active_electricity.markup_green ? active_electricity.markup_green.value*1:0) | number : 2}}</span>
+						<span ng-show="absolute" class="new-amount">&euro;{{total_cost(active_electricity) + (markup_green && active_electricity.markup_green ? active_electricity.markup_green.value*1:0) | number : 2}}</span>
+					</div>
+					<div class="togglec">
+						<div class="toggle toggle-bg" style="height: 60px;">
+							<span ng-show="!absolute" class="old-amount" style="text-align:center">
+								<div style="height:24px">
+									<img ng-src='{{ "%>/images/providers/" +  your_electricity.provider + "-logo.png" }}' alt="" class="center" style="max-height:24px"/><br>
+								</div>
+								<%= gt.gettext("Uw huidig tarief:") %>
+							</span>
+							<span class="new-amount" style="text-align:center">
+								<div style="height:24px">
+									<img ng-src='{{ "%>/images/providers/" +  active_electricity.provider + "-logo.png" }}' alt="" class="center" style="max-height:24px"/><br>
+								</div>
+								<%= gt.gettext("Nieuw tarief:") %>
+							</span>
+						</div>
+						<div class="toggle toggle-bg">
+							<div class="togglet">
+								<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+								<span class="max-width-mobile-150"><%= gt.gettext("Prijs:") %></span>
+								<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.total_cost_no_discount.value*1 + (your_electricity.prosumer_cost? (count-your_electricity.prosumer_cost.units)*your_electricity.prosumer_cost.unit_cost:0) | number : 2}}</span>
+								<span class="new-amount">&euro;{{active_electricity.total_cost_no_discount.value*1 + (active_electricity.prosumer_cost? (count-active_electricity.prosumer_cost.units)*active_electricity.prosumer_cost.unit_cost:0) | number : 2}}</span>
+							</div>
+							<div class="togglec" style="display: none;">
+								<div class="toggle toggle-bg" ng-show="your_electricity.total_energy || active_electricity.total_energy">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Energiekost:") %></span>
+										<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.total_energy}}</span>
+										<span class="new-amount">&euro;{{active_electricity.total_energy}}</span>
+									</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg" ng-show="your_electricity.abonnement_meter || active_electricity.abonnement_meter">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Abonnement:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.abonnement_meter}}</span>
+												<span class="new-amount">&euro;{{active_electricity.abonnement_meter}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.variabele_kost_dag || active_electricity.variabele_kost_dag">
+											<div class="togglet">
+												<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+												<span class="max-width-mobile-150"><%= gt.gettext("Verbruik dag:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.variabele_kost_dag.value}}</span>
+												<span class="new-amount">&euro;{{active_electricity.variabele_kost_dag.value}}</span>
+												</div>
+											<div class="togglec" style="display: none;">
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.variabele_kost_dag.units}}</span>
+														<span class="new-amount">{{active_electricity.variabele_kost_dag.units}}</span>
+													</div>
+												</div>
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.variabele_kost_dag.unit_cost}}</span>
+														<span class="new-amount">{{active_electricity.variabele_kost_dag.unit_cost}}</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.variabele_kost_nacht || active_electricity.variabele_kost_nacht">
+											<div class="togglet">
+												<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+												<span class="max-width-mobile-150"><%= gt.gettext("Verbruik nacht:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.variabele_kost_nacht.value}}</span>
+												<span class="new-amount">&euro;{{active_electricity.variabele_kost_nacht.value}}</span>
+												</div>
+											<div class="togglec" style="display: none;">
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.variabele_kost_nacht.units}}</span>
+														<span class="new-amount">{{active_electricity.variabele_kost_nacht.units}}</span>
+													</div>
+												</div>
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.variabele_kost_nacht.unit_cost}}</span>
+														<span class="new-amount">{{active_electricity.variabele_kost_nacht.unit_cost}}</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.variabele_kost_excl_nacht || active_electricity.variabele_kost_excl_nacht">
+											<div class="togglet">
+												<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+												<span class="max-width-mobile-150"><%= gt.gettext("Verbruik exclusief nacht:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.variabele_kost_excl_nacht.value}}</span>
+												<span class="new-amount">&euro;{{active_electricity.variabele_kost_excl_nacht.value}}</span>
+												</div>
+											<div class="togglec" style="display: none;">
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.variabele_kost_excl_nacht.units}}</span>
+														<span class="new-amount">{{active_electricity.variabele_kost_excl_nacht.units}}</span>
+													</div>
+												</div>
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.variabele_kost_excl_nacht.unit_cost}}</span>
+														<span class="new-amount">{{active_electricity.variabele_kost_excl_nacht.unit_cost}}</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.cost_green || active_electricity.cost_green">
+											<div class="togglet">
+												<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+												<span class="max-width-mobile-150"><%= gt.gettext("Kost groene stroom:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.cost_green.value}}</span>
+												<span class="new-amount">&euro;{{active_electricity.cost_green.value}}</span>
+												</div>
+											<div class="togglec" style="display: none;">
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.cost_green.units}}</span>
+														<span class="new-amount">{{active_electricity.cost_green.units}}</span>
+													</div>
+												</div>
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.cost_green.unit_cost}}</span>
+														<span class="new-amount">{{active_electricity.cost_green.unit_cost}}</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.cost_wkk || active_electricity.cost_wkk">
+											<div class="togglet">
+												<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+												<span class="max-width-mobile-150"><%= gt.gettext("WKK:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.cost_wkk.value}}</span>
+												<span class="new-amount">&euro;{{active_electricity.cost_wkk.value}}</span>
+											</div>
+											<div class="togglec" style="display: none;">
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.cost_wkk.units}}</span>
+														<span class="new-amount">{{active_electricity.cost_wkk.units}}</span>
+													</div>
+												</div>
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.cost_wkk.unit_cost}}</span>
+														<span class="new-amount">{{active_electricity.cost_wkk.unit_cost}}</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="toggle toggle-bg" ng-show="your_electricity.heffingen || active_electricity.heffingen">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Heffingen:") %></span>
+										<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.heffingen}}</span>
+										<span class="new-amount">&euro;{{active_electricity.heffingen}}</span>
+									</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg" ng-show="your_electricity.contribution_cost || active_electricity.contribution_cost">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Bijdrage op energie:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.contribution_cost}}</span>
+												<span class="new-amount">&euro;{{active_electricity.contribution_cost}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.fed_cont_cost || active_electricity.fed_cont_cost">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Federale bijdrage:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.fed_cont_cost}}</span>
+												<span class="new-amount">&euro;{{active_electricity.fed_cont_cost}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.turtle_tax || active_electricity.turtle_tax">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Energieheffing:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.turtle_tax}}</span>
+												<span class="new-amount">&euro;{{active_electricity.turtle_tax}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.openbare_dienstverlening || active_electricity.openbare_dienstverlening">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Openbare dienstverlening:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.openbare_dienstverlening}}</span>
+												<span class="new-amount">&euro;{{active_electricity.openbare_dienstverlening}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="toggle toggle-bg">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Nettarieven:") %></span>
+										<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.net_tariff*1 + (your_electricity.prosumer_cost? (count-your_electricity.prosumer_cost.units)*your_electricity.prosumer_cost.unit_cost:0) | number : 2}}</span>
+										<span class="new-amount">{{active_electricity.net_tariff*1 + (active_electricity.prosumer_cost? (count-active_electricity.prosumer_cost.units)*active_electricity.prosumer_cost.unit_cost:0) | number : 2}}</span>
+									</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg" ng-show="your_electricity.distribution_cost || active_electricity.distribution_cost">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Distributie:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.distribution_cost}}</span>
+												<span class="new-amount">&euro;{{active_electricity.distribution_cost}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.prosumer_cost || active_electricity.prosumer_cost">
+											<div class="togglet">
+												<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+												<span class="max-width-mobile-150"><%= gt.gettext("Prosumententarief:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{count*your_electricity.prosumer_cost.unit_cost | number : 2}}</span>
+												<span class="new-amount">&euro;{{count*active_electricity.prosumer_cost.unit_cost | number : 2}}</span>
+											</div>
+											<div class="togglec" style="display: none;">
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{count}}</span>
+														<span class="new-amount">{{count}}</span>
+													</div>
+												</div>
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_electricity.prosumer_cost.unit_cost}}</span>
+														<span class="new-amount">{{active_electricity.prosumer_cost.unit_cost}}</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_electricity.transport_cost || active_electricity.transport_cost">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Transmissie:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_electricity.transport_cost}}</span>
+												<span class="new-amount">&euro;{{active_electricity.transport_cost}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="toggle toggle-bg" ng-show="your_electricity.total_discount || active_electricity.total_discount">
+							<div class="togglet">
+								<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+								<span class="max-width-mobile-150"><%= gt.gettext("Kortingen:") %></span>
+								<span ng-show="!absolute && your_electricity.total_discount" class="old-amount">&euro;{{your_electricity.total_discount}}</span>
+								<span class="new-amount">&euro;{{active_electricity.total_discount}}</span>
+							</div>
+							<div class="togglec" style="display: none;">
+								<div class="toggle toggle-bg" ng-show="your_electricity.korting_in_EUR || active_electricity.korting_in_EUR">
+									<div class="togglet">
+										<span class="max-width-mobile-150"><%= gt.gettext("Welkomstkorting:") %></span>
+										<span ng-show="!absolute && your_electricity.korting_in_EUR" class="old-amount">&euro;{{your_electricity.korting_in_EUR}}</span>
+										<span class="new-amount">&euro;{{active_electricity.korting_in_EUR}}</span>
+									</div>
+								</div>
+
+								<div class="toggle toggle-bg" ng-show="your_electricity.korting_gratis_kWh_in_EUR || active_electricity.korting_gratis_kWh_in_EUR">
+									<div class="togglet">
+										<span class="max-width-mobile-150">{{active_electricity.korting_gratis_kWh_in_EUR.units}} <%= gt.gettext("kWh gratis:") %></span>
+										<span ng-show="!absolute && your_electricity.korting_gratis_kWh_in_EUR.value" class="old-amount">&euro;{{your_electricity.korting_gratis_kWh_in_EUR.value}}</span>
+										<span class="new-amount">&euro;{{active_electricity.korting_gratis_kWh_in_EUR.value}}</span>
+									</div>
+								</div>
+
+								<div class="toggle toggle-bg" ng-show="your_electricity.korting_in_ckWh || active_electricity.korting_in_ckWh">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Korting in c/kWh:") %></span>
+										<span ng-show="!absolute && your_electricity.korting_in_ckWh.value" class="old-amount">&euro;{{your_electricity.korting_in_ckWh.value}}</span>
+										<span class="new-amount">&euro;{{active_electricity.korting_in_ckWh.value}}</span>
+									</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+												<span ng-show="!absolute && your_electricity.korting_in_ckWh.units" class="old-amount">{{your_electricity.korting_in_ckWh.units}}</span>
+												<span class="new-amount">{{active_electricity.korting_in_ckWh.units}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+												<span ng-show="!absolute && your_electricity.korting_in_ckWh.unit_cost" class="old-amount">{{your_electricity.korting_in_ckWh.unit_cost}}</span>
+												<span class="new-amount">{{active_electricity.korting_in_ckWh.unit_cost}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="toggle toggle-bg" ng-show="your_electricity.korting_in_prokWh || active_electricity.korting_in_prokWh">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Korting in % kWh:") %></span>
+										<span ng-show="!absolute && your_electricity.korting_in_prokWh.value" class="old-amount">&euro;{{your_electricity.korting_in_prokWh.value}}</span>
+										<span class="new-amount">&euro;{{active_electricity.korting_in_prokWh.value}}</span>
+										</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+												<span ng-show="!absolute && your_electricity.korting_in_prokWh.units" class="old-amount">{{your_electricity.korting_in_prokWh.units}}</span>
+												<span class="new-amount">{{active_electricity.korting_in_prokWh.units}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+												<span ng-show="!absolute && your_electricity.korting_in_prokWh.unit_cost" class="old-amount">{{your_electricity.korting_in_prokWh.unit_cost?your_electricity.korting_in_prokWh.unit_cost + "%":""}}</span>
+												<span class="new-amount">{{active_electricity.korting_in_prokWh.unit_cost?active_electricity.korting_in_prokWh.unit_cost + "%":""}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="toggle toggle-bg" ng-show="your_electricity.korting_day_night || active_electricity.korting_day_night">
+									<div class="togglet">
+										<span class="max-width-mobile-150"><%= gt.gettext("Korting dag/nacht:") %></span>
+										<span ng-show="!absolute && your_electricity.korting_day_night.value" class="old-amount">&euro;{{your_electricity.korting_day_night.value}}</span>
+										<span class="new-amount">&euro;{{active_electricity.korting_day_night.value}}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="toggle toggle-bg">
+							<div class="togglet">
+								<span class="max-width-mobile-150"><%= gt.gettext("Prijs na kortingen:") %></span>
+								<span ng-show="!absolute" class="old-amount">&euro;{{total_cost(your_electricity) + (your_electricity.prosumer_cost?(count-your_electricity.prosumer_cost.units)*your_electricity.prosumer_cost.unit_cost:0) | number : 2 }}</span>
+								<span class="new-amount">&euro;{{total_cost(active_electricity) + (active_electricity.prosumer_cost?(count-active_electricity.prosumer_cost.units)*active_electricity.prosumer_cost.unit_cost:0) | number : 2 }}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- gas -->
+				<div class="toggle toggle-bg" ng-show="your_gas || active_gas" data-state="open">
+					<div class="togglet">
+						<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+						<span ng-show="!absolute"><%= gt.gettext("Besparing gas:") %></span>
+						<span ng-show="absolute"><%= gt.gettext("Kost gas:") %></span>
+						<span ng-show="!absolute" class="new-amount">&euro;{{total_cost(your_gas) - total_cost(active_gas) - (markup_green && active_gas.markup_green ? active_gas.markup_green.value*1:0) | number : 2}}</span>
+						<span ng-show="absolute" class="new-amount">&euro;{{total_cost(active_gas) + (markup_green && active_gas.markup_green ? active_gas.markup_green.value*1:0) | number : 2}}</span>
+					</div>
+					<div class="togglec">
+						<div class="toggle toggle-bg" style="height: 60px;">
+							<span ng-show="!absolute" class="old-amount" style="text-align:center">
+							    <div style="height:24px">
+					            <img ng-src='{{ "%>/images/providers/" +  your_gas.provider + "-logo.png" }}' alt="" class="center" style="max-height:24px"/><br>
+					            </div>
+					            <%= gt.gettext("Uw huidig tarief:") %>
+					        </span>
+							<span class="new-amount" style="text-align:center">
+							    <div style="height:24px">
+					            <img ng-src='{{ "%>/images/providers/" +  active_gas.provider + "-logo.png" }}' alt="" class="center" style="max-height:24px"/><br>
+					            </div>
+							    <%= gt.gettext("Nieuw tarief:") %>
+							</span>
+						</div>
+						<div class="toggle toggle-bg">
+							<div class="togglet">
+								<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+								<span class="max-width-mobile-150"><%= gt.gettext("Prijs:") %></span>
+								<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.total_cost_no_discount.value*1 + (your_gas.prosumer_cost? (count-your_gas.prosumer_cost.units)*your_gas.prosumer_cost.unit_cost:0) | number : 2}}</span>
+								<span class="new-amount">&euro;{{active_gas.total_cost_no_discount.value*1 + (active_gas.prosumer_cost? (count-active_gas.prosumer_cost.units)*active_gas.prosumer_cost.unit_cost:0) | number : 2}}</span>
+							</div>
+							<div class="togglec" style="display: none;">
+								<div class="toggle toggle-bg" ng-show="your_gas.total_energy || active_gas.total_energy">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Energiekost:") %></span>
+										<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.total_energy}}</span>
+										<span class="new-amount">&euro;{{active_gas.total_energy}}</span>
+									</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg" ng-show="your_gas.abonnement || active_gas.abonnement">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Abonnement:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.abonnement}}</span>
+												<span class="new-amount">&euro;{{active_gas.abonnement}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_gas.variabel_gas || active_gas.variabel_gas">
+											<div class="togglet">
+												<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+												<span class="max-width-mobile-150"><%= gt.gettext("Verbruik:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.variabel_gas.value}}</span>
+												<span class="new-amount">&euro;{{active_gas.variabel_gas.value}}</span>
+												</div>
+											<div class="togglec" style="display: none;">
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_gas.variabel_gas.units}}</span>
+														<span class="new-amount">{{active_gas.variabel_gas.units}}</span>
+													</div>
+												</div>
+												<div class="toggle toggle-bg">
+													<div class="togglet">
+														<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+														<span ng-show="!absolute" class="old-amount">{{your_gas.variabel_gas.unit_cost}}</span>
+														<span class="new-amount">{{active_gas.variabel_gas.unit_cost}}</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="toggle toggle-bg" ng-show="your_gas.heffingen || active_gas.heffingen">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Heffingen:") %></span>
+										<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.heffingen}}</span>
+										<span class="new-amount">&euro;{{active_gas.heffingen}}</span>
+									</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg" ng-show="your_gas.contribution_cost || active_gas.contribution_cost">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Bijdrage op energie:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.contribution_cost}}</span>
+												<span class="new-amount">&euro;{{active_gas.contribution_cost}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_gas.fed_cont_cost || active_gas.fed_cont_cost">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Federale bijdrage:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.fed_cont_cost}}</span>
+												<span class="new-amount">&euro;{{active_gas.fed_cont_cost}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_gas.openbare_dienstverlening || active_gas.openbare_dienstverlening">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Openbare dienstverlening:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.openbare_dienstverlening}}</span>
+												<span class="new-amount">&euro;{{active_gas.openbare_dienstverlening}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="toggle toggle-bg">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Nettarieven:") %></span>
+										<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.net_tariff*1 + (your_gas.prosumer_cost? (count-your_gas.prosumer_cost.units)*your_gas.prosumer_cost.unit_cost:0) | number : 2}}</span>
+										<span class="new-amount">&euro;{{active_gas.net_tariff*1 + (active_gas.prosumer_cost? (count-active_gas.prosumer_cost.units)*active_gas.prosumer_cost.unit_cost:0) | number : 2}}</span>
+									</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg" ng-show="your_gas.distribution_cost || active_gas.distribution_cost">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Distributie:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.distribution_cost}}</span>
+												<span class="new-amount">&euro;{{active_gas.distribution_cost}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg" ng-show="your_gas.transport_cost || active_gas.transport_cost">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("Transmissie:") %></span>
+												<span ng-show="!absolute" class="old-amount">&euro;{{your_gas.transport_cost}}</span>
+												<span class="new-amount">&euro;{{active_gas.transport_cost}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="toggle toggle-bg" ng-show="your_gas.total_discount || active_gas.total_discount">
+							<div class="togglet">
+								<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+								<span class="max-width-mobile-150"><%= gt.gettext("Kortingen:") %></span>
+								<span ng-show="!absolute && your_gas.total_discount" class="old-amount">&euro;{{your_gas.total_discount}}</span>
+								<span class="new-amount">&euro;{{active_gas.total_discount}}</span>
+							</div>
+							<div class="togglec" style="display: none;">
+								<div class="toggle toggle-bg" ng-show="your_gas.korting_in_EUR || active_gas.korting_in_EUR">
+									<div class="togglet">
+										<span class="max-width-mobile-150"><%= gt.gettext("Welkomstkorting:") %></span>
+										<span ng-show="!absolute && your_gas.korting_in_EUR" class="old-amount">&euro;{{your_gas.korting_in_EUR}}</span>
+										<span class="new-amount">&euro;{{active_gas.korting_in_EUR}}</span>
+									</div>
+								</div>
+
+								<div class="toggle toggle-bg" ng-show="your_gas.korting_gratis_kWh_in_EUR || active_gas.korting_gratis_kWh_in_EUR">
+									<div class="togglet">
+										<span class="max-width-mobile-150">{{active_gas.korting_gratis_kWh_in_EUR.units}} <%= gt.gettext("kWh gratis:") %></span>
+										<span ng-show="!absolute && your_gas.korting_gratis_kWh_in_EUR.value" class="old-amount">&euro;{{your_gas.korting_gratis_kWh_in_EUR.value}}</span>
+										<span class="new-amount">&euro;{{active_gas.korting_gratis_kWh_in_EUR.value}}</span>
+									</div>
+								</div>
+
+								<div class="toggle toggle-bg" ng-show="your_gas.korting_in_ckWh || active_gas.korting_in_ckWh">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Korting in c/kWh:") %></span>
+										<span ng-show="!absolute && your_gas.korting_in_ckWh.value" class="old-amount">&euro;{{your_gas.korting_in_ckWh.value}}</span>
+										<span class="new-amount">&euro;{{active_gas.korting_in_ckWh.value}}</span>
+									</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+												<span ng-show="!absolute && your_gas.korting_in_ckWh.units" class="old-amount">{{your_gas.korting_in_ckWh.units}}</span>
+												<span class="new-amount">{{active_gas.korting_in_ckWh.units}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+												<span ng-show="!absolute && your_gas.korting_in_ckWh.unit_cost" class="old-amount">{{your_gas.korting_in_ckWh.unit_cost}}</span>
+												<span class="new-amount">{{active_gas.korting_in_ckWh.unit_cost}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="toggle toggle-bg" ng-show="your_gas.korting_in_prokWh || active_gas.korting_in_prokWh">
+									<div class="togglet">
+										<i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i>
+										<span class="max-width-mobile-150"><%= gt.gettext("Korting in % kWh:") %></span>
+										<span ng-show="!absolute && your_gas.korting_in_prokWh.value" class="old-amount">&euro;{{your_gas.korting_in_prokWh.value}}</span>
+										<span class="new-amount">&euro;{{active_gas.korting_in_prokWh.value}}</span>
+										</div>
+									<div class="togglec" style="display: none;">
+										<div class="toggle toggle-bg">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("# kWh:") %></span>
+												<span ng-show="!absolute && your_gas.korting_in_prokWh.units" class="old-amount">{{your_gas.korting_in_prokWh.units}}</span>
+												<span class="new-amount">{{active_gas.korting_in_prokWh.units}}</span>
+											</div>
+										</div>
+										<div class="toggle toggle-bg">
+											<div class="togglet">
+												<span class="max-width-mobile-150"><%= gt.gettext("€c/kWh:") %></span>
+												<span ng-show="!absolute && your_gas.korting_in_prokWh.unit_cost" class="old-amount">{{your_gas.korting_in_prokWh.unit_cost?your_gas.korting_in_prokWh.unit_cost + "%":""}}</span>
+												<span class="new-amount">{{active_gas.korting_in_prokWh.unit_cost?active_gas.korting_in_prokWh.unit_cost + "%":""}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="toggle toggle-bg">
+							<div class="togglet">
+								<span class="max-width-mobile-150"><%= gt.gettext("Prijs na kortingen:") %></span>
+								<span ng-show="!absolute" class="old-amount">&euro;{{total_cost(your_gas) + (your_gas.prosumer_cost?(count-your_gas.prosumer_cost.units)*your_gas.prosumer_cost.unit_cost:0) | number : 2 }}</span>
+								<span class="new-amount">&euro;{{total_cost(active_gas) + (active_gas.prosumer_cost?(count-active_gas.prosumer_cost.units)*active_gas.prosumer_cost.unit_cost:0) | number : 2 }}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="toggle toggle-bg">
+					<div class="togglet"><i class="toggle-closed icon-line-square-plus"></i><i class="toggle-open icon-line-square-minus"></i><%= gt.gettext("Extra korting:") %></div>
+					<div class="togglec" style="display: none;">
+
+					</div>
+				</div>-->
+				<div>
+					<button type="button" class="btn btn-info btn-md close-button" data-dismiss="modal" aria-hidden="true"><%= gt.gettext("Sluit") %></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,86 @@
+<div id="header-wrap">
+        <div class="container clearfix">
+           <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+           <!-- Logo
+              ============================================= -->
+           <div id="logo">
+              <a href="/<%=sess.site_lang%>/home" data-href="#" class="standard-logo" data-dark-logo="/images/<%= sess.logo %>-dark.png"><img src="/images/<%= sess.logo %>.png" alt="Logo"></a>
+              <a href="/<%=sess.site_lang%>/home" data-href="#" class="retina-logo" data-dark-logo="/images/<%= sess.logo %>-dark.png"><img src="/images/<%= sess.logo %>.png" alt="Logo"></a>
+           </div>
+           <!-- #logo end -->
+           <!-- Primary Navigation
+              ============================================= -->
+           <nav id="primary-menu">
+              <ul>
+                 <% if (host.indexOf('ing') !== -1) { %>
+                 <li>
+                    <a href="#">
+                       <div><%= sess.site_lang %><b style="font-family: 'font-icons';">&#xe72d; </b></div>
+                    </a>
+                    <ul>
+                       <li>
+                          <a href="/<%= helpers.substr_replace(originalUrl,'nl/',0,3) %>">
+                             <div <% if (sess.site_lang=="nl") {%> style='color:#0875bf' <% } %>>Nederlands</div>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="/<%= helpers.substr_replace(originalUrl,'fr/',0,3) %>">
+                             <div <% if (sess.site_lang=="fr") {%> style='color:#0875bf' <% } %>>Français</div>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="/<%= helpers.substr_replace(originalUrl,'en/',0,3) %>">
+                             <div <% if (sess.site_lang=="en") {%> style='color:#0875bf' <% } %>>English</div>
+                          </a>
+                       </li>
+                    </ul>
+                 </li>
+                 <% } else { %>
+                 <li>
+                    <a href="/<%=sess.site_lang%>/home#section-movie">
+                       <div><%= gt.gettext("Hoe werkt het") %></div>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="/<%=sess.site_lang%>/home#section-usp">
+                       <div><%= gt.gettext("Voordelen") %></div>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="/<%=sess.site_lang%>/home#section-team">
+                       <div><%= gt.gettext("Wie zijn wij") %></div>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="#">
+                       <div><%= sess.site_lang %><b style="font-family: 'font-icons';">&#xe72d; </b></div>
+                    </a>
+                    <ul>
+                       <li>
+                          <a href="https://energiegids.be/<%= helpers.substr_replace(originalUrl,'nl',0,3) %>">
+                             <div <% if (sess.site_lang=="nl") {%> style='color:#0875bf' <% } %>>Nederlands</div>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="https://guideenergie.be/<%= helpers.substr_replace(originalUrl,'fr',0,3) %>">
+                             <div <% if (sess.site_lang=="fr") {%> style='color:#0875bf' <% } %>>Français</div>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="https://contract.fit/<%= helpers.substr_replace(originalUrl,'en',0,3) %>">
+                             <div <% if (sess.site_lang=="en") {%> style='color:#0875bf' <% } %>>English</div>
+                          </a>
+                       </li>
+                    </ul>
+                 </li>
+                 <% } %>
+                 <li>
+                    <a href="/<%=sess.site_lang%>/home#section-form" >
+                       <div style="background:#c02841;color:white">&nbsp;&nbsp;<%= gt.gettext("Start nu") %>&nbsp;&nbsp;</div>
+                    </a>
+                 </li>
+              </ul>
+           </nav>
+           <!-- #primary-menu end -->
+        </div>
+     </div>

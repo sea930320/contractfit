@@ -1,0 +1,41 @@
+<%- include("init_header") %>
+
+<section class="force-full-screen full-screen">
+
+    <div class="force-full-screen full-screen dark" style="background-image: url('/images/background-sorry.jpg'); background-repeat: no-repeat;background-size: cover;">
+
+        <div class="container clearfix">
+            <div class="center vertical-middle">
+                <% if(sess.sorry_title == ""){ %>
+                <h1>
+                    <%= gt.gettext("Analyse niet gelukt") %>
+                </h1>
+                <% } else { %>
+                <h1>
+                    <%= sess.sorry_title %>
+                </h1>
+                <%
+            		}
+					sess.sorry_title = null;
+				%>
+                <% if (sess.sorry_message == "") { %>
+                <h1 style="color:white;">
+                    <%= gt.gettext("Deze factuur kon niet geanalyseerd worden") %>.
+                    <%= gt.gettext("We komen zo snel mogelijk per email naar u terug") %>.</h1>
+                <% } else { %>
+                <h1 style="color:white;">
+                    <%= sess.sorry_message %>
+                </h1>
+                <%
+                    }
+					sess.sorry_message = null;
+				%>
+                <a class="button" href="/">
+                    <%= gt.gettext("Naar homepagina") %>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include("footer") %>

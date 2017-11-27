@@ -1,0 +1,50 @@
+<% if(!sess.show_step || sess.show_step == 1) { %>
+    
+<div class="cf-column travel-cf-column upload-invoice">
+    <h2>
+        <%= gt.gettext('Factuur uploaden'); %>
+    </h2>
+    <p>
+        <%= gt.gettext('Stuur ons uw energiefactuur en krijg een gratis analyse binnen de minuut.'); %>
+    </p>
+    <form method="POST" id="upload-form" novalidate>
+        <input class="upload-email" type="email" required="" name="email" placeholder="<%= gt.gettext('Uw emailadres'); %>" id="txtMail" />
+        <div class="file-upload">
+            <label for="upload" class="file-upload-label"><%= gt.gettext('Factuur uploaden'); %></label>
+            <input id="upload" class="file-upload-wrapper" type="file" name="fileToUpload[]" accept=".pdf" multiple>
+        </div>
+        <div id="upload-form-feedback"></div>
+        <input type="submit" value="<%= gt.gettext('Bekijk het beste contract'); %>" name="submit" class="button" id="upload-button">
+        <p>
+            <%= gt.gettext('Het gebruik van deze dienst impliceert de aanvaarding van onze'); %> 
+            <a href="/<%= sess.site_lang %>/terms-and-conditions"> <%= gt.gettext('gebruiksvoorwaarden'); %>.</a>
+        </p>
+    </form>
+    <div id="personal-data" style="border-top:1px solid #efefef;padding-top:10px">
+        <p> 
+            <%= vsprintf(gt.gettext('U kan gewoon uw laatste afrekening doorsturen naar factuur@%s'),[sess.brand]); %>
+        </p>
+        <p>
+            <%= gt.gettext('Geen digitale factuur bij de hand%') %> 
+            <a href="/<%= sess.site_lang %>/manual">
+                <u><%=  gt.gettext('Klik hier') %></u>
+            </a> 
+            (<%=  gt.gettext('manuele ingave') %>)
+        </p>
+    </div>
+</div>
+
+<% } else if(sess.show_step == 2) { %>
+    
+    <div class="cf-column travel-cf-column switch-provider" ng-app="app">
+        <div ng-controller="optionsController" ng-cloak>
+            <%- include('section_switch_provider'); %>
+        </div>
+    </div>
+
+<% } else { %>
+
+    <div class="cf-column travel-cf-column">
+        <%- include('section_user_information'); %>
+    </div>
+<% } %>

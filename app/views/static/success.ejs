@@ -1,0 +1,67 @@
+<%- include("init_header") %>
+<!-- Google Code for ConversionGoal2-SupplierSwitch Conversion Page -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 871589193;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "ffffff";
+    var google_conversion_label = "TFHXCKv-0msQycrNnwM";
+    var google_remarketing_only = false;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/871589193/?label=TFHXCKv-0msQycrNnwM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+<header id="header" class="" >
+    <%- include("header") %>
+</header>
+<section id="page-title">
+    <div class="container clearfix">
+        <h1 style="text-align: center;"><%= gt.gettext('Proficiat, u bent overgestapt !'); %></h1>
+    </div>
+</section>
+<!-- #page-title end -->
+<section id="content">
+    <div id="success" class="row">
+        <div class="small-12 medium-offset-2 medium-8 columns end text-center">
+            <p><%= gt.gettext("Wij hebben alle nodige informatie om de overstap te starten bij de nieuwe leverancier") %>. <%= gt.gettext("De nieuwe leverancier en netbeheerder zullen je contacteren voor de verdere afhandeling") %>.</p>
+        </div>
+        <div class="small-12 medium-offset-3 medium-6 columns end text-center success-feedback">
+            <h2><%=gt.gettext("Wat vind je van onze dienst")%>?</h2>
+            <div id="success-feedback">
+                <form method="POST" action="/<%=sess.site_lang%>/thanks" novalidate>
+                    <input type="hidden" name="email" value="<%= (sess.email ? sess.email : body.email) %>"><br>
+                    <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    <input type="radio" name="rating" value="2"><i></i>
+                    <input type="radio" name="rating" value="3"><i></i>
+                    <input type="radio" name="rating" value="4"><i></i>
+                    <input type="radio" name="rating" value="5"><i></i>
+                    </span>
+                    <textarea rows="4" cols="50" name="description" placeholder="<%= gt.gettext("Beschrijf uw ervaring") %>"></textarea>
+                    <div id="feedback-output">
+                        <%  
+                            if (typeof feedback === 'object') {
+                                errors = [];
+                                feedback.forEach(function(info){
+                                    if(!helpers.in_array(info.param, errors)) {
+                                        errors.push(info.param);
+                        %>
+                                <%- '<small ' + (info.success ? 'class="success"' : 'class="error"') + '>' + info.msg + ' </small>' %>
+                        <%
+                                    }
+                                });
+                            }
+                        %>
+                    </div>
+                    <button type="submit" class="button"><%= gt.gettext("Versturen") %></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include("footer") %>

@@ -1,0 +1,119 @@
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog" style="width:100%;max-width:1100px;margin: 0px;">
+      <div class="modal-body">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               <h4 class="modal-title" id="infoModalLabel"><%= gt.gettext("Product info") %></h4>
+            </div>
+            <div class="modal-body">
+               <!--
+                  <div class="row hiddenOnWider">
+                  	<div class="alert alert-danger">
+                  	  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  	  <i class="icon-remove-sign"></i><%= gt.gettext("Draai uw scherm voor een betere ervaring!") %>
+                  	</div>
+                  </div>
+                  -->
+               <div class="row">
+                  <div class="small-12 columns">
+                     <div class="info-title clearfix">
+                        <img ng-src='{{ "/images/providers/" +  product._provider + "-logo.png" }}' style="margin-top:10px" alt="" class="left" />
+                        <b class="left">{{ product._product }}</b>
+                     </div>
+                  </div>
+               </div>
+               <!--
+                  <div class="row topmargin-sm">
+                  	<div class="small-12 columns full">
+                  		<table style="width:100%">
+                  		  <tbody>
+                  		    <tr>
+                  		      <td ><b><%= gt.gettext("Beschrijving") %></b></td>
+                  		      <td>
+                  			      <ul>
+                  					  {{ product.description._value }}
+                  			      </ul>
+                  		    </tr>
+                  		  </tbody>
+                  		</table>
+                  	</div>
+                  </div>-->
+               <div class="row topmargin-sm">
+                  <div class="small-12 columns full">
+                     <table style="width:100%">
+                        <tbody>
+                           <tr>
+                              <td ><b><%= gt.gettext("Promoties") %></b></td>
+                              <td>
+                                 <ul>
+                                    {{ product.promotions._value }}
+                                 </ul>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="small-12 medium-6 columns">
+                     <b class="info-title" ><%= gt.gettext("Kenmerken") %></b>
+                     <div class="info-table">
+                        <table style="width:100%">
+                           <tbody>
+                              <!--<tr>
+                                 <td>Groene stroom</td>
+                                 <td>{{ product.green_level._value }}%</td>
+                                 </tr>-->
+                              <tr>
+                                 <td ><%= gt.gettext("Contractduur (# jaar)") %></td>
+                                 <td>{{ product.duration_string._value }}</td>
+                              </tr>
+                              <tr>
+                                 <td ><%= gt.gettext("Beschikbaar in") %></td>
+                                 <td>{{ product.availability._value }}</td>
+                              </tr>
+                              <tr ng-if=product.green_level._value>
+                                 <td ><%= gt.gettext("Groene stroom") %></td>
+                                 <td>{{ product.green_level._value }}</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="small-12 medium-6 columns">
+                     <b class="info-title" ><%= gt.gettext("Prijzen") %></b>
+                     <div class="info-table">
+                        <table style="width:100%">
+                           <tbody>
+                              <tr>
+                                 <td ><%= gt.gettext("BTW") %></td>
+                                 <td >{{ product.vat._value }}</td>
+                              </tr>
+                              <tr>
+                                 <td ><%= gt.gettext("Tarieftype") %></td>
+                                 <td>{{ product.rate_type._value }}</td>
+                              </tr>
+                              <!--
+                                 <tr ng-if=product.tariefkaart>
+                                   <td ><%= gt.gettext("Tariefkaart") %></td>
+                                 <td><a href='{{ "assets/cards/" + product.tariefkaart._value }}' target="_blank">tariefkaart</a></td>
+                                 <td><a href='{{ product.tariefkaart._value }}' target="_blank" ><%= gt.gettext("tariefkaart") %></a></td>
+                                 </tr>-->
+                              <tr>
+                                 <td ><%= gt.gettext("Betaalwijze") %></td>
+                                 <td>{{ product.payment_method._value }} </td>
+                              </tr>
+                              <tr>
+                                 <td ><%= gt.gettext("Aansluiting / Overstap") %></td>
+                                 <td ><%= gt.gettext("Gratis") %></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

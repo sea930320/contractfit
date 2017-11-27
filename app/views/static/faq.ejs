@@ -1,0 +1,99 @@
+<%- include("init_header"); %>
+<header id="header" class="" >
+   <%- include("header"); %>
+</header>
+<section id="page-title">
+   <div class="container clearfix">
+      <h1><%= gt.gettext('Veelgestelde vragen') %></h1>
+   </div>
+</section>
+<!-- #page-title end -->
+<section id="section-faq" class="page-section section nomargin noborder nobg tleft" style="padding: 80px 0;">
+    <div class="container clearfix tleft">
+        <div class="toggle">
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= gt.gettext('Kan ik zomaar van leverancier veranderen?'); %>
+            </div>
+            <div class="togglec">
+                <p><%= gt.gettext('Gezinnen hebben het recht om op elk moment hun contract voor elektriciteit of gas te beëindigen, ongeacht welke einddatum op hun factuur vermeld is. Dit geldt zowel voor een gestart contract in de loop van het eerste jaar, als voor een al lopend contract dat stilzwijgend verlengd is voor een nieuwe periode.'); %></p>
+                <p><%= gt.gettext('De enige voorwaarde is dat u een minimum opzegtermijn van 1 maand in acht moet nemen. Dat wil zeggen dat als u beslist om van leverancier te veranderen en vandaag een nieuw contract aangaat, u dit nieuw contract kan laten starten ten vroegste binnen een maand.'); %></p>
+                <p><%= gt.gettext('U moet er wel rekening mee houden dat sommige kortingen en welkomstpremies voor nieuwe klanten vereisen dat u een bepaalde periode klant blijft.'); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= gt.gettext('Moet er iemand van de energiemaatschappij langskomen als ik verander?'); %>
+            </div>
+            <div class="togglec">
+                <p><%= gt.gettext('Nee. Het veranderen van elektriciteits- of gasleverancier vereist geen interventie bij u thuis.'); %></p>
+                <p><%= gt.gettext('Er zal u enkel gevraagd worden de meterstanden door te geven op het moment van de overschakeling zodat de eindafrekening met uw huidige leverancier correct kan gebeuren.'); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= gt.gettext('Wat als ik enkel een papieren afrekening heb?'); %>
+            </div>
+            <div class="togglec">
+                <p><%= vsprintf(gt.gettext('Om gebruik te maken van %s heb je een pdf factuur nodig. Als je je factuur enkel op papier krijgt, kan je die scannen, bijvoorbeeld met de gratis apps Scannable (App Store) of CamScanner (Google Play Store).'),[sess.brand]); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= gt.gettext('Mijn afrekening werd niet correct verwerkt, wat nu?'); %>
+            </div>
+            <div class="togglec">
+                <p><%= gt.gettext('Als u een foutboodschap kreeg, dan bekijken we wat het probleem is en komen we per email naar u terug van zodra het probleem verholpen is.'); %></p>
+                <p><%= gt.gettext('Als u geen foutboodschap kreeg, maar van mening bent dat we je afrekening niet correct geïnterpreteerd hebben, dan horen we dat graag.'); %> <a href="/<%=sess.site_lang%>/contact">Contact</a></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= gt.gettext('Waarom zijn de berekeningen niet altijd exact hetzelfde als op de site van de VREG?'); %>
+            </div>
+            <div class="togglec">
+                <p><%= vsprintf(gt.gettext('De berekeningen op de site van de VREG zijn correct maar niet volledig. De berekening van de VREG houdt enkel rekening met de standaardtarieven van de leveranciers, en bijvoorbeeld niet de acties en promoties. %s geeft wel het volledige beeld.'),[sess.brand]); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= vsprintf(gt.gettext('Ik ben via de %s dienst van leverancier veranderd. Wat nu?'),[sess.brand]); %>
+            </div>
+            <div class="togglec">
+                <p><%= gt.gettext('Uw nieuwe leverancier stuurt u een bevestiging en neemt contact met u op om de overstap af te ronden.'); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= gt.gettext('Kan ik deze dienst ook gebruiken voor het energiecontract van mijn bedrijf?'); %>
+            </div>
+            <div class="togglec">
+                <p><%= vsprintf(gt.gettext('Zeker, u kunt uw afrekening opladen op de startpagina of doorsturen naar factuur@%s. Deze dienst is nog in testfase, dus laat zeker iets weten mochten we niet herkend hebben dat dit een factuur is van een bedrijf.'),[sess.brand]); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= vsprintf(gt.gettext('Hoe verdient %s geld?'),sess.brand); %>
+            </div>
+            <div class="togglec">
+                <p><%= vsprintf(gt.gettext('%s is gratis voor de gebruikers, maar heeft inkomsten nodig om de dienst te kunnen blijven aanbieden. Bij een overstap krijgt %s een kleine commissie van de leveranciers. Dit is mogelijk doordat %s gebruikers en leveranciers op een zeer efficiënte manier met elkaar in contact brengt. Deze commissie is veel lager dan de kost voor de leverancier om klanten te bereiken via dure reclamespots of andere kanalen.'),[sess.brand,sess.brand,sess.brand]); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= vsprintf(gt.gettext('Is %s wel objectief?'),sess.brand); %>
+            </div>
+            <div class="togglec">
+                <p><%= vsprintf(gt.gettext('%s is volledig neutraal en objectief. We geven het volledige detail van de berekeningen weer zodat u, indien u dit wenst, in detail kan nakijken hoe de cijfers berekend zijn en hoe %s tot het voorstel komt met het beste contract voor uw persoonlijke situatie.'),[sess.brand,sess.brand]); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= vsprintf(gt.gettext('Ik wil %s volgend jaar terug gebruiken. Kunt u mij een herinnering sturen?'),sess.brand); %>
+            </div>
+            <div class="togglec">
+                <p><%= vsprintf(gt.gettext('Ja. %s kan u een herinnering sturen om volgend jaar opnieuw na te kijken wat voor u het beste contract is.'),sess.brand); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= gt.gettext('Ik heb een vraag of idee om deze dienst nog verder te verbeteren. Hoe kan ik dit met jullie delen?'); %>
+            </div>
+            <div class="togglec">
+                <p><%= gt.gettext('U kunt uw vraag, idee of feedback op onze dienst sturen naar '); %> <a href="mailto:info@<%=sess.brand%>">info@<%=sess.brand%>.</a></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= vsprintf(gt.gettext('Kan ik %s ook gebruiken van op mijn smartphone of tablet?'),sess.brand); %>
+            </div>
+            <div class="togglec">
+                <p><%= vsprintf(gt.gettext('Zeker. %s werkt zowel op PC, smartphone als tablet.'),sess.brand); %></p>
+            </div>
+            <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>
+                <%= vsprintf(gt.gettext('Werkt %s ook als ik gewoon de email van een leverancier doorstuur?'),sess.brand); %>
+            </div>
+            <div class="togglec">
+                <p><%= vsprintf(gt.gettext('Absoluut. U kunt de email van de leverancier met pdf afrekening in bijlage gewoon via een forward doorsturen naar factuur@%s. U krijgt een email terug met een link naar onze website waar u het resultaat van de berekeningen kunt bekijken en met één klik veranderen van leverancier.'),sess.brand); %></p>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include("footer") %>

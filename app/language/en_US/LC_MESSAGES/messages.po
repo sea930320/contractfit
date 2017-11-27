@@ -1,0 +1,4341 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-09-07 17:41+0200\n"
+"PO-Revision-Date: 2017-09-07 17:44+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ../../../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: FrontEnd/application\n"
+"X-Poedit-SearchPath-1: BackEnd\n"
+
+#: BackEnd/Step4_picturestream.py:58
+msgid "Bedankt %name% ! "
+msgstr "Thanks %name% ! "
+
+#: BackEnd/Step4_picturestream.py:63
+msgid "Ik heb nog 1 foto nodig. "
+msgstr "I need 1 more picture. "
+
+#: BackEnd/Step4_picturestream.py:65
+#, python-format
+msgid "Ik heb nog %s fotos nodig. "
+msgstr "I still need %s pictures. "
+
+#: BackEnd/Step4_picturestream.py:73
+msgid ""
+"Even kijken wat je elektriciteitsverbruik is. Kan je mij een foto doorsturen "
+"van onderstaand stuk? Typisch staat dit op pagina %page_number%."
+msgstr ""
+"Let's see what your electricity consumption is. Could you send me a picture "
+"of the part below? Typically, this is on page %page_number%."
+
+#: BackEnd/Step4_picturestream.py:76
+msgid ""
+"Even kijken wat je gasverbruik is. Kan je mij een foto doorsturen van "
+"onderstaand stuk? Typisch staat dit op pagina %page_number%."
+msgstr ""
+"Let's see what your gas consumption is. Could you send me a picture of the "
+"part below? Typically, this is on page %page_number%."
+
+#: BackEnd/Step4_picturestream.py:79
+msgid ""
+"Even kijken wat je verbruik is. Kan je mij een foto doorsturen van "
+"onderstaand stuk? Typisch staat dit op pagina %page_number%."
+msgstr ""
+"Let's see what your energy consumption is. Could you send me a picture of "
+"the part below? Typically, this is on page %page_number%."
+
+#: BackEnd/Step4_picturestream.py:82
+msgid ""
+"Even kijken wat je kost is. Kan je mij een foto doorsturen van onderstaand "
+"stuk? Typisch staat dit op pagina %page_number%."
+msgstr ""
+"Let's see what your current energy cost is. Could you send me a picture of "
+"the part below? Typically, this is on page %page_number%."
+
+#: BackEnd/Step4_picturestream.py:90
+msgid ""
+"Even kijken wat je elektriciteitsverbruik is. Kan je mij een foto doorsturen "
+"van pagina %page_number%?"
+msgstr ""
+"Let's see what your electricity consumption is. Could you send me a picture "
+"of page %page_number%."
+
+#: BackEnd/Step4_picturestream.py:93
+msgid ""
+"Even kijken wat je gasverbruik is. Kan je mij een foto doorsturen van pagina "
+"%page_number%?"
+msgstr ""
+"Let's see what your gas consumption is. Could you send me a picture of page "
+"%page_number%."
+
+#: BackEnd/Step4_picturestream.py:96
+msgid ""
+"Even kijken wat je verbruik is. Kan je mij een foto doorsturen van pagina "
+"%page_number%?"
+msgstr ""
+"Let's see what your energy consumption is. Could you send me a picture of "
+"page %page_number%."
+
+#: BackEnd/Step4_picturestream.py:99
+msgid ""
+"Even kijken wat je kost is. Kan je mij een foto doorsturen van pagina "
+"%page_number%?"
+msgstr ""
+"Let's see what your energy cost is. Could you send me a picture of page "
+"%page_number%."
+
+#: BackEnd/execute_web_mail.py:88
+msgid ""
+"Dit document werd niet herkend.<br>Enkele tips:<br>Fotografeer de volledige "
+"pagina en hou je toestel horizontaal<br>Zorg voor goede belichting, focus en "
+"resolutie (niet wazig)"
+msgstr ""
+"This document was not recognized. <br> Some tips: <br> Take a picture of the "
+"complete page and keep your camera horizontal <br> Ensure good lighting, "
+"focus, and resolution"
+
+#: BackEnd/execute_web_mail.py:100
+msgid ""
+"Dit is de begeleidende brief bij de factuur.<br>Gelieve een foto te nemen "
+"van de eerste pagina, met als titel: Afrekening"
+msgstr ""
+"This is the cover letter of your invoice.<br>Please take a picture of the "
+"first page with title: Afrekening (Dutch) or Décompte (French)"
+
+#: FrontEnd/application/controllers/Annotator.php:62
+msgid "Annotator"
+msgstr "Annotator"
+
+#: FrontEnd/application/controllers/Forward.php:27
+#, php-format
+msgid ""
+"Je overstap naar %s kunnen we voor jou regelen, daar hoef je niks meer voor "
+"te doen."
+msgstr ""
+"We can take care about your transition to %s for you, so no need to worry "
+"about that."
+
+#: FrontEnd/application/controllers/Forward.php:32
+msgid "Bijna klaar"
+msgstr "Almost there"
+
+#: FrontEnd/application/controllers/Forward.php:35
+#: FrontEnd/application/controllers/Result.php:132
+#: FrontEnd/application/controllers/Result_parsing.php:51
+#: FrontEnd/application/controllers/Static_pages.php:24
+#: FrontEnd/application/controllers/Static_pages.php:64
+#: FrontEnd/application/controllers/Static_pages.php:98
+#: FrontEnd/application/controllers/Static_pages.php:160
+#: FrontEnd/application/controllers/Static_pages.php:183
+#: FrontEnd/application/controllers/Static_pages.php:206
+#: FrontEnd/application/controllers/Static_pages.php:587
+#: FrontEnd/application/controllers/Static_pages.php:652
+#: FrontEnd/application/controllers/Static_pages.php:674
+#: FrontEnd/application/controllers/Static_pages.php:701
+#: FrontEnd/application/controllers/Success.php:53
+#: FrontEnd/application/controllers/User_information.php:344
+#: FrontEnd/application/controllers/deprecated_Home.php:13
+#: FrontEnd/application/views/master-old.php:29
+#: FrontEnd/application/views/master-old.php:38
+#: FrontEnd/application/views/remove.php:29
+#: FrontEnd/application/views/remove.php:38
+#: FrontEnd/application/views/static/choice.php:31
+#: FrontEnd/application/views/static/choice.php:40
+#: FrontEnd/application/views/static/init_header.php:31
+#: FrontEnd/application/views/static/init_header.php:40
+#, php-format
+msgid ""
+"%s leidt gebruikers moeiteloos naar het best passende product voor hun "
+"energie: gas en elektriciteit. Met %s vergelijk je snel, makkelijk en "
+"gegarandeerd objectief het aanbod van de markt en kan je zonder moeite "
+"overstappen."
+msgstr ""
+"%s seamlessly guides users to the most suitable product on the market for "
+"energy: gas and electricity. With %s, you can easily compare the different "
+"offers on the market and switch to the best offer with no hassle."
+
+#: FrontEnd/application/controllers/Forward.php:41
+#: FrontEnd/application/controllers/Success.php:62
+msgid "Dat is dan geregeld!"
+msgstr "That’s settled"
+
+#: FrontEnd/application/controllers/Ins_portal_01.php:79
+msgid "Insurance Demo Portal"
+msgstr "Insurance Demo Portal"
+
+#: FrontEnd/application/controllers/Intolaw.php:72
+msgid "Intolaw"
+msgstr "Intolaw"
+
+#: FrontEnd/application/controllers/Result.php:18
+msgid "Fout tijdens uploaden"
+msgstr "Error during upload"
+
+#: FrontEnd/application/controllers/Result.php:19
+msgid "Er werden geen bestanden gevonden."
+msgstr "No files found"
+
+#: FrontEnd/application/controllers/Result.php:26
+msgid "Fout e-mailadres"
+msgstr "Please enter a valid email address"
+
+#: FrontEnd/application/controllers/Result.php:27
+msgid "Het opgegeven e-mailadres is niet geldig."
+msgstr "Please enter a valid email address"
+
+#: FrontEnd/application/controllers/Result.php:34
+msgid "Fout bestand"
+msgstr "Invalid file"
+
+#: FrontEnd/application/controllers/Result.php:35
+msgid "Een van de opgegeven bestanden is geen geldig bestand."
+msgstr "Invalid file"
+
+#: FrontEnd/application/controllers/Result.php:131
+#: FrontEnd/application/controllers/Result_parsing.php:50
+msgid "Resultaat berekening"
+msgstr "Result calculation"
+
+#: FrontEnd/application/controllers/Share_by_picture.php:66
+#: FrontEnd/application/controllers/Upload_invoice.php:16
+#: FrontEnd/application/controllers/User_information.php:6
+msgid "Fout aantal bestanden"
+msgstr "Please upload 1 or 2 files"
+
+#: FrontEnd/application/controllers/Share_by_picture.php:72
+#: FrontEnd/application/controllers/Upload_invoice.php:22
+#: FrontEnd/application/controllers/User_information.php:12
+msgid "Een van de bestanden is ongeldig"
+msgstr "Invalid file"
+
+#: FrontEnd/application/controllers/Share_by_picture.php:100
+#: FrontEnd/application/controllers/Static_pages.php:225
+#: FrontEnd/application/controllers/Static_pages.php:610
+#: FrontEnd/application/controllers/Success.php:16
+#: FrontEnd/application/controllers/Upload_invoice.php:45
+#: FrontEnd/application/controllers/User_information.php:40
+#: FrontEnd/application/controllers/User_information.php:206
+#: FrontEnd/application/views/static/manual.php:196
+#: FrontEnd/application/views/static/personal_info.php:2
+#: FrontEnd/application/views/static/section_user_information.php:149
+msgid "email"
+msgstr "email"
+
+#: FrontEnd/application/controllers/Share_by_picture.php:101
+#: FrontEnd/application/controllers/Static_pages.php:298
+#: FrontEnd/application/controllers/Static_pages.php:614
+#: FrontEnd/application/controllers/Upload_invoice.php:48
+#: FrontEnd/application/controllers/User_information.php:43
+#: FrontEnd/application/controllers/deprecated_feedback.php:18
+msgid "Gelieve een correct emailadres op te geven"
+msgstr "Please enter a correct email address"
+
+#: FrontEnd/application/controllers/Share_by_picture.php:103
+#: FrontEnd/application/controllers/Upload_invoice.php:46
+#: FrontEnd/application/controllers/User_information.php:41
+msgid "fileToUpload[]"
+msgstr "fileToUpload[]"
+
+#: FrontEnd/application/controllers/Share_by_picture.php:191
+#: FrontEnd/application/controllers/Share_by_picture.php:194
+msgid ""
+"Gelieve een heldere foto te nemen met goede resolutie van de volledige "
+"eerste pagina van uw factuur."
+msgstr ""
+"Please take a clear photo with a decent resolution of the complete first "
+"page of your invoice."
+
+#: FrontEnd/application/controllers/Share_by_picture.php:210
+#: FrontEnd/application/controllers/Upload_invoice.php:141
+msgid "Er liep iets mis"
+msgstr "Something went wrong"
+
+#: FrontEnd/application/controllers/Share_by_picture.php:211
+#: FrontEnd/application/controllers/Upload_invoice.php:142
+msgid "Er is een zeer merkwaardige fout opgetreden..."
+msgstr "Something went wrong"
+
+#: FrontEnd/application/controllers/Static_pages.php:23
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:9
+#, php-format
+msgid "VREG V-Test? Creg Scan? … Of %s?"
+msgstr "VREG V-Test? CREG Scan? ... Or %s?"
+
+#: FrontEnd/application/controllers/Static_pages.php:63
+#: FrontEnd/application/views/master-old.php:107
+#: FrontEnd/application/views/remove.php:107
+#: FrontEnd/application/views/static/faq.php:9
+#: FrontEnd/application/views/static/new_home.php:146
+msgid "Veelgestelde vragen"
+msgstr "FAQ"
+
+#: FrontEnd/application/controllers/Static_pages.php:97
+#: FrontEnd/application/controllers/Static_pages.php:182
+#: FrontEnd/application/controllers/Static_pages.php:700
+#: FrontEnd/application/views/master-old.php:27
+#: FrontEnd/application/views/master-old.php:37
+#: FrontEnd/application/views/remove.php:27
+#: FrontEnd/application/views/remove.php:37
+#: FrontEnd/application/views/static/choice.php:29
+#: FrontEnd/application/views/static/choice.php:39
+#: FrontEnd/application/views/static/company.php:29
+#: FrontEnd/application/views/static/company.php:39
+#: FrontEnd/application/views/static/init_header.php:29
+#: FrontEnd/application/views/static/init_header.php:39
+msgid "Verander van energieleverancier in 60 seconden"
+msgstr "Change energy suppliers in 60 seconds"
+
+#: FrontEnd/application/controllers/Static_pages.php:205
+msgid "Manuele invoer"
+msgstr "Manual input"
+
+#: FrontEnd/application/controllers/Static_pages.php:226
+msgid "type klant"
+msgstr "type of customer"
+
+#: FrontEnd/application/controllers/Static_pages.php:227
+#: FrontEnd/application/controllers/User_information.php:213
+msgid "scenario"
+msgstr "scenario"
+
+#: FrontEnd/application/controllers/Static_pages.php:228
+#: FrontEnd/application/controllers/User_information.php:217
+#: FrontEnd/application/controllers/User_information.php:231
+#: FrontEnd/application/views/static/manual.php:197
+msgid "postcode"
+msgstr "zip code"
+
+#: FrontEnd/application/controllers/Static_pages.php:229
+msgid "elektriciteit"
+msgstr "electricity"
+
+#: FrontEnd/application/controllers/Static_pages.php:230
+msgid "gas"
+msgstr "gas"
+
+#: FrontEnd/application/controllers/Static_pages.php:231
+#: FrontEnd/application/controllers/Static_pages.php:254
+msgid "meter type elektriciteit"
+msgstr "meter type electricity"
+
+#: FrontEnd/application/controllers/Static_pages.php:232
+#: FrontEnd/application/controllers/Static_pages.php:256
+msgid "kost elektriciteit"
+msgstr "cost electricity"
+
+#: FrontEnd/application/controllers/Static_pages.php:233
+#: FrontEnd/application/controllers/Static_pages.php:258
+msgid "verbruik elektriciteit dag"
+msgstr "consumption electricity day"
+
+#: FrontEnd/application/controllers/Static_pages.php:234
+msgid "elektriciteit incl. BTW"
+msgstr "electricity cost incl. VAT"
+
+#: FrontEnd/application/controllers/Static_pages.php:235
+msgid "gas incl. BTW"
+msgstr "gas cost incl. VAT"
+
+#: FrontEnd/application/controllers/Static_pages.php:236
+#: FrontEnd/application/controllers/Static_pages.php:271
+msgid "kost gas"
+msgstr "cost gas"
+
+#: FrontEnd/application/controllers/Static_pages.php:237
+#: FrontEnd/application/controllers/Static_pages.php:273
+msgid "verbruik gas"
+msgstr "consumption gas"
+
+#: FrontEnd/application/controllers/Static_pages.php:238
+msgid "exclusief nacht meter"
+msgstr "exclusive night counter"
+
+#: FrontEnd/application/controllers/Static_pages.php:239
+msgid "eigen productie elektriciteit"
+msgstr "own production electricity"
+
+#: FrontEnd/application/controllers/Static_pages.php:240
+#: FrontEnd/application/controllers/Static_pages.php:277
+#: FrontEnd/application/views/static/manual.php:364
+msgid "aantal inwoners"
+msgstr "number of inhabitants"
+
+#: FrontEnd/application/controllers/Static_pages.php:241
+#: FrontEnd/application/controllers/Static_pages.php:278
+msgid "type huis"
+msgstr "type of house"
+
+#: FrontEnd/application/controllers/Static_pages.php:242
+#: FrontEnd/application/controllers/Static_pages.php:279
+msgid "type verwarming"
+msgstr "type of heating"
+
+#: FrontEnd/application/controllers/Static_pages.php:243
+#: FrontEnd/application/controllers/Static_pages.php:280
+msgid "type isolatie"
+msgstr "type of insulation"
+
+#: FrontEnd/application/controllers/Static_pages.php:245
+#: FrontEnd/application/controllers/Static_pages.php:286
+msgid "leverancier elektriciteit"
+msgstr "supplier electricity"
+
+#: FrontEnd/application/controllers/Static_pages.php:246
+#: FrontEnd/application/controllers/Static_pages.php:287
+msgid "product elektriciteit"
+msgstr "product electricity"
+
+#: FrontEnd/application/controllers/Static_pages.php:247
+#: FrontEnd/application/controllers/Static_pages.php:291
+msgid "leverancier gas"
+msgstr "supplier gas"
+
+#: FrontEnd/application/controllers/Static_pages.php:248
+#: FrontEnd/application/controllers/Static_pages.php:292
+msgid "product_gas"
+msgstr "product_gas"
+
+#: FrontEnd/application/controllers/Static_pages.php:250
+#: FrontEnd/application/controllers/Static_pages.php:260
+msgid "verbruik elektriciteit nacht"
+msgstr "consumption electricity night"
+
+#: FrontEnd/application/controllers/Static_pages.php:251
+#: FrontEnd/application/controllers/Static_pages.php:262
+msgid "verbruik elektriciteit exclusief nacht"
+msgstr "consumption electricity exclusive night"
+
+#: FrontEnd/application/controllers/Static_pages.php:252
+#: FrontEnd/application/controllers/Static_pages.php:264
+#: FrontEnd/application/views/static/manual.php:280
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:71
+#: FrontEnd/application/views/steps/result.php:152
+msgid "kVA"
+msgstr "kVA"
+
+#: FrontEnd/application/controllers/Static_pages.php:267
+msgid "gas of elektriciteit"
+msgstr "gas or electricity"
+
+#: FrontEnd/application/controllers/Static_pages.php:296
+#: FrontEnd/application/controllers/User_information.php:258
+#, php-format
+msgid "Gelieve het %s veld correct in te vullen."
+msgstr "Please fill in the %s field correctly"
+
+#: FrontEnd/application/controllers/Static_pages.php:297
+msgid "Gelieve een geldige postcode in te vullen."
+msgstr "Please enter a valid Belgian zip code"
+
+#: FrontEnd/application/controllers/Static_pages.php:299
+msgid "Bedrag niet herkend"
+msgstr "Amount not recognized"
+
+#: FrontEnd/application/controllers/Static_pages.php:300
+#, php-format
+msgid "Ongeldige invoer voor veld %s"
+msgstr "Invalid input for field %s"
+
+#: FrontEnd/application/controllers/Static_pages.php:301
+#, php-format
+msgid "Het veld %s moet lager zijn dan 50000"
+msgstr "Field %s requires a value between 0 and 50000 kWh"
+
+#: FrontEnd/application/controllers/Static_pages.php:302
+#, php-format
+msgid "Het veld %s moet lager zijn dan 150000"
+msgstr "Field %s requires a value between 0 and 100000 kWh"
+
+#: FrontEnd/application/controllers/Static_pages.php:586
+#: FrontEnd/application/views/master-old.php:226
+#: FrontEnd/application/views/remove.php:226
+#: FrontEnd/application/views/static/contact.php:9
+msgid "Contact"
+msgstr "Contact"
+
+#: FrontEnd/application/controllers/Static_pages.php:609
+msgid "naam"
+msgstr "name"
+
+#: FrontEnd/application/controllers/Static_pages.php:611
+msgid "bericht"
+msgstr "message"
+
+#: FrontEnd/application/controllers/Static_pages.php:613
+#: FrontEnd/application/controllers/Success.php:21
+#: FrontEnd/application/controllers/deprecated_feedback.php:17
+#, php-format
+msgid "Gelieve het %s-veld correct in te vullen."
+msgstr "Please fill in the %s field correctly."
+
+#: FrontEnd/application/controllers/Static_pages.php:622
+msgid "Uw bericht werd verstuurd"
+msgstr "Your message has been sent"
+
+#: FrontEnd/application/controllers/Static_pages.php:651
+#: FrontEnd/application/views/master-old.php:225
+#: FrontEnd/application/views/remove.php:225
+#: FrontEnd/application/views/static/terms_and_conditions.php:10
+msgid "Gebruikersvoorwaarden"
+msgstr "Terms of use"
+
+#: FrontEnd/application/controllers/Static_pages.php:673
+msgid "Sorry"
+msgstr "Sorry"
+
+#: FrontEnd/application/controllers/Success.php:17
+msgid "beschrijving"
+msgstr "description"
+
+#: FrontEnd/application/controllers/Success.php:18
+msgid "rating"
+msgstr "rating"
+
+#: FrontEnd/application/controllers/Success.php:37
+msgid "Feedback succesvol verzonden"
+msgstr "Feedback sent successfully"
+
+#: FrontEnd/application/controllers/Success.php:52
+msgid "Dat is dan geregeld"
+msgstr "That’s settled"
+
+#: FrontEnd/application/controllers/Upload_invoice.php:112
+#: FrontEnd/application/controllers/Upload_invoice.php:115
+#: FrontEnd/application/controllers/User_information.php:92
+#: FrontEnd/application/controllers/User_information.php:95
+msgid "Er is een fout opgetreden tijdens het verwerken van uw bestand."
+msgstr "We could not process your input file."
+
+#: FrontEnd/application/controllers/User_information.php:165
+#: FrontEnd/application/controllers/User_information.php:343
+#: FrontEnd/application/views/steps/home-old.php:151
+msgid "Persoonlijke gegevens"
+msgstr "Personal Information"
+
+#: FrontEnd/application/controllers/User_information.php:172
+msgid "Vermogen eigen installatie (kVA)"
+msgstr "Capacity own production (kVA)"
+
+#: FrontEnd/application/controllers/User_information.php:173
+msgid "Groene energie"
+msgstr "Renewable energy"
+
+#: FrontEnd/application/controllers/User_information.php:174
+msgid "Verschillende leveranciers"
+msgstr "Different suppliers"
+
+#: FrontEnd/application/controllers/User_information.php:175
+#: FrontEnd/application/views/steps/result.php:297
+msgid "Vaste tarieven"
+msgstr "Fixed tariffs"
+
+#: FrontEnd/application/controllers/User_information.php:176
+#: FrontEnd/application/views/steps/result.php:308
+msgid "Variabele tarieven"
+msgstr "Variable tariffs"
+
+#: FrontEnd/application/controllers/User_information.php:177
+#: FrontEnd/application/views/static/payment_info.php:35
+msgid "Domiciliëring"
+msgstr "Direct debit"
+
+#: FrontEnd/application/controllers/User_information.php:178
+#: FrontEnd/application/views/steps/info-modal.php:47
+msgid "Promoties"
+msgstr "Promotions"
+
+#: FrontEnd/application/controllers/User_information.php:207
+msgid "geboortedag"
+msgstr "birthday"
+
+#: FrontEnd/application/controllers/User_information.php:208
+msgid "geboortemaand"
+msgstr "birth month"
+
+#: FrontEnd/application/controllers/User_information.php:209
+msgid "geboortejaar"
+msgstr "birth year"
+
+#: FrontEnd/application/controllers/User_information.php:210
+#: FrontEnd/application/views/static/personal_info.php:150
+#: FrontEnd/application/views/static/section_user_information.php:287
+msgid "telefoonnummer"
+msgstr "phone number"
+
+#: FrontEnd/application/controllers/User_information.php:214
+msgid "aanspreking"
+msgstr "title"
+
+#: FrontEnd/application/controllers/User_information.php:215
+msgid "voornaam"
+msgstr "first name"
+
+#: FrontEnd/application/controllers/User_information.php:216
+msgid "familienaam"
+msgstr "name"
+
+#: FrontEnd/application/controllers/User_information.php:218
+#: FrontEnd/application/controllers/User_information.php:232
+msgid "gemeente"
+msgstr "city"
+
+#: FrontEnd/application/controllers/User_information.php:219
+#: FrontEnd/application/controllers/User_information.php:233
+msgid "straat"
+msgstr "street"
+
+#: FrontEnd/application/controllers/User_information.php:220
+#: FrontEnd/application/controllers/User_information.php:234
+msgid "nummer"
+msgstr "number"
+
+#: FrontEnd/application/controllers/User_information.php:221
+#: FrontEnd/application/controllers/User_information.php:235
+msgid "bus"
+msgstr "bus"
+
+#: FrontEnd/application/controllers/User_information.php:222
+#: FrontEnd/application/controllers/User_information.php:228
+#: FrontEnd/application/views/static/section_user_information.php:391
+#: FrontEnd/application/views/static/section_user_information2.php:240
+msgid "EAN Gas"
+msgstr "EAN Gas"
+
+#: FrontEnd/application/controllers/User_information.php:223
+#: FrontEnd/application/controllers/User_information.php:226
+#: FrontEnd/application/views/static/section_user_information.php:388
+#: FrontEnd/application/views/static/section_user_information2.php:236
+msgid "EAN Elektriciteit"
+msgstr "EAN Electricity"
+
+#: FrontEnd/application/controllers/User_information.php:240
+#: FrontEnd/application/controllers/User_information.php:242
+msgid "rijksregisternummer"
+msgstr "National number"
+
+#: FrontEnd/application/controllers/User_information.php:244
+#: FrontEnd/application/views/static/travel_table.php:14
+msgid "gebruiksvoorwaarden"
+msgstr "Terms and conditions of use"
+
+#: FrontEnd/application/controllers/User_information.php:245
+msgid "domiciliëring"
+msgstr "direct debit"
+
+#: FrontEnd/application/controllers/User_information.php:248
+#: FrontEnd/application/controllers/User_information.php:253
+msgid "rekeningnaam"
+msgstr "account name"
+
+#: FrontEnd/application/controllers/User_information.php:249
+#: FrontEnd/application/controllers/User_information.php:254
+msgid "rekeningnummer"
+msgstr "account number"
+
+#: FrontEnd/application/controllers/User_information.php:374
+msgid "Dit telefoonnummer wordt niet herkend."
+msgstr "This phone number is not recognized."
+
+#: FrontEnd/application/controllers/User_information.php:384
+#: FrontEnd/application/controllers/User_information.php:397
+msgid "Dit is niet herkend als een geldig rijksregisternummer."
+msgstr "This is not recognized as a valid national registration number."
+
+#: FrontEnd/application/controllers/User_information.php:437
+#: FrontEnd/application/controllers/User_information.php:459
+msgid "Dit is niet herkend als een geldig Belgisch EAN nummer."
+msgstr "This is not recognized as a valid Belgian EAN number."
+
+#: FrontEnd/application/controllers/User_information.php:475
+msgid "Dit is niet herkend als een geldig Belgisch IBAN nummer."
+msgstr "This is not recognized as a valid Belgian IBAN number."
+
+#: FrontEnd/application/controllers/User_information.php:493
+#: FrontEnd/application/controllers/User_information.php:498
+msgid "Gelieve het IBAN nummer te controleren."
+msgstr "Please check the IBAN number."
+
+#: FrontEnd/application/controllers/deprecated_Home.php:12
+msgid "Deel factuur"
+msgstr "Share invoice"
+
+#: FrontEnd/application/controllers/deprecated_Home.php:40
+msgid "Bespaar tijd en geld voor de de echt belangrijke zaken in het leven"
+msgstr "Save time and money for the really important things in life"
+
+#: FrontEnd/application/views/errors/html/error_404.php:33
+msgid "pagina niet gevonden"
+msgstr "Page not found"
+
+#: FrontEnd/application/views/errors/html/error_404.php:34
+msgid ""
+"De pagina waarnaar u op zoek bent bestaat niet. Contacteer ons op in geval "
+"van een probleem."
+msgstr ""
+"The page you are looking for does not exist. Contact us in case of problems."
+
+#: FrontEnd/application/views/master-old.php:17
+#: FrontEnd/application/views/remove.php:17
+#: FrontEnd/application/views/static/choice.php:19
+#: FrontEnd/application/views/static/init_header.php:19
+msgid ""
+"Bezorg ons uw gas- en elektriciteitsfactuur en krijg een berekening op maat "
+"van het beste aanbod op de markt voor uw verbruik. Verander gratis en "
+"zorgenloos van energieleverancier en bespaar tot 300€ per jaar. Stap gratis "
+"over naar de goedkoopste energieleverancier en wij regelen al het papierwerk."
+msgstr ""
+"Share your gas and electricity invoice and we will guide you to the best "
+"offer on the market based on your consumption. Switch providers for free and "
+"without any hassle and save up to €300. We will take care of all the "
+"paperwork, so you don’t have to."
+
+#: FrontEnd/application/views/master-old.php:106
+#: FrontEnd/application/views/remove.php:106
+msgid "Over ons"
+msgstr "About us"
+
+#: FrontEnd/application/views/master-old.php:140
+#: FrontEnd/application/views/remove.php:140
+#: FrontEnd/application/views/static/travel_table.php:4
+#: FrontEnd/application/views/static/travel_table.php:9
+#: FrontEnd/application/views/steps/home-old.php:14
+#: FrontEnd/application/views/steps/home-old.php:18
+msgid "Factuur uploaden"
+msgstr "Upload invoice"
+
+#: FrontEnd/application/views/master-old.php:148
+#: FrontEnd/application/views/remove.php:148
+msgid "Provider kiezen"
+msgstr "Choose provider"
+
+#: FrontEnd/application/views/master-old.php:158
+#: FrontEnd/application/views/remove.php:158
+msgid "Overstappen"
+msgstr "Switch"
+
+#: FrontEnd/application/views/master-old.php:185
+#: FrontEnd/application/views/remove.php:185
+msgid ""
+"Een vraag, feedback of wil je gewoon op de hoogte blijven? Laat hier je "
+"gegevens achter:"
+msgstr ""
+"A question, feedback or just want to stay informed? Leave your details here:"
+
+#: FrontEnd/application/views/master-old.php:191
+#: FrontEnd/application/views/remove.php:191
+#: FrontEnd/application/views/static/contact.php:29
+#: FrontEnd/application/views/static/id_reader.php:101
+#: FrontEnd/application/views/static/share_picture.php:44
+#: FrontEnd/application/views/static/travel_table.php:7
+#: FrontEnd/application/views/steps/home-old.php:17
+msgid "Uw emailadres"
+msgstr "Your Email"
+
+#: FrontEnd/application/views/master-old.php:194
+#: FrontEnd/application/views/remove.php:194
+#: FrontEnd/application/views/static/contact.php:30
+msgid "Uw bericht"
+msgstr "Your message"
+
+#: FrontEnd/application/views/master-old.php:197
+#: FrontEnd/application/views/remove.php:197
+#: FrontEnd/application/views/static/contact.php:31
+msgid "Verzenden"
+msgstr "Send"
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:17
+#, php-format
+msgid ""
+"We krijgen vaak vragen over de websites van de regulatoren (CREG, VREG, "
+"Cwape, BruSim), zoals “Wat is het verschil met %s ?” of “Waarom zie ik "
+"andere prijzen ?”"
+msgstr ""
+"We often get questions on the websites of the regulators (CREG, VREG, Cwape, "
+"BruSim), such as \"what's the difference with %s?\", or \"why do I see "
+"different prices?\""
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:19
+msgid ""
+"Alle informatie die op de sites van de CREG, VREG, e.d. staat is "
+"ongetwijfeld correct, maar ook onvolledig. Daarnaast kan volgens ons ook de "
+"gebruikerservaring een stuk beter."
+msgstr ""
+"All information on the website of the regulators is undoubtedly correct. At "
+"the same time, it is incomplete. Furthermore, we believe there is a lot of "
+"room for improvement in the user experience."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:21
+#, php-format
+msgid ""
+"Volledige, objectieve informatie aanbieden én een goeie gebruikerservaring, "
+"dat is nu net waar %s voor staat ! Hieronder de belangrijkste verschillen:"
+msgstr ""
+"Complete, impartial information, and a great user experience. That is what "
+"%s stands for ! Here are the most important differences:"
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:26
+#, php-format
+msgid "1. %s houdt rekening met kortingen en promoties."
+msgstr "1. %s takes into account discounts and promotions."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:27
+#, php-format
+msgid ""
+"Welkomstkortingen, loyaliteitskorting, korting bij elektronische factuur en/"
+"of bij domiciliëren. Deze maken een groot verschil. CREG, VREG, e.d. houden "
+"hier geen rekening mee. %s wel."
+msgstr ""
+"Discounts for new clients, loyalty discounts, discounts for electronic "
+"invoices or direct debit. These discounts add up. The regulator does not "
+"take these into account. %s does."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:30
+#, php-format
+msgid "2. %s leest de nodige gegevens automatisch uit je energiefactuur."
+msgstr "2. %s reads the data right from your energy invoice."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:31
+#, php-format
+msgid ""
+"Voor een accurate vergelijking zijn gegevens nodig over je woonplaats, "
+"verbruik, type meter, huidige leverancier en product, … In plaats van dit "
+"alles te gaan opzoeken in je factuur en te moeten intikken op de website, "
+"leest %s deze automatisch in enkele seconden uit je factuur."
+msgstr ""
+"For an accurate comparison, we need information such as your zip code, "
+"consumption, meter type, current supplier and product, ... Rather than "
+"asking you to find this information in your invoice and to key it in on the "
+"website, %s reads this information automatically in just a few seconds."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:34
+#, php-format
+msgid "3. %s houdt rekening met je huidige leverancier en contract. "
+msgstr "3. %s takes your current supplier and product into account."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:35
+#, php-format
+msgid ""
+"Stel, je laatste afrekening bedraagt 1200€. Een simulatie via bv. de V-test "
+"toont een goedkoopste optie van 1350€.  Je beslist om je huidige contract te "
+"behouden. "
+msgstr ""
+"Imagine: your last invoice is 1200€. A simulation through the regulator's "
+"website tells you the cheapest option is 1350€. You decide to stick with "
+"your current contract."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:37
+#, php-format
+msgid ""
+"Via %s kom je te weten dat je volgend jaar misschien wel 1500€ zou betalen "
+"bij je huidige leverancier, en een overstap dus wel loont. Want, prijzen, "
+"nettarieven, taksen en heffingen (bv. de Turteltaks) veranderen vaak. %s "
+"houdt hier rekening mee."
+msgstr ""
+"Through %s, you may find out that you would have paid 1500€ at your current "
+"supplier and that a switch of provider would be worthwhile. Because prices, "
+"net tariffs, taxes change often. %s takes this into account."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:40
+#, php-format
+msgid "4. %s regelt ook meteen de overstap."
+msgstr "4. %s will take care of your switch."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:41
+#, php-format
+msgid ""
+"CREG, VREG, e.d. geven louter informatie. Daarna moet je naar een website "
+"van een leverancier en opnieuw alle gegevens invoeren, inclusief de EAN "
+"codes van uw meters. %s regelt ook de overstap. Dit is een fluitje van een "
+"cent want bijna alle gegevens, tot en met de EAN codes toe, worden "
+"automatisch uit je factuur gelezen."
+msgstr ""
+"The websites of the regulator guide you to the right product. After that, "
+"you need to go to the website of the supplier and reenter all data once "
+"again, this time also the EAN codes of your meters. %s on the other hand, "
+"will also take care of the switch for you. That is super simple since all "
+"data, including your EAN codes, are read automatically from your invoice."
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:44
+#, php-format
+msgid ""
+"Kortom: volledige, objectieve informatie aanbieden met een goeie "
+"gebruikerservaring. Duizenden tevreden gebruikers gingen u al voor, en "
+"regelden hun overstap via %s, in slechts 60 seconden. Waarop wacht u nog?"
+msgstr ""
+"In short: complete, impartial information with a great user experience. "
+"Thousands of users have used our service and switched to a new energy "
+"contract through %s in just 60 seconds. What are you waiting for?"
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:49
+#: FrontEnd/application/views/static/header.php:48
+#: FrontEnd/application/views/static/new_home.php:18
+#: FrontEnd/application/views/static/new_home.php:51
+msgid "Start nu"
+msgstr "Start now"
+
+#: FrontEnd/application/views/static/Creg_Vreg_Cwape_Brusim.php:56
+msgid ""
+"Niet veel mensen zijn op de hoogte van deze verschillen. Doe daarom je "
+"vrienden, collega's en familie een plezier door dit bericht ook naar hen "
+"door te sturen. Alvast bedankt!"
+msgstr ""
+"Not many people are aware of these differences. So go ahead and do your "
+"friends, colleagues, and family a favor and share this with them. Thanks in "
+"advance !"
+
+#: FrontEnd/application/views/static/annotator.php:58
+msgid "Fix"
+msgstr "Fix"
+
+#: FrontEnd/application/views/static/contact.php:28
+#: FrontEnd/application/views/static/section_user_information2.php:161
+#: FrontEnd/application/views/steps/home-old.php:156
+msgid "Uw naam"
+msgstr "Your name"
+
+#: FrontEnd/application/views/static/el.php:27
+msgid "Uw huidige elektriciteitsleverancier"
+msgstr "Your current electricity provider"
+
+#: FrontEnd/application/views/static/el.php:28
+#: FrontEnd/application/views/static/el.php:64
+#: FrontEnd/application/views/static/gas.php:3
+#: FrontEnd/application/views/static/gas.php:35
+msgid "Weet ik niet / Niet van toepassing"
+msgstr "I don’t know / not applicable"
+
+#: FrontEnd/application/views/static/el.php:29
+#: FrontEnd/application/views/static/gas.php:4
+msgid "Geef geldige postcode op"
+msgstr "Please enter a valid zip code"
+
+#: FrontEnd/application/views/static/el.php:63
+msgid "Uw huidige elektriciteitsproduct"
+msgstr "Your current electricity product"
+
+#: FrontEnd/application/views/static/el.php:65
+#: FrontEnd/application/views/static/gas.php:36
+msgid "Nog geen leverancier geselecteerd"
+msgstr "Please select a supplier"
+
+#: FrontEnd/application/views/static/explainer.php:7
+#: FrontEnd/application/views/static/explainer_picture.php:7
+msgid "Even geduld, we verwerken uw factuur..."
+msgstr "Just a minute, we are processing your invoice…"
+
+#: FrontEnd/application/views/static/explainer.php:15
+msgid ""
+"Wist u dat u mits één maand opzeg steeds van energieleverancier kunt "
+"veranderen, ook als u nog een lopend contract heeft?"
+msgstr ""
+"Did you know that you can change energy providers with a one month notice "
+"period, regardless of the duration of your current contract?"
+
+#: FrontEnd/application/views/static/explainer_id.php:7
+msgid "Even geduld, we verwerken uw identiteitskaart..."
+msgstr "Please wait while we process your ID ..."
+
+#: FrontEnd/application/views/static/explainer_id.php:15
+msgid ""
+"We veranderen het beeld in gestructureerde informatie. Bedankt voor het "
+"wachten."
+msgstr "We change the image in structured information. Thanks for waiting."
+
+#: FrontEnd/application/views/static/faq.php:18
+msgid "Kan ik zomaar van leverancier veranderen?"
+msgstr "Can I easily change utility providers?"
+
+#: FrontEnd/application/views/static/faq.php:21
+msgid ""
+"Gezinnen hebben het recht om op elk moment hun contract voor elektriciteit "
+"of gas te beëindigen, ongeacht welke einddatum op hun factuur vermeld is. "
+"Dit geldt zowel voor een gestart contract in de loop van het eerste jaar, "
+"als voor een al lopend contract dat stilzwijgend verlengd is voor een nieuwe "
+"periode."
+msgstr ""
+"In Belgium, retail customers can stop their contract for electricity or gas "
+"at any time, regardless of the contract duration."
+
+#: FrontEnd/application/views/static/faq.php:22
+msgid ""
+"De enige voorwaarde is dat u een minimum opzegtermijn van 1 maand in acht "
+"moet nemen. Dat wil zeggen dat als u beslist om van leverancier te "
+"veranderen en vandaag een nieuw contract aangaat, u dit nieuw contract kan "
+"laten starten ten vroegste binnen een maand."
+msgstr ""
+"The only condition is a 30 day notice period. This means that should you "
+"choose to change providers today, your new contract will start in a month at "
+"the earliest."
+
+#: FrontEnd/application/views/static/faq.php:23
+msgid ""
+"U moet er wel rekening mee houden dat sommige kortingen en welkomstpremies "
+"voor nieuwe klanten vereisen dat u een bepaalde periode klant blijft."
+msgstr ""
+"Please note that some discounts and promotions require you to remain with "
+"the same provider for a given period (typically one year)."
+
+#: FrontEnd/application/views/static/faq.php:26
+msgid "Moet er iemand van de energiemaatschappij langskomen als ik verander?"
+msgstr "Does switching provider require a physical intervention at my home?"
+
+#: FrontEnd/application/views/static/faq.php:29
+msgid ""
+"Nee. Het veranderen van elektriciteits- of gasleverancier vereist geen "
+"interventie bij u thuis."
+msgstr ""
+"No, changing providers for gas or electricity does not require any physical "
+"intervention."
+
+#: FrontEnd/application/views/static/faq.php:30
+msgid ""
+"Er zal u enkel gevraagd worden de meterstanden door te geven op het moment "
+"van de overschakeling zodat de eindafrekening met uw huidige leverancier "
+"correct kan gebeuren."
+msgstr ""
+"You will be asked to share your meter readings when switch suppliers. This "
+"will enable the proper transition to the new provider and correct final "
+"invoice from your current provider."
+
+#: FrontEnd/application/views/static/faq.php:33
+msgid "Wat als ik enkel een papieren afrekening heb?"
+msgstr "What if I only have a paper invoice?"
+
+#: FrontEnd/application/views/static/faq.php:36
+#, php-format
+msgid ""
+"Om gebruik te maken van %s heb je een pdf factuur nodig. Als je je factuur "
+"enkel op papier krijgt, kan je die scannen, bijvoorbeeld met de gratis apps "
+"Scannable (App Store) of CamScanner (Google Play Store)."
+msgstr ""
+"To use %s, you will need a pdf invoice. Should you only have a paper "
+"invoice, you can scan it to pdf. To achieve this, you could use one of the "
+"free apps, such as Scannable (App Store) or CamScanner (Google Play Store)."
+
+#: FrontEnd/application/views/static/faq.php:39
+msgid "Mijn afrekening werd niet correct verwerkt, wat nu?"
+msgstr "My invoice was not processed correctly, what do I do now?"
+
+#: FrontEnd/application/views/static/faq.php:42
+msgid ""
+"Als u een foutboodschap kreeg, dan bekijken we wat het probleem is en komen "
+"we per email naar u terug van zodra het probleem verholpen is."
+msgstr ""
+"If you received an error message, we’ll look into the problem and contact "
+"you by email as soon as we have addressed the problem."
+
+#: FrontEnd/application/views/static/faq.php:43
+msgid ""
+"Als u geen foutboodschap kreeg, maar van mening bent dat we je afrekening "
+"niet correct geïnterpreteerd hebben, dan horen we dat graag."
+msgstr ""
+"If you did not receive an error message, but you believe we have "
+"misinterpreted your invoice, we would love to hear from you."
+
+#: FrontEnd/application/views/static/faq.php:46
+msgid ""
+"Waarom zijn de berekeningen niet altijd exact hetzelfde als op de site van "
+"de VREG?"
+msgstr "Why are the computations not exactly the same as on the VREG website?"
+
+#: FrontEnd/application/views/static/faq.php:49
+#, php-format
+msgid ""
+"De berekeningen op de site van de VREG zijn correct maar niet volledig. De "
+"berekening van de VREG houdt enkel rekening met de standaardtarieven van de "
+"leveranciers, en bijvoorbeeld niet de acties en promoties. %s geeft wel het "
+"volledige beeld."
+msgstr ""
+"The computations on the VREG website are correct, but not necessarily "
+"complete. The VREG computation only takes the official tariffs into account, "
+"yet does not integrate temporary discounts or reductions. %s does give you "
+"the complete picture."
+
+#: FrontEnd/application/views/static/faq.php:52
+#, php-format
+msgid "Ik ben via de %s dienst van leverancier veranderd. Wat nu?"
+msgstr "I changed suppliers using %s. What do I do next?"
+
+#: FrontEnd/application/views/static/faq.php:55
+msgid ""
+"Uw nieuwe leverancier stuurt u een bevestiging en neemt contact met u op om "
+"de overstap af te ronden."
+msgstr ""
+"Your new supplier will send you a confirmation and contact you to finalize "
+"the transition."
+
+#: FrontEnd/application/views/static/faq.php:58
+msgid ""
+"Kan ik deze dienst ook gebruiken voor het energiecontract van mijn bedrijf?"
+msgstr "Can I use this service for my company?"
+
+#: FrontEnd/application/views/static/faq.php:61
+#, php-format
+msgid ""
+"Zeker, u kunt uw afrekening opladen op de startpagina of doorsturen naar "
+"factuur@%s. Deze dienst is nog in testfase, dus laat zeker iets weten "
+"mochten we niet herkend hebben dat dit een factuur is van een bedrijf."
+msgstr ""
+"Absolutely, u can upload your invoice on the homepage or send it to invoice@"
+"%s. This service is still in test phase, so just drop us a line if we didn’t "
+"recognize your invoice correctly."
+
+#: FrontEnd/application/views/static/faq.php:64
+#, php-format
+msgid "Hoe verdient %s geld?"
+msgstr "How does %s make money?"
+
+#: FrontEnd/application/views/static/faq.php:67
+#, php-format
+msgid ""
+"%s is gratis voor de gebruikers, maar heeft inkomsten nodig om de dienst te "
+"kunnen blijven aanbieden. Bij een overstap krijgt %s een kleine commissie "
+"van de leveranciers. Dit is mogelijk doordat %s gebruikers en leveranciers "
+"op een zeer efficiënte manier met elkaar in contact brengt. Deze commissie "
+"is veel lager dan de kost voor de leverancier om klanten te bereiken via "
+"dure reclamespots of andere kanalen."
+msgstr ""
+"%s is free for users, yet needs revenues to be able to keep the service free "
+"going forward. %s receives a small compensation by the receiving supplier "
+"for each switched customer. As %s allows suppliers to drastically lower "
+"their customer acquisition cost, this is beneficial for both the customers "
+"and the suppliers."
+
+#: FrontEnd/application/views/static/faq.php:70
+#, php-format
+msgid "Is %s wel objectief?"
+msgstr "Is %s neutral?"
+
+#: FrontEnd/application/views/static/faq.php:73
+#, php-format
+msgid ""
+"%s is volledig neutraal en objectief. We geven het volledige detail van de "
+"berekeningen weer zodat u, indien u dit wenst, in detail kan nakijken hoe de "
+"cijfers berekend zijn en hoe %s tot het voorstel komt met het beste contract "
+"voor uw persoonlijke situatie."
+msgstr ""
+"%s guarantees to be completely neutral and objective. At %s, we have an open "
+"book policy, so you can review all computations for completeness and "
+"correctness."
+
+#: FrontEnd/application/views/static/faq.php:76
+#, php-format
+msgid ""
+"Ik wil %s volgend jaar terug gebruiken. Kunt u mij een herinnering sturen?"
+msgstr ""
+"I would like to use %s in a year from now when I receive my new invoice. Can "
+"you send me a reminder?"
+
+#: FrontEnd/application/views/static/faq.php:79
+#, php-format
+msgid ""
+"Ja. %s kan u een herinnering sturen om volgend jaar opnieuw na te kijken wat "
+"voor u het beste contract is."
+msgstr ""
+"Yes, %s will be happy to remind you when the time has come to have another "
+"look at your invoice."
+
+#: FrontEnd/application/views/static/faq.php:82
+msgid ""
+"Ik heb een vraag of idee om deze dienst nog verder te verbeteren. Hoe kan ik "
+"dit met jullie delen?"
+msgstr ""
+"I have a question or an idea on how to further improve the service. How can "
+"I contact you?"
+
+#: FrontEnd/application/views/static/faq.php:85
+msgid "U kunt uw vraag, idee of feedback op onze dienst sturen naar "
+msgstr "You can ask your question, idea or feedback on our service send to "
+
+#: FrontEnd/application/views/static/faq.php:88
+#, php-format
+msgid "Kan ik %s ook gebruiken van op mijn smartphone of tablet?"
+msgstr "Can I use %s on my mobile or tablet?"
+
+#: FrontEnd/application/views/static/faq.php:91
+#, php-format
+msgid "Zeker. %s werkt zowel op PC, smartphone als tablet."
+msgstr ""
+"Absolutely. %s is responsive and will work on your PC, laptop, mobile, and "
+"tablet."
+
+#: FrontEnd/application/views/static/faq.php:94
+#, php-format
+msgid "Werkt %s ook als ik gewoon de email van een leverancier doorstuur?"
+msgstr "Does %s allow me to just forward the email of my supplier?"
+
+#: FrontEnd/application/views/static/faq.php:97
+#, php-format
+msgid ""
+"Absoluut. U kunt de email van de leverancier met pdf afrekening in bijlage "
+"gewoon via een forward doorsturen naar factuur@%s. U krijgt een email terug "
+"met een link naar onze website waar u het resultaat van de berekeningen kunt "
+"bekijken en met één klik veranderen van leverancier."
+msgstr ""
+"Absolutely. You can forward the email of your supplier with your invoice to "
+"invoice@%s. You will receive an email with a link to our website on which "
+"you can review the outcome of our comparison and easily switch to the most "
+"suitable contract."
+
+#: FrontEnd/application/views/static/footer_1.php:14
+msgid "Gebruiksvoorwaarden"
+msgstr "Terms and conditions"
+
+#: FrontEnd/application/views/static/forward.php:26
+msgid "Je bent bijna overgestapt !"
+msgstr "You have almost switched energy suppliers !"
+
+#: FrontEnd/application/views/static/forward.php:33
+msgid ""
+"Wij hebben alle nodige informatie om de overstap te regelen netjes opgelijst"
+msgstr "We have prepared all required information to finalize the transition"
+
+#: FrontEnd/application/views/static/forward.php:33
+msgid "Je kan nu je overstap finaliseren op de website van Luminus"
+msgstr "You can finalize your supplier switch on the website of Luminus"
+
+#: FrontEnd/application/views/static/forward.php:33
+msgid "Daar zal je zien dat alle gegevens al ingevuld zijn"
+msgstr "You'll see that we have prefilled all your data"
+
+#: FrontEnd/application/views/static/forward.php:33
+msgid "Je hoeft dus enkel nog door te klikken en te bevestigen"
+msgstr "So, all you have to do is confirm"
+
+#: FrontEnd/application/views/static/forward.php:37
+#: FrontEnd/application/views/static/success.php:39
+msgid "Deel uw ervaring"
+msgstr "Share your experience"
+
+#: FrontEnd/application/views/static/forward.php:43
+#: FrontEnd/application/views/static/success.php:45
+#, php-format
+msgid "Een lekker etentje met onze besparing dankzij %s"
+msgstr "A nice dinner party with our savings thanks to %s"
+
+#: FrontEnd/application/views/static/forward.php:46
+#: FrontEnd/application/views/static/forward.php:67
+#: FrontEnd/application/views/static/success.php:48
+#: FrontEnd/application/views/static/success.php:69
+msgid "Deel op:"
+msgstr "Share on:"
+
+#: FrontEnd/application/views/static/forward.php:49
+#: FrontEnd/application/views/static/forward.php:52
+#: FrontEnd/application/views/static/forward.php:55
+#: FrontEnd/application/views/static/forward.php:73
+#: FrontEnd/application/views/static/success.php:51
+#: FrontEnd/application/views/static/success.php:54
+#: FrontEnd/application/views/static/success.php:57
+#: FrontEnd/application/views/static/success.php:75
+#, php-format
+msgid "Een lekker etentje met onze besparing dankzij %s !"
+msgstr "A nice dinner party with our savings thanks to %s !"
+
+#: FrontEnd/application/views/static/forward.php:64
+#: FrontEnd/application/views/static/success.php:66
+#, php-format
+msgid "Een leuke uitstap dankzij onze besparing met %s"
+msgstr "A fun trip thanks to our savings thanks to %s"
+
+#: FrontEnd/application/views/static/forward.php:70
+#: FrontEnd/application/views/static/forward.php:76
+#: FrontEnd/application/views/static/success.php:72
+#: FrontEnd/application/views/static/success.php:78
+#, php-format
+msgid "Een leuke uitstap dankzijn onze besparing met %s !"
+msgstr "A fun outing thank our savings thanks to %s!"
+
+#: FrontEnd/application/views/static/forward.php:89
+msgid "Naar Luminus"
+msgstr "To Luminus"
+
+#: FrontEnd/application/views/static/gas.php:2
+msgid "Uw huidige gasleverancier"
+msgstr "Your current gas supplier"
+
+#: FrontEnd/application/views/static/gas.php:34
+msgid "Uw huidige gasproduct"
+msgstr "Your current gas product"
+
+#: FrontEnd/application/views/static/header.php:32
+#: FrontEnd/application/views/static/new_home.php:46
+#: FrontEnd/application/views/static/new_home.php:66
+msgid "Hoe werkt het"
+msgstr "How?"
+
+#: FrontEnd/application/views/static/header.php:34
+#: FrontEnd/application/views/static/new_home.php:47
+#: FrontEnd/application/views/static/new_home.php:78
+msgid "Voordelen"
+msgstr "Benefits"
+
+#: FrontEnd/application/views/static/header.php:36
+#: FrontEnd/application/views/static/new_home.php:50
+#: FrontEnd/application/views/static/new_home.php:255
+msgid "Wie zijn wij"
+msgstr "Team"
+
+#: FrontEnd/application/views/static/id_reader.php:35
+msgid "Result"
+msgstr "Result"
+
+#: FrontEnd/application/views/static/id_reader.php:100
+#: FrontEnd/application/views/static/share_picture.php:43
+msgid "Email"
+msgstr "Email"
+
+#: FrontEnd/application/views/static/id_reader.php:108
+msgid "Selecteer hier uw energiefactuur"
+msgstr "Choose your energy invoice here"
+
+#: FrontEnd/application/views/static/manual.php:23
+msgid "Handmatig invoeren van gegevens"
+msgstr "Manual data entry"
+
+#: FrontEnd/application/views/static/manual.php:155
+#: FrontEnd/application/views/static/section_user_information2.php:484
+msgid "Gelieve een geldig email adres op te geven"
+msgstr "Please provide a valid email address"
+
+#: FrontEnd/application/views/static/manual.php:156
+#: FrontEnd/application/views/static/section_user_information2.php:491
+#: FrontEnd/application/views/static/section_user_information2.php:496
+msgid "Gelieve een geldige Belgische postcode op te geven"
+msgstr "Please provide a valid Belgian zip code"
+
+#: FrontEnd/application/views/static/manual.php:157
+msgid ""
+"Gelieve aan te geven of je een particulier of professionele gebruiker bent"
+msgstr "Please indicate whether you are a personal or professional user"
+
+#: FrontEnd/application/views/static/manual.php:158
+msgid "Gelieve een scenario te kiezen"
+msgstr "Please select a scenario"
+
+#: FrontEnd/application/views/static/manual.php:159
+#: FrontEnd/application/views/static/manual.php:160
+msgid "Gelieve minstens 1 energietype te selecteren (electriciteit en/of gas)"
+msgstr "Please select at least one energy type (electricity and/or gas)"
+
+#: FrontEnd/application/views/static/manual.php:161
+msgid "Gelieve je metertype aan te duiden"
+msgstr "Please indicate your meter type"
+
+#: FrontEnd/application/views/static/manual.php:162
+#: FrontEnd/application/views/static/manual.php:163
+#: FrontEnd/application/views/static/manual.php:164
+#: FrontEnd/application/views/static/manual.php:170
+msgid "Formaat: 1234,56, kleiner dan"
+msgstr "Format: 1234,56, smaller than"
+
+#: FrontEnd/application/views/static/manual.php:165
+msgid "Formaat: 1,23, kleiner dan 10"
+msgstr "Format: 1,23, smaller than 10"
+
+#: FrontEnd/application/views/static/manual.php:166
+#: FrontEnd/application/views/static/manual.php:168
+msgid ""
+"Om uw verbruik af te leiden van uw maandelijkse kost, moeten we de "
+"leverancier kennen"
+msgstr ""
+"We need to know your current supplier to derive your consumption from your "
+"monthly cost"
+
+#: FrontEnd/application/views/static/manual.php:167
+#: FrontEnd/application/views/static/manual.php:169
+msgid ""
+"Om uw verbruik af te leiden van uw maandelijkse kost, moeten we de "
+"productnaam kennen"
+msgstr ""
+"We need to know your current product to derive your consumption from your "
+"monthly cost"
+
+#: FrontEnd/application/views/static/manual.php:171
+#: FrontEnd/application/views/static/manual.php:172
+msgid "Maandelijkse kost, formaat: 123,45, <2000"
+msgstr "Monthly cost, format: 123,45, <2000"
+
+#: FrontEnd/application/views/static/manual.php:173
+msgid "Gelieve uw type huis aan te geven"
+msgstr "Please indicate your type of housing"
+
+#: FrontEnd/application/views/static/manual.php:174
+msgid "Gelieve uw type verwarming aan te geven"
+msgstr "Please indicate your type of heating"
+
+#: FrontEnd/application/views/static/manual.php:175
+msgid "Gelieve uw isolatiegraad aan te geven"
+msgstr "Please indicate your degree of insulation"
+
+#: FrontEnd/application/views/static/manual.php:176
+msgid "Gelieve het aantal inwoners na te kijken (<=10)"
+msgstr "Please check the number of inhabitants (<10)"
+
+#: FrontEnd/application/views/static/manual.php:200
+msgid "U bent"
+msgstr "You are"
+
+#: FrontEnd/application/views/static/manual.php:201
+#: FrontEnd/application/views/static/manual.php:206
+msgid "Particulier"
+msgstr "Retail"
+
+#: FrontEnd/application/views/static/manual.php:202
+#: FrontEnd/application/views/static/manual.php:209
+msgid "Professioneel"
+msgstr "Professional"
+
+#: FrontEnd/application/views/static/manual.php:203
+#: FrontEnd/application/views/static/manual.php:218
+#: FrontEnd/application/views/static/manual.php:235
+#: FrontEnd/application/views/static/manual.php:292
+#: FrontEnd/application/views/static/manual.php:324
+msgid "wijzig"
+msgstr "change"
+
+#: FrontEnd/application/views/static/manual.php:213
+#: FrontEnd/application/views/static/section_user_information.php:118
+#: FrontEnd/application/views/static/section_user_information2.php:132
+msgid "Scenario"
+msgstr "Scenario"
+
+#: FrontEnd/application/views/static/manual.php:214
+msgid "Kies eerst type klant"
+msgstr "Choose a type of customer"
+
+#: FrontEnd/application/views/static/manual.php:215
+#: FrontEnd/application/views/static/manual.php:221
+msgid "Ik ken mijn verbruik"
+msgstr "I know my consumption"
+
+#: FrontEnd/application/views/static/manual.php:216
+#: FrontEnd/application/views/static/manual.php:224
+msgid ""
+"Ik ken mijn verbruik niet, wel mijn maandelijkse kost en mijn huidige product"
+msgstr ""
+"I don’t know my consumption, but I do know my monthly cost and my current "
+"product"
+
+#: FrontEnd/application/views/static/manual.php:217
+#: FrontEnd/application/views/static/manual.php:227
+msgid "Ik ken noch mijn verbruik, noch mijn maandelijkse kost"
+msgstr "I don’t know my consumption, nor my monthly cost"
+
+#: FrontEnd/application/views/static/manual.php:234
+#: FrontEnd/application/views/static/manual.php:337
+#: FrontEnd/application/views/static/manual.php:344
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:22
+#: FrontEnd/application/views/static/section_switch_provider.php:24
+#: FrontEnd/application/views/static/section_user_information2.php:297
+#: FrontEnd/application/views/steps/result.php:103
+#: FrontEnd/application/views/steps/result_parsing.php:49
+msgid "Elektriciteit"
+msgstr "Electricity"
+
+#: FrontEnd/application/views/static/manual.php:236
+#: FrontEnd/application/views/static/manual.php:293
+#: FrontEnd/application/views/static/section_user_information.php:136
+#: FrontEnd/application/views/static/section_user_information.php:301
+#: FrontEnd/application/views/static/section_user_information.php:323
+#: FrontEnd/application/views/static/section_user_information.php:385
+msgid "klap in"
+msgstr "fold"
+
+#: FrontEnd/application/views/static/manual.php:244
+msgid "Kost"
+msgstr "Cost"
+
+#: FrontEnd/application/views/static/manual.php:246
+#: FrontEnd/application/views/static/manual.php:306
+msgid "Maandelijkse kost (€/maand)"
+msgstr "Monthly cost (€/month)"
+
+#: FrontEnd/application/views/static/manual.php:248
+#: FrontEnd/application/views/static/manual.php:308
+msgid "bovenstaand bedrag is incl. BTW"
+msgstr "the above amount includes VAT"
+
+#: FrontEnd/application/views/static/manual.php:250
+msgid "Meter type"
+msgstr "Meter type"
+
+#: FrontEnd/application/views/static/manual.php:253
+msgid "Enkele meter"
+msgstr "Single meter"
+
+#: FrontEnd/application/views/static/manual.php:256
+msgid "Dubbele meter (dag/nacht)"
+msgstr "Double meter (day/night)"
+
+#: FrontEnd/application/views/static/manual.php:261
+msgid "Verbruik Enkel/Dag (kWh)"
+msgstr "Consumption Single/Day (kWh)"
+
+#: FrontEnd/application/views/static/manual.php:264
+msgid "Verbruik Nacht (kWh)"
+msgstr "Consumption Night (kWh)"
+
+#: FrontEnd/application/views/static/manual.php:268
+msgid "Ik heb een exclusief nacht teller"
+msgstr "I have an exclusive night counter"
+
+#: FrontEnd/application/views/static/manual.php:272
+msgid "Verbruik Exclusief Nacht (kWh)"
+msgstr "Consumption exclusive night (kWh)"
+
+#: FrontEnd/application/views/static/manual.php:277
+msgid "Ik produceer zelf energie"
+msgstr "I produce my own energy"
+
+#: FrontEnd/application/views/static/manual.php:291
+#: FrontEnd/application/views/static/manual.php:337
+#: FrontEnd/application/views/static/manual.php:341
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:78
+#: FrontEnd/application/views/static/section_switch_provider.php:70
+#: FrontEnd/application/views/static/section_user_information2.php:315
+#: FrontEnd/application/views/steps/result.php:159
+#: FrontEnd/application/views/steps/result_parsing.php:85
+msgid "Gas"
+msgstr "Gas"
+
+#: FrontEnd/application/views/static/manual.php:302
+msgid "Verbruik Gas (kWh)"
+msgstr "Consumption Gas (kWh)"
+
+#: FrontEnd/application/views/static/manual.php:318
+msgid "Inschatting verbruik"
+msgstr "Assessment consumption"
+
+#: FrontEnd/application/views/static/manual.php:323
+msgid "Type huis"
+msgstr "Type of house"
+
+#: FrontEnd/application/views/static/manual.php:323
+#: FrontEnd/application/views/static/manual.php:327
+msgid "Studio of appartement"
+msgstr "Apartment"
+
+#: FrontEnd/application/views/static/manual.php:323
+#: FrontEnd/application/views/static/manual.php:330
+msgid "Gesloten of halfopen bebouwing"
+msgstr "Closed or half-open house"
+
+#: FrontEnd/application/views/static/manual.php:323
+#: FrontEnd/application/views/static/manual.php:333
+msgid "Open bebouwing"
+msgstr "Detached house"
+
+#: FrontEnd/application/views/static/manual.php:337
+msgid "Type verwarming"
+msgstr "Type of heating"
+
+#: FrontEnd/application/views/static/manual.php:337
+msgid "Selecteer eerst type woning"
+msgstr "Please select type of house first"
+
+#: FrontEnd/application/views/static/manual.php:337
+#: FrontEnd/application/views/static/manual.php:347
+msgid "Andere (bvb. stookolie)"
+msgstr "Other (e.g., fuel oil)"
+
+#: FrontEnd/application/views/static/manual.php:352
+msgid "Isolatie"
+msgstr "Insulation"
+
+#: FrontEnd/application/views/static/manual.php:352
+msgid "Selecteer eerst type verwarming"
+msgstr "Please select type of heating first"
+
+#: FrontEnd/application/views/static/manual.php:352
+#: FrontEnd/application/views/static/manual.php:356
+msgid "Goed geïsoleerd"
+msgstr "Well insulated"
+
+#: FrontEnd/application/views/static/manual.php:352
+#: FrontEnd/application/views/static/manual.php:359
+msgid "Niet tot matig geïsoleerd"
+msgstr "Not or poorly insulated"
+
+#: FrontEnd/application/views/static/manual.php:370
+#: FrontEnd/application/views/static/manual.php:374
+#: FrontEnd/application/views/static/modal_reminder.php:108
+#: FrontEnd/application/views/static/modal_user_information.php:32
+#: FrontEnd/application/views/static/new_home.php:500
+msgid "Verstuur"
+msgstr "Send"
+
+#: FrontEnd/application/views/static/modal_reminder.php:45
+msgid "Please wait..."
+msgstr "Please wait..."
+
+#: FrontEnd/application/views/static/modal_reminder.php:91
+msgid "Blijf op de hoogte"
+msgstr "Stay informed"
+
+#: FrontEnd/application/views/static/modal_reminder.php:102
+msgid ""
+"Heb je je factuur niet meteen bij de hand en wil je een reminder binnen een "
+"week?"
+msgstr "Don't have an invoice handy? Shall we remind you in a week?"
+
+#: FrontEnd/application/views/static/modal_reminder.php:103
+msgid "Wil je op de hoogte blijven van nieuwe functionaliteit?"
+msgstr "Would you like to stay up to date?"
+
+#: FrontEnd/application/views/static/modal_reminder.php:106
+msgid "E-mailadres"
+msgstr "Email address"
+
+#: FrontEnd/application/views/static/modal_reminder.php:111
+msgid "We delen je gegevens niet met derden"
+msgstr "We don't share your data with third parties"
+
+#: FrontEnd/application/views/static/modal_result_confirmation.php:7
+msgid "Rondleiding?"
+msgstr "In for a guided tour?"
+
+#: FrontEnd/application/views/static/modal_result_confirmation.php:10
+msgid ""
+"Als je wil, kunnen we je even kort tonen hoe je de resultatenpagina kan "
+"gebruiken."
+msgstr "If you want, we can quickly guide you around the result screen."
+
+#: FrontEnd/application/views/static/modal_result_confirmation.php:11
+msgid "Zullen we je een korte rondleiding geven?"
+msgstr "Shall we go on a short tour?"
+
+#: FrontEnd/application/views/static/modal_result_confirmation.php:12
+msgid "Ja, graag !"
+msgstr "Yes, I'd love to!"
+
+#: FrontEnd/application/views/static/modal_result_confirmation.php:14
+msgid "Niet nodig"
+msgstr "No, thanks"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:7
+msgid "Hallo"
+msgstr "Hi"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:11
+msgid "We hebben deze gegevens gebruikt voor een persoonlijke analyse"
+msgstr "We've built a personalized analysis based on your data"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:13
+msgid ""
+"We hebben deze gegevens uit je factuur gebruikt voor een persoonlijke analyse"
+msgstr "We have used your data for a personalized analysis"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:17
+#: FrontEnd/application/views/static/section_user_information.php:303
+#: FrontEnd/application/views/static/section_user_information2.php:170
+#: FrontEnd/application/views/steps/result.php:98
+#: FrontEnd/application/views/steps/result_parsing.php:43
+msgid "Leveradres"
+msgstr "Delivery address"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:25
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:99
+#: FrontEnd/application/views/steps/result.php:106
+#: FrontEnd/application/views/steps/result.php:180
+msgid "Leverancier"
+msgstr "Supplier"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:26
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:100
+#: FrontEnd/application/views/steps/result.php:107
+#: FrontEnd/application/views/steps/result.php:181
+msgid "Product"
+msgstr "Product"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:38
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:112
+#: FrontEnd/application/views/steps/result.php:119
+#: FrontEnd/application/views/steps/result.php:193
+#: FrontEnd/application/views/steps/result_parsing.php:55
+#: FrontEnd/application/views/steps/result_parsing.php:91
+msgid "Verbruik: "
+msgstr "Consumption: "
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:39
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:113
+#: FrontEnd/application/views/steps/result.php:120
+#: FrontEnd/application/views/steps/result.php:194
+#: FrontEnd/application/views/steps/result_parsing.php:56
+#: FrontEnd/application/views/steps/result_parsing.php:92
+msgid "Voor de berekening schalen we uw verbruik naar een periode van 1 jaar."
+msgstr "In our calculations, we scale your consumption to a period of 1 year."
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:44
+#: FrontEnd/application/views/steps/result.php:125
+#: FrontEnd/application/views/steps/result_parsing.php:61
+msgid "Dag"
+msgstr "Day"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:49
+#: FrontEnd/application/views/steps/result.php:130
+#: FrontEnd/application/views/steps/result_parsing.php:66
+msgid "Nacht"
+msgstr "Night"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:54
+#: FrontEnd/application/views/steps/result.php:135
+#: FrontEnd/application/views/steps/result_parsing.php:71
+msgid "Excl. nacht"
+msgstr "Excl. night"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:59
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:121
+#: FrontEnd/application/views/steps/result.php:140
+#: FrontEnd/application/views/steps/result.php:202
+#: FrontEnd/application/views/steps/result_parsing.php:76
+#: FrontEnd/application/views/steps/result_parsing.php:100
+msgid "Maandelijkse kost"
+msgstr "Monthly cost"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:62
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:124
+#: FrontEnd/application/views/steps/result.php:143
+#: FrontEnd/application/views/steps/result.php:205
+#: FrontEnd/application/views/steps/result_parsing.php:79
+#: FrontEnd/application/views/steps/result_parsing.php:103
+msgid ""
+"Op basis van uw maandelijkse kost berekenen we het aantal kWh dat u op "
+"jaarbasis gebruikt."
+msgstr "We derive your yearly consumption (kWh) from your monthly cost."
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:66
+#: FrontEnd/application/views/steps/result.php:147
+msgid "Zonnepanelen? klik hier!"
+msgstr "Solar panels? Click here!"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:69
+#: FrontEnd/application/views/steps/result.php:150
+msgid "Mijn vermogen: "
+msgstr "Capacity of my own production: "
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:72
+#: FrontEnd/application/views/steps/result.php:153
+msgid ""
+"Geef hier het vermogen van uw installatie in. Merk op dat dit geen invloed "
+"heeft op de besparing die je kan realiseren, dit is immers onafhankelijk van "
+"de gekozen leverancier. In de detailberekening kan je de totale kost zien "
+"inclusief prosumententarief."
+msgstr ""
+"Here you can fill in the consumption of your own installation. Note that "
+"this will not impact the savings, as this is independent of the chosen "
+"supplier. In the detailed computation, you will then be able to see the "
+"total cost, including the prosumer tariff (Flanders)."
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:83
+#: FrontEnd/application/views/steps/result.php:164
+msgid "Geen gas gevonden, klik hier om toe te voegen"
+msgstr "No gas, click here to add"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:92
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:140
+#: FrontEnd/application/views/steps/result.php:173
+#: FrontEnd/application/views/steps/result.php:221
+msgid "Toevoegen"
+msgstr "Add"
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:131
+#: FrontEnd/application/views/steps/result.php:212
+msgid "Geen elektriciteit gevonden, klik hier om toe te voegen"
+msgstr "No electricity. Click here to add."
+
+#: FrontEnd/application/views/static/modal_result_confirmation_former.php:146
+msgid "Ok"
+msgstr "Ok"
+
+#: FrontEnd/application/views/static/modal_user_information.php:7
+msgid "Invullen van gegevens"
+msgstr "Data entry"
+
+#: FrontEnd/application/views/static/modal_user_information.php:20
+msgid ""
+"Deel de eerste pagina van je energiefactuur. Dan halen wij daar alle nodige "
+"informatie uit voor de overstap!"
+msgstr ""
+"Share the first page of your latest energy invoice. We'll take the required "
+"information for the supplier switch from there."
+
+#: FrontEnd/application/views/static/modal_user_information.php:23
+msgid "Op een mobiel toestel krijg je ook de optie om een foto te nemen."
+msgstr "On a mobile device, you also have the option of taking a picture."
+
+#: FrontEnd/application/views/static/new_home-old.php:4
+msgid "Verander van energieleverancier in 60s"
+msgstr "Change energy supplier in 60s"
+
+#: FrontEnd/application/views/static/new_home-old.php:28
+#: FrontEnd/application/views/steps/info-modal.php:108
+msgid "Gratis"
+msgstr "Free"
+
+#: FrontEnd/application/views/static/new_home-old.php:29
+msgid ""
+"Onze dienst is volledig gratis. Er zijn ook geen opzeg- of overstapkosten. "
+"Zelfs als u een meerjarig contract tekende kan u kostenloos overstappen "
+"binnen 30 dagen."
+msgstr ""
+"Our service is completely free. There are also no cancellation or startup "
+"costs. Even if you have signed a multi-year contract with your current "
+"energy supplier, you can switch free of charge with 30 days notice."
+
+#: FrontEnd/application/views/static/new_home-old.php:33
+msgid "Makkelijk"
+msgstr "Easy"
+
+#: FrontEnd/application/views/static/new_home-old.php:34
+msgid ""
+"Wij regelen het papierwerk voor je. Bij ons hoef je geen eindeloze "
+"formulieren in te vullen. We halen immers alle nodige gegevens automatisch "
+"uit je factuur."
+msgstr ""
+"We’ll take care of the paper work for you. With us you don’t have endless "
+"forms to fill out. After all, we extract all the necessary information "
+"automatically from your invoice."
+
+#: FrontEnd/application/views/static/new_home-old.php:40
+msgid "Snel"
+msgstr "Fast"
+
+#: FrontEnd/application/views/static/new_home-old.php:41
+msgid ""
+"Binnen de 60 seconden vertellen we je wat het beste aanbod is de markt op "
+"basis van jouw verbruik en adres. Nog twee keer klikken en je bent "
+"overgestapt."
+msgstr ""
+"Within 60 seconds we tell you what the best offer is on the market based on "
+"your consumption and address. Two more clicks and you’re switched."
+
+#: FrontEnd/application/views/static/new_home-old.php:45
+msgid "Neutraal"
+msgstr "Neutral"
+
+#: FrontEnd/application/views/static/new_home-old.php:46
+#: FrontEnd/application/views/static/new_home.php:120
+msgid ""
+"Wij tonen objectief het beste aanbod op de markt op maat van jouw verbruik. "
+"Bovendien geven we volledige transparantie in de berekeningen."
+msgstr ""
+"We show the best offer on the market tailored to your consumption. In "
+"addition, we give full transparency on our calculations."
+
+#: FrontEnd/application/views/static/new_home-old.php:52
+msgid "Naadloos"
+msgstr "Seamless"
+
+#: FrontEnd/application/views/static/new_home-old.php:53
+msgid ""
+"De levering van gas en elektriciteit wordt op geen enkel moment onderbroken. "
+"De overgang wordt in goede banen geleid door je netbeheerder."
+msgstr ""
+"The supply of electricity and gas is at no time interrupted. The switch of "
+"suppliers is guided by your network operator."
+
+#: FrontEnd/application/views/static/new_home-old.php:57
+msgid "Veilig"
+msgstr "Safe"
+
+#: FrontEnd/application/views/static/new_home-old.php:58
+msgid ""
+"Wij geven uw data niet door aan derden. Indien u ervoor kiest over te "
+"stappen delen we enkel de nodige data met je nieuwe energieleverancier."
+msgstr ""
+"We do not pass on your data to third parties. If you choose to migrate, we "
+"share only the necessary data with your new energy supplier."
+
+#: FrontEnd/application/views/static/new_home.php:12
+msgid "Energie: leveranciers vergelijken, kiezen en overstappen"
+msgstr "Energy: compare, choose and switch suppliers"
+
+#: FrontEnd/application/views/static/new_home.php:13
+msgid "Vergelijk, kies en bespaar op gas en elektriciteit"
+msgstr "Compare, choose and switch gas and electricity"
+
+#: FrontEnd/application/views/static/new_home.php:14
+msgid ""
+"Goeie keuzes zijn belangrijk. Ontvang in minder dan 60 seconden een gratis "
+"analyse op basis van jouw factuur en hulp bij de overstap!"
+msgstr ""
+"Good choices matter. Receive a free analysis in less than 60 seconds based "
+"on your invoice"
+
+#: FrontEnd/application/views/static/new_home.php:15
+msgid ""
+"Goeie keuzes zijn belangrijk, ook voor energie. Laat nu in 60 seconden je "
+"factuur analyseren en krijg hulp bij de overstap. Gratis en zonder gedoe."
+msgstr ""
+"Good choices matter, also for energy.  Let us analyse your invoice in less "
+"than 60 seconds and get help to switch providers. Free and without hassle."
+
+#: FrontEnd/application/views/static/new_home.php:16
+msgid "Meer lezen"
+msgstr "Read more"
+
+#: FrontEnd/application/views/static/new_home.php:17
+msgid "Benieuwd hoe dit kan?"
+msgstr "Want to find out more?"
+
+#: FrontEnd/application/views/static/new_home.php:19
+msgid "Ik ken het al, start nu !"
+msgstr "I know how it works, start now!"
+
+#: FrontEnd/application/views/static/new_home.php:41
+msgid "Verken"
+msgstr "Explore"
+
+#: FrontEnd/application/views/static/new_home.php:45
+msgid "Welkom"
+msgstr "Welcome"
+
+#: FrontEnd/application/views/static/new_home.php:48
+msgid "Leveranciers"
+msgstr "Suppliers"
+
+#: FrontEnd/application/views/static/new_home.php:49
+msgid "Getuigenissen"
+msgstr "Testimonials"
+
+#: FrontEnd/application/views/static/new_home.php:67
+msgid "Benieuwd hoe het werkt? Dat vertellen we je graag in dit filmpje"
+msgstr "Want to know how it works? Let us explain this in a short movie"
+
+#: FrontEnd/application/views/static/new_home.php:79
+msgid "Waarom zou je het niet eens proberen?"
+msgstr "How about you give it a try?"
+
+#: FrontEnd/application/views/static/new_home.php:87
+msgid "Volledig gratis"
+msgstr "Completely free"
+
+#: FrontEnd/application/views/static/new_home.php:88
+msgid ""
+"Onze dienst is volledig gratis. Er zijn ook geen opzeg- of overstapkosten. "
+"Zelfs als je een meerjarig contract tekende kan je kostenloos overstappen "
+"binnen 30 dagen."
+msgstr ""
+"Our service is completely free. There are also no cancellation or startup "
+"costs. Even if you have signed a multi-year contract with your current "
+"energy supplier, you can switch free of charge with 30 days notice."
+
+#: FrontEnd/application/views/static/new_home.php:97
+msgid "Geen onnodig tikwerk"
+msgstr "No unnecessary typing"
+
+#: FrontEnd/application/views/static/new_home.php:98
+#, php-format
+msgid ""
+"Bij ons hoef je geen eindeloze formulieren in te vullen. We lezen alle "
+"nodige gegevens automatisch uit je factuur."
+msgstr ""
+"With Contract.fit, no need to fill out endless web forms. We read all "
+"necessary information from your invoice."
+
+#: FrontEnd/application/views/static/new_home.php:107
+msgid "Snel en makkelijk"
+msgstr "Fast and easy"
+
+#: FrontEnd/application/views/static/new_home.php:108
+msgid ""
+"Binnen de 60 seconden vertellen we je wat het beste aanbod is op de markt op "
+"basis van jouw verbruik en adres. We regelen voor jou de overstap."
+msgstr ""
+"In less than 60 seconds we let you know what the best offer is based on your "
+"consumption and location. And we take care of the switching process."
+
+#: FrontEnd/application/views/static/new_home.php:119
+msgid "Objectief en transparant"
+msgstr "Objective and transparent"
+
+#: FrontEnd/application/views/static/new_home.php:129
+msgid "Beter dan een groepsaankoop"
+msgstr "Better than group purchasing"
+
+#: FrontEnd/application/views/static/new_home.php:130
+#, php-format
+msgid ""
+"%s zoekt het beste aanbod voor jou persoonlijk profiel. Een groepsaankoop "
+"zoekt het beste aanbod voor het gemiddelde profiel in de groep."
+msgstr ""
+"%s will find the best offer for your particular consumption profile. A group "
+"purchase finds the best offer for the average consumption profile of the "
+"group."
+
+#: FrontEnd/application/views/static/new_home.php:139
+msgid "Completer dan Vreg / Cwape / Brusim"
+msgstr "More complete than Vreg / Cwape / Brusim"
+
+#: FrontEnd/application/views/static/new_home.php:140
+msgid ""
+"Vreg / Cwape / Brusim houden geen rekening met kortingen en promoties, en "
+"helpen je ook niet overstappen. Wij wel."
+msgstr ""
+"Vreg / Cwape / Brusim do not take into account discounts and promotions, and "
+"do not help with switching providers. We do."
+
+#: FrontEnd/application/views/static/new_home.php:153
+msgid "Vergelijk onder meer de volgende leveranciers"
+msgstr "Compare amongst others the following providers"
+
+#: FrontEnd/application/views/static/new_home.php:183
+msgid "Enkele getuigenissen"
+msgstr "Some testimonials"
+
+#: FrontEnd/application/views/static/new_home.php:184
+msgid "Zij gingen je al voor"
+msgstr "Some of our happy users"
+
+#: FrontEnd/application/views/static/new_home.php:195
+msgid "Als het zo makkelijk kan, dan verander ik wel elk jaar van leverancier"
+msgstr "If it’s so easy, I’ll happily switch supplier each year"
+
+#: FrontEnd/application/views/static/new_home.php:209
+msgid ""
+"400€ verdiend in minder dan een minuut, normaal moet ik daar harder voor "
+"werken"
+msgstr "Earned 400€ in less than a minute, that’s better than my day-time job"
+
+#: FrontEnd/application/views/static/new_home.php:223
+msgid ""
+"Wow, dit is super ! Wanneer maken jullie dit beschikbaar voor mijn "
+"autoverzekering?"
+msgstr ""
+"Wow, this is great ! I wish I could do this with my car insurance as well."
+
+#: FrontEnd/application/views/static/new_home.php:237
+msgid "Dit werkt echt en super makkelijk ! Een aanrader."
+msgstr "This really works and super easy! Highly recommended."
+
+#: FrontEnd/application/views/static/new_home.php:264
+msgid ""
+"Oprichters Bertrand Anckaert en Pol Brouckaert hebben een jarenlange "
+"ervaring in de technologie- (Microsoft, Altran) en bedrijfswereld (The "
+"Boston Consulting Group). Zij hebben besloten om op de trein van de "
+"digitalisering te springen en volop in te zetten op nieuwe oplossingen die "
+"een sterke meerwaarde kunnen bieden voor mensen en bedrijven."
+msgstr ""
+"Founder Bertrand Anckaert and Pol Brouckaert have a rich experience in the "
+"technology world (Microsoft, Altran) and business world (The Boston "
+"Consulting Group). They decided to hop on the digitization train to offer "
+"new solutions with a strong added value for people and companies."
+
+#: FrontEnd/application/views/static/new_home.php:265
+#, php-format
+msgid ""
+"%s is hier een prima voorbeeld van: zonder gedoe en volledig digitaal de "
+"matchmaking regelen tussen energiegebruikers en -leveranciers. Want zeg nu "
+"zelf, wie houdt van die lastige call centers of opdringerige deur-aan-deur "
+"verkopers ;-) "
+msgstr ""
+"%s is the perfect example: no nonsense and completely digital matchmaking "
+"between energy suppliers and consumers. Because after all, who likes call "
+"centers or pushy door-to-door salesmen ;-)"
+
+#: FrontEnd/application/views/static/new_home.php:266
+msgid ""
+"Ze worden hierbij ondersteund door zowel ING FinTech Village, KBC StartIt "
+"als Eggsplore. "
+msgstr ""
+"Contract.fit is supported by ING FinTech Village, KBC StartIt and Eggsplore."
+
+#: FrontEnd/application/views/static/new_home.php:267
+msgid "Zit je nog met een vraag, aarzel dan niet om ons te contacteren."
+msgstr "Do not hesitate to reach out, should any questions remain."
+
+#: FrontEnd/application/views/static/new_home.php:269
+msgid "Contacteer ons"
+msgstr "Contact us"
+
+#: FrontEnd/application/views/static/new_home.php:334
+msgid "OK, I got it !  Hoeveel kan ik besparen ?"
+msgstr "OK, I got it !  How much can I save ?"
+
+#: FrontEnd/application/views/static/new_home.php:335
+msgid ""
+"Prima, bezorg ons je energiefactuur en wij doen al het harde werk voor je"
+msgstr "Great ! Send us your invoice and we’ll do the hard work for you "
+
+#: FrontEnd/application/views/static/new_home.php:338
+msgid ""
+"We maken het makkelijk voor je, kies één van deze drie opties om je "
+"maandelijkse voorschotfactuur of jaarlijkse afrekening te delen:"
+msgstr ""
+"We make it as easy as possible, choose one of these options to share your "
+"monthly advance invoice or your yearly regularization invoice:"
+
+#: FrontEnd/application/views/static/new_home.php:343
+msgid "Ik upload een factuur of scan"
+msgstr "I upload an invoice or scan"
+
+#: FrontEnd/application/views/static/new_home.php:350
+#: FrontEnd/application/views/static/new_home.php:516
+msgid "Ik maak een foto van mijn papieren factuur"
+msgstr "I take a picture of my paper invoice"
+
+#: FrontEnd/application/views/static/new_home.php:351
+msgid "Ik vul de gegevens zelf in"
+msgstr "I'll fill in the data myself"
+
+#: FrontEnd/application/views/static/new_home.php:356
+#: FrontEnd/application/views/static/new_home.php:554
+msgid "Ik mail mijn factuur"
+msgstr "I send an email with my invoice"
+
+#: FrontEnd/application/views/static/new_home.php:363
+msgid "Ik heb geen factuur en vul de gegevens zelf in via "
+msgstr "I don't have an invoice and will fill in the data myself through "
+
+#: FrontEnd/application/views/static/new_home.php:363
+msgid "deze link."
+msgstr "this link."
+
+#: FrontEnd/application/views/static/new_home.php:369
+msgid "Wat gebeurt er dan?"
+msgstr "What will happen now?"
+
+#: FrontEnd/application/views/static/new_home.php:372
+msgid "Ons systeem leest automatisch je woonplaats en verbruik uit de factuur"
+msgstr "Our system reads your location and consumption from the invoice"
+
+#: FrontEnd/application/views/static/new_home.php:373
+msgid ""
+"Je krijgt je persoonlijke besparing te zien en de beste energieleveranciers"
+msgstr "You will see your personal saving and the best energy providers"
+
+#: FrontEnd/application/views/static/new_home.php:374
+msgid "Simuleer je prijs voor vast/variabel tarief, type energie, ..."
+msgstr "Simulate your price: fix / indexed rate, energy type, …"
+
+#: FrontEnd/application/views/static/new_home.php:375
+msgid "Indien je dit wenst kan je meteen overstappen"
+msgstr "If you wish, you can immediately change providers"
+
+#: FrontEnd/application/views/static/new_home.php:380
+msgid "Ik heb geen recente digitale factuur: "
+msgstr "I have no recent digital invoice: "
+
+#: FrontEnd/application/views/static/new_home.php:380
+msgid "klik hier"
+msgstr "click here"
+
+#: FrontEnd/application/views/static/new_home.php:383
+msgid "Stap 1: Deel je gegevens"
+msgstr "Step 1: Share your data"
+
+#: FrontEnd/application/views/static/new_home.php:384
+msgid "Stap 2: Kies je leverancier"
+msgstr "Step 2: Choose your supplier"
+
+#: FrontEnd/application/views/static/new_home.php:385
+#: FrontEnd/application/views/steps/result.php:67
+#: FrontEnd/application/views/steps/user_information.php:28
+msgid "Stap 3: Bevestig"
+msgstr "Step 3: Confirm"
+
+#: FrontEnd/application/views/static/new_home.php:417
+msgid "Browse"
+msgstr "Browse"
+
+#: FrontEnd/application/views/static/new_home.php:474
+msgid "Uploaden van een factuur of scan"
+msgstr "Upload an invoice or scan"
+
+#: FrontEnd/application/views/static/new_home.php:475
+msgid "Ik upload mijn factuur"
+msgstr "I upload my invoice"
+
+#: FrontEnd/application/views/static/new_home.php:492
+#: FrontEnd/application/views/static/new_home.php:532
+#: FrontEnd/application/views/static/personal_info.php:1
+#: FrontEnd/application/views/static/section_user_information.php:148
+msgid "Uw email adres"
+msgstr "Your email address"
+
+#: FrontEnd/application/views/static/new_home.php:493
+msgid "Email adres"
+msgstr "Email address"
+
+#: FrontEnd/application/views/static/new_home.php:496
+msgid "Uw factuur"
+msgstr "Your invoice"
+
+#: FrontEnd/application/views/static/new_home.php:515
+msgid "Foto maken van een papieren factuur"
+msgstr "Take a picture of a paper invoice"
+
+#: FrontEnd/application/views/static/new_home.php:538
+msgid "Maak een foto"
+msgstr "Take a picture"
+
+#: FrontEnd/application/views/static/new_home.php:541
+msgid ""
+"Kies een foto of van op jouw toestel of maak een nieuwe foto met de camera. "
+"Hou de camera ongeveer 30cm recht boven de eerste pagina van de factuur."
+msgstr ""
+"Select a picture on your device on take a new one with the camera. Hold the "
+"camera around 30cm straight above the first page of your invoice."
+
+#: FrontEnd/application/views/static/new_home.php:557
+msgid ""
+"Stuur je factuur of de email van jouw energieleverancier door naar dit adres."
+msgstr ""
+"Send your invoice or forward the email of your current energy supplier to "
+"this address"
+
+#: FrontEnd/application/views/static/new_home.php:559
+#, php-format
+msgid "factuur@%s"
+msgstr "invoice@%s"
+
+#: FrontEnd/application/views/static/new_home.php:561
+msgid "Copied!"
+msgstr "Copied!"
+
+#: FrontEnd/application/views/static/new_home.php:562
+msgid "Copy"
+msgstr "Copy"
+
+#: FrontEnd/application/views/static/payment_info.php:1
+msgid "Betaling"
+msgstr "Payment"
+
+#: FrontEnd/application/views/static/payment_info.php:7
+#: FrontEnd/application/views/static/section_user_information.php:333
+msgid "Domiciliëring (verplicht voor gekozen product(en):"
+msgstr "Direct debit (mandatory for chosen product(s))"
+
+#: FrontEnd/application/views/static/payment_info.php:10
+#: FrontEnd/application/views/static/payment_info.php:41
+msgid "Uw rekeningnummer (IBAN)"
+msgstr "Your account number (IBAN)"
+
+#: FrontEnd/application/views/static/payment_info.php:11
+#: FrontEnd/application/views/static/payment_info.php:26
+#: FrontEnd/application/views/static/payment_info.php:42
+msgid "Rekeningnummer"
+msgstr "Account number"
+
+#: FrontEnd/application/views/static/payment_info.php:22
+#: FrontEnd/application/views/static/section_user_information.php:347
+#: FrontEnd/application/views/static/section_user_information.php:359
+msgid "Ik wens te betalen via domiciliëring"
+msgstr "I wish to pay through direct debit"
+
+#: FrontEnd/application/views/static/payment_info.php:25
+#: FrontEnd/application/views/static/section_user_information.php:350
+msgid "Rekeninginformatie (gevraagd door nieuwe leverancier(s))"
+msgstr "Account information (requested by new supplier(s))"
+
+#: FrontEnd/application/views/static/payment_info.php:37
+#: FrontEnd/application/views/static/section_user_information.php:361
+msgid "Domiciliëring verplicht voor korting (inbegrepen in berekening): "
+msgstr "Direct debit required to obtain discount (included in calculation): "
+
+#: FrontEnd/application/views/static/payment_info.php:49
+msgid "Algemene voorwaarden"
+msgstr "General conditions"
+
+#: FrontEnd/application/views/static/payment_info.php:55
+#, php-format
+msgid ""
+"Door dit formulier in te sturen, geeft u %s het mandaat om de overstap in uw "
+"naam aan te vragen."
+msgstr ""
+"By submitting this form, you give %s the mandate to start the transfer in "
+"your name."
+
+#: FrontEnd/application/views/static/personal_info.php:4
+#: FrontEnd/application/views/static/section_user_information.php:150
+#: FrontEnd/application/views/steps/home-old.php:157
+msgid "Uw geboortedatum"
+msgstr "Date of birth"
+
+#: FrontEnd/application/views/static/personal_info.php:8
+#: FrontEnd/application/views/static/section_user_information.php:152
+msgid "dag"
+msgstr "day"
+
+#: FrontEnd/application/views/static/personal_info.php:44
+#: FrontEnd/application/views/static/section_user_information.php:186
+msgid "maand"
+msgstr "month"
+
+#: FrontEnd/application/views/static/personal_info.php:45
+#: FrontEnd/application/views/static/section_user_information.php:187
+msgid "januari"
+msgstr "January"
+
+#: FrontEnd/application/views/static/personal_info.php:46
+#: FrontEnd/application/views/static/section_user_information.php:188
+msgid "februari"
+msgstr "February"
+
+#: FrontEnd/application/views/static/personal_info.php:47
+#: FrontEnd/application/views/static/section_user_information.php:189
+msgid "maart"
+msgstr "March"
+
+#: FrontEnd/application/views/static/personal_info.php:48
+#: FrontEnd/application/views/static/section_user_information.php:190
+msgid "april"
+msgstr "April"
+
+#: FrontEnd/application/views/static/personal_info.php:49
+#: FrontEnd/application/views/static/section_user_information.php:191
+msgid "mei"
+msgstr "May"
+
+#: FrontEnd/application/views/static/personal_info.php:50
+#: FrontEnd/application/views/static/section_user_information.php:192
+msgid "juni"
+msgstr "June"
+
+#: FrontEnd/application/views/static/personal_info.php:51
+#: FrontEnd/application/views/static/section_user_information.php:193
+msgid "juli"
+msgstr "July"
+
+#: FrontEnd/application/views/static/personal_info.php:52
+#: FrontEnd/application/views/static/section_user_information.php:194
+msgid "augustus"
+msgstr "August"
+
+#: FrontEnd/application/views/static/personal_info.php:53
+#: FrontEnd/application/views/static/section_user_information.php:195
+msgid "september"
+msgstr "September"
+
+#: FrontEnd/application/views/static/personal_info.php:54
+#: FrontEnd/application/views/static/section_user_information.php:196
+msgid "oktober"
+msgstr "October"
+
+#: FrontEnd/application/views/static/personal_info.php:55
+#: FrontEnd/application/views/static/section_user_information.php:197
+msgid "november"
+msgstr "November"
+
+#: FrontEnd/application/views/static/personal_info.php:56
+#: FrontEnd/application/views/static/section_user_information.php:198
+msgid "december"
+msgstr "December"
+
+#: FrontEnd/application/views/static/personal_info.php:61
+#: FrontEnd/application/views/static/section_user_information.php:201
+msgid "jaar"
+msgstr "year"
+
+#: FrontEnd/application/views/static/personal_info.php:149
+#: FrontEnd/application/views/static/section_user_information.php:286
+#: FrontEnd/application/views/steps/home-old.php:158
+msgid "Uw telefoonnummer"
+msgstr "Phone number"
+
+#: FrontEnd/application/views/static/personal_info.php:153
+msgid "Uw rijksregisternummer - gevraagd door gekozen leverancier"
+msgstr ""
+"Your national registry number - asked for by the supplier of your choice"
+
+#: FrontEnd/application/views/static/personal_info.php:154
+#: FrontEnd/application/views/static/section_user_information.php:291
+#: FrontEnd/application/views/steps/home-old.php:162
+msgid "Uw rijksregisternummer"
+msgstr "Your national register number"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:2
+#: FrontEnd/application/views/steps/result.php:80
+msgid "Jaarlijkse besparing:"
+msgstr "Yearly saving:"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:3
+#: FrontEnd/application/views/steps/result.php:81
+msgid "Extra kost:"
+msgstr "Extra cost:"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:6
+#: FrontEnd/application/views/steps/result.php:84
+msgid "Kost: "
+msgstr "Cost: "
+
+#: FrontEnd/application/views/static/section_switch_provider.php:9
+msgid "Mijn gegevens"
+msgstr "My data"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:13
+msgid "Mijn voorkeuren"
+msgstr "My preferences"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:26
+#: FrontEnd/application/views/static/section_switch_provider.php:72
+msgid "Goedkopere tarieven"
+msgstr "Cheaper tariffs"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:27
+#: FrontEnd/application/views/static/section_switch_provider.php:73
+msgid "Goedkoopste tarief"
+msgstr "Cheapest tariff"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:43
+#: FrontEnd/application/views/static/section_switch_provider.php:89
+msgid "van"
+msgstr "by"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:56
+msgid ""
+"Niet helemaal comfortabel met het voorgestelde product? <br> Wil je meer "
+"keuze? <br> Via deze knop krijg je toegang tot alle producten van alle "
+"leveranciers op de markt."
+msgstr ""
+"Not fully comfortable with the proposed product? <br> Do you want more "
+"options? <br> Click here to get access to all the products and suppliers on "
+"the market."
+
+#: FrontEnd/application/views/static/section_switch_provider.php:57
+#: FrontEnd/application/views/static/section_switch_provider.php:103
+msgid "Duurdere tarieven"
+msgstr "More expensive tariffs"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:58
+#: FrontEnd/application/views/static/section_switch_provider.php:104
+msgid "Duurste tarief"
+msgstr "Most expensive tariff"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:63
+#: FrontEnd/application/views/static/section_switch_provider.php:109
+msgid "Geen aanbieders voor deze opties"
+msgstr "No offers for the selected options"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:129
+#: FrontEnd/application/views/steps/result.php:74
+#: FrontEnd/application/views/steps/user_information.php:35
+msgid "Kies"
+msgstr "Choose"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:131
+#: FrontEnd/application/views/static/section_switch_provider.php:132
+msgid "Detail vergelijking"
+msgstr "Detail comparison"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:134
+msgid "Wat gebeurt er hierna ?"
+msgstr "What will happen next ?"
+
+#: FrontEnd/application/views/static/section_switch_provider.php:135
+msgid ""
+"Op de volgende pagina krijgt u alle details van de overstap te zien, "
+"vooraleer u deze bevestigt."
+msgstr ""
+"On the next page you will see all the details of the switching process, "
+"after which you can confirm your choice."
+
+#: FrontEnd/application/views/static/section_user_information.php:75
+#: FrontEnd/application/views/static/section_user_information2.php:270
+msgid "Aanvullen informatie"
+msgstr "Additional Info"
+
+#: FrontEnd/application/views/static/section_user_information.php:78
+#: FrontEnd/application/views/static/section_user_information2.php:273
+#: FrontEnd/application/views/static/section_user_information2.php:292
+msgid "Uw keuze"
+msgstr "Your choice"
+
+#: FrontEnd/application/views/static/section_user_information.php:82
+#: FrontEnd/application/views/static/section_user_information2.php:277
+#: FrontEnd/application/views/static/section_user_information2.php:341
+msgid "Wat gebeurt hierna?"
+msgstr "What happens next?"
+
+#: FrontEnd/application/views/static/section_user_information.php:87
+msgid "Om de overstap te regelen, hebben we de volgende informatie nodig."
+msgstr "We need the following information to finalize the switch"
+
+#: FrontEnd/application/views/static/section_user_information.php:96
+msgid "Geen zin om alles manueel in te vullen? Klik hier!"
+msgstr "Don't feel like entering the data manually? Click here!"
+
+#: FrontEnd/application/views/static/section_user_information.php:98
+#: FrontEnd/application/views/static/section_user_information2.php:281
+msgid ""
+"We hebben enkel nog de volgende informatie nodig, de rest vinden we in uw "
+"factuur."
+msgstr ""
+"We have only the following information, the rest we find in your invoice."
+
+#: FrontEnd/application/views/static/section_user_information.php:119
+#: FrontEnd/application/views/static/section_user_information2.php:133
+msgid "Ik verhuis"
+msgstr "I am moving"
+
+#: FrontEnd/application/views/static/section_user_information.php:120
+#: FrontEnd/application/views/static/section_user_information2.php:134
+msgid "Openen meter"
+msgstr "Opening of a new meter"
+
+#: FrontEnd/application/views/static/section_user_information.php:121
+#: FrontEnd/application/views/static/section_user_information2.php:135
+msgid "Verandering leverancier"
+msgstr "Change of supplier"
+
+#: FrontEnd/application/views/static/section_user_information.php:125
+#: FrontEnd/application/views/static/section_user_information2.php:139
+msgid "Openen meter (nieuw of afgesloten)"
+msgstr "Opening of meter (new or closed)"
+
+#: FrontEnd/application/views/static/section_user_information.php:128
+#: FrontEnd/application/views/static/section_user_information2.php:142
+msgid "Ik verander van leverancier (huidige adres)"
+msgstr "I am changing suppliers (current address)"
+
+#: FrontEnd/application/views/static/section_user_information.php:131
+#: FrontEnd/application/views/static/section_user_information2.php:145
+msgid "Ik verhuis (nieuw adres)"
+msgstr "I am moving (new address)"
+
+#: FrontEnd/application/views/static/section_user_information.php:134
+msgid "Persoonlijke informatie"
+msgstr "Personal information"
+
+#: FrontEnd/application/views/static/section_user_information.php:135
+#: FrontEnd/application/views/static/section_user_information.php:300
+#: FrontEnd/application/views/static/section_user_information.php:322
+#: FrontEnd/application/views/static/section_user_information.php:384
+msgid "vul in"
+msgstr "complete"
+
+#: FrontEnd/application/views/static/section_user_information.php:139
+#: FrontEnd/application/views/static/section_user_information2.php:152
+msgid "Selecteer aanspreking"
+msgstr "Select title"
+
+#: FrontEnd/application/views/static/section_user_information.php:140
+#: FrontEnd/application/views/static/section_user_information2.php:153
+msgid "Juffrouw"
+msgstr "Miss"
+
+#: FrontEnd/application/views/static/section_user_information.php:141
+#: FrontEnd/application/views/static/section_user_information2.php:154
+msgid "Mevrouw"
+msgstr "Misses"
+
+#: FrontEnd/application/views/static/section_user_information.php:142
+#: FrontEnd/application/views/static/section_user_information2.php:155
+msgid "Meneer"
+msgstr "Mister"
+
+#: FrontEnd/application/views/static/section_user_information.php:144
+#: FrontEnd/application/views/static/section_user_information2.php:159
+msgid "Voornaam"
+msgstr "First name"
+
+#: FrontEnd/application/views/static/section_user_information.php:145
+#: FrontEnd/application/views/static/section_user_information2.php:162
+msgid "Naam"
+msgstr "Name"
+
+#: FrontEnd/application/views/static/section_user_information.php:299
+#: FrontEnd/application/views/static/section_user_information2.php:167
+msgid "Adresinformatie"
+msgstr "Address information"
+
+#: FrontEnd/application/views/static/section_user_information.php:304
+msgid "Postcode (levering)"
+msgstr "Zip code (delivery)"
+
+#: FrontEnd/application/views/static/section_user_information.php:305
+msgid "Gemeente (levering)"
+msgstr "City (delivery)"
+
+#: FrontEnd/application/views/static/section_user_information.php:306
+msgid "Straat (levering)"
+msgstr "Street (delivery)"
+
+#: FrontEnd/application/views/static/section_user_information.php:307
+msgid "Nummer (levering)"
+msgstr "Number (delivery)"
+
+#: FrontEnd/application/views/static/section_user_information.php:308
+msgid "Bus (levering)"
+msgstr "Bus (delivery)"
+
+#: FrontEnd/application/views/static/section_user_information.php:311
+#: FrontEnd/application/views/static/section_user_information2.php:199
+msgid "Ander facturatieadres"
+msgstr "Other billing address"
+
+#: FrontEnd/application/views/static/section_user_information.php:313
+#: FrontEnd/application/views/static/section_user_information2.php:202
+msgid "Facturatieadres"
+msgstr "Delivery address"
+
+#: FrontEnd/application/views/static/section_user_information.php:314
+msgid "Postcode (facturatie)"
+msgstr "Zip code (billing)"
+
+#: FrontEnd/application/views/static/section_user_information.php:315
+msgid "Gemeente (facturatie)"
+msgstr "City (billing)"
+
+#: FrontEnd/application/views/static/section_user_information.php:316
+msgid "Straat (facturatie)"
+msgstr "Street (billing)"
+
+#: FrontEnd/application/views/static/section_user_information.php:317
+msgid "Nummer (facturatie)"
+msgstr "Number (billing)"
+
+#: FrontEnd/application/views/static/section_user_information.php:318
+msgid "Bus (facturatie)"
+msgstr "Bus (billing)"
+
+#: FrontEnd/application/views/static/section_user_information.php:321
+msgid "Rekeninginformatie"
+msgstr "Bank account information"
+
+#: FrontEnd/application/views/static/section_user_information.php:336
+#: FrontEnd/application/views/static/section_user_information.php:351
+#: FrontEnd/application/views/static/section_user_information.php:365
+#: FrontEnd/application/views/steps/home-old.php:174
+#: FrontEnd/application/views/steps/home-old.php:187
+#: FrontEnd/application/views/steps/home-old.php:196
+msgid "Uw rekeningnummer"
+msgstr "Account number"
+
+#: FrontEnd/application/views/static/section_user_information.php:383
+#: FrontEnd/application/views/static/section_user_information2.php:231
+msgid "Meterinformatie"
+msgstr "Meter information"
+
+#: FrontEnd/application/views/static/section_user_information.php:409
+msgid "Stap over"
+msgstr "Switch"
+
+#: FrontEnd/application/views/static/section_user_information.php:410
+#: FrontEnd/application/views/steps/home-old.php:210
+#, php-format
+msgid ""
+"Door op bovenstaande knop te drukken geeft u %s het mandaat om de overstap "
+"te initiëren in uw naam."
+msgstr ""
+"By pressing this button, you authorize %s to initiate your supplier switch."
+
+#: FrontEnd/application/views/static/section_user_information2.php:108
+msgid "TIP"
+msgstr "HINT"
+
+#: FrontEnd/application/views/static/section_user_information2.php:108
+msgid ""
+"Als je geen zin hebt om dit formulier in te vullen, kan je ook gewoon een "
+"foto van de eerste pagina van je factuur delen. Supereenvoudig vanop een "
+"mobiel toestel."
+msgstr ""
+"If you don't feel like completing this form, you can also simply send us a "
+"picture of the the first page of your invoice. Super easy on a mobile device."
+
+#: FrontEnd/application/views/static/section_user_information2.php:108
+#: FrontEnd/application/views/static/travel_table.php:18
+msgid "Klik hier"
+msgstr "Click here"
+
+#: FrontEnd/application/views/static/section_user_information2.php:108
+msgid "om je foto te delen"
+msgstr "to share your photo"
+
+#: FrontEnd/application/views/static/section_user_information2.php:113
+#: FrontEnd/application/views/static/section_user_information2.php:283
+msgid "Persoonlijke info"
+msgstr "Personal info"
+
+#: FrontEnd/application/views/static/section_user_information2.php:150
+msgid "Aanspreking"
+msgstr "Title"
+
+#: FrontEnd/application/views/static/section_user_information2.php:158
+msgid "Uw voornaam"
+msgstr "Your first name"
+
+#: FrontEnd/application/views/static/section_user_information2.php:173
+#: FrontEnd/application/views/static/section_user_information2.php:174
+#: FrontEnd/application/views/static/section_user_information2.php:205
+#: FrontEnd/application/views/static/section_user_information2.php:206
+msgid "Straat"
+msgstr "Street"
+
+#: FrontEnd/application/views/static/section_user_information2.php:177
+#: FrontEnd/application/views/static/section_user_information2.php:178
+#: FrontEnd/application/views/static/section_user_information2.php:209
+#: FrontEnd/application/views/static/section_user_information2.php:210
+msgid "Nummer"
+msgstr "Number"
+
+#: FrontEnd/application/views/static/section_user_information2.php:181
+#: FrontEnd/application/views/static/section_user_information2.php:182
+#: FrontEnd/application/views/static/section_user_information2.php:213
+#: FrontEnd/application/views/static/section_user_information2.php:214
+msgid "Bus"
+msgstr "Box"
+
+#: FrontEnd/application/views/static/section_user_information2.php:188
+#: FrontEnd/application/views/static/section_user_information2.php:189
+#: FrontEnd/application/views/static/section_user_information2.php:219
+#: FrontEnd/application/views/static/section_user_information2.php:220
+msgid "Postcode"
+msgstr "Zip code"
+
+#: FrontEnd/application/views/static/section_user_information2.php:192
+#: FrontEnd/application/views/static/section_user_information2.php:193
+#: FrontEnd/application/views/static/section_user_information2.php:223
+#: FrontEnd/application/views/static/section_user_information2.php:224
+msgid "Gemeente"
+msgstr "City"
+
+#: FrontEnd/application/views/static/section_user_information2.php:235
+msgid "EAN elektriciteit"
+msgstr "EAN electricity"
+
+#: FrontEnd/application/views/static/section_user_information2.php:239
+msgid "EAN gas"
+msgstr "EAN gas"
+
+#: FrontEnd/application/views/static/section_user_information2.php:245
+msgid "Betaling en voorwaarden"
+msgstr "Payment and conditions"
+
+#: FrontEnd/application/views/static/section_user_information2.php:286
+#: FrontEnd/application/views/steps/result.php:76
+#: FrontEnd/application/views/steps/user_information.php:37
+msgid "Bevestig"
+msgstr "Confirm"
+
+#: FrontEnd/application/views/static/section_user_information2.php:332
+msgid "Klik hier om uw keuze aan te passen"
+msgstr "Click here to change your choice"
+
+#: FrontEnd/application/views/static/section_user_information2.php:334
+#: FrontEnd/application/views/static/section_user_information2.php:359
+#: FrontEnd/application/views/steps/detail-modal.php:585
+#: FrontEnd/application/views/steps/result.php:227
+#: FrontEnd/application/views/steps/result.php:319
+msgid "Sluit"
+msgstr "Close"
+
+#: FrontEnd/application/views/static/section_user_information2.php:344
+msgid "Je nieuwe leverancier stuurt je een welkomstmail (binnen de 24h)"
+msgstr " Your new supplier will send you a welcome email (within 24 hours)"
+
+#: FrontEnd/application/views/static/section_user_information2.php:348
+msgid "Je hebt 14 dagen bedenktijd"
+msgstr " You have 14 days to change your mind"
+
+#: FrontEnd/application/views/static/section_user_information2.php:352
+msgid "De netbeheerder nodigt je uit om de meterstanden door te geven"
+msgstr "The network operator invites you to transmit the meter readings"
+
+#: FrontEnd/application/views/static/section_user_information2.php:356
+msgid "30 dagen na vandaag krijgt je energie van jouw nieuwe leverancier"
+msgstr ""
+"30 days counting from now, your will receive energy from your new supplier"
+
+#: FrontEnd/application/views/static/section_user_information2.php:481
+msgid "Gelieve een aanspreking op te geven"
+msgstr "Please enter a title"
+
+#: FrontEnd/application/views/static/section_user_information2.php:482
+msgid "Gelieve een voornaam op te geven"
+msgstr "Please enter your first name"
+
+#: FrontEnd/application/views/static/section_user_information2.php:483
+msgid "Gelieve een naam op te geven"
+msgstr "Please enter your name"
+
+#: FrontEnd/application/views/static/section_user_information2.php:485
+#: FrontEnd/application/views/static/section_user_information2.php:486
+#: FrontEnd/application/views/static/section_user_information2.php:487
+msgid " !"
+msgstr " !"
+
+#: FrontEnd/application/views/static/section_user_information2.php:488
+#: FrontEnd/application/views/static/section_user_information2.php:493
+msgid "Gelieve een straat op te geven"
+msgstr "Please enter your street"
+
+#: FrontEnd/application/views/static/section_user_information2.php:489
+#: FrontEnd/application/views/static/section_user_information2.php:494
+msgid "Gelieve een huisnummer op te geven"
+msgstr "Please enter a number"
+
+#: FrontEnd/application/views/static/section_user_information2.php:490
+#: FrontEnd/application/views/static/section_user_information2.php:495
+msgid "Gelieve een bus op te geven"
+msgstr "Please enter a box"
+
+#: FrontEnd/application/views/static/section_user_information2.php:492
+#: FrontEnd/application/views/static/section_user_information2.php:497
+msgid "Gelieve een gemeente op te geven"
+msgstr "Please enter a city"
+
+#: FrontEnd/application/views/static/section_user_information2.php:498
+#: FrontEnd/application/views/static/section_user_information2.php:499
+msgid "Gelieve een geldig EAN nummer op te geven (18 cijfers, start met 5414)"
+msgstr "Please provide a valid EAN (18 digits, starting with 5414)"
+
+#: FrontEnd/application/views/static/section_user_information2.php:500
+msgid "Gelieve een geldig IBAN nummer op te geven (BExx xxxx xxxx xxxx)"
+msgstr "Please provide a valid IBAN number (BExx xxxx xxxx xxxxx)"
+
+#: FrontEnd/application/views/static/section_user_information2.php:501
+msgid "U dient de voorwaarden te accepteren"
+msgstr "You need to accept the terms and conditions"
+
+#: FrontEnd/application/views/static/section_user_information2.php:502
+msgid "Gelieve een geldig telefoonnummer op te geven"
+msgstr "Please provide a valid phone number"
+
+#: FrontEnd/application/views/static/section_user_information2.php:503
+msgid "Gelieve een geldig rijksregisternummer op te geven"
+msgstr "Please provide a valid national registry number"
+
+#: FrontEnd/application/views/static/sorry.php:10
+msgid "Analyse niet gelukt"
+msgstr "Analysis failed"
+
+#: FrontEnd/application/views/static/sorry.php:18
+msgid "Deze factuur kon niet geanalyseerd worden"
+msgstr "This invoice could not yet be analyzed automatically"
+
+#: FrontEnd/application/views/static/sorry.php:18
+msgid "We komen zo snel mogelijk per email naar u terug"
+msgstr "We come back to you as soon as possible by email"
+
+#: FrontEnd/application/views/static/sorry.php:25
+msgid "Naar homepagina"
+msgstr "Home"
+
+#: FrontEnd/application/views/static/success.php:29
+msgid "Proficiat, u bent overgestapt !"
+msgstr "Congratulations, you've switched energy suppliers !"
+
+#: FrontEnd/application/views/static/success.php:36
+msgid ""
+"Wij hebben alle nodige informatie om de overstap te starten bij de nieuwe "
+"leverancier"
+msgstr ""
+"We have all the necessary information in order to start the transfer to the "
+"new supplier"
+
+#: FrontEnd/application/views/static/success.php:36
+msgid ""
+"De nieuwe leverancier en netbeheerder zullen je contacteren voor de verdere "
+"afhandeling"
+msgstr ""
+"The new supplier and system operator will contact you for further processing"
+
+#: FrontEnd/application/views/static/success.php:89
+msgid "Wat vind je van onze dienst"
+msgstr "What do you think of our service"
+
+#: FrontEnd/application/views/static/success.php:100
+msgid "Beschrijf uw ervaring"
+msgstr "Describe your experience"
+
+#: FrontEnd/application/views/static/success.php:110
+msgid "Versturen"
+msgstr "Send"
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:24
+msgid "Algemeen"
+msgstr "General"
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:26
+#, php-format
+msgid ""
+"Door het gebruik van de website van www.%s stemt u in met onze Algemene "
+"Voorwaarden inzake het gebruik van onze website."
+msgstr ""
+"By using the website www.%s, you agree to our General Terms and Conditions "
+"regarding the use of our website."
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:27
+#, php-format
+msgid ""
+"Hoewel www.%s de op deze website aangeboden informatie met de grootst "
+"mogelijke zorg heeft samengesteld en er steeds naar streeft deze informatie "
+"zo actueel, volledig en nauwkeurig mogelijk te houden, is deze informatie "
+"slechts indicatief en kan u als gebruiker van deze website geen rechten "
+"ontlenen of verbintenissen inroepen tegen www.%s. De informatie op deze "
+"website wordt continu aangevuld, gecorrigeerd, bijgewerkt of verwijderd. "
+"Eventuele wijzigingen kunnen steeds en met onmiddellijke ingang worden "
+"aangebracht zonder dat www.%s gehouden is tot enige meldingsplicht."
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:28
+#, php-format
+msgid ""
+"www.%s treedt enkel op als tussenpersoon tussen uzelf als potentiële klant "
+"en de leverancier en dit op basis van informatie die haar door deze "
+"leveranciers werd verstrekt. Zij sluit zelf geen overeenkomst af met u als "
+"potentiële klant. Bijgevolg kan zij zelf ook niet verplicht zijn om "
+"verbintenissen voor of namens een leverancier na te komen en is zij ook niet "
+"aansprakelijk voor enig gebrek of fout die op haar website zou voorkomen "
+"(ongeacht de aard van het gebrek of de fout inzake het gebruik of  de "
+"beschikbaarheid van de website of de presentatie ervan). Deze uitsluiting "
+"van aansprakelijkheid geldt ongeacht de aard van de beweerde schade en de "
+"ingeroepen juridische grondslag voor de beweerde aansprakelijkheid, met "
+"uitzondering van zware fout of bedrag vanwege www.%s. www.%s garandeert niet "
+"dat aan haar toegezonden e-mails of andere elektronische berichten tijdig "
+"worden ontvangen en verwerkt en www.%s is niet aansprakelijk voor eventuele "
+"gevolgen van het niet of te laat ontvangen of verwerken van dergelijke e-"
+"mails of berichten, met uitzondering van zware fout of bedrag vanwege www.%s."
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:29
+#, php-format
+msgid ""
+"www.%s behoudt zich uitdrukkelijk alle intellectuele en industriële "
+"eigendomsrechten voor wat betreft het uitzicht, de vormgeving en de inhoud "
+"van de website “www.%s” die niet mag worden gereproduceerd of geëxploiteerd "
+"zonder uitdrukkelijke en schriftelijke toestemming van www.%s."
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:33
+msgid "Privacy-beleid"
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:35
+#, php-format
+msgid ""
+"Door deze website te gebruiken geeft u toestemming voor het verzamelen en "
+"het gebruik van eventueel door u aangeleverde gegevens zoals de door u "
+"gebruikte browser  of IP adres, het besturingsprogramma dat u gebruikt of de "
+"domeinnaam van de website langs waar u naar deze website gekomen bent of "
+"waarlangs u deze weer verlaat en desgevallend inclusief persoonsgegevens. "
+"Deze gegevens zullen uitsluitend worden gebruikt voor het identificeren van "
+"de voor u meest voordelige leverancier op basis van de gegevens die u ons "
+"ter beschikking stelt. Deze gegevens zullen niet aan derden worden "
+"overgedragen met uitzondering van potentiële leveranciers met wie u wenst te "
+"contracteren. Deze gegevens zullen niet gebruikt worden voor direct "
+"marketing. www.%s neemt op contractuele basis met de potentiële leveranciers "
+"de gepaste technische en organisatorische maatregelen om de gegevens te "
+"beveiligen met name door de retentie van deze gegevens tot een minimum te "
+"beperken, deze in ieder geval te versleutelen met encryptietechnologie die "
+"voldoet aan de stand van de techniek en haar informatica-infrastructuur op "
+"afdoende wijze te beveiligen tegen inbraak of ongeoorloofde toegang."
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:36
+msgid ""
+"Als ons Privacy-beleid verandert, zal daarvan melding van gemaakt worden op "
+"deze pagina van de website zodat u altijd op de hoogte blijft van de aard "
+"van de informatie die wordt verzameld, hoe deze wordt gebruikt en onder "
+"welke omstandigheden deze informatie wordt bekend gemaakt of overgedragen "
+"aan derden."
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:40
+msgid "Links van en naar andere websites"
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:42
+#, php-format
+msgid ""
+"Deze website kan links naar websites of naar webpagina's van derden en "
+"andere partijen bevatten of daar op een andere manier naar verwijzen. www.%s "
+"heeft geen zeggenschap over de inhoud of over andere kenmerken van deze "
+"websites of webpagina's en is in geen geval aansprakelijk voor de inhoud "
+"ervan. Het plaatsen van links door www.%s houdt op geen enkele wijze enige "
+"goedkeuring in van de inhoud van deze websites of webpagina's."
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:46
+msgid "Cookies"
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:48
+#, php-format
+msgid ""
+"Deze website kan gebruik maken van zogenaamde “cookies” om het "
+"Internetverkeer van gebruikers vast te leggen met het oog op een betere en "
+"efficiëntere dienstverlening. Cookies zijn kleine tekstbestanden die een "
+"website overzet naar het opslagmedium van uw computer. Cookies identificeren "
+"geen personen, maar computers van gebruikers. U kan deze cookies weigeren "
+"maar in dat geval kan www.%s mogelijk de behoorlijke werking van deze "
+"website niet meer volledig garanderen. De meeste browsers zijn standaard "
+"ingesteld om cookies te accepteren maar laten toe om cookies automatisch te "
+"weigeren dan wel om u vooraf te waarschuwen alvorens een cookie wordt "
+"opgeslagen op uw computer."
+msgstr ""
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:49
+#, php-format
+msgid ""
+"Voor vragen en/of opmerkingen kan u via info@%s met ons in contact treden."
+msgstr ""
+"If you have any questions and/or comments, you can contact us via info@%s."
+
+#: FrontEnd/application/views/static/terms_and_conditions.php:50
+#, php-format
+msgid "%s (BE0646697416) p.a. De Kleetlaan 5A, 1831 Diegem, België"
+msgstr "%s (BE0646697416) p.o. De Kleetlaan 5A, 1831 Diegem, België"
+
+#: FrontEnd/application/views/static/travel_table.php:5
+#: FrontEnd/application/views/steps/home-old.php:15
+msgid ""
+"Stuur ons uw energiefactuur en krijg een gratis analyse binnen de minuut."
+msgstr "Send us your energy bill and get a free analysis within the minute."
+
+#: FrontEnd/application/views/static/travel_table.php:13
+#: FrontEnd/application/views/steps/home-old.php:31
+msgid "Bekijk het beste contract"
+msgstr "See the best offer"
+
+#: FrontEnd/application/views/static/travel_table.php:14
+msgid "Het gebruik van deze dienst impliceert de aanvaarding van onze"
+msgstr "The use of this service implies the acceptance of our"
+
+#: FrontEnd/application/views/static/travel_table.php:17
+#, php-format
+msgid "U kan gewoon uw laatste afrekening doorsturen naar factuur@%s"
+msgstr "You can just forward your last invoice to invoice@%s"
+
+#: FrontEnd/application/views/static/travel_table.php:18
+msgid "Geen digitale factuur bij de hand?"
+msgstr "No digital invoice?"
+
+#: FrontEnd/application/views/static/travel_table.php:18
+msgid "manuele ingave"
+msgstr "manual entry"
+
+#: FrontEnd/application/views/steps/detail-modal.php:6
+msgid "Berekening"
+msgstr "Calculation"
+
+#: FrontEnd/application/views/steps/detail-modal.php:7
+msgid "Klik op de"
+msgstr "Click on the"
+
+#: FrontEnd/application/views/steps/detail-modal.php:7
+msgid "symbolen voor meer detail."
+msgstr "symbols for more detail."
+
+#: FrontEnd/application/views/steps/detail-modal.php:12
+msgid "Besparing totaal:"
+msgstr "Savings total:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:14
+msgid "Totale kost:"
+msgstr "Total cost:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:22
+msgid "Besparing elektriciteit:"
+msgstr "Savings electricity:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:23
+msgid "Kost elektriciteit:"
+msgstr "Cost electricity:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:33
+#: FrontEnd/application/views/steps/detail-modal.php:380
+msgid "Uw huidig tarief:"
+msgstr "Your current tariff:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:39
+#: FrontEnd/application/views/steps/detail-modal.php:386
+msgid "Nieuw tarief:"
+msgstr "New tariff:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:45
+#: FrontEnd/application/views/steps/detail-modal.php:392
+msgid "Prijs:"
+msgstr "Price:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:53
+#: FrontEnd/application/views/steps/detail-modal.php:400
+msgid "Energiekost:"
+msgstr "Energy cost:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:60
+#: FrontEnd/application/views/steps/detail-modal.php:407
+msgid "Abonnement:"
+msgstr "Subscription:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:68
+msgid "Verbruik dag:"
+msgstr "Consumption day:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:75
+#: FrontEnd/application/views/steps/detail-modal.php:99
+#: FrontEnd/application/views/steps/detail-modal.php:123
+#: FrontEnd/application/views/steps/detail-modal.php:147
+#: FrontEnd/application/views/steps/detail-modal.php:171
+#: FrontEnd/application/views/steps/detail-modal.php:250
+#: FrontEnd/application/views/steps/detail-modal.php:309
+#: FrontEnd/application/views/steps/detail-modal.php:333
+#: FrontEnd/application/views/steps/detail-modal.php:422
+#: FrontEnd/application/views/steps/detail-modal.php:529
+#: FrontEnd/application/views/steps/detail-modal.php:553
+msgid "# kWh:"
+msgstr "# kWh:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:82
+#: FrontEnd/application/views/steps/detail-modal.php:106
+#: FrontEnd/application/views/steps/detail-modal.php:130
+#: FrontEnd/application/views/steps/detail-modal.php:154
+#: FrontEnd/application/views/steps/detail-modal.php:178
+#: FrontEnd/application/views/steps/detail-modal.php:257
+#: FrontEnd/application/views/steps/detail-modal.php:316
+#: FrontEnd/application/views/steps/detail-modal.php:340
+#: FrontEnd/application/views/steps/detail-modal.php:429
+#: FrontEnd/application/views/steps/detail-modal.php:536
+#: FrontEnd/application/views/steps/detail-modal.php:560
+msgid "€c/kWh:"
+msgstr "€c/kWh:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:92
+msgid "Verbruik nacht:"
+msgstr "Consumption night:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:116
+msgid "Verbruik exclusief nacht:"
+msgstr "Consumption exclusive night:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:140
+msgid "Kost groene stroom:"
+msgstr "Extra cost green energy:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:164
+msgid "WKK:"
+msgstr "Cogeneration:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:190
+#: FrontEnd/application/views/steps/detail-modal.php:441
+msgid "Heffingen:"
+msgstr "Taxes:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:197
+#: FrontEnd/application/views/steps/detail-modal.php:448
+msgid "Bijdrage op energie:"
+msgstr "Energy contribution:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:204
+#: FrontEnd/application/views/steps/detail-modal.php:455
+msgid "Federale bijdrage:"
+msgstr "Federal contribution:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:211
+msgid "Energieheffing:"
+msgstr "Energy tax:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:218
+#: FrontEnd/application/views/steps/detail-modal.php:462
+msgid "Openbare dienstverlening:"
+msgstr "Public Service:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:228
+#: FrontEnd/application/views/steps/detail-modal.php:472
+msgid "Nettarieven:"
+msgstr "Net tariffs:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:235
+#: FrontEnd/application/views/steps/detail-modal.php:479
+msgid "Distributie:"
+msgstr "Distribution:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:243
+msgid "Prosumententarief:"
+msgstr "Prosumer tariff:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:266
+#: FrontEnd/application/views/steps/detail-modal.php:486
+msgid "Transmissie:"
+msgstr "Transmission:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:278
+#: FrontEnd/application/views/steps/detail-modal.php:498
+msgid "Kortingen:"
+msgstr "Discounts:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:285
+#: FrontEnd/application/views/steps/detail-modal.php:505
+msgid "Welkomstkorting:"
+msgstr "Welcome discount:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:293
+#: FrontEnd/application/views/steps/detail-modal.php:513
+msgid "kWh gratis:"
+msgstr "kWh free:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:302
+#: FrontEnd/application/views/steps/detail-modal.php:522
+msgid "Korting in c/kWh:"
+msgstr "Discount in c/kWh:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:326
+#: FrontEnd/application/views/steps/detail-modal.php:546
+msgid "Korting in % kWh:"
+msgstr "Discount in % kWh:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:349
+msgid "Korting dag/nacht:"
+msgstr "Discount day/night:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:358
+#: FrontEnd/application/views/steps/detail-modal.php:571
+msgid "Prijs na kortingen:"
+msgstr "Cost after discounts:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:369
+msgid "Besparing gas:"
+msgstr "Saving gas:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:370
+msgid "Kost gas:"
+msgstr "Cost gas:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:415
+msgid "Verbruik:"
+msgstr "Consumption:"
+
+#: FrontEnd/application/views/steps/detail-modal.php:579
+msgid "Extra korting:"
+msgstr "Extra discount:"
+
+#: FrontEnd/application/views/steps/home-old.php:4
+msgid "Verander van leverancier in 60 seconden"
+msgstr "Change suppliers in 60 seconds"
+
+#: FrontEnd/application/views/steps/home-old.php:32
+msgid ""
+"Het gebruik van deze dienst implicieert aanvaarding van onze <a href=\"/"
+"terms-and-conditions\">gebruikersvoorwaarden.</a>"
+msgstr ""
+"The use of this service implies acceptance of our <a href=“/terms-and-"
+"conditions”>terms of service.</a>"
+
+#: FrontEnd/application/views/steps/home-old.php:40
+msgid "U kunt tot"
+msgstr "You can save up to"
+
+#: FrontEnd/application/views/steps/home-old.php:40
+msgid "besparen"
+msgstr " "
+
+#: FrontEnd/application/views/steps/home-old.php:173
+#: FrontEnd/application/views/steps/home-old.php:186
+#: FrontEnd/application/views/steps/home-old.php:195
+msgid "Uw rekeningnaam"
+msgstr "Your account name"
+
+#: FrontEnd/application/views/steps/home-old.php:209
+msgid "Verander nu"
+msgstr "Change now"
+
+#: FrontEnd/application/views/steps/home-old.php:220
+msgid "Hoe werkt het?"
+msgstr "Manual\t"
+
+#: FrontEnd/application/views/steps/home-old.php:226
+msgid ""
+"Om deze video te bekijken dient u Javascript te activeren of een browser te "
+"selecteren die HTML5 video ondersteunt."
+msgstr ""
+"To view this video please enable JavaScript in your browser or a browser "
+"that supports HTML5 video."
+
+#: FrontEnd/application/views/steps/home-old.php:236
+msgid ""
+"Dit werkt echt goed en snel! Ik zag het resultaat al na enkele seconden."
+msgstr ""
+"This really works well and super-fast! I could review the result after just "
+"a few seconds."
+
+#: FrontEnd/application/views/steps/home-old.php:237
+msgid "Geert C."
+msgstr "Geert C."
+
+#: FrontEnd/application/views/steps/home-old.php:240
+#, php-format
+msgid "Ik wil dit voor al mijn contracten! Ik zou %s aan iedereen aanraden!"
+msgstr "I want this for all of my contracts! I definitely recommend %s."
+
+#: FrontEnd/application/views/steps/home-old.php:241
+msgid "Carine B."
+msgstr "Carine B."
+
+#: FrontEnd/application/views/steps/home-old.php:249
+msgid "Jouw voordelen"
+msgstr "Your benefits"
+
+#: FrontEnd/application/views/steps/home-old.php:253
+msgid "<span>Gratis:</span> Geen opzeg- of overstapkosten"
+msgstr "<span>Free:</span> No switch or cancellation costs"
+
+#: FrontEnd/application/views/steps/home-old.php:257
+msgid ""
+"<span>Makkelijk:</span> Op elk moment, onafhankelijk van de looptijd van uw "
+"huidige contract. Uw nieuwe leverancier regelt alles"
+msgstr ""
+"<span>Easy:</span> At any time, independent of the duration of your current "
+"contract. Your new supplier handles everything"
+
+#: FrontEnd/application/views/steps/home-old.php:261
+msgid ""
+"<span>Correct:</span> Objectief en compleet advies (incl. kortingen en "
+"promoties)"
+msgstr ""
+"<span>Correct:</span> Objective and complete advice (incl. discounts and "
+"promotions)"
+
+#: FrontEnd/application/views/steps/home-old.php:265
+msgid "<span>Vlot:</span> Geen onderbreking van levering"
+msgstr "<span>Smooth:</span> No interruption of delivery"
+
+#: FrontEnd/application/views/steps/home-old.php:269
+msgid "<span>Veilig:</span> We geven uw data niet door aan derden"
+msgstr "<span>Safe:</span> We won’t give your data to third parties"
+
+#: FrontEnd/application/views/steps/home-old.php:282
+#, php-format
+msgid "U kan gewoon uw laatste afrekening doorsturen naar factuur@%s."
+msgstr "You can just forward your last statement to invoice@%s."
+
+#: FrontEnd/application/views/steps/home-old.php:285
+msgid "Factuur mailen"
+msgstr "Email invoice"
+
+#: FrontEnd/application/views/steps/info-modal.php:7
+msgid "Product info"
+msgstr "Product info"
+
+#: FrontEnd/application/views/steps/info-modal.php:14
+msgid "Draai uw scherm voor een betere ervaring!"
+msgstr "Please turn your screen for a better experience"
+
+#: FrontEnd/application/views/steps/info-modal.php:32
+msgid "Beschrijving"
+msgstr "Description"
+
+#: FrontEnd/application/views/steps/info-modal.php:59
+msgid "Kenmerken"
+msgstr "Properties"
+
+#: FrontEnd/application/views/steps/info-modal.php:68
+msgid "Contractduur (# jaar)"
+msgstr "Contract duration (# years)"
+
+#: FrontEnd/application/views/steps/info-modal.php:72
+msgid "Beschikbaar in"
+msgstr "Available in"
+
+#: FrontEnd/application/views/steps/info-modal.php:76
+msgid "Groene stroom"
+msgstr "Green Power"
+
+#: FrontEnd/application/views/steps/info-modal.php:84
+msgid "Prijzen"
+msgstr "Prices"
+
+#: FrontEnd/application/views/steps/info-modal.php:89
+msgid "BTW"
+msgstr "VAT"
+
+#: FrontEnd/application/views/steps/info-modal.php:93
+msgid "Tarieftype"
+msgstr "Tariff type"
+
+#: FrontEnd/application/views/steps/info-modal.php:98
+msgid "Tariefkaart"
+msgstr "Rate card"
+
+#: FrontEnd/application/views/steps/info-modal.php:100
+msgid "tariefkaart"
+msgstr "rate card"
+
+#: FrontEnd/application/views/steps/info-modal.php:103
+msgid "Betaalwijze"
+msgstr "Payment method"
+
+#: FrontEnd/application/views/steps/info-modal.php:107
+msgid "Aansluiting / Overstap"
+msgstr "Connection / Switch"
+
+#: FrontEnd/application/views/steps/loading_overlay.php:7
+msgid "Even geduld. We zijn uw factuur aan het analyseren."
+msgstr "Just a minute. We are analyzing your invoice."
+
+#: FrontEnd/application/views/steps/loading_overlay.php:12
+msgid ""
+"Wist u dat wij ook de overstap super makkelijk kunnen regelen? Druk gewoon "
+"op de knop -overstap regelen- en u zal zien dat wij al het papierwerk voor "
+"onze rekening nemen"
+msgstr ""
+"Did you know that we can help you switch providers easily? Just push the "
+"button -switch providers- and you will see that we take care of all the "
+"paperwork for you"
+
+#: FrontEnd/application/views/steps/result.php:59
+#: FrontEnd/application/views/steps/user_information.php:20
+msgid "Stap 1: Deel"
+msgstr "Step 1: Share"
+
+#: FrontEnd/application/views/steps/result.php:63
+#: FrontEnd/application/views/steps/user_information.php:24
+msgid "Stap 2: Kies"
+msgstr "Step 2: Choose"
+
+#: FrontEnd/application/views/steps/result.php:72
+#: FrontEnd/application/views/steps/user_information.php:33
+msgid "Deel"
+msgstr "Share"
+
+#: FrontEnd/application/views/steps/result.php:86
+msgid "Start de rondleiding"
+msgstr "Start the tour"
+
+#: FrontEnd/application/views/steps/result.php:89
+msgid ""
+"In dit paneel tonen we je standaard het goedkoopste aanbod op maat van jouw "
+"profiel."
+msgstr ""
+"Here we show you the best option on the market based on your consumption "
+"profile."
+
+#: FrontEnd/application/views/steps/result.php:92
+msgid ""
+"Hier vind je de gegevens terug op basis waarvan we de berekening hebben "
+"gemaakt"
+msgstr "Here you can find the data on which we have based our computation."
+
+#: FrontEnd/application/views/steps/result.php:95
+#: FrontEnd/application/views/steps/result_parsing.php:39
+msgid "Uw gegevens"
+msgstr "Your data"
+
+#: FrontEnd/application/views/steps/result.php:237
+msgid "Uw voorkeuren"
+msgstr "Your preferences"
+
+#: FrontEnd/application/views/steps/result.php:241
+msgid ""
+"Ik laat verschillende producten/leveranciers toe voor elektriciteit en gas"
+msgstr ""
+"I am happy to have a different product/supplier for gas than for electricity"
+
+#: FrontEnd/application/views/steps/result.php:252
+msgid ""
+"In dit paneel kan je je voorkeuren instellen. <br>Je ziet meteen de impact "
+"op je besparing.<br><br> Wens je bijvoorbeeld niet te betalen met "
+"domiciliëring? Zet deze optie dan af."
+msgstr ""
+"Here, you can indicate your preferences. <br> You will immediately see the "
+"impact on your saving potential. <br><br> For example, if you don't like to "
+"pay through direct debit, turn this option off."
+
+#: FrontEnd/application/views/steps/result.php:255
+msgid "Toon ook tarieven met domiciliëring"
+msgstr "Also show tariffs that require direct debit"
+
+#: FrontEnd/application/views/steps/result.php:269
+msgid "Toon enkel tarieven met groene energie"
+msgstr "Show only tariffs with green energy"
+
+#: FrontEnd/application/views/steps/result.php:283
+msgid "Hou rekening met lopende promoties"
+msgstr "Take discounts and promotions into account"
+
+#: FrontEnd/application/views/steps/result.php:496
+msgid "Gelieve een emailadres in te vullen."
+msgstr "Please enter an email address."
+
+#: FrontEnd/application/views/steps/result.php:498
+msgid "Gelieve een correct emailadres in te vullen."
+msgstr "Please enter a valid email address."
+
+#: FrontEnd/application/views/steps/result_parsing.php:52
+#: FrontEnd/application/views/steps/result_parsing.php:88
+msgid "EAN"
+msgstr "EAN"
+
+#~ msgid ""
+#~ "Energiegids zoekt het beste aanbod voor jou persoonlijk profiel. Een "
+#~ "groepsaankoop zoekt het beste aanbod voor het gemiddelde profiel in de "
+#~ "groep."
+#~ msgstr ""
+#~ "Contract.fit finds the best offer for your personal profile. Group "
+#~ "purchasing finds the best offer for the average profile of the group."
+
+#~ msgid ""
+#~ "Energiegids.be is hier een prima voorbeeld van: zonder gedoe en volledig "
+#~ "digitaal de matchmaking regelen tussen energiegebruikers en -"
+#~ "leveranciers. Want zeg nu zelf, wie houdt van die lastige call centers of "
+#~ "opdringerige deur-aan-deur verkopers ;-) "
+#~ msgstr ""
+#~ "Contract.fit is a prime example: fully digital and no-frills matchmaking "
+#~ "between energy users and providers.  With Contract.fit, you no longer "
+#~ "have to deal with those annoying call centers or pushy door-to-door "
+#~ "salesmen ;-)"
+
+#~ msgid "factuur@energiegids.be"
+#~ msgstr "invoice@contract.fit"
+
+#~ msgid "Productkeuze"
+#~ msgstr "Product selection"
+
+#~ msgid "Kies deze tarieven"
+#~ msgstr "Choose these tariffs"
+
+#~ msgid "Kies dit tarief"
+#~ msgstr "Choose this tariff"
+
+#~ msgid "Klik hier om uw productkeuze aan te passen"
+#~ msgstr "Click here to change your product selection"
+
+#~ msgid "Stap 1: Deel uw gegevens"
+#~ msgstr "Step 1: Share your data"
+
+#~ msgid "Stap 2: Kies uw leverancier"
+#~ msgstr "Step 2: Choose new supplier"
+
+#~ msgid ""
+#~ "Gelieve een geldig EAN nummer in te geven (18 cijfers, start met 5414)"
+#~ msgstr "Please enter a valid EAN number (18 digits, starts with 5414)"
+
+#~ msgid "Gelieve een geldig IBAN nummer in te geven (BExx xxxx xxxx xxxx)"
+#~ msgstr "Please enter a valid IBAN number (BExx xxxx xxxx xxxx)"
+
+#~ msgid "Gelieve een geldig telefoonnummer in te geven"
+#~ msgstr "Please enter a valid phone number"
+
+#~ msgid "Gelieve een geldig rijksregisternummer in te geven"
+#~ msgstr "Please enter a valid national registry number"
+
+#~ msgid "Stap 3: Stap over"
+#~ msgstr "Step 3: Switch"
+
+#~ msgid "Uw besparing:"
+#~ msgstr "Your saving:"
+
+#~ msgid "Uw extra kost:"
+#~ msgstr "Your extra cost:"
+
+#~ msgid "Uw jaarlijkse besparing:"
+#~ msgstr "Your yearly saving:"
+
+#~ msgid "Waarom zou u het niet eens proberen?"
+#~ msgstr "How about you give it a try?"
+
+#~ msgid "Zij gingen u al voor"
+#~ msgstr "Some of our happy users"
+
+#~ msgid "Ik upload een digitale factuur of scan (pdf)"
+#~ msgstr "I upload an invoice (digital or scanned - pdf)"
+
+#~ msgid "Ik stuur een mail met mijn factuur"
+#~ msgstr "I send an email with my invoice"
+
+#~ msgid "Stap 1: Stuur uw factuur"
+#~ msgstr "Step 1: Send your invoice"
+
+#~ msgid "Uploaden van een digitale factuur of scan"
+#~ msgstr "Upload a digital or scanned invoice"
+
+#~ msgid "uw email adres"
+#~ msgstr "your email address"
+
+#~ msgid ""
+#~ "Kies een foto of van op uw toestel of maak een nieuwe foto met de camera. "
+#~ "Hou de camera ongeveer 30cm recht boven de eerste pagina van de factuur."
+#~ msgstr ""
+#~ "Select a picture on your device on take a new one with the camera. Hold "
+#~ "the camera around 30cm straight above the first page of your invoice."
+
+#~ msgid "Gekopieerd!"
+#~ msgstr "Copied!"
+
+#~ msgid ""
+#~ "Stuur uw factuur of de email van uw energieleverancier door naar het "
+#~ "bovenstaand adres."
+#~ msgstr ""
+#~ "Send your invoice or the email from your provider to the email address "
+#~ "mentioned above."
+
+#~ msgid ""
+#~ "Door dit formulier in te sturen, geeft u %s het mandaat om de overstap te "
+#~ "initiëren in uw naam."
+#~ msgstr ""
+#~ "By submitting this form, you give %s the mandate to initiate the transfer "
+#~ "in your name."
+
+#~ msgid "Elektriciteit: Tarieven"
+#~ msgstr "Electricity: Tariffs"
+
+#~ msgid "Gas: Tarieven"
+#~ msgstr "Gas: Tariffs"
+
+#~ msgid "30 dagen na vandaag wordt u beleverd door de nieuwe leverancier"
+#~ msgstr "30 days after you are supplied by the new supplier"
+
+#~ msgid ""
+#~ "Wij hebben alle nodige information om de overstap te initiëren bij de "
+#~ "nieuwe leverancier"
+#~ msgstr ""
+#~ "We have all the necessary information in order to initiate the transition "
+#~ "to the new supplier"
+
+#~ msgid "Wat vindt u van onze dienst"
+#~ msgstr "What do you think of our service"
+
+#~ msgid "Ik laat verschillende tarieven toe voor elektriciteit en gas"
+#~ msgstr ""
+#~ "I am happy to have a different tariff/supplier for gas than for "
+#~ "electricity"
+
+#~ msgid "Kostprijs:"
+#~ msgstr "Cost:"
+
+#~ msgid "Kostprijs na kortingen:"
+#~ msgstr "Cost after discounts:"
+
+#~ msgid "Uw besparing: "
+#~ msgstr "Your saving: "
+
+#~ msgid "We maken het makkelijk voor je, kies één van deze drie opties:"
+#~ msgstr ""
+#~ "We make it as easy as possible, choose one of the following options:"
+
+#~ msgid ""
+#~ "Kies het juiste pdf bestand op uw toestel. Bij een afzonderlijke factuur "
+#~ "voor gas en elektriciteit, kunt u deze samen uploaden."
+#~ msgstr ""
+#~ "Select the pdf file on your device. Should you have separate invoices for "
+#~ "gas and electricity, you can can upload these together."
+
+#~ msgid "Elektriciteit: Tarieven (1 = goedkoopst)"
+#~ msgstr "Electricity: Tariffs (1 = cheapest)"
+
+#~ msgid "Gas: Tarieven (1 = goedkoopst)"
+#~ msgstr "Gas: Tariffs (1 = cheapest)"
+
+#~ msgid "uw huidig:"
+#~ msgstr "your current:"
+
+#~ msgid "uw geselecteerd:"
+#~ msgstr "your selected:"
+
+#~ msgid "U kan tot"
+#~ msgstr "You can save up to"
+
+#~ msgid "Info product"
+#~ msgstr "Product info"
+
+#~ msgid "Detail van uw besparing? Klik hier"
+#~ msgstr "Detail of your savings? Click here"
+
+#~ msgid "Besparing elektriciteit"
+#~ msgstr "Saving electricity"
+
+#~ msgid "Besparing gas"
+#~ msgstr "Saving gas"
+
+#~ msgid "Korting elektriciteit + gas"
+#~ msgstr "Discount electricity and gas"
+
+#~ msgid "Korting bij domiciliëring"
+#~ msgstr "Discount for direct debit"
+
+#~ msgid "Uw besparing"
+#~ msgstr "Your saving"
+
+#~ msgid "Detail van totale kost"
+#~ msgstr "Detail of total cost"
+
+#~ msgid "Totale kost"
+#~ msgstr "Total cost"
+
+#~ msgid "Kies leverancier"
+#~ msgstr "Choose supplier"
+
+#~ msgid "De berekening"
+#~ msgstr "The computation"
+
+#~ msgid "Energiekost"
+#~ msgstr "Cost of energy"
+
+#~ msgid "Abonnement"
+#~ msgstr "Subscription"
+
+#~ msgid "Verbruik dag"
+#~ msgstr "Consumption day"
+
+#~ msgid "Verbruik nacht"
+#~ msgstr "Consumption night"
+
+#~ msgid "Verbruik excl_nacht"
+#~ msgstr "Consumption excl. night"
+
+#~ msgid "Verbruik"
+#~ msgstr "Consumption"
+
+#~ msgid "Extra kost groene stroom"
+#~ msgstr "Extra cost green energy"
+
+#~ msgid "Kosten voor groene stroom"
+#~ msgstr "Cost for Green Power"
+
+#~ msgid "WKK"
+#~ msgstr "Cogeneration"
+
+#~ msgid "Nettarieven"
+#~ msgstr "Net tariffs"
+
+#~ msgid "Distributie"
+#~ msgstr "Distribution"
+
+#~ msgid "Prosumententarief"
+#~ msgstr "Prosumer tariff"
+
+#~ msgid "Transmissie"
+#~ msgstr "Transmission"
+
+#~ msgid "Heffingen"
+#~ msgstr "Taxes"
+
+#~ msgid "Bijdrage op energie"
+#~ msgstr "Energy contribution"
+
+#~ msgid "Federale bijdrage"
+#~ msgstr "Federal contribution"
+
+#~ msgid "Bijdrage energiefonds"
+#~ msgstr "Contribution energy fund"
+
+#~ msgid "Energieheffing"
+#~ msgstr "Energy tax"
+
+#~ msgid "Openbare Dienstverlening"
+#~ msgstr "Public Service"
+
+#~ msgid "totaal"
+#~ msgstr "Total"
+
+#~ msgid "Dezelfde berekening door uw energieregulator"
+#~ msgstr "This calculation by your regulator"
+
+#~ msgid "Kortingen"
+#~ msgstr "Discounts"
+
+#~ msgid "Welkomstkorting"
+#~ msgstr "Welcome discount"
+
+#~ msgid "Korting in c/kWh"
+#~ msgstr "Discount in c/kWh"
+
+#~ msgid "Korting in % kWh"
+#~ msgstr "Discount in % kWh"
+
+#~ msgid "Korting dag/nacht in Euro"
+#~ msgstr "Discount day/night in Euro"
+
+#~ msgid "Totaal"
+#~ msgstr "Total"
+
+#~ msgid "na kortingen"
+#~ msgstr "after discounts"
+
+#~ msgid "Uw product"
+#~ msgstr "Your product"
+
+#~ msgid "Prijs"
+#~ msgstr "Price"
+
+#~ msgid "Getoond product"
+#~ msgstr "Product on display"
+
+#~ msgid "Produceert u energie?"
+#~ msgstr "Do you produce energy yourself?"
+
+#~ msgid ""
+#~ "Mag je leverancier voor gas een andere leverancier zijn dan die voor "
+#~ "elektriciteit? Zet deze optie dan aan."
+#~ msgstr ""
+#~ "Are you okay to have two different suppliers? One for gas and another one "
+#~ "for electricity? If so, check this option."
+
+#~ msgid "Verschillende leverancier"
+#~ msgstr "Different suppliers"
+
+#~ msgid "Ben je bereid te betalen via domiciliëring? Zet deze optie dan aan."
+#~ msgstr ""
+#~ "Are you prepared to pay through direct debit? If so, select this option."
+
+#~ msgid "Wil je gegarandeerd groene energie? Zet deze optie dan aan."
+#~ msgstr "Do you want guaranteed green energy? If so, check this option."
+
+#~ msgid ""
+#~ "Wil je de besparing zien inclusief tijdelijke kortingen en promoties? Zet "
+#~ "deze optie dan aan."
+#~ msgstr ""
+#~ "Do you want us to include temporary discounts in the computation? If so, "
+#~ "click this option."
+
+#~ msgid "Lopende promoties"
+#~ msgstr "Promotions"
+
+#~ msgid ""
+#~ "Hier kan je kiezen of we producten tonen met variabele en/of vaste "
+#~ "tarieven"
+#~ msgstr ""
+#~ "Here you can choose whether or not to include products with fixed and "
+#~ "variable rates"
+
+#~ msgid "Vast tarief"
+#~ msgstr "Fixed rate"
+
+#~ msgid "Variabel tarief"
+#~ msgstr "Variable rate"
+
+#~ msgid "Bedankt %s ! "
+#~ msgstr "Thanks %s! "
+
+#~ msgid "Ik heb nog %d fotos nodig. "
+#~ msgstr "I need %d more pictures. "
+
+#~ msgid ""
+#~ "Even kijken wat je elektriciteitsverbruik is. Kan je mij een foto "
+#~ "doorsturen van onderstaand stuk? Typisch staat dit op pagina %d."
+#~ msgstr ""
+#~ "Let's see what your electricity consumption is. Could you send me a "
+#~ "picture of this piece? Typically it is on page %d."
+
+#~ msgid ""
+#~ "Even kijken wat je gasverbruik is. Kan je mij een foto doorsturen van "
+#~ "onderstaand stuk? Typisch staat dit op pagina %d."
+#~ msgstr ""
+#~ "Let's see what your gas consumption is. Could you send me a picture of "
+#~ "this piece? Typically it is on page %d."
+
+#~ msgid ""
+#~ "Even kijken wat je verbruik is. Kan je mij een foto doorsturen van "
+#~ "onderstaand stuk? Typisch staat dit op pagina %d."
+#~ msgstr ""
+#~ "Let's see what your consumption is. Could you send me a picture of this "
+#~ "piece? Typically it is on page %d."
+
+#~ msgid ""
+#~ "Even kijken wat je kost is. Kan je mij een foto doorsturen van "
+#~ "onderstaand stuk? Typisch staat dit op pagina %d."
+#~ msgstr ""
+#~ "Let's see what your energy cost is. Could you send me a picture of this "
+#~ "piece? Typically it is on page %d."
+
+#~ msgid ""
+#~ "Even kijken wat je elektriciteitsverbruik is. Kan je mij een foto "
+#~ "doorsturen van pagina %d."
+#~ msgstr ""
+#~ "Let's see what your electricity consumption is. Could you send me a "
+#~ "picture of page %d."
+
+#~ msgid ""
+#~ "Even kijken wat je gasverbruik is. Kan je mij een foto doorsturen van "
+#~ "pagina %d."
+#~ msgstr ""
+#~ "Let's see what your gas consumption is. Could you send me a picture of "
+#~ "page %d."
+
+#~ msgid ""
+#~ "Even kijken wat je verbruik is. Kan je mij een foto doorsturen van pagina "
+#~ "%d."
+#~ msgstr ""
+#~ "Let's see what your energy consumption is. Could you send me a picture of "
+#~ "page %d."
+
+#~ msgid ""
+#~ "Even kijken wat je kost is. Kan je mij een foto doorsturen van pagina %d."
+#~ msgstr ""
+#~ "Let's see what your energy cost is. Could you send me a picture of page "
+#~ "%d?"
+
+#~ msgid "Er werden te veel bestanden gevonden"
+#~ msgstr "Please upload 1 or 2 files"
+
+#~ msgid "Selecteer uw factuur"
+#~ msgstr "Select your invoice"
+
+#~ msgid "Hier kan nog iets gezet worden"
+#~ msgstr "You can put some stuff here"
+
+#~ msgid ""
+#~ "Prima, vul hiernaast je email adres in, selecteer een energiefactuur "
+#~ "(jaarafrekening of maandelijkse factuur) en daarna doen wij al het harde "
+#~ "werk voor je!"
+#~ msgstr ""
+#~ "Great ! Send us your invoice and we’ll take care of the paperwork for you"
+
+#~ msgid "Upload uw factuur"
+#~ msgstr "Upload your invoice"
+
+#~ msgid "of"
+#~ msgstr "or"
+
+#~ msgid "Fotografeer uw factuur"
+#~ msgstr "Take a picture of your invoice"
+
+#~ msgid "Mail uw factuur"
+#~ msgstr "Mail your invoice"
+
+#~ msgid "Vul met de hand in"
+#~ msgstr "Manual data entry"
+
+#~ msgid ""
+#~ "Geen elektriciteitsfactuur gevonden, klik hieronder om er een toe te "
+#~ "voegen"
+#~ msgstr "No electricity. Click here to add."
+
+#~ msgid "Geen gasfactuur gevonden, klik hieronder om er een toe te voegen"
+#~ msgstr "No gas, click here to add"
+
+#~ msgid "Uw voordeel"
+#~ msgstr "Your benefit"
+
+#~ msgid "Makkelijk:"
+#~ msgstr "Easy:"
+
+#~ msgid ""
+#~ "Wij regelen alle administratie. U hoeft geen eindeloze formulieren in te "
+#~ "vullen"
+#~ msgstr ""
+#~ "We arrange all the administration. You don’t need to fill in endless forms"
+
+#~ msgid "Kostenloos:"
+#~ msgstr "For free:"
+
+#~ msgid "Geen enkele meerkost, geen opzeg- of overstapkosten"
+#~ msgstr "No additional costs, no termination or switching costs"
+
+#~ msgid "Vlot:"
+#~ msgstr "Seamless:"
+
+#~ msgid "Geen onderbreking van levering"
+#~ msgstr "Your energy supply will not be interrupted"
+
+#~ msgid "Veilig:"
+#~ msgstr "Secure:"
+
+#~ msgid ""
+#~ "We delen enkel de informatie benodigd voor de overstap met uw nieuwe "
+#~ "leverancier"
+#~ msgstr ""
+#~ "We only share the information required for the transition with your new "
+#~ "supplier"
+
+#~ msgid "Benieuwd wat je straks te zien krijgt?"
+#~ msgstr "Want to know what you’ll see in a minute?"
+
+#~ msgid ""
+#~ "Hieronder alvast een illustratie. Voor de gebieden die met een rode lijn "
+#~ "zijn omkaderd kan je wat extra uitleg krijgen."
+#~ msgstr ""
+#~ "Here’s a sneak preview. You can find out more about the areas with red "
+#~ "borders by hovering over them."
+
+#~ msgid "Klik op de pijltjes om door de gesorteerde lijst te stappen"
+#~ msgstr "Click on the arrows to walk through the ordered list of products"
+
+#~ msgid "Logo voorgestelde leverancier"
+#~ msgstr "Logo proposed supplier"
+
+#~ msgid "Voorgesteld product"
+#~ msgstr "Proposed product"
+
+#~ msgid ""
+#~ "Klik hier om de berekening te zien op basis van de officiële tarieven"
+#~ msgstr "Click here to see the detail of the computation"
+
+#~ msgid "Bekijk details"
+#~ msgstr "Show details"
+
+#~ msgid "Voorgestelde leverancier"
+#~ msgstr "Proposed supplier"
+
+#~ msgid "Hier tonen we de gegevens die we gelezen hebben uit uw factuur"
+#~ msgstr "Here we show you the data we read from your invoice"
+
+#~ msgid "Uw adres"
+#~ msgstr "Your address"
+
+#~ msgid "uw product, uw leverancier"
+#~ msgstr "your product, your supplier"
+
+#~ msgid "Verbruik dag (kWh)"
+#~ msgstr "Day consumption (kWh)"
+
+#~ msgid "Verbruik nacht (kWh)"
+#~ msgstr "Night consumption (kWh)"
+
+#~ msgid "aantal kWh"
+#~ msgstr "# kWh"
+
+#~ msgid "Verbruik (kWh)"
+#~ msgstr "Consumption (kWh)"
+
+#~ msgid ""
+#~ "Hier kan je bepaalde voorkeuren meegeven. Wil je graag groene energie? "
+#~ "Wil je enkel vaste tarieven? Geef het straks hier aan."
+#~ msgstr ""
+#~ "Here you can share your preferences. Do you want green energy? Do you "
+#~ "want fixed rates? Indicate it here in a second."
+
+#~ msgid "geboortedatum"
+#~ msgstr "date of birth"
+
+#~ msgid "Ik verhuis of heb geen recente factuur: "
+#~ msgstr "I am moving or do not have a recent invoice: "
+
+#~ msgid "Proposed product"
+#~ msgstr "Proposed product"
+
+#~ msgid "Excl. nacht (kWh)"
+#~ msgstr "Excl. night (kWh)"
+
+#~ msgid "Maandelijkse kost (€)"
+#~ msgstr "Monthly cost (€)"
+
+#~ msgid "Produceert u zelf energie?"
+#~ msgstr "Do you produce energy yoursef?"
+
+#~ msgid ""
+#~ "Dat heeft geen invloed op de mogelijke besparing, het prosumententarief "
+#~ "is immers onafhankelijk van de leverancier."
+#~ msgstr ""
+#~ "This doesn’t impact your saving. The prosumer tariff is independent of "
+#~ "the chosen supplier."
+
+#~ msgid "Team"
+#~ msgstr "Who are we"
+
+#~ msgid "Info besparing"
+#~ msgstr "Info savings"
+
+#~ msgid "Gegevens uit uw factuur"
+#~ msgstr "Data from your invoice"
+
+#~ msgid "Detail van uw besparing"
+#~ msgstr "Detail of your savings"
+
+#~ msgid "Boodschap"
+#~ msgstr "Message"
+
+#~ msgid "Korting voor domiciliëring"
+#~ msgstr "Discount for Direct Debit Mandate"
+
+#~ msgid "Contractduur"
+#~ msgstr "Contract duration"
+
+#~ msgid "Inbegrepen in berekeningen"
+#~ msgstr "Included in computations"
+
+#~ msgid "tarief"
+#~ msgstr "tariff"
+
+#~ msgid ""
+#~ "Prijzen zijn berekend volgens de officiële richtlijnen van de "
+#~ "energieregulator CREG"
+#~ msgstr ""
+#~ "Prices computed according to the official guidelines of the regulator CREG"
+
+#~ msgid ""
+#~ "Dat heeft geen invloed op de mogelijke besparing, het prosumententarief "
+#~ "is immers onafhankelijk van de leverancier. In de detailberekening kan u "
+#~ "desgewenst het totaal aanpassen door het aantal kVA inte geven bij de "
+#~ "nettarieven."
+#~ msgstr ""
+#~ "This doesn’t impact your saving. The prosumer tariff is independent of "
+#~ "the chosen supplier. Should you want to do so, you can enter the kVA in "
+#~ "the details of the calculation within the net tariffs to see the impact "
+#~ "on the total cost."
+
+#~ msgid ""
+#~ "Binnen de 60 seconden vertellen we je wat het beste aanbod is de markt op "
+#~ "basis van jouw verbruik en adres. We regelen voor jou de overstap."
+#~ msgstr ""
+#~ "In less than 60 seconds we let you know what the best offer is based on "
+#~ "your consumption and location. And we take care of the switching process."
+
+#~ msgid "PhD in Computer Engineering"
+#~ msgstr "PhD in Computer Engineering"
+
+#~ msgid "Former Microsoft Research"
+#~ msgstr "Former Microsoft Research"
+
+#~ msgid "Former Principal The Boston Consulting Group"
+#~ msgstr "Former Principal The Boston Consulting Group"
+
+#~ msgid "MsC in Computer Engineering"
+#~ msgstr "MSC in Computer Engineering"
+
+#~ msgid "MBA from INSEAD"
+#~ msgstr "MBA from INSEAD"
+
+#~ msgid ""
+#~ "Vul hier je gegevens in en daarna doen wij al het harde werk voor je !"
+#~ msgstr ""
+#~ "Please leave your details here and then we take care of the hard work !"
+
+#~ msgid "Dat vertellen we je graag in dit filmpje"
+#~ msgstr "We’d love to show you in this movie"
+
+#~ msgid "Transparant"
+#~ msgstr "Transparent"
+
+#~ msgid "Wij vergelijken tarieven van onder meer de volgende leveranciers"
+#~ msgstr "We compare rates of, among others, the following suppliers"
+
+#~ msgid "Het team"
+#~ msgstr "Team"
+
+#~ msgid ""
+#~ "Missie: het supermakkelijk maken om klant te worden bij de leverancier "
+#~ "die het best bij u past"
+#~ msgstr ""
+#~ "Mission: to make it super easy for all us to switch to the best matching "
+#~ "supplier"
+
+#~ msgid ""
+#~ "Missie: formulieren uit de wereld helpen door ze te vervangen door het "
+#~ "delen van documenten"
+#~ msgstr ""
+#~ "Mission: to eradicate complex forms and to replace them by simple "
+#~ "document sharing"
+
+#~ msgid "Ik ben overtuigd en wil weten hoeveel ik kan besparen!"
+#~ msgstr "I am convinced and want to know how much I can save !"
+
+#~ msgid "Stuur ons uw factuur"
+#~ msgstr "Send us your invoice"
+
+#~ msgid "Hier zie je de besparing voor de getoonde producten"
+#~ msgstr "Here, you can see the saving for the selected products"
+
+#~ msgid ""
+#~ "Hier zie je het voorgestelde product op basis van jouw verbruik en "
+#~ "voorkeuren"
+#~ msgstr ""
+#~ "Here you can see the proposed product based upon your consumption and "
+#~ "preferences"
+
+#~ msgid ""
+#~ "Klik hier indien u tevreden bent met de getoonde producten om door te "
+#~ "gaan naar de volgende stap"
+#~ msgstr ""
+#~ "Click here if you are happy with the products shown and move on to the "
+#~ "next step"
+
+#~ msgid "Energieleveranciers vergelijken, kiezen en overstappen"
+#~ msgstr "Energy suppliers: Compare, choose and switch"
+
+#~ msgid "Welkom bij %s!"
+#~ msgstr "Welcome to %s!"
+
+#~ msgid ""
+#~ "Onze missie is jullie allen toe te laten op een eenvoudige en intuïtieve "
+#~ "manier het best passende contract af te sluiten voor jullie specifieke "
+#~ "noden. We starten met gas en elektriciteit. Probeer het gerust even uit "
+#~ "door op de homepagina je laatste maandelijkse factuur of jaarafrekening "
+#~ "door te geven, je zal zien: de rest gaat vanzelf."
+#~ msgstr ""
+#~ "Our mission is to enable all of you to find in a simple and intuitive way "
+#~ "the best fit for your specific needs. We start with gas and electricity. "
+#~ "Feel free to try it out by uploading your last monthly or yearly invoice "
+#~ "and you will see: we take care of the rest."
+
+#~ msgid "Eenvoudig en helder"
+#~ msgstr "Clear and simple"
+
+#~ msgid ""
+#~ "We helpen je het complexe landschap van leveranciers te navigeren. "
+#~ "Begrijp in één oogopslag het beste tarief op de markt, inclusief "
+#~ "kortingen, voor jouw verbruik zonder data in te geven."
+#~ msgstr ""
+#~ "We’ll help you navigate the complex landscape of utility providers. "
+#~ "You’ll instantly see and understand the best tariff in the market, "
+#~ "including promotions and discounts, for your consumption without the "
+#~ "hassle of entering data."
+
+#~ msgid "Makkelijk veranderd"
+#~ msgstr "Easy switch"
+
+#~ msgid ""
+#~ "We kunnen als je dat wenst je veranderen van leverancier. Opnieuw zonder "
+#~ "moeite, aangezien we de meeste gegevens uit je afrekening kunnen halen."
+#~ msgstr ""
+#~ "If you want, we can help you switch provider. Effortlessly, since we will "
+#~ "get most of the data from your invoice."
+
+#~ msgid "Bespaar"
+#~ msgstr "Save"
+
+#~ msgid ""
+#~ "Door het tarief te kiezen dat het beste bij je past, kan je vaak een paar "
+#~ "honderd euro besparen. Zonder moeite en zonder meerkost. Onze dienst is "
+#~ "immers gratis voor particuliere gebruikers."
+#~ msgstr ""
+#~ "By selecting the tariff that best suits your needs, you can often save a "
+#~ "few hundred Euro. No hassle, no extra cost. Our service is and will "
+#~ "remain free to retail customers."
+
+#~ msgid "Denk eraan"
+#~ msgstr "Remember"
+
+#~ msgid ""
+#~ "Indien je dat wenst, kunnen we je eraan herinneren je factuur periodiek "
+#~ "door te sturen zodat je steeds gebruik maakt van het beste tarief en de "
+#~ "beste kortingen op de markt."
+#~ msgstr ""
+#~ "If you want, we can remind you to periodically send or upload your "
+#~ "invoice to ensure you always have the most suitable contract on the "
+#~ "market."
+
+#~ msgid "Makkelijk in gebruik"
+#~ msgstr "Easy to use"
+
+#~ msgid ""
+#~ "We willen het jullie zo éénvoudig mogelijk maken. Wij geloven dat je moet "
+#~ "kunnen genieten van het beste aanbod in de markt in seconden, niet in "
+#~ "minuten of uren. Waarom niet terwijl je staat te wachten op de volgende "
+#~ "bus of trein. Stuur ons gewoon je laatste maandelijkse factuur of "
+#~ "jaarafrekening en de rest is kinderspel."
+#~ msgstr ""
+#~ "We want to make it as easily as possible to you. We believe you should "
+#~ "enjoy the best offer in the market in seconds, not minutes or hours. Why "
+#~ "not while you’re waiting for the next bus or train. Just send us your "
+#~ "latest monthly invoice or billing year and the rest is easy."
+
+#~ msgid "Bespaar tot 300€ op uw energiefactuur"
+#~ msgstr "Save up to 300€ on your energy invoice"
+
+#~ msgid "Vergelijk en verander van energieleverancier in 60 seconden"
+#~ msgstr "Compare and switch energy provider in 60 seconds"
+
+#~ msgid "Advies op maat in drie eenvoudige stappen"
+#~ msgstr "Three easy steps"
+
+#~ msgid "Stap 1: Deel uw factuur"
+#~ msgstr "Step 1: Share your invoice"
+
+#~ msgid "Stap 3: Finaliseer"
+#~ msgstr "Step 3: Finalise"
+
+#~ msgid "Volgende stap"
+#~ msgstr "Next step"
+
+#~ msgid "Overstap regelen"
+#~ msgstr "Switch providers"
+
+#~ msgid "Gezin"
+#~ msgstr "Family"
+
+#~ msgid "Klein bedrijf"
+#~ msgstr "Small company"
+
+#~ msgid "Besparing jaar 1"
+#~ msgstr "Saving year 1"
+
+#~ msgid "Domiciliëring (verplicht voor gekozen product(en)"
+#~ msgstr "Direct debit (mandatory for chosen product (s))"
+
+#~ msgid "Vermogen eigen productie (kVA)"
+#~ msgstr "Capacity own production (kVA)"
+
+#~ msgid ""
+#~ "Als u geen foutboodschap kreeg, maar van mening bent dat we je afrekening "
+#~ "niet correct geïnterpreteerd hebben, dan horen we dat graag <a href=\"/nl/"
+#~ "contact\">via deze weg.</a>"
+#~ msgstr ""
+#~ "If you do not receive an error message, but believe that we have not "
+#~ "correctly interpreted your statement, then we’d like to hear <a href=‘/en/"
+#~ "contact’>in this way.</a>"
+
+#~ msgid ""
+#~ "Als u geen foutboodschap kreeg, maar van mening bent dat we je afrekening "
+#~ "niet correct geïnterpreteerd hebben, dan horen we dat graag <a href=\"/"
+#~ "contact\">via deze weg.</a>"
+#~ msgstr ""
+#~ "If you do not receive an error message, but believe that we have not "
+#~ "correctly interpreted your statement, then we’d like to hear <a href=“/"
+#~ "contact”>in this way.</a>"
+
+#~ msgid "Copyright (c) Energiegids 2016"
+#~ msgstr "Copyright (c) 2016 Energy Guide"
+
+#~ msgid ""
+#~ "%s leidt gebruikers moeiteloos naar het best passende product voor hun "
+#~ "energie: gas en elektriciteit. Met %s vergelijk je snel, makkelijk en "
+#~ "gegarandeerd objectief het aanbod van de markt en kan moeite  overstappen."
+#~ msgstr ""
+#~ "%s seamlessly guides users to the most suitable product on the market for "
+#~ "energy: gas and electricity. With %s, you can easily compare the "
+#~ "different offers on the market end switch to the best offer with no "
+#~ "hassle."
+
+#~ msgid ""
+#~ "www.%s treedt enkel op als tussenpersoon tussen uzelf als potentiële "
+#~ "klant en de leverancier en dit op basis van informatie die haar door deze "
+#~ "leveranciers werd verstrekt. Zij sluit zelf geen overeenkomst af met u "
+#~ "als potentiële klant. Bijgevolg kan zij zelf ook niet verplicht zijn om "
+#~ "verbintenissen voor of namens een leverancier na te komen en is zij ook "
+#~ "niet aansprakelijk voor enig gebrek of fout die op haar website zou "
+#~ "voorkomen (ongeacht de aard van het gebrek of de fout inzake het gebruik "
+#~ "of  de beschikbaarheid van de website of de presentatie ervan). Deze "
+#~ "uitsluiting van aansprakelijkheid geldt ongeacht de aard van de beweerde "
+#~ "schade en de ingeroepen juridische grondslag voor de beweerde "
+#~ "aansprakelijkheid, met uitzondering van zware fout of bedrag vanwege www."
+#~ "%s garandeert niet dat aan haar toegezonden e-mails of andere "
+#~ "elektronische berichten tijdig worden ontvangen en verwerkt en www.%s is "
+#~ "niet aansprakelijk voor eventuele gevolgen van het niet of te laat "
+#~ "ontvangen of verwerken van dergelijke e-mails of berichten, met "
+#~ "uitzondering van zware fout of bedrag vanwege www.%s."
+#~ msgstr ""
+#~ "www.%s acts solely as an intermediary between you as a potential customer "
+#~ "and the supplier based on information provided by these suppliers. We do "
+#~ "not enter into any agreements with you as a potential customer. "
+#~ "Consequently, we are also not obliged to fulfil any commitments to or on "
+#~ "behalf of a supplier, and are not liable for any defects or errors that "
+#~ "may occur on our website (regardless of the nature of the defect or error "
+#~ "regarding the use or availability of the website or its performance). "
+#~ "This exclusion of liability shall apply regardless of the nature of the "
+#~ "alleged damage and the invoked legal basis for the alleged liability, "
+#~ "except in the case of a serious error on the part of www.%s. www.%s is "
+#~ "not able to guarantee that e-mails or other electronic messages sent to "
+#~ "us will be received and processed in a timely manner, and www.%s is not "
+#~ "liable for any consequences of the non-receipt or late processing of such "
+#~ "e-mails or messages, with the exception of a serious error on the part of "
+#~ "www.%s."
+
+#~ msgid "%s (BE0646697416) p.a. De Kleetlaan 5A, 1831 Diegem, België\n"
+#~ msgstr "%s (BE0646697416) c/o De Kleetlaan 5A, 1831 Diegem, Belgium\n"
+
+#~ msgid "Een lekker etentje met onze besparing dankzij"
+#~ msgstr "A nice dinner party with our savings thanks to"
+
+#~ msgid "Een leuke uitstap dankzij onze besparing met"
+#~ msgstr "A fun trip thanks to our savings thanks to"
+
+#~ msgid "Dit emailadres is verkeerd."
+#~ msgstr "This email address is wrong."
+
+# Test1
+#~ msgid "This is a text string!"
+#~ msgstr "This is a translated text string!"

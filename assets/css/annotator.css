@@ -1,0 +1,175 @@
+#images > div {
+  display: none;
+  position: relative;
+}
+#images .active-image {
+  display: block;
+}
+#images > div > .annotation {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 3px;
+}
+#images > div > .possible-annotation {
+  position: absolute;
+  border: 3px dotted #337ab7;
+}
+#images > div > .annotation.annotation-error {
+  border-color: rgba(217, 83, 79, 0.7);
+  border-width: 2px;
+  /*border-color: #ff0000;*/
+  /*border-width: 3px;*/
+}
+#images > div > .annotation.annotation-fixed {
+  border-color: #5cb85c;
+  /*border-width: 1px;*/
+  border-width: 3px;
+}
+#images > div > .annotation.annotation-active {
+  /*border-color: rgba(91, 192, 222, 0.3);*/
+  border-color: rgba(91, 192, 222, 1);
+  border-width: 2px;
+}
+#images > div > .annotation.annotation-error.annotation-active {
+  /*border-color: rgba(217, 83, 79, 0.3);*/
+}
+#images > div > .annotation.annotation-fixed.annotation-active {
+  /*border-color: rgba(240, 173, 78, 0.3);*/
+  border-color: #ff0000;
+}
+
+#barbox {
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 5px 0;
+}
+#barbox div {
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+#barbox label {
+  font-size: 12px;
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
+#barbox input {
+  font-size: 12px;
+  height: inherit;
+  margin: 0;
+  padding: 4px;
+}
+
+#image-navigator-buttons ul {
+  list-style-type: none;
+}
+
+#image-navigator-buttons li {
+  display: inline-block;
+}
+
+#image-navigator-buttons button {
+  background-color: inherit;
+  color: #666666;
+}
+
+.renderjson {
+  width: 100%;
+  text-align: left !important;
+  font-weight: bold;
+}
+
+.renderjson a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: medium;
+}
+.renderjson .disclosure {
+  color: #000000;
+}
+.renderjson .syntax {
+  color: #000000;
+}
+.renderjson .string {
+  color: #007777;
+}
+.renderjson .number {
+  color: #AA00AA;
+}
+.renderjson .boolean {
+  color: #0000FF;
+}
+.renderjson .key    {
+  color: #CC0000;
+}
+.renderjson .keyword {
+  color: #0000FF;
+}
+.renderjson .object.syntax {
+  color: #00AA00;
+}
+.renderjson .array.syntax  {
+  color: #0033FF;
+}
+
+#fix-button {
+  position: absolute;
+  right: 0;
+  border-radius: 7px;
+  color: #ffffff;
+  background-color: #d9534f;
+  border: 1px solid transparent;
+  border-color: #d43f3a;
+  display: none;
+  cursor: pointer;
+}
+
+#fix-button span {
+  padding: 0 20px;
+}
+
+#fix-button.fb-fixing {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+#fix-button.fb-fixed {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  cursor: default;
+}
+
+#manual-button {
+  position: absolute;
+  background-color: #444444;
+  width: 17px;
+  height: 17px;
+  line-height: normal;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#manual-button span {
+  color: #00aa00;
+  font-size: x-large;
+  font-weight: bold;
+  line-height: 0;
+  cursor: pointer;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.added-button {
+  position: absolute;
+  background-color: rgba(64, 0, 128, 0.5);
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border-radius: 5px;
+}
