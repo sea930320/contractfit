@@ -40,7 +40,7 @@ mongoose.connection.on('error', (err)=> {
 //---------app configuration-------------
 const app = express();
 //port no
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 5030;
 //mailer configuration
 mailer.extend(app, require("./app/config/email"));
 //init global variable
