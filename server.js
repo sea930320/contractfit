@@ -3,6 +3,8 @@
 //----------importing modules------------
 
 const express = require('express');
+const compression = require('compression');
+const helmet = require('helmet');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
@@ -20,7 +22,7 @@ const requestIp = require('request-ip');
 const db = require('./app/config/database');
 const db_url = process.env.NODE_ENV ? db.production.url : db.development.url;
 //connect to mongodb
-// mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;
 mongoose.connect(db_url, {
 	useMongoClient: true
 });
@@ -64,6 +66,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'app/views'));
 
 //----------adding middlewares------------
+//Compress all routes
+app.use(compression());
+//Using Helmet to protect against well known vulnerabilities
+app.use(helmet());
 //cors
 app.use(cors());
 //session secret
