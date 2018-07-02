@@ -1,0 +1,51 @@
+{
+    "billing_address": {
+        "city": "VORSELAAR",
+        "box": "",
+        "full": "KUIPERSTRAAT 16 , 2290 VORSELAAR",
+        "zip_code": "2290",
+        "fullname": "Mevrouw Ingrid Peeters",
+        "street": "KUIPERSTRAAT",
+        "number": "16"
+    },
+    "invoice": {
+        "monthly_cost": 0,
+        "frequency": "annual",
+        "consumption_derived": true
+    },
+    "person": {
+        "first_name": "Ingrid",
+        "last_name": "Peeters",
+        "title": "MS"
+    },
+    "gas": {
+        "consumption": "5328",
+        "to": "10/01/2017",
+        "from": "29/01/2016",
+        "product": "tip",
+        "EAN": "541448820038628861",
+        "supplier": "Lampiris"
+    },
+    "delivery_address": {
+        "city": "VORSELAAR",
+        "box": "",
+        "full": "KUIPERSTRAAT 16 , 2290 VORSELAAR",
+        "zip_code": "2290",
+        "street": "KUIPERSTRAAT",
+        "number": "16"
+    },
+    "el": {
+        "EAN_excl_night": "",
+        "kVA": "",
+        "night": "",
+        "from": "",
+        "product": "",
+        "EAN": "",
+        "supplier": "",
+        "excl_night": "",
+        "to": "",
+        "total": "",
+        "meter_type": "",
+        "day": ""
+    }
+}

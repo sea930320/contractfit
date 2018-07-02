@@ -225,7 +225,7 @@ helpers = module.exports = {
                 return { "i": i, "d": d };
         } 
         modulus = parseFloat( modulus );
-        modulus = abs( modulus );
+        modulus = Math.abs( modulus );
         if ( modulus === 0 ) { return null; }
         var take = 4;
         var modulus_limit = Math.pow( 10, take );
@@ -272,7 +272,7 @@ helpers = module.exports = {
                     d_chars[ ci ] = v.toString();
                 }
             }
-            var result = ( parseInt( r.i ) + carry ).toString() + array_reverse( d_chars.slice( 0, -1 ) ).join( '' ).replace( /[0.]*$/, '' );
+            var result = ( parseInt( r.i ) + carry ).toString() + d_chars.slice( 0, -1 ).reverse().join( '' ).replace( /[0.]*$/, '' );
             return result;
         }
         do {

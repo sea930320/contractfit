@@ -108,6 +108,7 @@ app.use(requestIp.mw())
 app.use(express.static(path.join(__dirname, 'app/views')));
 app.use(express.static(path.join(__dirname, 'assets')));
 app.use(express.static(path.join(__dirname, 'mounts')));
+// app.use(express.static('/mounts'));
 //base middleware
 const base_middleware = require('./app/routes/base_middleware');
 app.use(base_middleware);

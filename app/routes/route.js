@@ -20,7 +20,7 @@ router.post('/manual', StaticPagesController.post_manual);
 //Upload Image
 //router.use('/upload_image', UploadImagesController.index); // incomplete
 
-//router.use('/share_picture', StaticPagesController.share_picture);
+router.use('/share_picture', StaticPagesController.share_picture);
 //router.use('/share_by_picture', ShareByPictureController.index);
 
 //Upload Invoice

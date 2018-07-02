@@ -583,28 +583,28 @@ const StaticPagesController = module.exports = {
                 var fs = require('fs');
                 var target_dir = path.join(__basedir, dir_conf.share_dir, 'uploads');
                 var unique_name = helpers.random_str(25);
-                // while (fs.existsSync(path.join(target_dir, unique_name)))
-                //     unique_name += helpers.random_str(25);
-                // fs.mkdirSync(path.join(target_dir, unique_name), 0777);
+                while (fs.existsSync(path.join(target_dir, unique_name)))
+                    unique_name += helpers.random_str(25);
+                fs.mkdirSync(path.join(target_dir, unique_name), 0777);
 
-                // fs.writeFile(path.join(target_dir, unique_name, 'input.json'), JSON.stringify(obj), function (err) {
-                //     if (err) {
-                //         res.redirect('/' + sess.site_lang + '/sorry');
-                //         return;
-                //     }
-                // });
-                unique_name = 'ibd38vwAaggHvArAhHTziru80';
+                fs.writeFile(path.join(target_dir, unique_name, 'input.json'), JSON.stringify(obj), function (err) {
+                    if (err) {
+                        res.redirect('/' + sess.site_lang + '/sorry');
+                        return;
+                    }
+                });
+                // unique_name = 'ibd38vwAaggHvArAhHTziru80';
 	    		var command = process.env.CONTRACTFIT + '/EnergieGids/Scripts/execute_manual.sh ' + escapeshellarg(unique_name);
 	    		if (process.platform != "Darwin") {
                     command = 'sudo -u azureuser ' + command;
                 }
-                // if (process.platform == 'win32') {
-                // } else {
-	    		//     exec(command, function(err, out, code) {
-                //         if (err instanceof Error) {
-                //             res.redirect('/' + sess.site_lang + '/sorry');
-                            // return;
-                //         } else {
+                if (process.platform == 'win32') {
+                } else {
+	    		    exec(command, function(err, out, code) {
+                        if (err instanceof Error) {
+                            res.redirect('/' + sess.site_lang + '/sorry');
+                            return;
+                        } else {
                             sess.gas_product_id = null;
                             sess.electricity_product_id = null;
                             sess.directory = unique_name;
@@ -612,10 +612,11 @@ const StaticPagesController = module.exports = {
                             sess.show_step = 2;
                             sess.last_step = 2;
                             res.redirect('/' + sess.site_lang + '/result/' + unique_name + '#confirm');
-                        // }
+                        }
                         return;
-                    // });
-                // }
+                    });
+                    return;
+                }
             }
         }
 

@@ -100,19 +100,19 @@ const ResultController = module.exports = {
                 promises.push(moveFilAsync(target_dir, unique_name, fileToUpload[i]));
             }
             Promise.all(promises).then(fileNames => {
-                var command = process.env.CONTRACTFIT + '/EnergieGids/Scripts/execute_manual.sh ' + escapeshellarg(unique_name);
+                var command = process.env.CONTRACTFIT + '/EnergieGids/Scripts/execute_web.sh ' + escapeshellarg(unique_name);
                 if (process.platform != "Darwin") {
                     command = 'sudo -u azureuser ' + command;
                 }
-                // exec(command, function(err, out, code) {
-                //     if (err instanceof Error) {
-                //         redirect_func(['Sorry, Something wrong, Please try Again']);
-                //         return;
-                //     } else {
+                exec(command, function(err, out, code) {
+                    if (err instanceof Error) {
+                        redirect_func(['Sorry, Something wrong, Please try Again']);
+                        return;
+                    } else {
                         res.redirect('/' + sess.site_lang + '/result/' + unique_name + '#confirm');
                         return;
-                //     }
-                // });
+                    }
+                });
             }, error => {
                 redirect_func(['Sorry, Something wrong, Please try Again']);
             }).catch(e => {

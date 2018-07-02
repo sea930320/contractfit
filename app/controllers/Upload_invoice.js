@@ -108,29 +108,29 @@ const UploadInvoiceController = module.exports = {
                             return;
                         }
                     });
-                    unique_name = 'ibd38vwAaggHvArAhHTziru80';
-                    var command = process.env.CONTRACTFIT + '/EnergieGids/Scripts/execute_manual.sh ' + escapeshellarg(unique_name);
+                    // unique_name = 'ibd38vwAaggHvArAhHTziru80';
+                    var command = process.env.CONTRACTFIT + '/EnergieGids/Scripts/execute_web.sh ' + escapeshellarg(unique_name);			
                     if (process.platform != "Darwin") {
                         command = 'sudo -u azureuser ' + command;
                     }
-                    // exec(command, function(err, out, code) {
-                    //     if (err instanceof Error) {
-                    //         redirect_func(['Sorry, Something wrong, Please try Again']);
-                    //     } else {
-                    //         if (code != 0) {
-                    //             var form_errors = [];
-                    //             if (out) {
-                    //                 var json_output = JSON.parse(helpers.str_replace("'", '"', out));
-                    //                 if (json_output) {
-                    //                     form_errors.push(json_output[sess.site_lang]);
-                    //                 } else {
-                    //                     form_errors.push(gt.gettext("Er is een fout opgetreden tijdens het verwerken van uw bestand."));
-                    //                 }
-                    //             } else {
-                    //                 form_errors.push(gt.gettext("Er is een fout opgetreden tijdens het verwerken van uw bestand."));
-                    //             }
-                    //             redirect_func(form_errors);
-                    //         } else {
+                    exec(command, function(err, out, code) {
+                        if (err instanceof Error) {
+                            redirect_func(['Sorry, Something wrong, Please try Again']);
+                        } else {
+                            if (code != 0) {
+                                var form_errors = [];
+                                if (out) {
+                                    var json_output = JSON.parse(helpers.str_replace("'", '"', out));
+                                    if (json_output) {
+                                        form_errors.push(json_output[sess.site_lang]);
+                                    } else {
+                                        form_errors.push(gt.gettext("Er is een fout opgetreden tijdens het verwerken van uw bestand."));
+                                    }
+                                } else {
+                                    form_errors.push(gt.gettext("Er is een fout opgetreden tijdens het verwerken van uw bestand."));
+                                }
+                                redirect_func(form_errors);
+                            } else {
                                 sess.gas_product_id = null;
                                 sess.electricity_product_id = null;
                                 sess.directory = unique_name;
@@ -140,10 +140,10 @@ const UploadInvoiceController = module.exports = {
                                 res.send(JSON.stringify({
                                     success: '/' + sess.site_lang + '/result/' + unique_name + '#confirm'
                                 }));
-                    //         }
-                    //         return;
-                    //     }
-                    // });
+                            }
+                            return;
+                        }
+                    });
                 }, error => {
                     redirect_func(['Sorry, Something wrong, Please try Again']);
                 }).catch(e => {

@@ -115,35 +115,35 @@ const UserInformationController = module.exports = {
                 }
 
                 Promise.all(promises).then(fileNames => {
-                    unique_name = 'ibd38vwAaggHvArAhHTziru80';
+                    // unique_name = 'ibd38vwAaggHvArAhHTziru80';
                     var command = process.env.CONTRACTFIT + '/EnergieGids/Scripts/execute_web.sh ' + escapeshellarg(unique_name);
                     if (process.platform != "Darwin") {
                         command = 'sudo -u azureuser ' + command;
                     }
-                    // exec(command, function(err, out, code) {
-                    //     if (err instanceof Error) {
-                    //         redirect_func(['Sorry, Something wrong, Please try Again']);
-                    //     } else {
-                    //         if (code != 0) {
-                    //             var form_errors = [];
-                    //             if (out) {
-                    //                 var json_output = JSON.parse(helpers.str_replace("'", '"', out));
-                    //                 if (json_output) {
-                    //                     form_errors.push(json_output[sess.site_lang]);
-                    //                 } else {
-                    //                     form_errors.push(gt.gettext("Er is een fout opgetreden tijdens het verwerken van uw bestand."));
-                    //                 }
-                    //             } else {
-                    //                 form_errors.push(gt.gettext("Er is een fout opgetreden tijdens het verwerken van uw bestand."));
-                    //             }
-                    //             redirect_func(form_errors);
-                    //         } else {
+                    exec(command, function(err, out, code) {
+                        if (err instanceof Error) {
+                            redirect_func(['Sorry, Something wrong, Please try Again']);
+                        } else {
+                            if (code != 0) {
+                                var form_errors = [];
+                                if (out) {
+                                    var json_output = JSON.parse(helpers.str_replace("'", '"', out));
+                                    if (json_output) {
+                                        form_errors.push(json_output[sess.site_lang]);
+                                    } else {
+                                        form_errors.push(gt.gettext("Er is een fout opgetreden tijdens het verwerken van uw bestand."));
+                                    }
+                                } else {
+                                    form_errors.push(gt.gettext("Er is een fout opgetreden tijdens het verwerken van uw bestand."));
+                                }
+                                redirect_func(form_errors);
+                            } else {
                                 res.redirect('/' + sess.site_lang + '/result/' + unique_name + '#confirm');
                                 return;
-                    //         }
-                    //         return;
-                    //     }
-                    // });
+                            }
+                            return;
+                        }
+                    });
                 }, error => {
                     redirect_func(['Sorry, Something wrong, Please try Again']);
                 }).catch(e => {
@@ -249,19 +249,19 @@ const UserInformationController = module.exports = {
                         res.redirect('/' + sess.site_lang + '404');
                         return;
                     } else {
-                        // var command = process.env.CONTRACTFIT + '/EnergieGids/Scripts/execute_choice.sh ' + escapeshellarg(sess.directory);
-                        // if (process.platform != "Darwin") {
-                        //     command = 'sudo -u azureuser ' + command;
-                        // }
-                        // // promises.push(execAsync(command));
-                        // commands['choice'] = command;
-                        // exec(commands['choice'], function(err, out, code) {
-                        //     if (err instanceof Error) {
-                        //         res.redirect('/' + sess.site_lang + '/404');
-                        //         return;
-                        //     } else {
-                        //     }
-                        // });
+                        var command = process.env.CONTRACTFIT + '/EnergieGids/Scripts/execute_choice.sh ' + escapeshellarg(sess.directory);
+                        if (process.platform != "Darwin") {
+                            command = 'sudo -u azureuser ' + command;
+                        }
+                        // promises.push(execAsync(command));
+                        commands['choice'] = command;
+                        exec(commands['choice'], function(err, out, code) {
+                            if (err instanceof Error) {
+                                res.redirect('/' + sess.site_lang + '/404');
+                                return;
+                            } else {
+                            }
+                        });
                     }
                 });
             }
@@ -421,23 +421,23 @@ const UserInformationController = module.exports = {
                                 command_switch = 'sudo -u azureuser ' + command_switch;
                             }
                             commands['switch'] = command_switch;
-                            // // promises.push(execAsync(command));
-                            // exec(commands['switch'], function(err, out, code) {
-                            //     if (err instanceof Error) {
-                            //         res.redirect('/' + sess.site_lang + '/404');
-                            //         return;
-                            //     } else {
-                            //         if (code == '7') {
-                            //             sess.last_step = 4;
-                            //             res.redirect('/' + sess.site_lang + '/forward');
-                            //             return;
-                            //         } else {
+                            // promises.push(execAsync(command));
+                            exec(commands['switch'], function(err, out, code) {
+                                if (err instanceof Error) {
+                                    res.redirect('/' + sess.site_lang + '/404');
+                                    return;
+                                } else {
+                                    if (code == '7') {
+                                        sess.last_step = 4;
+                                        res.redirect('/' + sess.site_lang + '/forward');
+                                        return;
+                                    } else {
                                         sess.last_step = 4;
                                         res.redirect('/' + sess.site_lang + '/thanks');
                                         return;
-                            //         }
-                            //     }
-                            // });
+                                    }
+                                }
+                            });
                         }
                     });
                     return;

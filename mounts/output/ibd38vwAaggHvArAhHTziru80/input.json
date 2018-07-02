@@ -1,0 +1,2389 @@
+{
+    "billing_address": {
+        "lines": [
+            "Mevrouw Ingrid Peeters",
+            "Kuiperstraat, 16",
+            "2290 VORSELAAR"
+        ],
+        "zip_code": "2290",
+        "fullname": "Mevrouw Ingrid Peeters",
+        "number": "16",
+        "street": "KUIPERSTRAAT",
+        "full": "KUIPERSTRAAT 16 , 2290 VORSELAAR",
+        "city": "VORSELAAR",
+        "box": ""
+    },
+    "has_electricity": "False",
+    "delivery_address": {
+        "zip_code": "2290",
+        "box": "",
+        "street": "KUIPERSTRAAT",
+        "number": "16",
+        "full": "KUIPERSTRAAT 16 , 2290 VORSELAAR",
+        "city": "VORSELAAR"
+    },
+    "addto": "efd2fb169cf3046b16b59dca60cd877c",
+    "postal_code": "2290",
+    "parser": {
+        "files": [
+            {
+                "parser": "en_lampiris",
+                "frequency": "annual",
+                "name": "efd2fb169cf3046b16b59dca60cd877c.txt",
+                "language": "nl"
+            }
+        ]
+    },
+    "gas": {
+        "supplier": "Lampiris",
+        "consumption": "5328",
+        "product": "tip",
+        "product_fr": "tip",
+        "from": "29/01/2016",
+        "consumption_orig": "5066.11",
+        "product_en": "tip",
+        "EAN": "541448820038628861",
+        "to": "10/01/2017"
+    },
+    "offers_gas": {
+        "best_product": {
+            "ask_algemene_voorwaarden_nl": "Luminus: Ja, ik ga akkoord met de overeenkomst, met de bijzondere en <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">algemene voorwaarden</a>, inclusief het bestaan en de modaliteiten voor het uitoefenen van het herroepingsrecht en ik erken dat mijn bestelling een betalingsverplichting inhoudt.",
+            "transport_cost": "10.34",
+            "rent_cost": "5.87",
+            "product": "Optimal",
+            "korting_in_EUR": "65.00",
+            "one_click_change": "True",
+            "supplier": "Luminus",
+            "dom_required": "False",
+            "beheerder": "IVEKA",
+            "korting_in_ckWh": {
+                "unit_cost": "1.00",
+                "value": "53.28",
+                "units": "5328.0"
+            },
+            "product_en": "Optimal",
+            "total_cost": {
+                "unit_cost": "3.84",
+                "value": "204.84",
+                "units": "5328"
+            },
+            "rate_type": "Variabel",
+            "abonnement": "40.00",
+            "heffingen": "9.49",
+            "ask_algemene_voorwaarden_fr": "Luminus: Oui, je suis d\\\u2019accord avec le Contrat, avec les <a href=\"https://secure.luminus.be/~/media/online-channels/download-documents/res_conditions_generales__verzakingsform_fr_072014.ashx\" target=\"_blank\"> conditions g\u00e9n\u00e9rales</a> et particuli\u00e8res, y compris l\u2019existence et les modalit\u00e9s pour l\u2019exercice du droit de r\u00e9traction et je reconnais que ma commande comprend une obligation de paiement.",
+            "duration": "1",
+            "total_cost_no_dom_digital": {
+                "value": "204.84"
+            },
+            "provider": "Luminus",
+            "ask_date_of_birth": "True",
+            "contribution_cost": "6.43",
+            "distribution_cost": "127.72",
+            "total_cost_no_digital": {
+                "value": "204.84"
+            },
+            "ask_phone_number": "True",
+            "variabel_gas": {
+                "unit_cost": "3.21",
+                "value": "171.24",
+                "units": "5328"
+            },
+            "net_tariff": "138.06",
+            "ask_algemene_voorwaarden_en": "Luminus: Yes, I agree with the contract, the special and <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">general terms and conditions</a>, including the existance and the modalities for the exercise of the right of withdrawal and I recognise that my order implies an obligation to pay.",
+            "product_fr": "Optimal",
+            "only_digital_invoice": "False",
+            "total_cost_no_discount": {
+                "unit_cost": "6.73",
+                "value": "358.80",
+                "units": "5328"
+            },
+            "connection_cost": "0.00",
+            "feature_2": "Variabel",
+            "service_level": "5",
+            "pid": "211",
+            "upfront_payment_required": "False",
+            "total_energy": "211.24",
+            "total_discount": "153.96",
+            "cooperative": "False",
+            "korting_gratis_kWh_in_EUR": {
+                "unit_cost": "1250.00",
+                "value": "35.68",
+                "units": "1250.0"
+            },
+            "total_cost_no_dom": {
+                "value": "204.84"
+            },
+            "feature_1": "1 jaar",
+            "supplier_id": "1.00",
+            "fed_cont_cost": "3.06"
+        },
+        "delta": "141.37",
+        "product": [
+            {
+                "ask_algemene_voorwaarden_nl": "OCTA+: Ik aanvaard de algemene voorwaarden van<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Budget",
+                "ask_rijksregisternummer": "True",
+                "one_click_change": "True",
+                "supplier": "OCTA+ ENERGIE",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Budget",
+                "total_cost": {
+                    "unit_cost": "5.90",
+                    "value": "314.55",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "314.55"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "OCTA+ Ik aanvaard de algemene voorwaarden van<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "ask_account": "True",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "314.55"
+                },
+                "provider": "OCTA+ ENERGIE",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "20.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.76",
+                    "value": "147.00",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "OCTA+: I accept the general terms and conditions of<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "product_fr": "Budget",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "5.90",
+                    "value": "314.55",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "388",
+                "upfront_payment_required": "False",
+                "total_energy": "167.00",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "314.55"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "OCTA+: Ik aanvaard de algemene voorwaarden van<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Omnium Vast",
+                "ask_rijksregisternummer": "True",
+                "one_click_change": "True",
+                "supplier": "OCTA+ ENERGIE",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Omnium Fixed",
+                "total_cost": {
+                    "unit_cost": "6.47",
+                    "value": "344.61",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "344.61"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "OCTA+ Ik aanvaard de algemene voorwaarden van<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "ask_account": "True",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "344.61"
+                },
+                "provider": "OCTA+ ENERGIE",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "50.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.76",
+                    "value": "147.05",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "OCTA+: I accept the general terms and conditions of<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "product_fr": "Omnium Fixe",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.47",
+                    "value": "344.61",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "390",
+                "upfront_payment_required": "False",
+                "total_energy": "197.05",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "344.61"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "OCTA+: Ik aanvaard de algemene voorwaarden van<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Omnium Variabel",
+                "ask_rijksregisternummer": "True",
+                "one_click_change": "True",
+                "supplier": "OCTA+ ENERGIE",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Omnium variable",
+                "total_cost": {
+                    "unit_cost": "6.43",
+                    "value": "342.74",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "342.74"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "OCTA+ Ik aanvaard de algemene voorwaarden van<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "ask_account": "True",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "342.74"
+                },
+                "provider": "OCTA+ ENERGIE",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "50.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.73",
+                    "value": "145.19",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "OCTA+: I accept the general terms and conditions of<a href=\"http://www.octaplus.be/public/uploaded/pdf/conditions/Algemene_voorwaarden.pdf\" target=\"_blank\"> OCTA+</a>.",
+                "product_fr": "Omnium Variable",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.43",
+                    "value": "342.74",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "391",
+                "upfront_payment_required": "False",
+                "total_energy": "195.19",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "342.74"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Ik aanvaard de algemene voorwaarden van Mega",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Free",
+                "one_click_change": "True",
+                "supplier": "Mega",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Free",
+                "total_cost": {
+                    "unit_cost": "6.08",
+                    "value": "323.95",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "323.95"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "J'accepte les conditions g\u00e9n\u00e9rales de  Mega",
+                "duration": "\\",
+                "total_cost_no_dom_digital": {
+                    "value": "323.95"
+                },
+                "provider": "Mega",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "40.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.56",
+                    "value": "136.40",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "I accept the general terms and conditions of Mega",
+                "product_fr": "Free",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.08",
+                    "value": "323.95",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "274",
+                "upfront_payment_required": "False",
+                "total_energy": "176.40",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "323.95"
+                },
+                "feature_1": "1, 2 of 3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Watz: Ik ga akkoord met de algemene voorwaarden. <a href=\"http://www.watz.be/algemene-voorwaarden#niet-particulieren\">Bedrijf</a> <a href=\"http://www.watz.be/algemene-voorwaarden#particulieren\">Particulier</a>en ik machtig bij deze Watz BVBA om in mijn naam en rekening, alle handelingen te stellen met het oog op de verandering van leverancier, de nettoegang, de levering, het doorvoeren van de netaansluiting en met het oog op het opvragen van alle gegevens, inclusief historische, bij de netbeheerders.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Aardgas",
+                "one_click_change": "True",
+                "supplier": "Watz",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Natural Gas",
+                "total_cost": {
+                    "unit_cost": "5.91",
+                    "value": "315.01",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "315.01"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Watz: Ik ga akkoord met de algemene voorwaarden. <a href=\"http://www.watz.be/algemene-voorwaarden#niet-particulieren\">Bedrijf</a> <a href=\"http://www.watz.be/algemene-voorwaarden#particulieren\">Particulier</a>en ik machtig bij deze Watz BVBA om in mijn naam en rekening, alle handelingen te stellen met het oog op de verandering van leverancier, de nettoegang, de levering, het doorvoeren van de netaansluiting en met het oog op het opvragen van alle gegevens, inclusief historische, bij de netbeheerders.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "315.01"
+                },
+                "provider": "Watz",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "19.50",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.78",
+                    "value": "147.96",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Watz: I accept the general terms and conditions. <a href=\"http://www.watz.be/algemene-voorwaarden#niet-particulieren\">Corporate</a> <a href=\"http://www.watz.be/algemene-voorwaarden#particulieren\">Private</a>and I empower Watz BVBA to take all actions in my name to do with change of suppliers, network access, delivery, the implementation of the network connection and to do with requesting all information, including historic, of network managers.",
+                "product_fr": "Aardgas",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "5.91",
+                    "value": "315.01",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "260",
+                "upfront_payment_required": "False",
+                "total_energy": "167.46",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "315.01"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "0.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Ik aanvaard de algemene voorwaarden van Mega",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Ecogas",
+                "one_click_change": "True",
+                "supplier": "Mega",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Ecogas",
+                "total_cost": {
+                    "unit_cost": "6.36",
+                    "value": "338.65",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "338.65"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "J'accepte les conditions g\u00e9n\u00e9rales de  Mega",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "338.65"
+                },
+                "provider": "Mega",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "45.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.74",
+                    "value": "146.09",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "I accept the general terms and conditions of Mega",
+                "product_fr": "Ecogas",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.36",
+                    "value": "338.65",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "289",
+                "upfront_payment_required": "False",
+                "total_energy": "191.09",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "338.65"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Essent: Ik heb kennis genomen van <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">de algemene voorwaarden, de instructies en het formulier voor herroeping </a>alsook de <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">geldige tarieven en de bijzondere voorwaarden </a> en verklaar hiermee akkoord te gaan",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Variabel",
+                "one_click_change": "True",
+                "supplier": "Essent",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Variable",
+                "total_cost": {
+                    "unit_cost": "6.88",
+                    "value": "366.39",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "366.39"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Essent: J'ai pris connaissance des <a href=\"https://www.essent.be/fr/generalcondition/B2C/WAL\" target=\"_blank\"> conditions g\u00e9n\u00e9rales, des instructions et du formulaire de r\u00e9tractation, de m\u00eame que des<a href=\"https://www.essent.be/fr/tariff/variant/B2C/FGZD/WAL\" target=\"_blank\"> tarifs en vigueur et des conditions particuli\u00e8res</a>, et d\u00e9clare par la pr\u00e9sente les accepter.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "366.39"
+                },
+                "provider": "Essent",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "59.95",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.98",
+                    "value": "158.88",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Essent: I have taken note of <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">the general terms and conditions, the instructions and the form of withdrawal </a>as well as the <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">valid tarrifs and the special conditions </a> and declare to agree to this.",
+                "product_fr": "Variable",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.88",
+                    "value": "366.39",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "162",
+                "upfront_payment_required": "False",
+                "total_energy": "218.83",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "366.39"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Essent: Ik heb kennis genomen van <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">de algemene voorwaarden, de instructies en het formulier voor herroeping </a>alsook de <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">geldige tarieven en de bijzondere voorwaarden </a> en verklaar hiermee akkoord te gaan",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Variabel 3 jaar",
+                "one_click_change": "True",
+                "supplier": "Essent",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Variable 3 years",
+                "total_cost": {
+                    "unit_cost": "6.88",
+                    "value": "366.39",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "366.39"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Essent: J'ai pris connaissance des <a href=\"https://www.essent.be/fr/generalcondition/B2C/WAL\" target=\"_blank\"> conditions g\u00e9n\u00e9rales, des instructions et du formulaire de r\u00e9tractation, de m\u00eame que des<a href=\"https://www.essent.be/fr/tariff/variant/B2C/FGZD/WAL\" target=\"_blank\"> tarifs en vigueur et des conditions particuli\u00e8res</a>, et d\u00e9clare par la pr\u00e9sente les accepter.",
+                "duration": "3",
+                "total_cost_no_dom_digital": {
+                    "value": "366.39"
+                },
+                "provider": "Essent",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "59.95",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.98",
+                    "value": "158.88",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Essent: I have taken note of <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">the general terms and conditions, the instructions and the form of withdrawal </a>as well as the <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">valid tarrifs and the special conditions </a> and declare to agree to this.",
+                "product_fr": "Variable 3 ans",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.88",
+                    "value": "366.39",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "163",
+                "upfront_payment_required": "False",
+                "total_energy": "218.83",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "366.39"
+                },
+                "feature_1": "3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Essent: Ik heb kennis genomen van <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">de algemene voorwaarden, de instructies en het formulier voor herroeping </a>alsook de <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">geldige tarieven en de bijzondere voorwaarden </a> en verklaar hiermee akkoord te gaan",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Vast",
+                "one_click_change": "True",
+                "supplier": "Essent",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Fixed",
+                "total_cost": {
+                    "unit_cost": "7.25",
+                    "value": "386.14",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "386.14"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Essent: J'ai pris connaissance des <a href=\"https://www.essent.be/fr/generalcondition/B2C/WAL\" target=\"_blank\"> conditions g\u00e9n\u00e9rales, des instructions et du formulaire de r\u00e9tractation, de m\u00eame que des<a href=\"https://www.essent.be/fr/tariff/variant/B2C/FGZD/WAL\" target=\"_blank\"> tarifs en vigueur et des conditions particuli\u00e8res</a>, et d\u00e9clare par la pr\u00e9sente les accepter.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "386.14"
+                },
+                "provider": "Essent",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "69.95",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "3.16",
+                    "value": "168.63",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Essent: I have taken note of <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">the general terms and conditions, the instructions and the form of withdrawal </a>as well as the <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">valid tarrifs and the special conditions </a> and declare to agree to this.",
+                "product_fr": "Fixe",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "7.25",
+                    "value": "386.14",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "164",
+                "upfront_payment_required": "False",
+                "total_energy": "238.58",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "386.14"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Elegant: Ik aanvaard de <a href=https://www.elegant.be/algemenevoorwaarden\" target=\"_blank\"> algemene voorwaarden</a>",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "aardgas BX",
+                "one_click_change": "True",
+                "supplier": "Elegant",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "natural gas BX",
+                "total_cost": {
+                    "unit_cost": "6.27",
+                    "value": "333.91",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "333.91"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Elegant: J'accepte les <a href=https://www.elegant.be/algemenevoorwaarden\" target=\"_blank\"> conditions g\u00e9n\u00e9rales</a>",
+                "ask_account": "True",
+                "duration": "/",
+                "total_cost_no_dom_digital": {
+                    "value": "333.91"
+                },
+                "provider": "Elegant",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "40.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.75",
+                    "value": "146.36",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Elegant: I accept the <a href=https://www.elegant.be/algemenevoorwaarden\" target=\"_blank\"> general terms and conditions.</a>",
+                "product_fr": "aardgas BX",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.27",
+                    "value": "333.91",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "293",
+                "upfront_payment_required": "False",
+                "total_energy": "186.36",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "333.91"
+                },
+                "feature_1": "onbepaalde duur",
+                "supplier_id": "0.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Luminus: Ja, ik ga akkoord met de overeenkomst, met de bijzondere en <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">algemene voorwaarden</a>, inclusief het bestaan en de modaliteiten voor het uitoefenen van het herroepingsrecht en ik erken dat mijn bestelling een betalingsverplichting inhoudt.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Click",
+                "one_click_change": "True",
+                "supplier": "Luminus",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Click",
+                "total_cost": {
+                    "unit_cost": "6.14",
+                    "value": "326.99",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "326.99"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Luminus: Oui, je suis d\\\u2019accord avec le Contrat, avec les <a href=\"https://secure.luminus.be/~/media/online-channels/download-documents/res_conditions_generales__verzakingsform_fr_072014.ashx\" target=\"_blank\"> conditions g\u00e9n\u00e9rales</a> et particuli\u00e8res, y compris l\u2019existence et les modalit\u00e9s pour l\u2019exercice du droit de r\u00e9traction et je reconnais que ma commande comprend une obligation de paiement.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "326.99"
+                },
+                "provider": "Luminus",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "30.25",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.80",
+                    "value": "149.18",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Luminus: Yes, I agree with the contract, the special and <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">general terms and conditions</a>, including the existance and the modalities for the exercise of the right of withdrawal and I recognise that my order implies an obligation to pay.",
+                "product_fr": "Click",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.14",
+                    "value": "326.99",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "173",
+                "upfront_payment_required": "False",
+                "total_energy": "179.43",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "326.99"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Ik aanvaard de algemene voorwaarden van Ebem",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Gas 12",
+                "one_click_change": "True",
+                "supplier": "Ebem",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Gas 12",
+                "total_cost": {
+                    "unit_cost": "6.23",
+                    "value": "332.00",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "332.00"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "J'accepte les conditions g\u00e9n\u00e9rales de  Ebem",
+                "duration": "/",
+                "total_cost_no_dom_digital": {
+                    "value": "332.00"
+                },
+                "provider": "Ebem",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "40.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.71",
+                    "value": "144.44",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "I accept the general terms and conditions of Ebem",
+                "product_fr": "Gas 12",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.23",
+                    "value": "332.00",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "177",
+                "upfront_payment_required": "False",
+                "total_energy": "184.44",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "332.00"
+                },
+                "feature_1": "onbepaalde duur",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Ik aanvaard de algemene voorwaarden van Comfort Energy",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Plus Variabel",
+                "one_click_change": "True",
+                "supplier": "Comfort Energy",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Plus Variable",
+                "total_cost": {
+                    "unit_cost": "6.71",
+                    "value": "357.35",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "357.35"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "J'accepte les conditions g\u00e9n\u00e9rales de  Comfort Energy",
+                "duration": "3",
+                "total_cost_no_dom_digital": {
+                    "value": "357.35"
+                },
+                "provider": "Comfort Energy",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "60.50",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.80",
+                    "value": "149.29",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "I accept the general terms and conditions of Comfort Energy",
+                "product_fr": "Plus Variable",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.71",
+                    "value": "357.35",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "307",
+                "upfront_payment_required": "False",
+                "total_energy": "209.79",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "357.35"
+                },
+                "feature_1": "3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Ik aanvaard de algemene voorwaarden van Comfort Energy",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Go Variabel",
+                "one_click_change": "True",
+                "supplier": "Comfort Energy",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Go Variable",
+                "total_cost": {
+                    "unit_cost": "6.01",
+                    "value": "320.25",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "320.25"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "J'accepte les conditions g\u00e9n\u00e9rales de  Comfort Energy",
+                "duration": "3",
+                "total_cost_no_dom_digital": {
+                    "value": "320.25"
+                },
+                "provider": "Comfort Energy",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "36.30",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.56",
+                    "value": "136.40",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "I accept the general terms and conditions of Comfort Energy",
+                "product_fr": "Go Variable",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.01",
+                    "value": "320.25",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "308",
+                "upfront_payment_required": "False",
+                "total_energy": "172.70",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "320.25"
+                },
+                "feature_1": "3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Eneco: Ja, ik ga akkoord met de <a href=\"http://www.eneco.be/nl/algemene-voorwaarden\" target=\"_blank\">algemene voorwaarden</a>",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Aardgas",
+                "one_click_change": "True",
+                "supplier": "Eneco",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Natural Gas",
+                "total_cost": {
+                    "unit_cost": "6.66",
+                    "value": "354.91",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "354.91"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Eneco: Oui, J'accepte les <a href=\"http://www.eneco.be/fr/conditions-generales\" target=\"_blank\">conditions g\u00e9n\u00e9rales</a>",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "354.91"
+                },
+                "provider": "Eneco",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "40.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "3.14",
+                    "value": "167.35",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Eneco: Yes, I agree to the <a href=\"http://www.eneco.be/nl/algemene-voorwaarden\" target=\"_blank\">general terms and conditions</a>",
+                "product_fr": "Gaz Naturel",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.66",
+                    "value": "354.91",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "182",
+                "upfront_payment_required": "False",
+                "total_energy": "207.35",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "354.91"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "0.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "korting_in_EUR": "25.00",
+                "upfront_payment_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Fix Gas",
+                "only_digital_invoice": "False",
+                "abonnement": "60.00",
+                "feature_1": "1 jaar",
+                "ask_algemene_voorwaarden_fr": "Poweo: J'accepte les conditions g\u00e9n\u00e9rales de vente, les conditions tarifaires et les notice l\u00e9gales <a href=\"http://groupe.poweo.be/fr/conditions-generales-de-vente/\"> de Poweo </a>",
+                "provider": "Poweo",
+                "korting_in_prokWh_domonly": false,
+                "one_click_change": "True",
+                "ask_phone_number": "True",
+                "ask_date_of_birth": "True",
+                "total_cost_no_dom_digital": {
+                    "value": "313.43"
+                },
+                "ask_algemene_voorwaarden_en": "Poweo: I accept the general terms and conditions, the tarrif conditions and the legal provisions  <a href=\"http://groupe.poweo.be/nl/algemene-verkoopsvoorwaarden/\"> of Poweo </a>",
+                "contribution_cost": "6.43",
+                "korting_in_EUR_dom": "15.00",
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "total_cost": {
+                    "unit_cost": "5.88",
+                    "value": "313.43",
+                    "units": "5328"
+                },
+                "pid": "312",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "313.43"
+                },
+                "fed_cont_cost": "3.06",
+                "ask_algemene_voorwaarden_nl": "Poweo: Ik aanvaard de algemene verkoopsvoorwaarden, de tariefvoorwaarden en de wettelijke bepalingen <a href=\"http://groupe.poweo.be/nl/algemene-verkoopsvoorwaarden/\"> van Poweo </a>",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Fix Gas",
+                "supplier": "Poweo",
+                "korting_in_prokWh": {
+                    "unit_cost": "8.00",
+                    "value": "11.38",
+                    "units": "142.26"
+                },
+                "total_cost_no_digital": {
+                    "value": "313.43"
+                },
+                "heffingen": "9.49",
+                "variabel_gas": {
+                    "unit_cost": "2.67",
+                    "value": "142.26",
+                    "units": "5328"
+                },
+                "service_level": "5",
+                "distribution_cost": "127.72",
+                "duration": "1",
+                "net_tariff": "138.06",
+                "product_fr": "Fix Gaz",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.57",
+                    "value": "349.81",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_energy": "202.26",
+                "total_discount": "36.38",
+                "dom_required": "False",
+                "supplier_id": "0.00"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Luminus: Ja, ik ga akkoord met de overeenkomst, met de bijzondere en <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">algemene voorwaarden</a>, inclusief het bestaan en de modaliteiten voor het uitoefenen van het herroepingsrecht en ik erken dat mijn bestelling een betalingsverplichting inhoudt.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Ecoflex",
+                "korting_in_EUR": "50.00",
+                "one_click_change": "True",
+                "supplier": "Luminus",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "korting_in_ckWh": {
+                    "unit_cost": "1.00",
+                    "value": "53.28",
+                    "units": "5328.0"
+                },
+                "product_en": "Ecoflex",
+                "total_cost": {
+                    "unit_cost": "4.48",
+                    "value": "238.48",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "abonnement": "66.55",
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Luminus: Oui, je suis d\\\u2019accord avec le Contrat, avec les <a href=\"https://secure.luminus.be/~/media/online-channels/download-documents/res_conditions_generales__verzakingsform_fr_072014.ashx\" target=\"_blank\"> conditions g\u00e9n\u00e9rales</a> et particuli\u00e8res, y compris l\u2019existence et les modalit\u00e9s pour l\u2019exercice du droit de r\u00e9traction et je reconnais que ma commande comprend une obligation de paiement.",
+                "duration": "2",
+                "total_cost_no_dom_digital": {
+                    "value": "238.48"
+                },
+                "provider": "Luminus",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "total_cost_no_digital": {
+                    "value": "238.48"
+                },
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "3.02",
+                    "value": "160.91",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Luminus: Yes, I agree with the contract, the special and <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">general terms and conditions</a>, including the existance and the modalities for the exercise of the right of withdrawal and I recognise that my order implies an obligation to pay.",
+                "product_fr": "Ecoflex",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "7.04",
+                    "value": "375.01",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "315",
+                "upfront_payment_required": "False",
+                "total_energy": "227.46",
+                "total_discount": "136.53",
+                "cooperative": "False",
+                "korting_gratis_kWh_in_EUR": {
+                    "unit_cost": "1250.00",
+                    "value": "33.25",
+                    "units": "1250.0"
+                },
+                "total_cost_no_dom": {
+                    "value": "238.48"
+                },
+                "feature_1": "2 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "rate_type": "Variabel",
+                "ask_algemene_voorwaarden_nl": "Luminus: Ja, ik ga akkoord met de overeenkomst, met de bijzondere en <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">algemene voorwaarden</a>, inclusief het bestaan en de modaliteiten voor het uitoefenen van het herroepingsrecht en ik erken dat mijn bestelling een betalingsverplichting inhoudt.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Essential",
+                "korting_in_EUR": "75.00",
+                "one_click_change": "True",
+                "supplier": "Luminus",
+                "dom_required": "True",
+                "beheerder": "IVEKA",
+                "korting_in_prokWh": {
+                    "unit_cost": "25.00",
+                    "value": "0.00",
+                    "units": "0"
+                },
+                "total_cost": {
+                    "unit_cost": "4.40",
+                    "value": "234.34",
+                    "units": "5328"
+                },
+                "product_en": "Essential",
+                "abonnement": "35.00",
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Luminus: Oui, je suis d\\\u2019accord avec le Contrat, avec les <a href=\"https://secure.luminus.be/~/media/online-channels/download-documents/res_conditions_generales__verzakingsform_fr_072014.ashx\" target=\"_blank\"> conditions g\u00e9n\u00e9rales</a> et particuli\u00e8res, y compris l\u2019existence et les modalit\u00e9s pour l\u2019exercice du droit de r\u00e9traction et je reconnais que ma commande comprend une obligation de paiement.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "234.34"
+                },
+                "provider": "Luminus",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "total_cost_no_digital": {
+                    "value": "234.34"
+                },
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "3.00",
+                    "value": "159.79",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Luminus: Yes, I agree with the contract, the special and <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">general terms and conditions</a>, including the existance and the modalities for the exercise of the right of withdrawal and I recognise that my order implies an obligation to pay.",
+                "product_fr": "Essential",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.43",
+                    "value": "342.34",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "210",
+                "upfront_payment_required": "False",
+                "total_energy": "194.79",
+                "total_discount": "108.00",
+                "cooperative": "False",
+                "korting_gratis_kWh_in_EUR": {
+                    "unit_cost": "1250.00",
+                    "value": "33.00",
+                    "units": "1250.0"
+                },
+                "total_cost_no_dom": {
+                    "value": "234.34"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Luminus: Ja, ik ga akkoord met de overeenkomst, met de bijzondere en <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">algemene voorwaarden</a>, inclusief het bestaan en de modaliteiten voor het uitoefenen van het herroepingsrecht en ik erken dat mijn bestelling een betalingsverplichting inhoudt.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Optimal",
+                "korting_in_EUR": "65.00",
+                "one_click_change": "True",
+                "supplier": "Luminus",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "korting_in_ckWh": {
+                    "unit_cost": "1.00",
+                    "value": "53.28",
+                    "units": "5328.0"
+                },
+                "product_en": "Optimal",
+                "total_cost": {
+                    "unit_cost": "3.84",
+                    "value": "204.84",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "abonnement": "40.00",
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Luminus: Oui, je suis d\\\u2019accord avec le Contrat, avec les <a href=\"https://secure.luminus.be/~/media/online-channels/download-documents/res_conditions_generales__verzakingsform_fr_072014.ashx\" target=\"_blank\"> conditions g\u00e9n\u00e9rales</a> et particuli\u00e8res, y compris l\u2019existence et les modalit\u00e9s pour l\u2019exercice du droit de r\u00e9traction et je reconnais que ma commande comprend une obligation de paiement.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "204.84"
+                },
+                "provider": "Luminus",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "total_cost_no_digital": {
+                    "value": "204.84"
+                },
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "3.21",
+                    "value": "171.24",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Luminus: Yes, I agree with the contract, the special and <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">general terms and conditions</a>, including the existance and the modalities for the exercise of the right of withdrawal and I recognise that my order implies an obligation to pay.",
+                "product_fr": "Optimal",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.73",
+                    "value": "358.80",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "211",
+                "upfront_payment_required": "False",
+                "total_energy": "211.24",
+                "total_discount": "153.96",
+                "cooperative": "False",
+                "korting_gratis_kWh_in_EUR": {
+                    "unit_cost": "1250.00",
+                    "value": "35.68",
+                    "units": "1250.0"
+                },
+                "total_cost_no_dom": {
+                    "value": "204.84"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Lampiris: Ik aanvaard de <a href=\"http://www.lampiris.be/uploaded/nl/conditions_NL.pdf\" target=\"_blank\"> algemene verkoopsvoorwaarden</a>, <a href=\"http://www.lampiris.be/nl/particulier.php?tarifs\" target=\"_blank\"> laatste tarieven </a> en <a href=\"http://www.lampiris.be/uploaded/nl/notice_legale_NL.pdf\" target=_blank\"> Wettelijke mededeling </a>",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "tip",
+                "one_click_change": "True",
+                "supplier": "Lampiris",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "tip",
+                "total_cost": {
+                    "unit_cost": "6.50",
+                    "value": "346.21",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "346.21"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Lampiris: J\\\u2019accepte <a href=\"http://www.lampiris.be/uploaded/fr/conditions_FR.pdf\" target=\"_blank\">  les conditions g\u00e9n\u00e9rales de vente,</a>, <a href=\"http://www.lampiris.be/fr/particulier.php?tarifs\" target=\"_blank\"> les conditions tarifaires </a> et <a href=\"http://www.lampiris.be/uploaded/fr/notice_legale_FR.pdf\" target=_blank\"> la notice l\u00e9gale </a>",
+                "duration": "\\",
+                "total_cost_no_dom_digital": {
+                    "value": "346.21"
+                },
+                "provider": "Lampiris",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "39.99",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.98",
+                    "value": "158.67",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Lampiris: I accept the <a href=\"http://www.lampiris.be/uploaded/nl/conditions_NL.pdf\" target=\"_blank\"> general terms and conditions</a>, <a href=\"http://www.lampiris.be/nl/particulier.php?tarifs\" target=\"_blank\"> latest tarrifs </a> and <a href=\"http://www.lampiris.be/uploaded/nl/notice_legale_NL.pdf\" target=_blank\"> legal notice </a>.",
+                "product_fr": "tip",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.50",
+                    "value": "346.21",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "342",
+                "upfront_payment_required": "False",
+                "total_energy": "198.66",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "346.21"
+                },
+                "feature_1": "1, 2 of 3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Lampiris: Ik aanvaard de <a href=\"http://www.lampiris.be/uploaded/nl/conditions_NL.pdf\" target=\"_blank\"> algemene verkoopsvoorwaarden</a>, <a href=\"http://www.lampiris.be/nl/particulier.php?tarifs\" target=\"_blank\"> laatste tarieven </a> en <a href=\"http://www.lampiris.be/uploaded/nl/notice_legale_NL.pdf\" target=_blank\"> Wettelijke mededeling </a>",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "TOP",
+                "one_click_change": "True",
+                "supplier": "Lampiris",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "TOP",
+                "total_cost": {
+                    "unit_cost": "6.69",
+                    "value": "356.55",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "356.55"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Lampiris: J\\\u2019accepte <a href=\"http://www.lampiris.be/uploaded/fr/conditions_FR.pdf\" target=\"_blank\">  les conditions g\u00e9n\u00e9rales de vente,</a>, <a href=\"http://www.lampiris.be/fr/particulier.php?tarifs\" target=\"_blank\"> les conditions tarifaires </a> et <a href=\"http://www.lampiris.be/uploaded/fr/notice_legale_FR.pdf\" target=_blank\"> la notice l\u00e9gale </a>",
+                "duration": "\\",
+                "total_cost_no_dom_digital": {
+                    "value": "356.55"
+                },
+                "provider": "Lampiris",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "75.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.51",
+                    "value": "134.00",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Lampiris: I accept the <a href=\"http://www.lampiris.be/uploaded/nl/conditions_NL.pdf\" target=\"_blank\"> general terms and conditions</a>, <a href=\"http://www.lampiris.be/nl/particulier.php?tarifs\" target=\"_blank\"> latest tarrifs </a> and <a href=\"http://www.lampiris.be/uploaded/nl/notice_legale_NL.pdf\" target=_blank\"> legal notice </a>.",
+                "product_fr": "TOP",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.69",
+                    "value": "356.55",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "344",
+                "upfront_payment_required": "False",
+                "total_energy": "209.00",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "356.55"
+                },
+                "feature_1": "1, 2 of 3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Ik aanvaard de algemene voorwaarden van Antargaz",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Variabel",
+                "one_click_change": "True",
+                "supplier": "Antargaz",
+                "dom_required": "True",
+                "beheerder": "IVEKA",
+                "product_en": "Variable",
+                "total_cost": {
+                    "unit_cost": "5.97",
+                    "value": "318.30",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "318.30"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "J'accepte les conditions g\u00e9n\u00e9rales de  Antargaz",
+                "duration": "/",
+                "total_cost_no_dom_digital": {
+                    "value": "318.30"
+                },
+                "provider": "Antargaz",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "36.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.53",
+                    "value": "134.75",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "I accept the general terms and conditions of Antargaz",
+                "product_fr": "Variable",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "5.97",
+                    "value": "318.30",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "345",
+                "upfront_payment_required": "False",
+                "total_energy": "170.75",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "318.30"
+                },
+                "feature_1": "onbepaalde duur",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Ik aanvaard de algemene voorwaarden van Mega",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Safe",
+                "one_click_change": "True",
+                "supplier": "Mega",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Safe",
+                "total_cost": {
+                    "unit_cost": "6.14",
+                    "value": "327.15",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "327.15"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "J'accepte les conditions g\u00e9n\u00e9rales de  Mega",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "327.15"
+                },
+                "provider": "Mega",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "40.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.62",
+                    "value": "139.59",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "I accept the general terms and conditions of Mega",
+                "product_fr": "Safe",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.14",
+                    "value": "327.15",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "347",
+                "upfront_payment_required": "False",
+                "total_energy": "179.59",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "327.15"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "ENGIE Electrabel: Ik aanvaard de algemene en bijzondere voorwaarden van het product van<a href=\"https://www.electrabel.be/nl/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Easy3 (vaste prijs)",
+                "one_click_change": "True",
+                "supplier": "ENGIE Electrabel",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Easy3 (fixed rate)",
+                "total_cost": {
+                    "unit_cost": "5.97",
+                    "value": "318.27",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "318.27"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "ENGIE Electrabel: Je suis d'accord avec les conditions g\u00e9n\u00e9rales et sp\u00e9cifiques et les tarifs en vigueur de<a href=\"https://www.engie-electrabel.be/fr/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "duration": "3",
+                "total_cost_no_dom_digital": {
+                    "value": "318.27"
+                },
+                "provider": "ENGIE Electrabel",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "27.23",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.69",
+                    "value": "143.48",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "ENGIE Electrabel: I accept the general and special terms and conditions for the product of<a href=\"https://www.electrabel.be/nl/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "product_fr": "Easy3 (prix fixe)",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "5.97",
+                    "value": "318.27",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "349",
+                "upfront_payment_required": "False",
+                "total_energy": "170.71",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "318.27"
+                },
+                "feature_1": "3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Essent: Ik heb kennis genomen van <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">de algemene voorwaarden, de instructies en het formulier voor herroeping </a>alsook de <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">geldige tarieven en de bijzondere voorwaarden </a> en verklaar hiermee akkoord te gaan",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Vast 3 jaar",
+                "one_click_change": "True",
+                "supplier": "Essent",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Fixed 3 years",
+                "total_cost": {
+                    "unit_cost": "7.25",
+                    "value": "386.14",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "386.14"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Essent: J'ai pris connaissance des <a href=\"https://www.essent.be/fr/generalcondition/B2C/WAL\" target=\"_blank\"> conditions g\u00e9n\u00e9rales, des instructions et du formulaire de r\u00e9tractation, de m\u00eame que des<a href=\"https://www.essent.be/fr/tariff/variant/B2C/FGZD/WAL\" target=\"_blank\"> tarifs en vigueur et des conditions particuli\u00e8res</a>, et d\u00e9clare par la pr\u00e9sente les accepter.",
+                "duration": "3",
+                "total_cost_no_dom_digital": {
+                    "value": "386.14"
+                },
+                "provider": "Essent",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "69.95",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "3.16",
+                    "value": "168.63",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Essent: I have taken note of <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">the general terms and conditions, the instructions and the form of withdrawal </a>as well as the <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">valid tarrifs and the special conditions </a> and declare to agree to this.",
+                "product_fr": "Fixe 3 ans",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "7.25",
+                    "value": "386.14",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "165",
+                "upfront_payment_required": "False",
+                "total_energy": "238.58",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "386.14"
+                },
+                "feature_1": "3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Luminus: Ja, ik ga akkoord met de overeenkomst, met de bijzondere en <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">algemene voorwaarden</a>, inclusief het bestaan en de modaliteiten voor het uitoefenen van het herroepingsrecht en ik erken dat mijn bestelling een betalingsverplichting inhoudt.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Basic",
+                "one_click_change": "True",
+                "supplier": "Luminus",
+                "dom_required": "True",
+                "beheerder": "IVEKA",
+                "product_en": "Basic",
+                "total_cost": {
+                    "unit_cost": "5.77",
+                    "value": "307.43",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "307.43"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Luminus: Oui, je suis d\\\u2019accord avec le Contrat, avec les <a href=\"https://secure.luminus.be/~/media/online-channels/download-documents/res_conditions_generales__verzakingsform_fr_072014.ashx\" target=\"_blank\"> conditions g\u00e9n\u00e9rales</a> et particuli\u00e8res, y compris l\u2019existence et les modalit\u00e9s pour l\u2019exercice du droit de r\u00e9traction et je reconnais que ma commande comprend une obligation de paiement.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "307.43"
+                },
+                "provider": "Luminus",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "18.15",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.66",
+                    "value": "141.72",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Luminus: Yes, I agree with the contract, the special and <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">general terms and conditions</a>, including the existance and the modalities for the exercise of the right of withdrawal and I recognise that my order implies an obligation to pay.",
+                "product_fr": "Basic",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "5.77",
+                    "value": "307.43",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "992",
+                "upfront_payment_required": "False",
+                "total_energy": "159.87",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "307.43"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Luminus: Ja, ik ga akkoord met de overeenkomst, met de bijzondere en <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">algemene voorwaarden</a>, inclusief het bestaan en de modaliteiten voor het uitoefenen van het herroepingsrecht en ik erken dat mijn bestelling een betalingsverplichting inhoudt.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "BeGreen",
+                "one_click_change": "True",
+                "supplier": "Luminus",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "korting_in_ckWh": {
+                    "unit_cost": "0.25",
+                    "value": "13.32",
+                    "units": "5328.0"
+                },
+                "product_en": "BeGreen",
+                "total_cost": {
+                    "unit_cost": "6.36",
+                    "value": "338.75",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "338.75"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Luminus: Oui, je suis d\\\u2019accord avec le Contrat, avec les <a href=\"https://secure.luminus.be/~/media/online-channels/download-documents/res_conditions_generales__verzakingsform_fr_072014.ashx\" target=\"_blank\"> conditions g\u00e9n\u00e9rales</a> et particuli\u00e8res, y compris l\u2019existence et les modalit\u00e9s pour l\u2019exercice du droit de r\u00e9traction et je reconnais que ma commande comprend une obligation de paiement.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "338.75"
+                },
+                "provider": "Luminus",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "48.40",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.93",
+                    "value": "156.11",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Luminus: Yes, I agree with the contract, the special and <a href=\"https://secure.luminus.be/~/media/Online%20Channels/Download%20documents/RES_Algemene_voorwaarden__verzakingsform_NL_072014.ashx\" target=\"_blank\">general terms and conditions</a>, including the existance and the modalities for the exercise of the right of withdrawal and I recognise that my order implies an obligation to pay.",
+                "product_fr": "BeGreen",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.61",
+                    "value": "352.07",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "997",
+                "upfront_payment_required": "False",
+                "total_energy": "204.51",
+                "total_discount": "13.32",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "338.75"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "ENGIE Electrabel: Ik aanvaard de algemene en bijzondere voorwaarden van het product van<a href=\"https://www.electrabel.be/nl/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Direct",
+                "one_click_change": "True",
+                "supplier": "ENGIE Electrabel",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Direct",
+                "total_cost": {
+                    "unit_cost": "5.70",
+                    "value": "303.91",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "303.91"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "ENGIE Electrabel: Je suis d'accord avec les conditions g\u00e9n\u00e9rales et sp\u00e9cifiques et les tarifs en vigueur de<a href=\"https://www.engie-electrabel.be/fr/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "303.91"
+                },
+                "provider": "ENGIE Electrabel",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "18.15",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.59",
+                    "value": "138.21",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "ENGIE Electrabel: I accept the general and special terms and conditions for the product of<a href=\"https://www.electrabel.be/nl/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "product_fr": "Direct",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "5.70",
+                    "value": "303.91",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "364",
+                "upfront_payment_required": "False",
+                "total_energy": "156.36",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "303.91"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "eni: Ik heb de <a href=\"https://cdn.eni.be/downloads/nl/general/vw/online-communicatie.pdf\" target=\"_blank\"> bijkomende voorwaarden voor online communicatie </a> en <a href=\"https://cdn.eni.be/downloads/nl/general/vw/gebruiksvoorwaarden-website.pdf\" target=\"_blank\"> het privacybeleid </a> voor communicatie via email gelezen en ik ga hiermee akkoord.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Start",
+                "one_click_change": "True",
+                "supplier": "eni",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Start",
+                "total_cost": {
+                    "unit_cost": "5.86",
+                    "value": "312.23",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "312.23"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "eni: J'ai lu <a href=\"https://cdn.eni.be/downloads/fr/general/vw/communication-en-ligne.pdf\" target=\"_blank\">les conditions compl\u00e9mentaires</a> et la <a href=\"https://cdn.eni.be/downloads/fr/general/vw/conditions-d-utilisation-website.pdf\" target=\"_blank\">politique de protection de la vie priv\u00e9e</a> pour ce service et je les accepte.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "312.23"
+                },
+                "provider": "eni",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "40.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.34",
+                    "value": "124.68",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "eni: I have read the <a href=\"https://cdn.eni.be/downloads/nl/general/vw/online-communicatie.pdf\" target=\"_blank\"> additional terms and conditions for online communication </a> and <a href=\"https://cdn.eni.be/downloads/nl/general/vw/gebruiksvoorwaarden-website.pdf\" target=\"_blank\"> the privacy policy </a> for communication via email.",
+                "product_fr": "Start",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "5.86",
+                    "value": "312.23",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "624",
+                "upfront_payment_required": "False",
+                "total_energy": "164.68",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "312.23"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "rate_type": "Variabel",
+                "ask_algemene_voorwaarden_nl": "eni: Ik heb de <a href=\"https://cdn.eni.be/downloads/nl/general/vw/online-communicatie.pdf\" target=\"_blank\"> bijkomende voorwaarden voor online communicatie </a> en <a href=\"https://cdn.eni.be/downloads/nl/general/vw/gebruiksvoorwaarden-website.pdf\" target=\"_blank\"> het privacybeleid </a> voor communicatie via email gelezen en ik ga hiermee akkoord.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Go Flex",
+                "one_click_change": "True",
+                "supplier": "eni",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "korting_in_prokWh": {
+                    "unit_cost": "20.00",
+                    "value": "31.36",
+                    "units": "156.8"
+                },
+                "total_cost": {
+                    "unit_cost": "6.25",
+                    "value": "333.00",
+                    "units": "5328"
+                },
+                "product_en": "Go Flex",
+                "abonnement": "60.00",
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "eni: J'ai lu <a href=\"https://cdn.eni.be/downloads/fr/general/vw/communication-en-ligne.pdf\" target=\"_blank\">les conditions compl\u00e9mentaires</a> et la <a href=\"https://cdn.eni.be/downloads/fr/general/vw/conditions-d-utilisation-website.pdf\" target=\"_blank\">politique de protection de la vie priv\u00e9e</a> pour ce service et je les accepte.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "333.00"
+                },
+                "provider": "eni",
+                "korting_in_prokWh_domonly": false,
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "total_cost_no_digital": {
+                    "value": "333.00"
+                },
+                "ask_phone_number": "True",
+                "ask_date_of_birth": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.94",
+                    "value": "156.80",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "eni: I have read the <a href=\"https://cdn.eni.be/downloads/nl/general/vw/online-communicatie.pdf\" target=\"_blank\"> additional terms and conditions for online communication </a> and <a href=\"https://cdn.eni.be/downloads/nl/general/vw/gebruiksvoorwaarden-website.pdf\" target=\"_blank\"> the privacy policy </a> for communication via email.",
+                "product_fr": "Go Flex",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.84",
+                    "value": "364.36",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "625",
+                "upfront_payment_required": "False",
+                "total_energy": "216.80",
+                "total_discount": "31.36",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "333.00"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "rate_type": "Vast",
+                "ask_algemene_voorwaarden_nl": "eni: Ik heb de <a href=\"https://cdn.eni.be/downloads/nl/general/vw/online-communicatie.pdf\" target=\"_blank\"> bijkomende voorwaarden voor online communicatie </a> en <a href=\"https://cdn.eni.be/downloads/nl/general/vw/gebruiksvoorwaarden-website.pdf\" target=\"_blank\"> het privacybeleid </a> voor communicatie via email gelezen en ik ga hiermee akkoord.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Go Fix",
+                "one_click_change": "True",
+                "supplier": "eni",
+                "dom_required": "True",
+                "beheerder": "IVEKA",
+                "korting_in_prokWh": {
+                    "unit_cost": "41.00",
+                    "value": "59.42",
+                    "units": "144.92"
+                },
+                "total_cost": {
+                    "unit_cost": "5.50",
+                    "value": "293.06",
+                    "units": "5328"
+                },
+                "product_en": "Go Fix",
+                "abonnement": "60.00",
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "eni: J'ai lu <a href=\"https://cdn.eni.be/downloads/fr/general/vw/communication-en-ligne.pdf\" target=\"_blank\">les conditions compl\u00e9mentaires</a> et la <a href=\"https://cdn.eni.be/downloads/fr/general/vw/conditions-d-utilisation-website.pdf\" target=\"_blank\">politique de protection de la vie priv\u00e9e</a> pour ce service et je les accepte.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "293.06"
+                },
+                "provider": "eni",
+                "korting_in_prokWh_domonly": false,
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "total_cost_no_digital": {
+                    "value": "293.06"
+                },
+                "ask_phone_number": "True",
+                "ask_date_of_birth": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.72",
+                    "value": "144.92",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "eni: I have read the <a href=\"https://cdn.eni.be/downloads/nl/general/vw/online-communicatie.pdf\" target=\"_blank\"> additional terms and conditions for online communication </a> and <a href=\"https://cdn.eni.be/downloads/nl/general/vw/gebruiksvoorwaarden-website.pdf\" target=\"_blank\"> the privacy policy </a> for communication via email.",
+                "product_fr": "Go Fix",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.62",
+                    "value": "352.48",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "626",
+                "upfront_payment_required": "False",
+                "total_energy": "204.92",
+                "total_discount": "59.42",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "293.06"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "eni: Ik heb de <a href=\"https://cdn.eni.be/downloads/nl/general/vw/online-communicatie.pdf\" target=\"_blank\"> bijkomende voorwaarden voor online communicatie </a> en <a href=\"https://cdn.eni.be/downloads/nl/general/vw/gebruiksvoorwaarden-website.pdf\" target=\"_blank\"> het privacybeleid </a> voor communicatie via email gelezen en ik ga hiermee akkoord.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Plus",
+                "one_click_change": "True",
+                "supplier": "eni",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Plus",
+                "total_cost": {
+                    "unit_cost": "7.02",
+                    "value": "374.20",
+                    "units": "5328"
+                },
+                "rate_type": "Vast",
+                "total_cost_no_digital": {
+                    "value": "374.20"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "eni: J'ai lu <a href=\"https://cdn.eni.be/downloads/fr/general/vw/communication-en-ligne.pdf\" target=\"_blank\">les conditions compl\u00e9mentaires</a> et la <a href=\"https://cdn.eni.be/downloads/fr/general/vw/conditions-d-utilisation-website.pdf\" target=\"_blank\">politique de protection de la vie priv\u00e9e</a> pour ce service et je les accepte.",
+                "duration": "3",
+                "total_cost_no_dom_digital": {
+                    "value": "374.20"
+                },
+                "provider": "eni",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "70.00",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.94",
+                    "value": "156.64",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "eni: I have read the <a href=\"https://cdn.eni.be/downloads/nl/general/vw/online-communicatie.pdf\" target=\"_blank\"> additional terms and conditions for online communication </a> and <a href=\"https://cdn.eni.be/downloads/nl/general/vw/gebruiksvoorwaarden-website.pdf\" target=\"_blank\"> the privacy policy </a> for communication via email.",
+                "product_fr": "Plus",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "7.02",
+                    "value": "374.20",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "627",
+                "upfront_payment_required": "False",
+                "total_energy": "226.64",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "374.20"
+                },
+                "feature_1": "3 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "rate_type": "Variabel",
+                "ask_algemene_voorwaarden_nl": "ENGIE Electrabel: Ik aanvaard de algemene en bijzondere voorwaarden van het product van<a href=\"https://www.electrabel.be/nl/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Easy (ge\u00efndexeerde prijs)",
+                "korting_in_EUR": "45.00",
+                "one_click_change": "True",
+                "supplier": "ENGIE Electrabel",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "korting_in_prokWh": {
+                    "unit_cost": "35.00",
+                    "value": "57.73",
+                    "units": "164.95"
+                },
+                "total_cost": {
+                    "unit_cost": "4.73",
+                    "value": "252.13",
+                    "units": "5328"
+                },
+                "product_en": "Easy (indexed rate)",
+                "abonnement": "42.35",
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "ENGIE Electrabel: Je suis d'accord avec les conditions g\u00e9n\u00e9rales et sp\u00e9cifiques et les tarifs en vigueur de<a href=\"https://www.engie-electrabel.be/fr/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "252.13"
+                },
+                "provider": "ENGIE Electrabel",
+                "korting_in_prokWh_domonly": false,
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "total_cost_no_digital": {
+                    "value": "252.13"
+                },
+                "ask_phone_number": "True",
+                "ask_date_of_birth": "True",
+                "variabel_gas": {
+                    "unit_cost": "3.10",
+                    "value": "164.95",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "ENGIE Electrabel: I accept the general and special terms and conditions for the product of<a href=\"https://www.electrabel.be/nl/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "product_fr": "Easy (prix index\u00e9)",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.66",
+                    "value": "354.86",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "244",
+                "upfront_payment_required": "False",
+                "total_energy": "207.30",
+                "total_discount": "102.73",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "252.13"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "rate_type": "Vast",
+                "ask_algemene_voorwaarden_nl": "ENGIE Electrabel: Ik aanvaard de algemene en bijzondere voorwaarden van het product van<a href=\"https://www.electrabel.be/nl/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Easy (vaste prijs)",
+                "korting_in_EUR": "45.00",
+                "one_click_change": "True",
+                "supplier": "ENGIE Electrabel",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "korting_in_prokWh": {
+                    "unit_cost": "35.00",
+                    "value": "61.39",
+                    "units": "175.4"
+                },
+                "total_cost": {
+                    "unit_cost": "4.58",
+                    "value": "243.79",
+                    "units": "5328"
+                },
+                "product_en": "Easy (fixed rate)",
+                "abonnement": "27.23",
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "ENGIE Electrabel: Je suis d'accord avec les conditions g\u00e9n\u00e9rales et sp\u00e9cifiques et les tarifs en vigueur de<a href=\"https://www.engie-electrabel.be/fr/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "243.79"
+                },
+                "provider": "ENGIE Electrabel",
+                "korting_in_prokWh_domonly": false,
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "total_cost_no_digital": {
+                    "value": "243.79"
+                },
+                "ask_phone_number": "True",
+                "ask_date_of_birth": "True",
+                "variabel_gas": {
+                    "unit_cost": "3.29",
+                    "value": "175.40",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "ENGIE Electrabel: I accept the general and special terms and conditions for the product of<a href=\"https://www.electrabel.be/nl/particulier/prices-and-conditions\" target=\"_blank\"> ENGIE Electrabel</a>.",
+                "product_fr": "Easy (prix fixe)",
+                "only_digital_invoice": "False",
+                "total_cost_no_discount": {
+                    "unit_cost": "6.57",
+                    "value": "350.18",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Vast",
+                "service_level": "5",
+                "pid": "246",
+                "upfront_payment_required": "False",
+                "total_energy": "202.63",
+                "total_discount": "106.39",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "243.79"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            },
+            {
+                "ask_algemene_voorwaarden_nl": "Essent: Ik heb kennis genomen van <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">de algemene voorwaarden, de instructies en het formulier voor herroeping </a>alsook de <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">geldige tarieven en de bijzondere voorwaarden </a> en verklaar hiermee akkoord te gaan",
+                "transport_cost": "10.34",
+                "rent_cost": "5.87",
+                "product": "Essent.online",
+                "one_click_change": "True",
+                "supplier": "Essent",
+                "dom_required": "False",
+                "beheerder": "IVEKA",
+                "product_en": "Essent.online",
+                "total_cost": {
+                    "unit_cost": "5.91",
+                    "value": "315.01",
+                    "units": "5328"
+                },
+                "rate_type": "Variabel",
+                "total_cost_no_digital": {
+                    "value": "315.01"
+                },
+                "heffingen": "9.49",
+                "ask_algemene_voorwaarden_fr": "Essent: J'ai pris connaissance des <a href=\"https://www.essent.be/fr/generalcondition/B2C/WAL\" target=\"_blank\"> conditions g\u00e9n\u00e9rales, des instructions et du formulaire de r\u00e9tractation, de m\u00eame que des<a href=\"https://www.essent.be/fr/tariff/variant/B2C/FGZD/WAL\" target=\"_blank\"> tarifs en vigueur et des conditions particuli\u00e8res</a>, et d\u00e9clare par la pr\u00e9sente les accepter.",
+                "duration": "1",
+                "total_cost_no_dom_digital": {
+                    "value": "315.01"
+                },
+                "provider": "Essent",
+                "ask_date_of_birth": "True",
+                "contribution_cost": "6.43",
+                "distribution_cost": "127.72",
+                "abonnement": "34.95",
+                "ask_phone_number": "True",
+                "variabel_gas": {
+                    "unit_cost": "2.49",
+                    "value": "132.51",
+                    "units": "5328"
+                },
+                "net_tariff": "138.06",
+                "ask_algemene_voorwaarden_en": "Essent: I have taken note of <a href=\"https://www.essent.be/nl/generalcondition/B2C/FLA\" target=\"_blank\">the general terms and conditions, the instructions and the form of withdrawal </a>as well as the <a href=\"https://www.essent.be/nl/tariff/variant/B2C/FGZD/FLA\" target=\"_blank\">valid tarrifs and the special conditions </a> and declare to agree to this.",
+                "product_fr": "Essent.online",
+                "only_digital_invoice": "True",
+                "total_cost_no_discount": {
+                    "unit_cost": "5.91",
+                    "value": "315.01",
+                    "units": "5328"
+                },
+                "connection_cost": "0.00",
+                "feature_2": "Variabel",
+                "service_level": "5",
+                "pid": "378",
+                "upfront_payment_required": "False",
+                "total_energy": "167.46",
+                "total_discount": "0.00",
+                "cooperative": "False",
+                "total_cost_no_dom": {
+                    "value": "315.01"
+                },
+                "feature_1": "1 jaar",
+                "supplier_id": "1.00",
+                "fed_cont_cost": "3.06"
+            }
+        ],
+        "product_fr": "tip",
+        "your_product": {
+            "ask_algemene_voorwaarden_nl": "Lampiris: Ik aanvaard de <a href=\"http://www.lampiris.be/uploaded/nl/conditions_NL.pdf\" target=\"_blank\"> algemene verkoopsvoorwaarden</a>, <a href=\"http://www.lampiris.be/nl/particulier.php?tarifs\" target=\"_blank\"> laatste tarieven </a> en <a href=\"http://www.lampiris.be/uploaded/nl/notice_legale_NL.pdf\" target=_blank\"> Wettelijke mededeling </a>",
+            "transport_cost": "10.34",
+            "rent_cost": "5.87",
+            "product": "tip",
+            "one_click_change": "True",
+            "supplier": "Lampiris",
+            "dom_required": "False",
+            "beheerder": "IVEKA",
+            "total_cost": {
+                "value": "346.21"
+            },
+            "rate_type": "Variabel",
+            "total_cost_no_digital": {
+                "value": "346.21"
+            },
+            "heffingen": "9.49",
+            "ask_algemene_voorwaarden_fr": "Lampiris: J\\\u2019accepte <a href=\"http://www.lampiris.be/uploaded/fr/conditions_FR.pdf\" target=\"_blank\">  les conditions g\u00e9n\u00e9rales de vente,</a>, <a href=\"http://www.lampiris.be/fr/particulier.php?tarifs\" target=\"_blank\"> les conditions tarifaires </a> et <a href=\"http://www.lampiris.be/uploaded/fr/notice_legale_FR.pdf\" target=_blank\"> la notice l\u00e9gale </a>",
+            "total_cost_no_dom_digital": {
+                "value": "346.21"
+            },
+            "provider": "Lampiris",
+            "ask_date_of_birth": "True",
+            "duration": "\\",
+            "distribution_cost": "127.72",
+            "abonnement": "39.99",
+            "ask_phone_number": "True",
+            "variabel_gas": {
+                "unit_cost": "2.98",
+                "value": "158.67",
+                "units": "5328"
+            },
+            "net_tariff": "138.06",
+            "ask_algemene_voorwaarden_en": "Lampiris: I accept the <a href=\"http://www.lampiris.be/uploaded/nl/conditions_NL.pdf\" target=\"_blank\"> general terms and conditions</a>, <a href=\"http://www.lampiris.be/nl/particulier.php?tarifs\" target=\"_blank\"> latest tarrifs </a> and <a href=\"http://www.lampiris.be/uploaded/nl/notice_legale_NL.pdf\" target=_blank\"> legal notice </a>.",
+            "pid": "342",
+            "only_digital_invoice": "False",
+            "total_cost_no_discount": {
+                "unit_cost": "6.50",
+                "value": "346.21",
+                "units": "5328"
+            },
+            "connection_cost": "0.00",
+            "feature_2": "Variabel",
+            "service_level": "5",
+            "contribution_cost": "6.43",
+            "upfront_payment_required": "False",
+            "total_energy": "198.66",
+            "total_discount": "0.00",
+            "cooperative": "False",
+            "total_cost_no_dom": {
+                "value": "346.21"
+            },
+            "feature_1": "1, 2 of 3 jaar",
+            "supplier_id": "1.00",
+            "fed_cont_cost": "3.06"
+        },
+        "product_en": "tip"
+    },
+    "is_afrekening": true,
+    "total_lines": [
+        49,
+        63,
+        79,
+        45,
+        48
+    ],
+    "delta": "141.37",
+    "invoice": {
+        "consumption_derived": true,
+        "frequency": "annual",
+        "monthly_cost": 0
+    },
+    "unique_code": "ibd38vwAaggHvArAhHTziru80",
+    "person": {
+        "email": "sea930320@hotmail.com",
+        "last_name": "Peeters",
+        "title": "MS",
+        "source": {
+            "referrer": "http://localhost:3002/en/home",
+            "site": "localhost:3002"
+        },
+        "locale": "nl",
+        "first_name": "Ingrid"
+    },
+    "has_gas": "True",
+    "supplier": "Lampiris"
+}
